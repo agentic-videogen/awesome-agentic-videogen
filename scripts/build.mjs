@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import {renderSurveyComparison} from './survey-comparison.mjs';
+import {renderResourceBadges} from './link-badges.mjs';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const catalogue = JSON.parse(fs.readFileSync(path.join(root, 'data/catalogue.json'), 'utf8'));
 const tracks = JSON.parse(fs.readFileSync(path.join(root, 'data/tracks.json'), 'utf8'));
@@ -34,7 +35,7 @@ fs.writeFileSync(indexPath, indexSource
 const repo = 'https://github.com/agentic-videogen/awesome-agentic-videogen';
 const slug = s => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const escape = s => String(s).replace(/\|/g, '\\|').replace(/\[/g, '\\[').replace(/\]/g, '\\]');
-const rows = ps => ps.map(p => `| ${p.year || 'n.d.'} | [${escape(p.title)}](${p.url}) | ${escape(p.venue)} | ${[p.code && `[Code](${p.code})`, p.project && `[Project](${p.project})`].filter(Boolean).join(' · ') || '—'} |`).join('\n');
+const rows = ps => ps.map(p => `| ${p.year || 'n.d.'} | [${escape(p.title)}](${p.url}) | ${escape(p.venue)} | ${renderResourceBadges(p)} |`).join('\n');
 const list = ps => `| Year | Paper / resource | Venue / source | Links |\n|:---:|:---|:---|:---|\n${rows(ps)}\n`;
 let readme = `<p align="center"><img src="docs/logo.svg" alt="Video Rebirth" width="210"></p>\n\n# Awesome Agentic Video Generation\n\n**Video Generation Meets Agent Harness: A Survey**\n\nAgentic video generation · Agentic world modeling · Recursive self-improvement\n\n[Website](https://agentic-videogen.github.io/) · [Browse the catalogue](data/catalogue.json) · [Contribute](${repo}/issues/new?template=add-resource.yml)\n\nA living collection of **${catalogue.papers.length} unique papers and resources**, organized around how the agent harness meets video generation in creation, interaction, and model development. The catalogue also includes shared agent capabilities, foundations, and evaluation resources.\n\nThe survey manuscript and its citation will be linked here when released. This repository currently publishes bibliographic records and links, not manuscript sources or paper PDFs.\n\n## News\n\n- **2026-10-28:** Initial bibliography-backed catalogue and companion website draft.\n\n## Contents\n\n${tracks.map(t=>`- [${t.title}](#${slug(t.title)})`).join('\n')}\n- [Benchmarks & Evaluation](#benchmarks--evaluation)\n- [Contributing](#contributing)\n- [Maintaining the catalogue](#maintaining-the-catalogue)\n\n## Overview\n\n| Reading path | Central question | Scope |\n|:---|:---|:---|\n${tracks.slice(0,3).map(t=>`| **${t.title}** | ${t.question} | ${t.description} |`).join('\n')}\n\nThe three paths are complementary settings, not capability levels. A resource may appear in multiple paths; the headline count is deduplicated. The development path includes mechanisms relevant to future RSI, rather than certifying that every listed system demonstrates RSI.\n\n`;
 for (const t of tracks) {

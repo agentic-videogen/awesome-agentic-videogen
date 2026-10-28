@@ -12,4 +12,6 @@ Metadata copied from a bibliography should keep `metadata: "Survey bibliography"
 
 Run `node scripts/build.mjs` and `node scripts/check.mjs` after changes. These refresh the README, website catalogue, and bibliography from the same data.
 
+The README links column is generated as Shields.io badges: live GitHub Star counts for repository links, red arXiv/Paper links, and blue Website links. Other sources retain a Source badge; non-repository GitHub links retain a Code badge instead of unrelated star counts. Missing code/project links are not invented. Edit metadata, not the generated badge markup. This presentation follows [Awesome-Video-Diffusion](https://github.com/showlab/Awesome-Video-Diffusion); it does not change the companion website.
+
 Do not commit manuscript sources, unpublished paper PDFs, credentials, personal local paths, or unlicensed third-party media.
