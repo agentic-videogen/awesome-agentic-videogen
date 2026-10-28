@@ -24,11 +24,11 @@
   ],
   "institutions": [
     {"id": "video-rebirth", "name": "Video Rebirth", "logo": "logo.svg", "logoSource": "Logo supplied by the survey authors"},
-    {"id": "hkust", "name": "Hong Kong University of Science and Technology", "logo": "logo-hkust.svg", "url": "https://hkust.edu.hk/", "logoSource": "https://brand.hkust.edu.hk/profiles/ust/modules/custom/hkust_signature_affiliate/assets/images/hkust_logo_small.svg"},
+    {"id": "hkust", "name": "Hong Kong University of Science and Technology", "logo": "crest-hkust.svg", "url": "https://hkust.edu.hk/", "logoSource": "https://jingliangli.com/affordance-survey/assets/logos/hkust-gz.svg", "logoNote": "University emblem shared by HKUST and HKUST (Guangzhou), without either campus wordmark."},
     {"id": "ntu", "name": "Nanyang Technological University", "logo": "logo-ntu.svg", "url": "https://www.ntu.edu.sg/", "logoSource": "https://jingliangli.com/affordance-survey/assets/logos/ntu.svg"},
-    {"id": "show-lab-nus", "name": "Show Lab, National University of Singapore", "logo": "logo-showlab.png", "url": "https://sites.google.com/view/showlab/home", "logoSource": "https://github.com/showlab.png?size=240"},
-    {"id": "ustc", "name": "University of Science and Technology of China", "logo": "logo-ustc.ico", "url": "https://en.ustc.edu.cn/", "logoSource": "https://en.ustc.edu.cn/images/logo.ico"},
-    {"id": "csu", "name": "Central South University", "logo": "logo-csu.jpg", "url": "https://en.csu.edu.cn/", "logoSource": "https://en.csu.edu.cn/images/logo1.jpg"}
+    {"id": "show-lab-nus", "name": "Show Lab, National University of Singapore", "logo": "crest-nus.png", "url": "https://sites.google.com/view/showlab/home", "logoSource": "https://isresearchworkshop.comp.nus.edu.sg/images/nus.png", "logoReference": "https://www.nus.edu.sg/identity/elements-of-the-nus-logo", "logoNote": "Original workshop asset retained intact; the webpage viewport displays the coat of arms."},
+    {"id": "ustc", "name": "University of Science and Technology of China", "logo": "crest-ustc.png", "url": "https://en.ustc.edu.cn/", "logoSource": "https://jbyang1987.github.io/ustclogo/%E6%A0%A1%E5%BE%BD/ustc%E6%A0%A1%E5%BE%BD%20%E7%A7%91%E5%A4%A7%E8%93%9D.png", "logoReference": "https://sz.ustc.edu.cn/wdxz_show/13.html"},
+    {"id": "csu", "name": "Central South University", "logo": "crest-csu.png", "url": "https://en.csu.edu.cn/", "logoSource": "https://www.csu.edu.cn/__local/5/85/66/A8DA6D0E8DD76C7FDDB81792C28_F0410DE8_8BDF4.png", "logoReference": "https://www.csu.edu.cn/zjzn/xxbs/xh.htm"}
   ],
   "note": "Institution order follows the manuscript. Individual author-to-institution assignments are not inferred. Institutional marks retain their owners' rights."
 }
