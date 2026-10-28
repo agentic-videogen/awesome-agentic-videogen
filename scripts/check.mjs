@@ -94,13 +94,14 @@ assert(exampleBadges.includes('stars/showlab/MovieAgent.svg?style=social&label=S
 assert(exampleBadges.includes('badge/arXiv-b31b1b.svg'),'Missing red arXiv badge');
 assert(exampleBadges.includes('badge/Website-9cf.svg'),'Missing blue Website badge');
 assert.equal((exampleBadges.match(/\[!\[/g)||[]).length,3,'Example badge count');
-assert.equal((exampleBadges.match(/&nbsp;/g)||[]).length,2,'Badge group must not wrap between links');
 assert(!renderResourceBadges({...example,code:null,project:null}).includes('Star'),'Invented repository badge');
 assert(renderResourceBadges({type:'Report',url:'https://example.org/report'}).includes('[![Source]'),'Report mislabeled as arXiv');
 assert(renderResourceBadges({type:'Paper',url:'https://doi.org/10.1234/example'}).includes('[![Paper]'),'Missing non-arXiv paper link');
 assert(!renderResourceBadges({...example,code:'https://github.com/arXiv/html_feedback/issues'}).includes('stars/'),'Issue list incorrectly assigned repository stars');
 const readme=read('README.md');
 for(const p of c.papers)assert(readme.includes(renderResourceBadges(p)),'README badges omitted: '+p.id);
-for(const row of readme.split('\n').filter(l=>/^\| (?:\d{4}|n\.d\.) \|/.test(l)))assert(row.includes('[!['),'Resource row missing link badges');
+const expectedEntryCount=c.papers.reduce((n,p)=>n+p.topics.length,0)+c.papers.filter(p=>p.type==='Benchmark').length;
+assert.equal(readme.split('\n').filter(l=>l.startsWith('- [')&&l.includes(' — **')).length,expectedEntryCount,'Resource entry count changed');
+assert(!readme.includes('| Year | Paper / resource | Venue / source | Links |'),'Resource table would compress link badges');
 for(const file of ['README.md','DEPLOYMENT.md','CONTRIBUTING.md','docs/index.html','docs/app.js','docs/styles.css','docs/cover.css','docs/comparison.css','data/catalogue.json','data/people.json','data/survey-comparison.json'])assert(!/\/Users\/|fanliaoyuandeMacBook|\.codex\/skills|\uFFFD/.test(read(file)),'Private path or broken Unicode: '+file);
 console.log(`PASS: ${c.papers.length} unique records; valid links and categories; README/data parity; privacy and website assets.`);
