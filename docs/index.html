@@ -22,7 +22,6 @@
 .authors sup {color:var(--violet);font-size:10px;line-height:0;position:relative;top:-.12em;margin-left:2px}
 .affiliations {list-style:none;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:20px;padding:23px 0 20px;margin:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .affiliation {display:flex;flex-direction:column;align-items:center;gap:10px;height:100%;padding:0 3px}
-a.affiliation:hover .affiliation-name {color:var(--violet)}
 .affiliation-logo {width:100%;height:51px;display:flex;align-items:center;justify-content:center}
 .affiliation-logo img {max-width:100%;width:auto;height:49px;max-height:51px;object-fit:contain}
 .affiliation[data-institution="video-rebirth"] img {width:48px;height:44px}
@@ -30,7 +29,6 @@ a.affiliation:hover .affiliation-name {color:var(--violet)}
 /* Show the coat of arms from the intact university lockup asset. */
 .affiliation[data-institution="show-lab-nus"] .affiliation-logo {width:40px;height:49px;overflow:hidden;justify-content:flex-start}
 .affiliation[data-institution="show-lab-nus"] img {height:225%;width:auto;max-width:none;max-height:none;flex:none}
-.affiliation-name {font-size:10px;font-weight:500;line-height:1.65;color:#5f615d;max-width:177px}
 .author-notes {display:flex;justify-content:center;gap:24px;flex-wrap:wrap;font-size:10px;color:var(--muted);margin:13px 0 23px}
 .author-notes b {color:var(--violet);font-weight:600;margin-right:4px}
 .hero-lead {font-size:18px;line-height:1.6;letter-spacing:-.2px;max-width:780px;margin:0 auto 10px}
@@ -43,7 +41,6 @@ a.affiliation:hover .affiliation-name {color:var(--violet)}
   .affiliation-logo {height:47px}
   .affiliation-logo img {max-height:47px;max-width:170px}
   .affiliation[data-institution="show-lab-nus"] .affiliation-logo {width:38px;height:47px}
-  .affiliation-name {max-width:220px}
 }
 @media(max-width:650px) {
   .hero {padding-top:32px;padding-bottom:28px}
@@ -59,7 +56,6 @@ a.affiliation:hover .affiliation-name {color:var(--violet)}
   .affiliation-logo,.affiliation-logo img {max-height:43px}
   .affiliation-logo img {max-width:145px}
   .affiliation[data-institution="show-lab-nus"] .affiliation-logo {width:35px;height:43px}
-  .affiliation-name {font-size:9px;max-width:155px}
   .author-notes {gap:7px 17px;font-size:9px;margin:12px 0 22px}
   .hero-lead {font-size:15px;max-width:370px;margin-bottom:9px}
   .hero-detail {font-size:11px;line-height:1.8}
@@ -110,12 +106,12 @@ a.affiliation:hover .affiliation-name {color:var(--violet)}
           <li>Wei Liu</li>
         </ul>
         <ul class="affiliations" aria-label="Participating institutions, in manuscript order">
-          <li><div class="affiliation" data-institution="video-rebirth"><span class="affiliation-logo"><img src="https://raw.githubusercontent.com/agentic-videogen/awesome-agentic-videogen/b18c86c/docs/logo.svg" alt="Video Rebirth logo" decoding="async"></span><span class="affiliation-name">Video Rebirth</span></div></li>
-          <li><a class="affiliation" data-institution="hkust" href="https://hkust.edu.hk/" target="_blank" rel="noopener noreferrer"><span class="affiliation-logo"><img src="https://raw.githubusercontent.com/agentic-videogen/awesome-agentic-videogen/b18c86c/docs/crest-hkust.svg" alt="Hong Kong University of Science and Technology logo" decoding="async"></span><span class="affiliation-name">Hong Kong University of Science and Technology</span></a></li>
-          <li><a class="affiliation" data-institution="ntu" href="https://www.ntu.edu.sg/" target="_blank" rel="noopener noreferrer"><span class="affiliation-logo"><img src="https://raw.githubusercontent.com/agentic-videogen/awesome-agentic-videogen/b18c86c/docs/logo-ntu.svg" alt="Nanyang Technological University logo" decoding="async"></span><span class="affiliation-name">Nanyang Technological University</span></a></li>
-          <li><a class="affiliation" data-institution="show-lab-nus" href="https://sites.google.com/view/showlab/home" target="_blank" rel="noopener noreferrer"><span class="affiliation-logo"><img src="https://raw.githubusercontent.com/agentic-videogen/awesome-agentic-videogen/b18c86c/docs/crest-nus.webp" alt="Show Lab, National University of Singapore logo" decoding="async"></span><span class="affiliation-name">Show Lab, National University of Singapore</span></a></li>
-          <li><a class="affiliation" data-institution="ustc" href="https://en.ustc.edu.cn/" target="_blank" rel="noopener noreferrer"><span class="affiliation-logo"><img src="https://raw.githubusercontent.com/agentic-videogen/awesome-agentic-videogen/b18c86c/docs/crest-ustc.png" alt="University of Science and Technology of China logo" decoding="async"></span><span class="affiliation-name">University of Science and Technology of China</span></a></li>
-          <li><a class="affiliation" data-institution="csu" href="https://en.csu.edu.cn/" target="_blank" rel="noopener noreferrer"><span class="affiliation-logo"><img src="https://raw.githubusercontent.com/agentic-videogen/awesome-agentic-videogen/b18c86c/docs/crest-csu.png" alt="Central South University logo" decoding="async"></span><span class="affiliation-name">Central South University</span></a></li>
+          <li><div class="affiliation" data-institution="video-rebirth"><span class="affiliation-logo"><img src="https://raw.githubusercontent.com/agentic-videogen/awesome-agentic-videogen/b18c86c/docs/logo.svg" alt="Video Rebirth logo" decoding="async"></span></div></li>
+          <li><a class="affiliation" data-institution="hkust" href="https://hkust.edu.hk/" target="_blank" rel="noopener noreferrer"><span class="affiliation-logo"><img src="https://raw.githubusercontent.com/agentic-videogen/awesome-agentic-videogen/b18c86c/docs/crest-hkust.svg" alt="Hong Kong University of Science and Technology logo" decoding="async"></span></a></li>
+          <li><a class="affiliation" data-institution="ntu" href="https://www.ntu.edu.sg/" target="_blank" rel="noopener noreferrer"><span class="affiliation-logo"><img src="https://raw.githubusercontent.com/agentic-videogen/awesome-agentic-videogen/b18c86c/docs/logo-ntu.svg" alt="Nanyang Technological University logo" decoding="async"></span></a></li>
+          <li><a class="affiliation" data-institution="show-lab-nus" href="https://sites.google.com/view/showlab/home" target="_blank" rel="noopener noreferrer"><span class="affiliation-logo"><img src="https://raw.githubusercontent.com/agentic-videogen/awesome-agentic-videogen/b18c86c/docs/crest-nus.webp" alt="Show Lab, National University of Singapore logo" decoding="async"></span></a></li>
+          <li><a class="affiliation" data-institution="ustc" href="https://en.ustc.edu.cn/" target="_blank" rel="noopener noreferrer"><span class="affiliation-logo"><img src="https://raw.githubusercontent.com/agentic-videogen/awesome-agentic-videogen/b18c86c/docs/crest-ustc.png" alt="University of Science and Technology of China logo" decoding="async"></span></a></li>
+          <li><a class="affiliation" data-institution="csu" href="https://en.csu.edu.cn/" target="_blank" rel="noopener noreferrer"><span class="affiliation-logo"><img src="https://raw.githubusercontent.com/agentic-videogen/awesome-agentic-videogen/b18c86c/docs/crest-csu.png" alt="Central South University logo" decoding="async"></span></a></li>
         </ul>
         <p class="author-notes"><span><b>*</b>Equal contribution</span><span><b>†</b>Corresponding author</span></p>
       </div>

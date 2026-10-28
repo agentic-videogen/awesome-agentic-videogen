@@ -31,6 +31,7 @@ assert.equal(people.authors.filter(a=>a.equalContribution).length,5,'Equal-contr
 assert.equal(people.authors.filter(a=>a.corresponding).map(a=>a.name).join(','),'Kevin Qinghong Lin','Corresponding-author mismatch');
 const authorBlock=html.match(/<!-- people:start -->([\s\S]*?)<!-- people:end -->/)?.[1];
 assert(authorBlock,'Missing generated author block');
+assert(!authorBlock.includes('class="affiliation-name"'),'Institution captions must not appear below logos');
 let authorPosition=-1;
 for(const a of people.authors){const next=authorBlock.indexOf(a.name);assert(next>authorPosition,'Author omitted or out of order: '+a.name);authorPosition=next;}
 let institutionPosition=-1;
