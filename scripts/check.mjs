@@ -24,6 +24,10 @@ for(const p of c.papers){
 }
 const exported=JSON.parse(read('docs/catalogue.json'));assert.deepEqual(exported.papers,c.papers,'Stale website data');
 const html=read('docs/index.html');
+const headerBrand=html.match(/<a class="brand"[^>]*>[\s\S]*?<\/a>/)?.[0];
+assert(headerBrand?.includes('<img class="brand-logo" src="logo.svg"'),'Header must use the supplied Video Rebirth logo');
+assert(headerBrand.includes('AGENTIC <b>VIDEOGEN</b>'),'Header brand text changed');
+assert(!headerBrand.includes('brand-symbol'),'Placeholder header logo remains');
 for(const name of ['styles.css','cover.css','app.js','logo.svg','references.bib'])assert(fs.existsSync(path.join(root,'docs',name)),'Missing website asset: '+name);
 const people=JSON.parse(read('data/people.json'));
 assert(new URL(people.logoAssetBase).hostname==='raw.githubusercontent.com','Unexpected institutional asset host');
