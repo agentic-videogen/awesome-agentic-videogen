@@ -1,0 +1,55 @@
+/* Native, accessible Table 1; coverage values come from the manuscript. */
+.comparison {padding-top:59px;padding-bottom:9px}
+.comparison .section-heading {align-items:end}
+.comparison h2 {font-size:32px;max-width:740px}
+.comparison-toolbar {display:flex;justify-content:space-between;align-items:center;gap:18px;margin:25px 0 16px;flex-wrap:wrap}
+.comparison-legend {display:flex;align-items:center;gap:22px;flex-wrap:wrap;font-size:11px;color:var(--muted)}
+.comparison-legend>span {display:inline-flex;align-items:center;gap:7px}
+.comparison-hint {font-size:10px;color:var(--muted)}
+.coverage-symbols {position:absolute;overflow:hidden;pointer-events:none}
+.coverage-mark {display:inline-flex;width:20px;height:20px;vertical-align:middle;align-items:center;justify-content:center;color:#00845a}
+.coverage-mark svg {width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round;transform:scaleY(-1)}
+.coverage-partial {color:#929292}
+.coverage-outside {color:#b92338}
+.comparison-scroll {max-height:660px;overflow:auto;overscroll-behavior:contain;border:1px solid #d5d8df;border-radius:7px;background:#fff;scrollbar-color:#bcb8cb #f4f2f7;scrollbar-width:thin}
+.comparison-scroll:focus-visible {outline:3px solid #8d7cda;outline-offset:4px}
+.comparison-table {border-collapse:separate;border-spacing:0;width:100%;min-width:940px;table-layout:fixed;font-size:11px;line-height:1.5;text-align:center}
+.comparison-study-col {width:32%}
+.comparison-year-col {width:6%}
+.comparison-table th,.comparison-table td {padding:9px 10px;border-bottom:1px solid #ececf0}
+.comparison-table thead {position:sticky;top:0;z-index:4}
+.comparison-table thead th {background:#efedf5;color:#504762;font-weight:600;font-size:10px;vertical-align:middle}
+.comparison-table thead tr:first-child th {border-bottom:1px solid #d8d3e3;padding-top:13px;padding-bottom:10px}
+.comparison-table thead tr:nth-child(2) th {height:57px;padding:9px 7px}
+.comparison-table .comparison-study {text-align:left;padding-left:17px}
+.comparison-table thead .comparison-study {position:sticky;left:0;z-index:5}
+.comparison-table tbody tr {--row-bg:#fff}
+.comparison-table tbody tr:nth-child(odd) {--row-bg:#fbfafc}
+.comparison-table tbody th[scope="row"],.comparison-table td {background:var(--row-bg,#fff)}
+.comparison-table tbody tr:hover {--row-bg:#f0edf8}
+.comparison-table th[scope="row"] {position:sticky;left:0;z-index:2;text-align:left;font-weight:450;padding-left:17px;border-right:1px solid #e7e5ec}
+.comparison-table th[scope="row"] a {display:block;text-underline-offset:3px}
+.comparison-table th[scope="row"] a>span {font-size:10px;color:#9b94ac}
+.comparison-table th[scope="row"] a:hover {color:var(--violet);text-decoration:underline}
+.comparison-table .comparison-family th {background:#f0f5fb;color:#4e5c70;text-align:left;font-size:10px;font-weight:600;letter-spacing:.15px;padding:8px 17px;border-top:1px solid #e1e7ee;border-bottom:1px solid #e1e7ee}
+.comparison-year {color:#797780;font-variant-numeric:tabular-nums}
+.comparison-table tfoot {position:sticky;bottom:0;z-index:3;--row-bg:#e2dcef}
+.comparison-table tfoot th,.comparison-table tfoot td {background:#e2dcef!important;border-bottom:0;border-top:1px solid #c7bedb;padding-top:12px;padding-bottom:12px}
+.comparison-table tfoot th[scope="row"] {font-weight:700;color:#55428c}
+.comparison-notes {font-size:10px;color:var(--muted);line-height:1.8;max-width:1000px;margin:14px 0 0}
+@media(max-width:650px) {
+  .site-header nav>a[href="#comparison"] {display:inline}
+  .site-header nav>a[href="#contribute"] {display:none}
+  .comparison {padding-top:37px;padding-bottom:0}
+  .comparison h2 {font-size:27px;max-width:330px}
+  .comparison-toolbar {margin-top:20px;gap:11px}
+  .comparison-legend {gap:8px 14px;font-size:9px}
+  .comparison-legend>span {gap:3px}
+  .comparison-hint {font-size:9px}
+  .comparison-scroll {max-height:550px}
+  .comparison-table {min-width:980px}
+  .comparison-study-col {width:23%}
+  .comparison-table th[scope="row"] {padding-left:12px;padding-right:12px}
+  .comparison-table .comparison-study {padding-left:12px}
+  .comparison-notes {font-size:9px}
+}

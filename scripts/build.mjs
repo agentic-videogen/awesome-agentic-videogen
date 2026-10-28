@@ -1,10 +1,12 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import {renderSurveyComparison} from './survey-comparison.mjs';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const catalogue = JSON.parse(fs.readFileSync(path.join(root, 'data/catalogue.json'), 'utf8'));
 const tracks = JSON.parse(fs.readFileSync(path.join(root, 'data/tracks.json'), 'utf8'));
 const people = JSON.parse(fs.readFileSync(path.join(root, 'data/people.json'), 'utf8'));
+const comparison = JSON.parse(fs.readFileSync(path.join(root, 'data/survey-comparison.json'), 'utf8'));
 const htmlEscape = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const peopleMarkup = `
       <div class="survey-people">
@@ -22,9 +24,13 @@ const indexSource = fs.readFileSync(indexPath, 'utf8');
 if (!/<!-- people:start -->[\s\S]*?<!-- people:end -->/.test(indexSource)) throw new Error('Missing author-block build markers');
 const coverStyle=fs.readFileSync(path.join(root,'docs/cover.css'),'utf8');
 if(!/<!-- cover:start -->[\s\S]*?<!-- cover:end -->/.test(indexSource))throw new Error('Missing cover-style build markers');
+const comparisonStyle=fs.readFileSync(path.join(root,'docs/comparison.css'),'utf8');
+if(!/<!-- comparison:start -->[\s\S]*?<!-- comparison:end -->/.test(indexSource))throw new Error('Missing comparison build markers');
 fs.writeFileSync(indexPath, indexSource
   .replace(/(<!-- people:start -->)[\s\S]*?(<!-- people:end -->)/, `$1${peopleMarkup}$2`)
-  .replace(/(<!-- cover:start -->)[\s\S]*?(<!-- cover:end -->)/, `$1\n  <style id="survey-cover-style">\n${coverStyle}</style>\n  $2`));
+  .replace(/(<!-- cover:start -->)[\s\S]*?(<!-- cover:end -->)/, `$1\n  <style id="survey-cover-style">\n${coverStyle}</style>\n  $2`)
+  .replace(/(<!-- comparison-style:start -->)[\s\S]*?(<!-- comparison-style:end -->)/,`$1\n  <style id="survey-comparison-style">\n${comparisonStyle}</style>\n  $2`)
+  .replace(/(<!-- comparison:start -->)[\s\S]*?(<!-- comparison:end -->)/,`$1${renderSurveyComparison(comparison,htmlEscape)}$2`));
 const repo = 'https://github.com/agentic-videogen/awesome-agentic-videogen';
 const slug = s => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const escape = s => String(s).replace(/\|/g, '\\|').replace(/\[/g, '\\[').replace(/\]/g, '\\]');

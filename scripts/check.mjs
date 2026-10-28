@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import assert from 'node:assert/strict';
 import { fileURLToPath } from 'node:url';
+import {renderSurveyComparison} from './survey-comparison.mjs';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const read=p=>fs.readFileSync(path.join(root,p),'utf8');
 const c=JSON.parse(read('data/catalogue.json')), t=JSON.parse(read('data/tracks.json'));
@@ -46,9 +47,30 @@ for(const i of people.institutions){
   else if(i.logo.endsWith('.webp')){assert.equal(logo.subarray(0,4).toString(),'RIFF','Invalid WebP logo: '+i.logo);assert.equal(logo.subarray(8,12).toString(),'WEBP','Invalid WebP logo: '+i.logo);}
 }
 assert(html.includes('Find your next paper.'),'Requested library title changed');
+const comparison=JSON.parse(read('data/survey-comparison.json'));
+assert.equal(comparison.source.manuscriptCommit,'63d5fc5680c2bb2cdca3f6249a72dd484d97ebdc','Unreviewed Table 1 source revision');
+assert.equal(comparison.columns.length,6,'Table 1 coverage dimensions changed');
+assert.equal(comparison.groups.length,11,'Table 1 families changed');
+const comparisonRows=comparison.groups.flatMap(g=>g.rows);
+assert.equal(comparisonRows.length,52,'Table 1 study count changed');
+assert.equal(new Set(comparisonRows.map(r=>r.citation)).size,52,'Duplicate Table 1 citation');
+for(const r of [...comparisonRows,comparison.ours]){
+  assert(r.title&&r.year>=2021&&r.year<=2026,'Invalid Table 1 title/year');
+  assert.equal(r.coverage.length,6,'Incomplete coverage row: '+r.title);
+  assert(r.coverage.every(s=>['systematic','partial','outside'].includes(s)),'Invalid Table 1 coverage: '+r.title);
+  if(r.url)assert(['https:','http:'].includes(new URL(r.url).protocol),'Unsafe Table 1 URL');
+}
+const comparisonBlock=html.match(/<!-- comparison:start -->([\s\S]*?)<!-- comparison:end -->/)?.[1];
+const htmlEscape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+assert.equal(comparisonBlock,renderSurveyComparison(comparison,htmlEscape),'Stale Table 1 markup');
+assert(html.includes(read('docs/comparison.css').trim()),'Stale Table 1 styles');
+assert.equal((comparisonBlock.match(/data-citation=/g)||[]).length,52,'Missing Table 1 rows');
+assert.equal((comparisonBlock.match(/class="coverage-mark /g)||[]).length,321,'Missing coverage cells/legend');
+assert(comparisonBlock.includes('Video-RSI: Harness Evolution (method)'),'Adjacent method omitted');
+assert(html.includes('href="#comparison"'),'Missing Table 1 navigation');
 assert.equal(t.find(x=>x.id==='development').title,'RSI in Video Generation','Incorrect RSI title');
 assert.deepEqual(exported.tracks,t,'Stale website track names');
 assert(html.includes('https://agentic-videogen.github.io/'),'Incorrect target domain');
 for(const p of c.papers)assert(read('README.md').includes(p.title.replace(/\|/g,'\\|').replace(/\[/g,'\\[').replace(/\]/g,'\\]')),'README omitted: '+p.id);
-for(const file of ['README.md','DEPLOYMENT.md','CONTRIBUTING.md','docs/index.html','docs/app.js','docs/styles.css','docs/cover.css','data/catalogue.json','data/people.json'])assert(!/\/Users\/|fanliaoyuandeMacBook|\.codex\/skills|\uFFFD/.test(read(file)),'Private path or broken Unicode: '+file);
+for(const file of ['README.md','DEPLOYMENT.md','CONTRIBUTING.md','docs/index.html','docs/app.js','docs/styles.css','docs/cover.css','docs/comparison.css','data/catalogue.json','data/people.json','data/survey-comparison.json'])assert(!/\/Users\/|fanliaoyuandeMacBook|\.codex\/skills|\uFFFD/.test(read(file)),'Private path or broken Unicode: '+file);
 console.log(`PASS: ${c.papers.length} unique records; valid links and categories; README/data parity; privacy and website assets.`);
