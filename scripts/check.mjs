@@ -22,8 +22,28 @@ for(const p of c.papers){
 }
 const exported=JSON.parse(read('docs/catalogue.json'));assert.deepEqual(exported.papers,c.papers,'Stale website data');
 const html=read('docs/index.html');
-for(const name of ['styles.css','app.js','logo.svg','references.bib'])assert(fs.existsSync(path.join(root,'docs',name)),'Missing website asset: '+name);
+for(const name of ['styles.css','cover.css','app.js','logo.svg','references.bib'])assert(fs.existsSync(path.join(root,'docs',name)),'Missing website asset: '+name);
+const people=JSON.parse(read('data/people.json'));
+assert.equal(people.institutions[0].id,'video-rebirth','Video Rebirth must appear first');
+assert.equal(people.authors.filter(a=>a.equalContribution).length,5,'Equal-contribution author count changed');
+assert.equal(people.authors.filter(a=>a.corresponding).map(a=>a.name).join(','),'Kevin Qinghong Lin','Corresponding-author mismatch');
+const authorBlock=html.match(/<!-- people:start -->([\s\S]*?)<!-- people:end -->/)?.[1];
+assert(authorBlock,'Missing generated author block');
+let authorPosition=-1;
+for(const a of people.authors){const next=authorBlock.indexOf(a.name);assert(next>authorPosition,'Author omitted or out of order: '+a.name);authorPosition=next;}
+let institutionPosition=-1;
+for(const i of people.institutions){
+  const next=authorBlock.indexOf(`data-institution="${i.id}"`);assert(next>institutionPosition,'Institution omitted or out of order: '+i.name);institutionPosition=next;
+  const logo=fs.readFileSync(path.join(root,'docs',i.logo));
+  if(i.logo.endsWith('.svg')){assert(/<svg\b/.test(logo.toString()),'Invalid SVG logo: '+i.logo);assert(!/<script|<foreignObject|\bonload\s*=/i.test(logo.toString()),'Active SVG content: '+i.logo);}
+  else if(i.logo.endsWith('.png'))assert.equal(logo.subarray(0,8).toString('hex'),'89504e470d0a1a0a','Invalid PNG logo: '+i.logo);
+  else if(i.logo.endsWith('.jpg'))assert.equal(logo.subarray(0,3).toString('hex'),'ffd8ff','Invalid JPEG logo: '+i.logo);
+  else if(i.logo.endsWith('.ico'))assert.equal(logo.subarray(0,4).toString('hex'),'00000100','Invalid icon logo: '+i.logo);
+}
+assert(html.includes('Find your next paper.'),'Requested library title changed');
+assert.equal(t.find(x=>x.id==='development').title,'RSI in Video Generation','Incorrect RSI title');
+assert.deepEqual(exported.tracks,t,'Stale website track names');
 assert(html.includes('https://agentic-videogen.github.io/'),'Incorrect target domain');
 for(const p of c.papers)assert(read('README.md').includes(p.title.replace(/\|/g,'\\|').replace(/\[/g,'\\[').replace(/\]/g,'\\]')),'README omitted: '+p.id);
-for(const file of ['README.md','DEPLOYMENT.md','CONTRIBUTING.md','docs/index.html','docs/app.js','docs/styles.css','data/catalogue.json'])assert(!/\/Users\/|fanliaoyuandeMacBook|\.codex\/skills|\uFFFD/.test(read(file)),'Private path or broken Unicode: '+file);
+for(const file of ['README.md','DEPLOYMENT.md','CONTRIBUTING.md','docs/index.html','docs/app.js','docs/styles.css','docs/cover.css','data/catalogue.json','data/people.json'])assert(!/\/Users\/|fanliaoyuandeMacBook|\.codex\/skills|\uFFFD/.test(read(file)),'Private path or broken Unicode: '+file);
 console.log(`PASS: ${c.papers.length} unique records; valid links and categories; README/data parity; privacy and website assets.`);

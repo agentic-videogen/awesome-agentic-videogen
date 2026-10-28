@@ -9,6 +9,7 @@
   <link rel="canonical" href="https://agentic-videogen.github.io/">
   <link rel="icon" href="logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="cover.css">
   <script src="app.js" type="module"></script>
 </head>
 <body>
@@ -20,11 +21,45 @@
   <main id="top">
     <section class="hero wrap" aria-labelledby="hero-title">
       <div class="eyebrow"><span class="status-dot"></span> A SURVEY & A LIVING RESEARCH LIBRARY <span class="edition">2026 EDITION</span></div>
-      <h1 id="hero-title">Video Generation<br>Meets <span>Agent Harness.</span></h1>
+      <h1 id="hero-title" aria-label="Video Generation Meets Agent Harness: A Survey">Video Generation<br>Meets <span>Agent Harness</span><span class="survey-label">A Survey</span></h1>
+      <!-- people:start -->
+      <div class="survey-people">
+        <ul class="authors" aria-label="Survey authors, in manuscript order">
+          <li>Liaoyuan Fan<sup aria-label="equal contribution">*</sup></li>
+          <li>Yuhao Zheng<sup aria-label="equal contribution">*</sup></li>
+          <li>Siyuan Hu<sup aria-label="equal contribution">*</sup></li>
+          <li>Hangyu Ran<sup aria-label="equal contribution">*</sup></li>
+          <li>Dongxing Mao<sup aria-label="equal contribution">*</sup></li>
+          <li>Weijia Mao</li>
+          <li>Rui Zhao</li>
+          <li>Weijia Wu</li>
+          <li>Yuchao Gu</li>
+          <li>Yanzhe Chen</li>
+          <li>Yuxin Jiang</li>
+          <li>Zeyu Zhu</li>
+          <li>Yiren Song</li>
+          <li>Qi Hu</li>
+          <li>Dan Kong</li>
+          <li>Alex Jinpeng Wang</li>
+          <li>Kevin Qinghong Lin<sup aria-label="corresponding author">†</sup></li>
+          <li>Mike Zheng Shou</li>
+          <li>Wei Liu</li>
+        </ul>
+        <ul class="affiliations" aria-label="Participating institutions, in manuscript order">
+          <li><div class="affiliation" data-institution="video-rebirth"><span class="affiliation-logo"><img src="logo.svg" alt="Video Rebirth logo" decoding="async"></span><span class="affiliation-name">Video Rebirth</span></div></li>
+          <li><a class="affiliation" data-institution="hkust" href="https://hkust.edu.hk/" target="_blank" rel="noopener noreferrer"><span class="affiliation-logo"><img src="logo-hkust.svg" alt="Hong Kong University of Science and Technology logo" decoding="async"></span><span class="affiliation-name">Hong Kong University of Science and Technology</span></a></li>
+          <li><a class="affiliation" data-institution="ntu" href="https://www.ntu.edu.sg/" target="_blank" rel="noopener noreferrer"><span class="affiliation-logo"><img src="logo-ntu.svg" alt="Nanyang Technological University logo" decoding="async"></span><span class="affiliation-name">Nanyang Technological University</span></a></li>
+          <li><a class="affiliation" data-institution="show-lab-nus" href="https://sites.google.com/view/showlab/home" target="_blank" rel="noopener noreferrer"><span class="affiliation-logo"><img src="logo-showlab.png" alt="Show Lab, National University of Singapore logo" decoding="async"></span><span class="affiliation-name">Show Lab, National University of Singapore</span></a></li>
+          <li><a class="affiliation" data-institution="ustc" href="https://en.ustc.edu.cn/" target="_blank" rel="noopener noreferrer"><span class="affiliation-logo"><img src="logo-ustc.ico" alt="University of Science and Technology of China logo" decoding="async"></span><span class="affiliation-name">University of Science and Technology of China</span></a></li>
+          <li><a class="affiliation" data-institution="csu" href="https://en.csu.edu.cn/" target="_blank" rel="noopener noreferrer"><span class="affiliation-logo"><img src="logo-csu.jpg" alt="Central South University logo" decoding="async"></span><span class="affiliation-name">Central South University</span></a></li>
+        </ul>
+        <p class="author-notes"><span><b>*</b>Equal contribution</span><span><b>†</b>Corresponding author</span></p>
+      </div>
+      <!-- people:end -->
       <p class="hero-lead">From creating videos to interacting with worlds<br class="desktop-break"> and improving the systems behind them.</p>
       <p class="hero-detail">A unified reading map for agentic video generation, agentic world modeling, and recursive self-improvement in video generation model development.</p>
       <div class="hero-actions"><a class="button primary" href="#library">Explore the literature <span aria-hidden="true">↗</span></a><a class="button outline" href="https://github.com/agentic-videogen/awesome-agentic-videogen" target="_blank" rel="noopener noreferrer">Awesome collection <span aria-hidden="true">↗</span></a></div>
-      <div class="hero-bottom"><div class="stats"><div><strong id="total-count">—</strong><span>PAPERS & RESOURCES</span></div><div><strong>03</strong><span>CORE READING PATHS</span></div><div><strong id="code-count">—</strong><span>CODE LINKS</span></div></div><img class="rebirth" src="logo.svg" alt="Video Rebirth" width="156" height="45"></div>
+      <div class="hero-bottom"><div class="stats"><div><strong id="total-count">—</strong><span>PAPERS & RESOURCES</span></div><div><strong>03</strong><span>CORE READING PATHS</span></div><div><strong id="code-count">—</strong><span>CODE LINKS</span></div></div></div>
     </section>
 
     <section class="perspective" id="perspective" aria-labelledby="perspective-title">
@@ -33,7 +68,7 @@
         <div class="paths">
           <a class="path violet" href="#library" data-track="generation"><div class="path-top"><span>01 / CREATE</span><span aria-hidden="true">↗</span></div><div class="path-glyph" aria-hidden="true"><span class="frame"></span><span class="frame"></span><span class="frame"></span></div><h3>Agentic Video<br>Generation</h3><p>Plan the story. Coordinate assets and tools. Inspect and refine the final cut.</p><div class="path-footer"><span>Brief → workflow → video</span><span data-track-count="generation">—</span></div></a>
           <a class="path teal" href="#library" data-track="world-modeling"><div class="path-top"><span>02 / INTERACT</span><span aria-hidden="true">↗</span></div><div class="path-glyph world-glyph" aria-hidden="true"><span></span><i></i><b></b></div><h3>Agentic World<br>Modeling</h3><p>Act in generated worlds. Maintain state and memory. Test what happens next.</p><div class="path-footer"><span>Action → world → observation</span><span data-track-count="world-modeling">—</span></div></a>
-          <a class="path orange" href="#library" data-track="development"><div class="path-top"><span>03 / IMPROVE</span><span aria-hidden="true">↗</span></div><div class="path-glyph improve-glyph" aria-hidden="true"><span>↻</span><i></i></div><h3>RSI for Video Generation<br>Model Development</h3><p>Improve data, models, evaluation, and the procedures that produce later updates.</p><div class="path-footer"><span>Experience → update → capability</span><span data-track-count="development">—</span></div></a>
+          <a class="path orange" href="#library" data-track="development"><div class="path-top"><span>03 / IMPROVE</span><span aria-hidden="true">↗</span></div><div class="path-glyph improve-glyph" aria-hidden="true"><span>↻</span><i></i></div><h3>RSI in<br>Video Generation</h3><p>Improve data, models, evaluation, and the procedures that produce later updates.</p><div class="path-footer"><span>Experience → update → capability</span><span data-track-count="development">—</span></div></a>
         </div>
         <p class="perspective-note">Complementary research settings, not a hierarchy of capability levels.</p>
       </div>

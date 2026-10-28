@@ -13,3 +13,7 @@ No `CNAME` file is required for the default `github.io` address. A repository un
 Run `node scripts/build.mjs`, then `node scripts/check.mjs`. Run `node scripts/serve.mjs` to preview the static site locally. There are no runtime packages, build services, secrets, or external font dependencies.
 
 Update the canonical `data/catalogue.json` first, regenerate, and then synchronize `docs/` with the website repository. The survey's arXiv/PDF link and citation should be added when the authors release them; do not invent an identifier or publish a private draft.
+
+## Authors and institutional marks
+
+`data/people.json` records the manuscript's author order, contribution notes, institution order, and logo provenance. The build renders this information into the homepage. Update it from the latest Overleaf author block, then rebuild; do not infer individual institution assignments when the manuscript does not provide them. Institutional marks remain their owners' property and are used here to identify participating institutions. The title–authors–institutions layout takes inspiration from the [Affordance Survey website](https://jingliangli.com/affordance-survey/); the existing paper library remains unchanged.

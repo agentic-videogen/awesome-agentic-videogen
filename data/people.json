@@ -1,0 +1,34 @@
+{
+  "source": "Overleaf author and institution block",
+  "sourceCommit": "85f5e22",
+  "authors": [
+    {"name": "Liaoyuan Fan", "equalContribution": true},
+    {"name": "Yuhao Zheng", "equalContribution": true},
+    {"name": "Siyuan Hu", "equalContribution": true},
+    {"name": "Hangyu Ran", "equalContribution": true},
+    {"name": "Dongxing Mao", "equalContribution": true},
+    {"name": "Weijia Mao"},
+    {"name": "Rui Zhao"},
+    {"name": "Weijia Wu"},
+    {"name": "Yuchao Gu"},
+    {"name": "Yanzhe Chen"},
+    {"name": "Yuxin Jiang"},
+    {"name": "Zeyu Zhu"},
+    {"name": "Yiren Song"},
+    {"name": "Qi Hu"},
+    {"name": "Dan Kong"},
+    {"name": "Alex Jinpeng Wang"},
+    {"name": "Kevin Qinghong Lin", "corresponding": true},
+    {"name": "Mike Zheng Shou"},
+    {"name": "Wei Liu"}
+  ],
+  "institutions": [
+    {"id": "video-rebirth", "name": "Video Rebirth", "logo": "logo.svg", "logoSource": "Logo supplied by the survey authors"},
+    {"id": "hkust", "name": "Hong Kong University of Science and Technology", "logo": "logo-hkust.svg", "url": "https://hkust.edu.hk/", "logoSource": "https://brand.hkust.edu.hk/profiles/ust/modules/custom/hkust_signature_affiliate/assets/images/hkust_logo_small.svg"},
+    {"id": "ntu", "name": "Nanyang Technological University", "logo": "logo-ntu.svg", "url": "https://www.ntu.edu.sg/", "logoSource": "https://jingliangli.com/affordance-survey/assets/logos/ntu.svg"},
+    {"id": "show-lab-nus", "name": "Show Lab, National University of Singapore", "logo": "logo-showlab.png", "url": "https://sites.google.com/view/showlab/home", "logoSource": "https://github.com/showlab.png?size=240"},
+    {"id": "ustc", "name": "University of Science and Technology of China", "logo": "logo-ustc.ico", "url": "https://en.ustc.edu.cn/", "logoSource": "https://en.ustc.edu.cn/images/logo.ico"},
+    {"id": "csu", "name": "Central South University", "logo": "logo-csu.jpg", "url": "https://en.csu.edu.cn/", "logoSource": "https://en.csu.edu.cn/images/logo1.jpg"}
+  ],
+  "note": "Institution order follows the manuscript. Individual author-to-institution assignments are not inferred. Institutional marks retain their owners' rights."
+}

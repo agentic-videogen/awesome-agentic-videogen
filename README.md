@@ -20,7 +20,7 @@ The survey manuscript and its citation will be linked here when released. This r
 
 - [Agentic Video Generation](#agentic-video-generation)
 - [Agentic World Modeling](#agentic-world-modeling)
-- [RSI for Video Generation Model Development](#rsi-for-video-generation-model-development)
+- [RSI in Video Generation](#rsi-in-video-generation)
 - [Agent Design](#agent-design)
 - [Foundations & Related Surveys](#foundations-related-surveys)
 - [Future Directions](#future-directions)
@@ -34,7 +34,7 @@ The survey manuscript and its citation will be linked here when released. This r
 |:---|:---|:---|
 | **Agentic Video Generation** | How does the agent harness organize video creation? | Planning, assets, shot production, editing, and provenance: from a creative brief to a coordinated generation workflow. |
 | **Agentic World Modeling** | How does the agent harness support world interaction? | Action conditioned video, semantic control, persistent state, generative rendering, and the evaluation of interactive worlds. |
-| **RSI for Video Generation Model Development** | How can video generation systems move toward RSI? | Data curation, model training, evaluation, and harness improvement: mechanisms that can strengthen future development procedures. |
+| **RSI in Video Generation** | How can video generation systems move toward RSI? | Data curation, model training, evaluation, and harness improvement: mechanisms that can strengthen future development procedures. |
 
 The three paths are complementary settings, not capability levels. A resource may appear in multiple paths; the headline count is deduplicated. The development path includes mechanisms relevant to future RSI, rather than certifying that every listed system demonstrates RSI.
 
@@ -195,7 +195,7 @@ Action conditioned video, semantic control, persistent state, generative renderi
 | 2024 | [Genie: Generative Interactive Environments](https://proceedings.mlr.press/v235/bruce24a.html) | Proceedings of the 41st International Conference on Machine Learning | — |
 | 2024 | [Learning Interactive Real-World Simulators](https://openreview.net/forum?id=sFyTZEqmUY) | International Conference on Learning Representations | [Project](https://universal-simulator.github.io) |
 
-## RSI for Video Generation Model Development
+## RSI in Video Generation
 
 Data curation, model training, evaluation, and harness improvement: mechanisms that can strengthen future development procedures. **134 resources.**
 
