@@ -34,5 +34,7 @@ export function renderResourceBadges(p){
     links.push(staticBadge(label,label==='Paper'?'b31b1b':'6c757d',p.url));
   }
   if(p.project)links.push(staticBadge('Website','9cf',p.project));
-  return links.join(' ');
+  // Keep the badge group together so GitHub tables do not shrink the wider
+  // social Star badge into a narrow, individually wrapped links column.
+  return links.join('&nbsp;');
 }

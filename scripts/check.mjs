@@ -94,6 +94,7 @@ assert(exampleBadges.includes('stars/showlab/MovieAgent.svg?style=social&label=S
 assert(exampleBadges.includes('badge/arXiv-b31b1b.svg'),'Missing red arXiv badge');
 assert(exampleBadges.includes('badge/Website-9cf.svg'),'Missing blue Website badge');
 assert.equal((exampleBadges.match(/\[!\[/g)||[]).length,3,'Example badge count');
+assert.equal((exampleBadges.match(/&nbsp;/g)||[]).length,2,'Badge group must not wrap between links');
 assert(!renderResourceBadges({...example,code:null,project:null}).includes('Star'),'Invented repository badge');
 assert(renderResourceBadges({type:'Report',url:'https://example.org/report'}).includes('[![Source]'),'Report mislabeled as arXiv');
 assert(renderResourceBadges({type:'Paper',url:'https://doi.org/10.1234/example'}).includes('[![Paper]'),'Missing non-arXiv paper link');
