@@ -17,3 +17,5 @@ Update the canonical `data/catalogue.json` first, regenerate, and then synchroni
 ## Authors and institutional marks
 
 `data/people.json` records the manuscript's author order, contribution notes, institution order, and logo provenance. The build renders this information into the homepage. Update it from the latest Overleaf author block, then rebuild; do not infer individual institution assignments when the manuscript does not provide them. Institutional marks remain their owners' property and are used here to identify participating institutions. The title–authors–institutions layout takes inspiration from the [Affordance Survey website](https://jingliangli.com/affordance-survey/); the existing paper library remains unchanged.
+
+The cover styles are embedded by the build. Institutional images use `logoAssetBase`, pinned to an existing Awesome-repository commit, so the website can be updated atomically through its text editor without re-uploading binary files. Keep the corresponding image files in `docs/` as the canonical asset copies. When changing an image, publish its new commit first and then update `logoAssetBase` before building the homepage.

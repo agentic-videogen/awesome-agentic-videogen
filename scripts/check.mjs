@@ -24,6 +24,8 @@ const exported=JSON.parse(read('docs/catalogue.json'));assert.deepEqual(exported
 const html=read('docs/index.html');
 for(const name of ['styles.css','cover.css','app.js','logo.svg','references.bib'])assert(fs.existsSync(path.join(root,'docs',name)),'Missing website asset: '+name);
 const people=JSON.parse(read('data/people.json'));
+assert(new URL(people.logoAssetBase).hostname==='raw.githubusercontent.com','Unexpected institutional asset host');
+assert(html.includes(read('docs/cover.css').trim()),'Stale embedded cover styles');
 assert.equal(people.institutions[0].id,'video-rebirth','Video Rebirth must appear first');
 assert.equal(people.authors.filter(a=>a.equalContribution).length,5,'Equal-contribution author count changed');
 assert.equal(people.authors.filter(a=>a.corresponding).map(a=>a.name).join(','),'Kevin Qinghong Lin','Corresponding-author mismatch');
@@ -34,6 +36,7 @@ for(const a of people.authors){const next=authorBlock.indexOf(a.name);assert(nex
 let institutionPosition=-1;
 for(const i of people.institutions){
   const next=authorBlock.indexOf(`data-institution="${i.id}"`);assert(next>institutionPosition,'Institution omitted or out of order: '+i.name);institutionPosition=next;
+  assert(authorBlock.includes(new URL(i.logo,people.logoAssetBase).href),'Incorrect institution asset URL: '+i.name);
   const logo=fs.readFileSync(path.join(root,'docs',i.logo));
   if(i.logo.endsWith('.svg')){assert(/<svg\b/.test(logo.toString()),'Invalid SVG logo: '+i.logo);assert(!/<script|<foreignObject|\bonload\s*=/i.test(logo.toString()),'Active SVG content: '+i.logo);}
   else if(i.logo.endsWith('.png'))assert.equal(logo.subarray(0,8).toString('hex'),'89504e470d0a1a0a','Invalid PNG logo: '+i.logo);

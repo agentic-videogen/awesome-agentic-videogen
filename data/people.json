@@ -1,6 +1,7 @@
 {
   "source": "Overleaf author and institution block",
   "sourceCommit": "85f5e22",
+  "logoAssetBase": "https://raw.githubusercontent.com/agentic-videogen/awesome-agentic-videogen/b18c86c/docs/",
   "authors": [
     {"name": "Liaoyuan Fan", "equalContribution": true},
     {"name": "Yuhao Zheng", "equalContribution": true},

@@ -12,7 +12,7 @@ const peopleMarkup = `
 ${people.authors.map(a => `          <li>${htmlEscape(a.name)}${a.equalContribution ? '<sup aria-label="equal contribution">*</sup>' : ''}${a.corresponding ? '<sup aria-label="corresponding author">†</sup>' : ''}</li>`).join('\n')}
         </ul>
         <ul class="affiliations" aria-label="Participating institutions, in manuscript order">
-${people.institutions.map(i => `          <li><${i.url ? 'a' : 'div'} class="affiliation" data-institution="${i.id}"${i.url ? ` href="${htmlEscape(i.url)}" target="_blank" rel="noopener noreferrer"` : ''}><span class="affiliation-logo"><img src="${htmlEscape(i.logo)}" alt="${htmlEscape(i.name)} logo" decoding="async"></span><span class="affiliation-name">${htmlEscape(i.name)}</span></${i.url ? 'a' : 'div'}></li>`).join('\n')}
+${people.institutions.map(i => `          <li><${i.url ? 'a' : 'div'} class="affiliation" data-institution="${i.id}"${i.url ? ` href="${htmlEscape(i.url)}" target="_blank" rel="noopener noreferrer"` : ''}><span class="affiliation-logo"><img src="${htmlEscape(new URL(i.logo,people.logoAssetBase).href)}" alt="${htmlEscape(i.name)} logo" decoding="async"></span><span class="affiliation-name">${htmlEscape(i.name)}</span></${i.url ? 'a' : 'div'}></li>`).join('\n')}
         </ul>
         <p class="author-notes"><span><b>*</b>Equal contribution</span><span><b>†</b>Corresponding author</span></p>
       </div>
@@ -20,7 +20,11 @@ ${people.institutions.map(i => `          <li><${i.url ? 'a' : 'div'} class="aff
 const indexPath = path.join(root, 'docs/index.html');
 const indexSource = fs.readFileSync(indexPath, 'utf8');
 if (!/<!-- people:start -->[\s\S]*?<!-- people:end -->/.test(indexSource)) throw new Error('Missing author-block build markers');
-fs.writeFileSync(indexPath, indexSource.replace(/(<!-- people:start -->)[\s\S]*?(<!-- people:end -->)/, `$1${peopleMarkup}$2`));
+const coverStyle=fs.readFileSync(path.join(root,'docs/cover.css'),'utf8');
+if(!/<!-- cover:start -->[\s\S]*?<!-- cover:end -->/.test(indexSource))throw new Error('Missing cover-style build markers');
+fs.writeFileSync(indexPath, indexSource
+  .replace(/(<!-- people:start -->)[\s\S]*?(<!-- people:end -->)/, `$1${peopleMarkup}$2`)
+  .replace(/(<!-- cover:start -->)[\s\S]*?(<!-- cover:end -->)/, `$1\n  <style id="survey-cover-style">\n${coverStyle}</style>\n  $2`));
 const repo = 'https://github.com/agentic-videogen/awesome-agentic-videogen';
 const slug = s => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const escape = s => String(s).replace(/\|/g, '\\|').replace(/\[/g, '\\[').replace(/\]/g, '\\]');
