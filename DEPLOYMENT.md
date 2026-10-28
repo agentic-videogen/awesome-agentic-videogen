@@ -1,0 +1,15 @@
+# Website deployment
+
+The target website is `https://agentic-videogen.github.io/`, owned by the `agentic-videogen` GitHub account. The Awesome collection is maintained separately in `agentic-videogen/awesome-agentic-videogen`.
+
+## Website repository
+
+Use a public repository named `agentic-videogen.github.io` under the matching account. Copy the contents of `docs/` (not its enclosing directory) to that repository's publishing root. In Settings → Pages, publish the `main` branch from `/ (root)`.
+
+No `CNAME` file is required for the default `github.io` address. A repository under another owner cannot claim this address merely by changing its name.
+
+## Build and preview
+
+Run `node scripts/build.mjs`, then `node scripts/check.mjs`. Run `node scripts/serve.mjs` to preview the static site locally. There are no runtime packages, build services, secrets, or external font dependencies.
+
+Update the canonical `data/catalogue.json` first, regenerate, and then synchronize `docs/` with the website repository. The survey's arXiv/PDF link and citation should be added when the authors release them; do not invent an identifier or publish a private draft.

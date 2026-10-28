@@ -1,0 +1,40 @@
+name: Add or correct a resource
+description: Suggest a paper, project, dataset, benchmark, or metadata correction.
+title: "[Resource] "
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Resource title
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Primary source URL
+      description: Canonical arXiv, official paper, or project URL.
+    validations:
+      required: true
+  - type: dropdown
+    id: path
+    attributes:
+      label: Reading path
+      multiple: true
+      options:
+        - Agentic Video Generation
+        - Agentic World Modeling
+        - RSI for Video Generation Model Development
+        - Agent Design
+        - Foundations & Related Surveys
+        - Future Directions
+    validations:
+      required: true
+  - type: input
+    id: code
+    attributes:
+      label: Official code or project URL (optional)
+  - type: textarea
+    id: notes
+    attributes:
+      label: Relevance or correction
+      description: Explain the resource's connection or the metadata to fix.

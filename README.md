@@ -1,2 +1,966 @@
-# awesome-agentic-videogen
-A curated collection of papers, code, and resources on agentic video generation, world modeling, and recursive self-improvement.
+<p align="center"><img src="docs/logo.svg" alt="Video Rebirth" width="210"></p>
+
+# Awesome Agentic Video Generation
+
+**Video Generation Meets Agent Harness: A Survey**
+
+Agentic video generation · Agentic world modeling · Recursive self-improvement
+
+[Website](https://agentic-videogen.github.io/) · [Browse the catalogue](data/catalogue.json) · [Contribute](https://github.com/agentic-videogen/awesome-agentic-videogen/issues/new?template=add-resource.yml)
+
+A living collection of **387 unique papers and resources**, organized around how the agent harness meets video generation in creation, interaction, and model development. The catalogue also includes shared agent capabilities, foundations, and evaluation resources.
+
+The survey manuscript and its citation will be linked here when released. This repository currently publishes bibliographic records and links, not manuscript sources or paper PDFs.
+
+## News
+
+- **2026-10-28:** Initial bibliography-backed catalogue and companion website draft.
+
+## Contents
+
+- [Agentic Video Generation](#agentic-video-generation)
+- [Agentic World Modeling](#agentic-world-modeling)
+- [RSI for Video Generation Model Development](#rsi-for-video-generation-model-development)
+- [Agent Design](#agent-design)
+- [Foundations & Related Surveys](#foundations-related-surveys)
+- [Future Directions](#future-directions)
+- [Benchmarks & Evaluation](#benchmarks--evaluation)
+- [Contributing](#contributing)
+- [Maintaining the catalogue](#maintaining-the-catalogue)
+
+## Overview
+
+| Reading path | Central question | Scope |
+|:---|:---|:---|
+| **Agentic Video Generation** | How does the agent harness organize video creation? | Planning, assets, shot production, editing, and provenance: from a creative brief to a coordinated generation workflow. |
+| **Agentic World Modeling** | How does the agent harness support world interaction? | Action conditioned video, semantic control, persistent state, generative rendering, and the evaluation of interactive worlds. |
+| **RSI for Video Generation Model Development** | How can video generation systems move toward RSI? | Data curation, model training, evaluation, and harness improvement: mechanisms that can strengthen future development procedures. |
+
+The three paths are complementary settings, not capability levels. A resource may appear in multiple paths; the headline count is deduplicated. The development path includes mechanisms relevant to future RSI, rather than certifying that every listed system demonstrates RSI.
+
+## Agentic Video Generation
+
+Planning, assets, shot production, editing, and provenance: from a creative brief to a coordinated generation workflow. **59 resources.**
+
+### Editing and Post-production
+
+| Year | Paper / resource | Venue / source | Links |
+|:---:|:---|:---|:---|
+| 2026 | [A Benchmark and Multi-Agent System for Instruction-driven Cinematic Video Compilation](https://arxiv.org/abs/2604.10456) | Preprint | [Code](https://github.com/deepinsight/insightface/) |
+| 2026 | [Aurora: Unified Video Editing with a Tool-Using Agent](https://arxiv.org/abs/2605.18748) | Preprint | — |
+| 2026 | [Crayotter: Traceable Multi-Agent Workflows for Long-Form Video Editing](https://arxiv.org/abs/2606.07636) | Preprint | — |
+| 2026 | [CutClaw: Agentic Hours-Long Video Editing via Music Synchronization](https://arxiv.org/abs/2603.29664) | Preprint | [Code](https://github.com/GVCLab/CutClaw) |
+| 2026 | [DIRECT: Video Mashup Creation via Hierarchical Multi-Agent Planning and Intent-Guided Editing](https://arxiv.org/abs/2604.04875) | Preprint | — |
+| 2026 | [ELLMPEG: An Edge-based Agentic LLM Video Processing Tool](https://doi.org/10.1145/3793853.3795760) | ACM MMSys 2026 | [Code](https://github.com/fraunhoferhhi/vvenc/wiki) · [Project](https://amiaopensource.github.io/ffmprovisr/) |
+| 2026 | [Evolutionary Multi-Agent Collaboration for Real-World Video Face Restoration](https://openaccess.thecvf.com/content/CVPR2026F/html/Tang_Evolutionary_Multi-Agent_Collaboration_for_Real-World_Video_Face_Restoration_CVPRF_2026_paper.html) | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Findings | — |
+| 2026 | [Thinking on Shots: Consistent Multi-Shot Video Editing with Agentic Reasoning](https://arxiv.org/abs/2608.26809) | Preprint | — |
+| 2025 | [EditDuet: A Multi-Agent System for Video Non-Linear Editing](https://doi.org/10.1145/3721238.3730761) | SIGGRAPH 2025: Conference Papers | [Code](https://github.com/arXiv/html_feedback/issues) · [Project](https://mudtriangle.com/editduet) |
+| 2024 | [LAVE: LLM-Powered Agent Assistance and Language Augmentation for Video Editing](https://doi.org/10.1145/3640543.3645143) | IUI 2024 | [Code](https://github.com/arXiv/html_feedback/issues) |
+
+### Asset Management
+
+| Year | Paper / resource | Venue / source | Links |
+|:---:|:---|:---|:---|
+| 2026 | [AgentMV: A State-Guided Multi-Agent Framework for Budget-Aware Music Video Generation](https://arxiv.org/abs/2605.10723) | Preprint | [Code](https://github.com/arXiv/html_feedback/issues) |
+| 2026 | [GroundShot: Visually Consistent Multi-Shot Long Video Generation via Entity-Grounded Shot Scheduling](https://arxiv.org/abs/2606.20799) | Preprint | [Code](https://github.com/arXiv/html_feedback/issues) |
+| 2026 | [HoloCine: Holistic Generation of Cinematic Multi-Shot Long Video Narratives](https://openaccess.thecvf.com/content/CVPR2026/html/Meng_HoloCine_Holistic_Generation_of_Cinematic_Multi-Shot_Long_Video_Narratives_CVPR_2026_paper.html) | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) | — |
+| 2026 | [MUSE: A Multi-agent Framework for Unconstrained Story Envisioning via Closed-Loop Cognitive Orchestration](https://arxiv.org/abs/2602.03028) | Preprint | — |
+| 2026 | [MVAgent: Multi-Agent Video Generation via Consistent Condition Construction and Shot-Level Policy Optimization](https://arxiv.org/abs/2609.30609) | Preprint | — |
+| 2026 | [ViMax: Agentic Video Generation](https://arxiv.org/abs/2606.07649) | arXiv | [Code](https://github.com/HKUDS/ViMax) |
+| 2025 | [AniME: Adaptive Multi-Agent Planning for Long Animation Generation](https://doi.org/10.1145/3757374.3771455) | SIGGRAPH Asia 2025: Posters | — |
+| 2025 | [AutoMV: An Automatic Multi-Agent System for Music Video Generation](https://arxiv.org/abs/2512.12196) | Preprint | — |
+| 2025 | [Long Context Tuning for Video Generation](https://arxiv.org/abs/2503.10589) | Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV) | — |
+| 2025 | [MM-StoryAgent: Immersive Narrated Storybook Video Generation with a Multi-Agent Paradigm across Text, Image and Audio](https://arxiv.org/abs/2503.05242) | Preprint | [Code](https://github.com/X-PLUG/MM_StoryAgent) |
+| 2024 | [Anim-Director: A Large Multimodal Model Powered Agent for Controllable Animation Video Generation](https://doi.org/10.1145/3680528.3687688) | SIGGRAPH Asia 2024: Conference Papers | — |
+
+### Shot Production
+
+| Year | Paper / resource | Venue / source | Links |
+|:---:|:---|:---|:---|
+| 2026 | [Authoring for Living Worlds: Tool-Constrained LLM Agents for Executable Multi-Actor Scenarios](https://arxiv.org/abs/2604.10383) | Preprint | — |
+| 2026 | [Beyond End-to-End Video Models: An LLM-Based Multi-Agent System for Educational Video Generation](https://doi.org/10.1145/3770855.3818323) | KDD 2026: Applied Data Science, Vol. 2 | — |
+| 2026 | [Code2Video: A Code-centric Paradigm for Educational Video Creation](https://icml.cc/virtual/2026/poster/65050) | ICML 2026 | — |
+| 2026 | [Cutscene Agent: An LLM Agent Framework for Automated 3D Cutscene Generation](https://arxiv.org/abs/2604.25318) | Preprint | — |
+| 2026 | [FantasyHSI: Video-Generation-Centric 4D Human Synthesis in Any Scene Through a Graph-Based Multi-Agent Framework](https://doi.org/10.1609/aaai.v40i10.37758) | AAAI 2026 | [Project](https://ojs.aaai.org/index.php/AAAI/article/view/37758) |
+| 2026 | [GenMAC: Compositional Text-to-Video Generation with Multi-Agent Collaboration](https://doi.org/10.1609/aaai.v40i7.37418) | Proceedings of the AAAI Conference on Artificial Intelligence | [Project](https://karine-h.github.io/GenMAC/) |
+| 2026 | [Lighting-grounded Video Generation with Renderer-based Agent Reasoning](https://openaccess.thecvf.com/content/CVPR2026/html/Cai_Lighting-grounded_Video_Generation_with_Renderer-based_Agent_Reasoning_CVPR_2026_paper.html) | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition | — |
+| 2026 | [MoReGen: Multi-Agent Motion-Reasoning Engine for Code-based Text-to-Video Synthesis](https://openaccess.thecvf.com/content/CVPR2026/html/Bai_MoReGen_Multi-Agent_Motion-Reasoning_Engine_for_Code-based_Text-to-Video_Synthesis_CVPR_2026_paper.html) | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition | — |
+| 2026 | [MPRESENTER: Multilingual Agentic System for Paper-to-Video Generation](https://aclanthology.org/2026.findings-acl.805/) | Findings of the Association for Computational Linguistics: ACL 2026 | — |
+| 2026 | [Presenting a Paper is an Art: Self-Improvement Aesthetic Agents for Academic Presentations](https://proceedings.iclr.cc/paper_files/paper/2026/hash/d848cb2c84f0bba7f1f73cf232734c40-Abstract-Conference.html) | ICLR 2026 | — |
+| 2026 | [SCMAPR: Self-Correcting Multi-Agent Prompt Refinement for Complex-Scenario Text-to-Video Generation](https://aclanthology.org/2026.findings-acl.345/) | Findings of the Association for Computational Linguistics: ACL 2026 | — |
+| 2026 | [TeachMaster: Generative Teaching via Code](https://aclanthology.org/2026.acl-industry.7/) | Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 6: Industry Track) | — |
+| 2026 | [VideoGen-Agent: Reinforcing Video Generation Agents](https://arxiv.org/abs/2609.24997) | Preprint | — |
+| 2026 | [VISTA: A Test-Time Self-Improving Video Generation Agent](https://openaccess.thecvf.com/content/CVPR2026/html/Long_VISTA_A_Test-Time_Self-Improving_Video_Generation_Agent_CVPR_2026_paper.html) | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition | — |
+| 2025 | [MotionAgent: Fine-grained Controllable Video Generation via Motion Field Agent](https://openaccess.thecvf.com/content/ICCV2025/html/Liao_MotionAgent_Fine-grained_Controllable_Video_Generation_via_Motion_Field_Agent_ICCV_2025_paper.html) | Proceedings of the IEEE/CVF International Conference on Computer Vision | — |
+| 2025 | [PhyT2V: LLM-Guided Iterative Self-Refinement for Physics-Grounded Text-to-Video Generation](https://openaccess.thecvf.com/content/CVPR2025/html/Xue_PhyT2V_LLM-Guided_Iterative_Self-Refinement_for_Physics-Grounded_Text-to-Video_Generation_CVPR_2025_paper.html) | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition | — |
+| 2025 | [TheoremExplainAgent: Towards Video-based Multimodal Explanations for LLM Theorem Understanding](https://aclanthology.org/2025.acl-long.332/) | Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) | — |
+| 2024 | [Kubrick: Multimodal Agent Collaborations for Synthetic Video Generation](https://arxiv.org/abs/2408.10453) | Preprint | [Code](https://github.com/arXiv/html_feedback/issues) |
+
+### Script and Shot Planning
+
+| Year | Paper / resource | Venue / source | Links |
+|:---:|:---|:---|:---|
+| 2026 | [Camera Artist: A Multi-Agent Framework for Cinematic Language Storytelling Video Generation](https://arxiv.org/abs/2604.09195) | Preprint | [Code](https://github.com/arXiv/html_feedback/issues) |
+| 2026 | [CamPilot: A Multi-Agent Cinematic Assistant for Camera-Controlled Movie Generation](https://arxiv.org/abs/2609.10943) | EMNLP REALM Workshop | — |
+| 2026 | [Co-Director: Agentic Generative Video Storytelling](https://arxiv.org/abs/2604.24842) | Preprint | — |
+| 2026 | [FilMaster: Bridging Cinematic Principles and Generative AI for Automated Film Generation](https://filmaster-ai.github.io/) | ICLR 2026 | [Project](https://proceedings.iclr.cc/paper_files/paper/2026/hash/fb8e52adcd9b59bad73f109c53afc43a-Abstract-Conference.html) |
+| 2026 | [FRAMEWORKERS: A Dynamic Multi-Agent Framework for AI-Generated Video Production](https://arxiv.org/abs/2608.29814) | Preprint | [Code](https://github.com/arXiv/html_feedback/issues) |
+| 2026 | [MAViS: A Multi-Agent Framework for Long-Sequence Video Storytelling](https://aclanthology.org/2026.eacl-long.101/) | Proceedings of the 19th Conference of the European Chapter of the Association for Computational Linguistics (Volume 1: Long Papers) | [Code](https://github.com/black-forest-labs/flux) |
+| 2026 | [Mind-of-Director: Multi-modal Agent-Driven Film Previsualization via Collaborative Decision-Making](https://arxiv.org/abs/2603.14790) | Preprint | — |
+| 2026 | [One Sentence, One Drama: Personalized Short-Form Drama Generation via Multi-Agent Systems](https://arxiv.org/abs/2605.22144) | Preprint | — |
+| 2026 | [The Script is All You Need: An Agentic Framework for Long-Horizon Dialogue-to-Cinematic Video Generation](https://arxiv.org/abs/2601.17737) | Preprint | — |
+| 2025 | [AniMaker: Multi-Agent Animated Storytelling with MCTS-Driven Clip Generation](https://animaker-dev.github.io/) | SIGGRAPH Asia 2025: Conference Papers | — |
+| 2025 | [Automated Movie Generation via Multi-Agent CoT Planning](https://arxiv.org/abs/2503.07314) | Preprint | [Code](https://github.com/showlab/MovieAgent) · [Project](https://weijiawu.github.io/MovieAgent) |
+| 2025 | [AutoMV: An Autonomous Agent Framework for Real Estate Marketing Video Generation](https://doi.org/10.1609/aaai.v39i28.35377) | AAAI 2025: Demonstration Track | [Project](https://ojs.aaai.org/index.php/AAAI/article/view/35377) |
+| 2024 | [FilmAgent: Automating Virtual Film Production Through a Multi-Agent Collaborative Framework](https://doi.org/10.1145/3681758.3698014) | SIGGRAPH Asia 2024: Technical Communications | — |
+
+### Watermarking and Provenance
+
+| Year | Paper / resource | Venue / source | Links |
+|:---:|:---|:---|:---|
+| 2026 | [Content Credentials: C2PA Technical Specification](https://spec.c2pa.org/specifications/specifications/2.4/specs/C2PA_Specification.html) | Online resource | — |
+| 2026 | [LVMark: Robust Watermark for Latent Video Diffusion Models](https://doi.org/10.1109/TIFS.2026.3688194) | IEEE Transactions on Information Forensics and Security | [Code](https://github.com/arXiv/html_feedback/issues) |
+| 2026 | [SIGMark: Scalable In-Generation Watermark with Blind Extraction for Video Diffusion](https://proceedings.iclr.cc/paper_files/paper/2026/hash/f3f6f1739b646e0bd20111261ce23adb-Abstract-Conference.html) | International Conference on Learning Representations | — |
+| 2026 | [SPDMark: Selective Parameter Displacement for Robust Video Watermarking](https://openaccess.thecvf.com/content/CVPR2026/html/Fares_SPDMark_Selective_Parameter_Displacement_for_Robust_Video_Watermarking_CVPR_2026_paper.html) | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) | — |
+| 2025 | [RBMark: Robust and blind video watermark in DT CWT domain](https://doi.org/10.1016/j.jvcir.2025.104438) | Journal of Visual Communication and Image Representation | — |
+| 2025 | [SepVAMark: Deep Separable Visual-Audio Fusion Watermarking for Source Tracing and Deepfake Detection](https://doi.org/10.1145/3746027.3755783) | Proceedings of the 33rd ACM International Conference on Multimedia | — |
+| 2025 | [VideoShield: Regulating Diffusion-based Video Generation Models via Watermarking](https://proceedings.iclr.cc/paper_files/paper/2025/hash/8227285e32f70e07fa3a247f3a48006d-Abstract-Conference.html) | International Conference on Learning Representations | — |
+
+## Agentic World Modeling
+
+Action conditioned video, semantic control, persistent state, generative rendering, and the evaluation of interactive worlds. **40 resources.**
+
+### Harness Interventions: Semantics, State, and Feedback
+
+| Year | Paper / resource | Venue / source | Links |
+|:---:|:---|:---|:---|
+| 2026 | [ABot-World-0: Infinite Interactive World Rollout on a Single Desktop GPU](https://arxiv.org/abs/2607.19191) | arXiv | [Code](https://github.com/amap-cvlab/ABot-World) · [Project](https://oasis-model.github.io/) |
+| 2026 | [Advancing Open-source World Models](https://arxiv.org/abs/2601.20540) | arXiv | — |
+| 2026 | [Infinite Worlds with Versatile Interactions](https://arxiv.org/abs/2607.07534) | arXiv | — |
+| 2026 | [SCOPE: Score-Isolated Agentic Optimization for Video World Models](https://arxiv.org/abs/2608.15043) | arXiv | — |
+| 2026 | [VLAW: Iterative Co-Improvement of Vision-Language-Action Policy and World Model](https://arxiv.org/abs/2602.12063) | Proceedings of the 43rd International Conference on Machine Learning | [Project](https://sites.google.com/view/vla-w) |
+| 2026 | [WorldPlay: Towards Long-Term Geometric Consistency for Real-Time Interactive World Modeling](https://arxiv.org/abs/2512.14614) | Proceedings of the 43rd International Conference on Machine Learning | [Code](https://github.com/Tencent-Hunyuan/HY-WorldPlay) · [Project](https://3d-models.hunyuan.tencent.com/world/) |
+| 2025 | [AdaWorld: Learning Adaptable World Models with Latent Actions](https://proceedings.mlr.press/v267/gao25u.html) | Proceedings of the 42nd International Conference on Machine Learning | [Code](https://github.com/Little-Podi/AdaWorld) · [Project](https://adaptable-world-model.github.io/) |
+| 2025 | [Diffusion Models Are Real-Time Game Engines](https://arxiv.org/abs/2408.14837) | International Conference on Learning Representations | [Project](https://gamengen.github.io/) |
+| 2025 | [Empowering World Models with Reflection for Embodied Video Prediction](https://proceedings.mlr.press/v267/chi25b.html) | Proceedings of the 42nd International Conference on Machine Learning | — |
+| 2025 | [GameGen-X: Interactive Open-world Game Video Generation](https://arxiv.org/abs/2411.00769) | International Conference on Learning Representations | [Code](https://github.com/GameGen-X/GameGen-X) · [Project](https://gamegen-x.github.io/) |
+| 2025 | [Genie 3: A New Frontier for World Models](https://deepmind.google/blog/genie-3-a-new-frontier-for-world-models/) | Google DeepMind blog | — |
+| 2025 | [Matrix-game 2.0: An open-source real-time and streaming interactive world model](https://arxiv.org/abs/2508.13009) | arXiv | [Project](https://matrix-game-v2.github.io) |
+| 2025 | [WorldMem: Long-term Consistent World Simulation with Memory](https://arxiv.org/abs/2504.12369) | arXiv | — |
+| 2024 | [Genie: Generative Interactive Environments](https://proceedings.mlr.press/v235/bruce24a.html) | Proceedings of the 41st International Conference on Machine Learning | — |
+
+### Explicit World State and Generative Rendering
+
+| Year | Paper / resource | Venue / source | Links |
+|:---:|:---|:---|:---|
+| 2026 | [AgentGarten: Code Worlds for Evolving Agents](https://arxiv.org/abs/2610.12374) | arXiv | — |
+| 2026 | [Coarse-to-Real: Generative Rendering for Populated Dynamic Scenes](https://arxiv.org/abs/2601.22301) | arXiv | — |
+| 2026 | [Code Video Model: Conditioning Video Generation on Code](https://doi.org/10.13140/RG.2.2.34014.80961) | Technical report, | [Project](https://code-video-model.github.io/) |
+| 2026 | [Code World Model: Coding Agent as World Brain](https://arxiv.org/abs/2608.25927) | arXiv | — |
+| 2026 | [EdenLive: Real-Time Generative Rendering from Any Visual Reference](https://assets.vast-eden.ai/assets/edenlive/EdenLive-tech-report.pdf) | Technical report, VAST | — |
+| 2026 | [Generative World Renderer](https://arxiv.org/abs/2604.02329) | arXiv | — |
+| 2026 | [Generative World Renderer at the Speed of Play](https://arxiv.org/abs/2607.18703) | arXiv | — |
+| 2026 | [Magpie: Real-Time World Renderer for Interactive Games](https://arxiv.org/abs/2608.27168) | arXiv | — |
+| 2026 | [Matrix-Game 4.0: Harnessing Video Models for Real-Time Playable Game Worlds](https://arxiv.org/abs/2610.27999) | arXiv | — |
+| 2026 | [Programmable World Model](https://arxiv.org/abs/2609.10540) | arXiv | — |
+| 2026 | [Proxy2World: Learning to Generate Worlds From Lightweight Proxies without Seeing Them](https://arxiv.org/abs/2609.35023) | arXiv | — |
+| 2026 | [RGBX-Next: Towards Realistic Generative Rendering from G-Buffers](https://arxiv.org/abs/2608.13929) | arXiv | — |
+| 2026 | [SolarRenderer: Few-Step Generative Reference Rendering](https://arxiv.org/abs/2610.28630) | arXiv | — |
+| 2026 | [Streaming Code World Model](https://github.com/TingtingLiao/streaming-code-world-model) | GitHub repository | [Code](https://github.com/TingtingLiao/streaming-code-world-model) |
+| 2026 | [StreamRender-H3: Interactive Coding Worlds with Real-time Streaming Diffusion Render](https://nvlabs.github.io/Sana/Sol-Engine/StreamRender-H3/) | Online resource | — |
+| 2026 | [World Narrative Model for Highly Controllable Video Generation: A Paradigm Shift from Pixel Sampling to Physical World Orchestration](https://arxiv.org/abs/2606.31946) | arXiv | — |
+| 2025 | [Diffusion Renderer: Neural Inverse and Forward Rendering with Video Diffusion Models](https://arxiv.org/abs/2501.18590) | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) | — |
+
+### Evaluation in Agentic World Modeling
+
+| Year | Paper / resource | Venue / source | Links |
+|:---:|:---|:---|:---|
+| 2026 | [Agentic World Modeling: Foundations, Capabilities, Laws, and Beyond](https://arxiv.org/abs/2604.22748) | arXiv | — |
+| 2026 | [Orbia: Do Generated Videos Form a Consistent 3D World?](https://arxiv.org/abs/2610.20693) | arXiv | — |
+| 2026 | [PlayWorld: Benchmarking World Models with Agent Players over Long-Horizon Objectives](https://arxiv.org/abs/2608.13552) | arXiv | [Code](https://github.com/kxding/PlayWorld) · [Project](https://kxding.github.io/project/PlayWorld/) |
+| 2026 | [SCOPE: Score-Isolated Agentic Optimization for Video World Models](https://arxiv.org/abs/2608.15043) | arXiv | — |
+| 2026 | [WorldArena: A Unified Benchmark for Evaluating Perception and Functional Utility of Embodied World Models](https://arxiv.org/abs/2602.08971) | arXiv | [Project](https://world-arena.ai) |
+| 2025 | [SIMA 2: A Generalist Embodied Agent for Virtual Worlds](https://arxiv.org/abs/2512.04797) | arXiv | [Code](https://github.com/arXiv/html_feedback/issues) |
+| 2025 | [WorldScore: A Unified Evaluation Benchmark for World Generation](https://openaccess.thecvf.com/content/ICCV2025/papers/Duan_WorldScore_A_Unified_Evaluation_Benchmark_for_World_Generation_ICCV_2025_paper.pdf) | Proceedings of the IEEE/CVF International Conference on Computer Vision | — |
+
+### From Video Generation Models to Interactive World Models
+
+| Year | Paper / resource | Venue / source | Links |
+|:---:|:---|:---|:---|
+| 2026 | [World Action Models are Zero-shot Policies](https://arxiv.org/abs/2602.15922) | arXiv | [Project](https://dreamzero0.github.io/) |
+| 2026 | [WorldPlay: Towards Long-Term Geometric Consistency for Real-Time Interactive World Modeling](https://arxiv.org/abs/2512.14614) | Proceedings of the 43rd International Conference on Machine Learning | [Code](https://github.com/Tencent-Hunyuan/HY-WorldPlay) · [Project](https://3d-models.hunyuan.tencent.com/world/) |
+| 2025 | [Cosmos World Foundation Model Platform for Physical AI](https://arxiv.org/abs/2501.03575) | arXiv | [Code](https://github.com/nvidia-cosmos/cosmos-predict1) |
+| 2025 | [Diffusion Models Are Real-Time Game Engines](https://arxiv.org/abs/2408.14837) | International Conference on Learning Representations | [Project](https://gamengen.github.io/) |
+| 2025 | [WorldMem: Long-term Consistent World Simulation with Memory](https://arxiv.org/abs/2504.12369) | arXiv | — |
+| 2024 | [Genie: Generative Interactive Environments](https://proceedings.mlr.press/v235/bruce24a.html) | Proceedings of the 41st International Conference on Machine Learning | — |
+| 2024 | [Learning Interactive Real-World Simulators](https://openreview.net/forum?id=sFyTZEqmUY) | International Conference on Learning Representations | [Project](https://universal-simulator.github.io) |
+
+## RSI for Video Generation Model Development
+
+Data curation, model training, evaluation, and harness improvement: mechanisms that can strengthen future development procedures. **134 resources.**
+
+### Agent Harness Improvement
+
+| Year | Paper / resource | Venue / source | Links |
+|:---:|:---|:---|:---|
+| 2026 | [A Benchmark and Multi-Agent System for Instruction-driven Cinematic Video Compilation](https://arxiv.org/abs/2604.10456) | Preprint | [Code](https://github.com/deepinsight/insightface/) |
+| 2026 | [A Versatile Multimodal Agent for Multimedia Content Generation](https://arxiv.org/abs/2601.03250) | Preprint | — |
+| 2026 | [A$^2$RD: Agentic Autoregressive Diffusion for Long Video Consistency](https://arxiv.org/abs/2605.06924) | Preprint | — |
+| 2026 | [AgenticGen: Reward-Guided Agentic Video Generation for Advertising](https://arxiv.org/abs/2609.09187) | arXiv | — |
+| 2026 | [Aurora: Unified Video Editing with a Tool-Using Agent](https://arxiv.org/abs/2605.18748) | Preprint | — |
+| 2026 | [AVA-Encoder: Towards Agent-Native Video Representation Learning](https://arxiv.org/abs/2608.12313) | arXiv | — |
+| 2026 | [Beyond Coherence: Benchmarking Professional Editing-Technique Execution in Multi-Shot Audio-Video Generation](https://arxiv.org/abs/2609.08275) | arXiv | — |
+| 2026 | [Beyond Trial-and-Error: Agentic Optimization for Image-to-Video Adherence](https://arxiv.org/abs/2608.12290) | arXiv | — |
+| 2026 | [Bridging Creative Intent and Visual Quality: Creator-Driven Recurrent Video Generation with Agentic Feedback Loops](https://arxiv.org/abs/2606.18591) | ICML Workshop on Human-AI Co-Creativity | — |
+| 2026 | [CamPilot: A Multi-Agent Cinematic Assistant for Camera-Controlled Movie Generation](https://arxiv.org/abs/2609.10943) | EMNLP REALM Workshop | — |
+| 2026 | [CineForge: Self-Improving Agents for Long-Horizon Video Generation](https://arxiv.org/abs/2608.29621) | arXiv | — |
+| 2026 | [Co-Director: Agentic Generative Video Storytelling](https://arxiv.org/abs/2604.24842) | Preprint | — |
+| 2026 | [CogenPVG: Cognitive-Enhanced Reflective Multi-Agent Framework for Persuasive Video Generation](https://arxiv.org/abs/2609.25821) | Preprint | — |
+| 2026 | [Crayotter: Learning Long-Horizon Video Editing Agents via Group-Relative Preference Backpropagation](https://arxiv.org/abs/2608.02694) | arXiv | — |
+| 2026 | [CutClaw: Agentic Hours-Long Video Editing via Music Synchronization](https://arxiv.org/abs/2603.29664) | Preprint | [Code](https://github.com/GVCLab/CutClaw) |
+| 2026 | [Diverse Video Generation with Determinantal Point Process-Guided Policy Optimization](https://arxiv.org/abs/2511.20647) | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) | — |
+| 2026 | [GenMAC: Compositional Text-to-Video Generation with Multi-Agent Collaboration](https://doi.org/10.1609/aaai.v40i7.37418) | Proceedings of the AAAI Conference on Artificial Intelligence | [Project](https://karine-h.github.io/GenMAC/) |
+| 2026 | [Identity-Preserving Text-to-Video Generation via Agentic Enhancement and Semantic Repair](https://arxiv.org/abs/2608.20749) | arXiv | [Code](https://github.com/oceanflowlab/AESR) |
+| 2026 | [MVAgent: Multi-Agent Video Generation via Consistent Condition Construction and Shot-Level Policy Optimization](https://arxiv.org/abs/2609.30609) | Preprint | — |
+| 2026 | [NEWTON: Agentic Planning for Physically Grounded Video Generation](https://arxiv.org/abs/2605.18396) | arXiv | — |
+| 2026 | [PhyPrompt: RL-based Prompt Refinement for Physically Plausible Text-to-Video Generation](https://arxiv.org/abs/2603.03505) | Preprint | — |
+| 2026 | [PhysAgent: Reflective Agentic Physics Control for Physically Plausible Video Generation](https://arxiv.org/abs/2607.16355) | arXiv | — |
+| 2026 | [Recommendation as Generation: Unifying Personalized Video Generation and Recommendation at Industrial Scale](https://arxiv.org/abs/2606.25496) | arXiv | — |
+| 2026 | [SCMAPR: Self-Correcting Multi-Agent Prompt Refinement for Complex-Scenario Text-to-Video Generation](https://aclanthology.org/2026.findings-acl.345/) | Findings of the Association for Computational Linguistics: ACL 2026 | — |
+| 2026 | [Self-Correcting Text-to-Video Generation with Misalignment Detection and Localized Refinement](https://arxiv.org/abs/2411.15115) | Findings of the Association for Computational Linguistics: ACL 2026 | — |
+| 2026 | [SkillPE: Creativity-Oriented Cinematic Skill Evolution for Text-to-Video Prompt Engineering](https://arxiv.org/abs/2609.34335) | Preprint | — |
+| 2026 | [SPAgent: Adaptive Task Decomposition and Model Selection for General Video Generation and Editing](https://arxiv.org/abs/2411.18983) | IEEE Transactions on Image Processing | — |
+| 2026 | [VideoAgent: All-in-One Framework for Video Understanding and Editing](https://arxiv.org/abs/2606.23327) | arXiv | — |
+| 2026 | [VideoGen-Agent: Reinforcing Video Generation Agents](https://arxiv.org/abs/2609.24997) | Preprint | — |
+| 2026 | [VideoWeaver: Evaluating and Evolving Skills for Agentic Long Video Generation](https://arxiv.org/abs/2606.08091) | arXiv | [Code](https://github.com/JianhuiWei7/VideoWeaver) |
+| 2026 | [VISTA: A Test-Time Self-Improving Video Generation Agent](https://openaccess.thecvf.com/content/CVPR2026/html/Long_VISTA_A_Test-Time_Self-Improving_Video_Generation_Agent_CVPR_2026_paper.html) | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition | — |
+| 2026 | [VQQA: An Agentic Approach for Video Evaluation and Quality Improvement](https://arxiv.org/abs/2603.12310) | arXiv | — |
+| 2025 | [Automated Movie Generation via Multi-Agent CoT Planning](https://arxiv.org/abs/2503.07314) | Preprint | [Code](https://github.com/showlab/MovieAgent) · [Project](https://weijiawu.github.io/MovieAgent) |
+| 2025 | [EditDuet: A Multi-Agent System for Video Non-Linear Editing](https://doi.org/10.1145/3721238.3730761) | SIGGRAPH 2025: Conference Papers | [Code](https://github.com/arXiv/html_feedback/issues) · [Project](https://mudtriangle.com/editduet) |
+| 2024 | [AesopAgent: Agent-driven Evolutionary System on Story-to-Video Production](https://arxiv.org/abs/2403.07952) | arXiv | [Project](https://aesopai.github.io/) |
+| 2024 | [DreamFactory: Pioneering Multi-Scene Long Video Generation with a Multi-Agent Framework](https://arxiv.org/abs/2408.11788) | arXiv | [Code](https://github.com/arXiv/html_feedback/issues) |
+
+### Evaluation in Self Improvement
+
+| Year | Paper / resource | Venue / source | Links |
+|:---:|:---|:---|:---|
+| 2026 | [Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models](https://arxiv.org/abs/2510.04618) | International Conference on Learning Representations | — |
+| 2026 | [AVGen-Bench: A Task-Driven Benchmark for Multi-Granular Evaluation of Text-to-Audio-Video Generation](https://arxiv.org/abs/2604.08540) | arXiv | [Project](http://aka.ms/avgenbench) |
+| 2026 | [Do Video Generators Track the World Across Segments? A Benchmark and Method for World-State Reasoning in Video Continuation](https://arxiv.org/abs/2609.03673) | arXiv | — |
+| 2026 | [Don't Read the Log: Execution Traces Contaminate Verifiers in Video-Generation Agents](https://arxiv.org/abs/2609.28564) | arXiv | — |
+| 2026 | [EvalVerse: Pipeline-Aware and Expert-Calibrated Benchmarking for Professional Cinematic Video Generation](https://arxiv.org/abs/2605.23271) | arXiv | — |
+| 2026 | [Evo-Bench: Can Language Models Improve Agent Harness?](https://arxiv.org/abs/2608.09096) | arXiv | — |
+| 2026 | [Evo-Harness: Context-to-Harness Skill Compilation for Self-Evolving Agents](https://arxiv.org/abs/2608.15071) | arXiv | — |
+| 2026 | [EvoHarnessBench: Can Your Agents Keep Pace with an Evolving Harness?](https://arxiv.org/abs/2609.04280) | arXiv | — |
+| 2026 | [GEPA: Reflective Prompt Evolution Can Outperform Reinforcement Learning](https://arxiv.org/abs/2507.19457) | International Conference on Learning Representations | — |
+| 2026 | [Jailbreaking on Text-to-Video Models via Scene Splitting Strategy](https://arxiv.org/abs/2509.22292) | International Conference on Learning Representations | [Project](https://velpegor.github.io/SceneSplit/) |
+| 2026 | [Meta-Harness: End-to-End Optimization of Model Harnesses](https://arxiv.org/abs/2603.28052) | arXiv | — |
+| 2026 | [Open Evaluation Agent: Efficient and Promptable Evaluation of Visual Generative Models](https://arxiv.org/abs/2608.09666) | arXiv | [Code](https://github.com/Vchitect/Evaluation-Agent) |
+| 2026 | [PhyGround: Benchmarking Physical Reasoning in Generative World Models](https://arxiv.org/abs/2605.10806) | arXiv | [Project](https://phyground.github.io/) |
+| 2026 | [PhysAgent: Reflective Agentic Physics Control for Physically Plausible Video Generation](https://arxiv.org/abs/2607.16355) | arXiv | — |
+| 2026 | [RAVEN-Eval: Rubric-Guided Automatic Evaluation for AI Video Generation Models Based on LMM Preference Judgement](https://arxiv.org/abs/2608.09111) | arXiv | [Code](https://github.com/arXiv/html_feedback/issues) |
+| 2026 | [Rethinking the Evaluation of Harness Evolution for Agents](https://arxiv.org/abs/2607.12227) | arXiv | — |
+| 2026 | [RewardVerse: Rubric-Guided Policy Optimization for Video Reward Modeling](https://arxiv.org/abs/2609.22947) | arXiv | — |
+| 2026 | [RRSI: Regularized Recursive Self-Improvement of Agent Harnesses](https://arxiv.org/abs/2609.24972) | arXiv | — |
+| 2026 | [Self-Correcting Text-to-Video Generation with Misalignment Detection and Localized Refinement](https://arxiv.org/abs/2411.15115) | Findings of the Association for Computational Linguistics: ACL 2026 | — |
+| 2026 | [SLVMEval: Synthetic Meta Evaluation Benchmark for Text-to-Long Video Generation](https://arxiv.org/abs/2603.29186) | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) | [Code](https://github.com/arXiv/html_feedback/issues) · [Project](https://slvmeval.github.io/) |
+| 2026 | [TEAR: Temporal-aware Automated Red-teaming for Text-to-Video Models](https://arxiv.org/abs/2511.21145) | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) | [Code](https://github.com/QwenLM/Qwen3-VL) |
+| 2026 | [V2V-Bench: A Comprehensive Benchmark for Video-to-Video Generation Evaluation](https://arxiv.org/abs/2606.05665) | arXiv | — |
+| 2026 | [VideoArgus: Agentic Rubric-Grounded Unified Evaluation for Video Generation and Editing](https://arxiv.org/abs/2608.05485) | arXiv | [Project](https://zzzmyyzeng.github.io/VideoArgus) |
+| 2026 | [VideoGen-Agent: Reinforcing Video Generation Agents](https://arxiv.org/abs/2609.24997) | Preprint | — |
+| 2026 | [VideoPhy-2: A Challenging Action-Centric Physical Commonsense Evaluation in Video Generation](https://arxiv.org/abs/2503.06800) | International Conference on Learning Representations | — |
+| 2026 | [VideoScore2: Think before You Score in Generated Video Evaluation](https://arxiv.org/abs/2509.22799) | Transactions on Machine Learning Research | — |
+| 2026 | [VideoWeaver: Evaluating and Evolving Skills for Agentic Long Video Generation](https://arxiv.org/abs/2606.08091) | arXiv | [Code](https://github.com/JianhuiWei7/VideoWeaver) |
+| 2026 | [VISTA: A Test-Time Self-Improving Video Generation Agent](https://openaccess.thecvf.com/content/CVPR2026/html/Long_VISTA_A_Test-Time_Self-Improving_Video_Generation_Agent_CVPR_2026_paper.html) | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition | — |
+| 2026 | [VQQA: An Agentic Approach for Video Evaluation and Quality Improvement](https://arxiv.org/abs/2603.12310) | arXiv | — |
+| 2025 | [A Self-Improving Coding Agent](https://arxiv.org/abs/2504.15228) | arXiv | — |
+| 2025 | [AFlow: Automating Agentic Workflow Generation](https://arxiv.org/abs/2410.10762) | International Conference on Learning Representations | — |
+| 2025 | [AIGVE-MACS: Unified Multi-Aspect Commenting and Scoring Model for AI-Generated Video Evaluation](https://arxiv.org/abs/2507.01255) | arXiv | — |
+| 2025 | [Automated Design of Agentic Systems](https://arxiv.org/abs/2408.08435) | International Conference on Learning Representations | — |
+| 2025 | [Evaluation Agent: Efficient and Promptable Evaluation Framework for Visual Generative Models](https://aclanthology.org/2025.acl-long.374/) | Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) | — |
+| 2025 | [Improving Video Generation with Human Feedback](https://arxiv.org/abs/2501.13918) | Advances in Neural Information Processing Systems | [Code](https://github.com/KwaiVGI/VideoAlign) |
+| 2025 | [Spotlight: Identifying and Localizing Video Generation Errors Using VLMs](https://arxiv.org/abs/2511.18102) | arXiv | [Code](https://github.com/SilentView/LVD-2M) |
+| 2025 | [T2V-CompBench: A Comprehensive Benchmark for Compositional Text-to-video Generation](https://arxiv.org/abs/2407.14505) | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) | [Code](https://github.com/KaiyueSun98/T2V-CompBench/tree/V2) · [Project](https://t2v-compbench-2025.github.io/) |
+| 2025 | [UVE: Are MLLMs Unified Evaluators for AI-Generated Videos?](https://arxiv.org/abs/2503.09949) | Advances in Neural Information Processing Systems | [Code](https://github.com/bytedance/UVE) · [Project](https://llava-vl.github.io/blog/2024-01-30-llava-next/) |
+| 2025 | [VBench-2.0: Advancing Video Generation Benchmark Suite for Intrinsic Faithfulness](https://arxiv.org/abs/2503.21755) | arXiv | [Code](https://github.com/Vchitect/VBench) · [Project](https://vchitect.github.io/VBench-2.0-project/) |
+| 2025 | [Video-Bench: Human-Aligned Video Generation Benchmark](https://arxiv.org/abs/2504.04907) | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) | — |
+| 2025 | [VideoGen-Eval: Agent-based System for Video Generation Evaluation](https://arxiv.org/abs/2503.23452) | arXiv | [Code](https://github.com/AILab-CVC/VideoGen-Eval) |
+| 2025 | [VideoPhy: Evaluating Physical Commonsense for Video Generation](https://arxiv.org/abs/2406.03520) | International Conference on Learning Representations | [Code](https://github.com/X-PLUG/mPLUG-Owl/tree/main/mPLUG-Owl/mplug_owl_video) · [Project](https://videophy.github.io/) |
+| 2024 | [EvalCrafter: Benchmarking and Evaluating Large Video Generation Models](https://openaccess.thecvf.com/content/CVPR2024/html/Liu_EvalCrafter_Benchmarking_and_Evaluating_Large_Video_Generation_Models_CVPR_2024_paper.html) | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition | [Project](https://evalcrafter.github.io/) |
+| 2024 | [Frechet Video Motion Distance: A Metric for Evaluating Motion Consistency in Videos](https://arxiv.org/abs/2407.16124) | arXiv | — |
+| 2024 | [On the Content Bias in Frechet Video Distance](https://arxiv.org/abs/2404.12391) | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) | — |
+| 2024 | [SafeSora: Towards Safety Alignment of Text2Video Generation via a Human Preference Dataset](https://arxiv.org/abs/2406.14477) | Advances in Neural Information Processing Systems | [Code](https://github.com/PKU-Alignment/safe-sora) · [Project](https://sites.google.com/view/safe-sora) |
+| 2024 | [VBench: Comprehensive Benchmark Suite for Video Generative Models](https://arxiv.org/abs/2311.17982) | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) | [Code](https://github.com/Vchitect/VBench) · [Project](https://vchitect.github.io/VBench-project/) |
+| 2024 | [VideoScore: Building Automatic Metrics to Simulate Fine-grained Human Feedback for Video Generation](https://arxiv.org/abs/2406.15252) | Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing | [Code](https://github.com/hotshotco/hotshot-xl) · [Project](https://tiger-ai-lab.github.io/MantisScore/) |
+| 2021 | [Active Testing: Sample-Efficient Model Evaluation](https://proceedings.mlr.press/v139/kossen21a.html) | Proceedings of the 38th International Conference on Machine Learning | — |
+| 2018 | [Towards Accurate Generative Models of Video: A New Metric & Challenges](https://arxiv.org/abs/1812.01717) | arXiv | — |
+
+### Recursion Channels in Video Generation
+
+| Year | Paper / resource | Venue / source | Links |
+|:---:|:---|:---|:---|
+| 2026 | [AgenticGen: Reward-Guided Agentic Video Generation for Advertising](https://arxiv.org/abs/2609.09187) | arXiv | — |
+| 2026 | [Code Video Model: Conditioning Video Generation on Code](https://doi.org/10.13140/RG.2.2.34014.80961) | Technical report, | [Project](https://code-video-model.github.io/) |
+| 2026 | [Darwin Godel Machine: Open-Ended Evolution of Self-Improving Agents](https://arxiv.org/abs/2505.22954) | International Conference on Learning Representations | — |
+| 2026 | [Dual-IPO: Dual-Iterative Preference Optimization for Text-to-Video Generation](https://arxiv.org/abs/2502.02088) | International Conference on Learning Representations | [Code](https://github.com/SAIS-FUXI/IPO) |
+| 2026 | [EdenLive: Real-Time Generative Rendering from Any Visual Reference](https://assets.vast-eden.ai/assets/edenlive/EdenLive-tech-report.pdf) | Technical report, VAST | — |
+| 2026 | [JAVEDIT: Joint Audio-Visual Instruction-Guided Video Editing with Agentic Data Curation](https://arxiv.org/abs/2606.03168) | arXiv | — |
+| 2026 | [Programmable World Model](https://arxiv.org/abs/2609.10540) | arXiv | — |
+| 2026 | [Recursive Self-Improvement in AI: From Bounded Self-Refinement to Autonomous Research Loops](https://arxiv.org/abs/2607.07663) | arXiv | — |
+| 2026 | [RewardVerse: Rubric-Guided Policy Optimization for Video Reward Modeling](https://arxiv.org/abs/2609.22947) | arXiv | — |
+| 2026 | [RRSI: Regularized Recursive Self-Improvement of Agent Harnesses](https://arxiv.org/abs/2609.24972) | arXiv | — |
+| 2026 | [SolarRenderer: Few-Step Generative Reference Rendering](https://arxiv.org/abs/2610.28630) | arXiv | — |
+| 2026 | [SPIRAL: Self-Evolving Action-Conditioned Video Generation via Reflective Planning Agents](https://arxiv.org/abs/2603.08403) | arXiv | [Project](https://yuyang-cloud.github.io/spiral) |
+| 2026 | [Video-RSI: Recursive Self-Improvement of Video Understanding Agents via Harness Evolution](https://arxiv.org/abs/2609.37950) | arXiv | — |
+| 2026 | [VideoWeaver: Evaluating and Evolving Skills for Agentic Long Video Generation](https://arxiv.org/abs/2606.08091) | arXiv | [Code](https://github.com/JianhuiWei7/VideoWeaver) |
+| 2026 | [VR-Thinker: Boosting Video Reward Models through Think-with-Image Reasoning](https://arxiv.org/abs/2510.10518) | Proceedings of the 43rd International Conference on Machine Learning | — |
+| 2025 | [DanceGRPO: Unleashing GRPO on Visual Generation](https://arxiv.org/abs/2505.07818) | arXiv | — |
+| 2025 | [Exploration-Driven Generative Interactive Environments](https://arxiv.org/abs/2504.02515) | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition | [Code](https://github.com/insait-institute/GenieRedux) |
+| 2025 | [Follow-Your-Instruction: A Comprehensive MLLM Agent for World Data Synthesis](https://arxiv.org/abs/2508.05580) | arXiv | [Code](https://github.com/black-forest-labs/flux) |
+| 2025 | [Self Forcing: Bridging the Train-Test Gap in Autoregressive Video Diffusion](https://arxiv.org/abs/2506.08009) | Advances in Neural Information Processing Systems | [Project](http://self-forcing.github.io/) |
+| 2025 | [VC-Agent: An Interactive Agent for Customized Video Dataset Collection](https://arxiv.org/abs/2509.21291) | Preprint | — |
+| 2025 | [VideoDPO: Omni-Preference Alignment for Video Diffusion Generation](https://arxiv.org/abs/2412.14167) | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition | [Project](https://videodpo.github.io/) |
+| 2025 | [VideoUFO: A Million-Scale User-Focused Dataset for Text-to-Video Generation](https://arxiv.org/abs/2503.01739) | Advances in Neural Information Processing Systems | [Code](https://github.com/WangWenhao0716/BenchUFO) · [Project](https://huggingface.co/datasets/WenhaoWang/VideoUFO) |
+| 2024 | [Self-Consuming Generative Models Go MAD](https://arxiv.org/abs/2307.01850) | International Conference on Learning Representations (ICLR) | — |
+| 2023 | [Scaling Laws for Reward Model Overoptimization](https://arxiv.org/abs/2210.10760) | Proceedings of the 40th International Conference on Machine Learning | — |
+| 2023 | [The Curse of Recursion: Training on Generated Data Makes Models Forget](https://arxiv.org/abs/2305.17493) | arXiv | — |
+
+### Foundation Model Improvement
+
+| Year | Paper / resource | Venue / source | Links |
+|:---:|:---|:---|:---|
+| 2026 | [AnyFlow: Any-Step Video Diffusion Model with On-Policy Flow Map Distillation](https://arxiv.org/abs/2605.13724) | arXiv | — |
+| 2026 | [Causal Forcing: Autoregressive Diffusion Distillation Done Right for High-Quality Real-Time Interactive Video Generation](https://arxiv.org/abs/2602.02214) | Proceedings of the 43rd International Conference on Machine Learning | — |
+| 2026 | [JAVEDIT: Joint Audio-Visual Instruction-Guided Video Editing with Agentic Data Curation](https://arxiv.org/abs/2606.03168) | arXiv | — |
+| 2026 | [Parallel Decoding Distillation for Fast Image and Video Generation](https://arxiv.org/abs/2607.26004) | arXiv | — |
+| 2026 | [Phantom-Data: Towards a General Subject-Consistent Video Generation Dataset](https://arxiv.org/abs/2506.18851) | International Conference on Learning Representations | — |
+| 2026 | [PhysInOne: Visual Physics Learning and Reasoning in One Suite](https://openaccess.thecvf.com/content/CVPR2026/html/Zhou_PhysInOne_Visual_Physics_Learning_and_Reasoning_in_One_Suite_CVPR_2026_paper.html) | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) | — |
+| 2026 | [RewardVerse: Rubric-Guided Policy Optimization for Video Reward Modeling](https://arxiv.org/abs/2609.22947) | arXiv | — |
+| 2026 | [Scaling Instruction-Based Video Editing with a High-Quality Synthetic Dataset](https://arxiv.org/abs/2510.15742) | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) | [Code](https://github.com/EzioBy/Ditto) · [Project](https://ezioby.github.io/Ditto_page) |
+| 2026 | [SolarWM: Open Data and Scalable Training for Long-Horizon Video World Models](https://arxiv.org/abs/2609.02886) | arXiv | — |
+| 2026 | [SPIRAL: Self-Evolving Action-Conditioned Video Generation via Reflective Planning Agents](https://arxiv.org/abs/2603.08403) | arXiv | [Project](https://yuyang-cloud.github.io/spiral) |
+| 2026 | [Transition Matching Distillation for Fast Video Generation](https://openaccess.thecvf.com/content/CVPR2026/html/Nie_Transition_Matching_Distillation_for_Fast_Video_Generation_CVPR_2026_paper.html) | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) | — |
+| 2026 | [Vidu S2: Real-Time Interactive, Editable, and Spatial Video Generation](https://arxiv.org/abs/2609.11638) | Preprint | — |
+| 2026 | [VR-Thinker: Boosting Video Reward Models through Think-with-Image Reasoning](https://arxiv.org/abs/2510.10518) | Proceedings of the 43rd International Conference on Machine Learning | — |
+| 2025 | [CogVideoX: Text-to-Video Diffusion Models with An Expert Transformer](https://arxiv.org/abs/2408.06072) | International Conference on Learning Representations | — |
+| 2025 | [DanceGRPO: Unleashing GRPO on Visual Generation](https://arxiv.org/abs/2505.07818) | arXiv | — |
+| 2025 | [Follow-Your-Instruction: A Comprehensive MLLM Agent for World Data Synthesis](https://arxiv.org/abs/2508.05580) | arXiv | [Code](https://github.com/black-forest-labs/flux) |
+| 2025 | [From Slow Bidirectional to Fast Autoregressive Video Diffusion Models](https://arxiv.org/abs/2412.07772) | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) | — |
+| 2025 | [Improving Video Generation with Human Feedback](https://arxiv.org/abs/2501.13918) | Advances in Neural Information Processing Systems | [Code](https://github.com/KwaiVGI/VideoAlign) |
+| 2025 | [Koala-36M: A Large-scale Video Dataset Improving Consistency between Fine-grained Conditions and Video Content](https://arxiv.org/abs/2410.08260) | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) | — |
+| 2025 | [MotionAgent: Fine-grained Controllable Video Generation via Motion Field Agent](https://openaccess.thecvf.com/content/ICCV2025/html/Liao_MotionAgent_Fine-grained_Controllable_Video_Generation_via_Motion_Field_Agent_ICCV_2025_paper.html) | Proceedings of the IEEE/CVF International Conference on Computer Vision | — |
+| 2025 | [OpenVid-1M: A Large-Scale High-Quality Dataset for Text-to-video Generation](https://arxiv.org/abs/2407.02371) | International Conference on Learning Representations | [Code](https://github.com/snap-research/Panda-70M/tree/main?tab=readme-ov-file#license-of-panda-70m) · [Project](https://nju-pcalab.github.io/projects/openvid) |
+| 2025 | [Rewarddance: Reward scaling in visual generation](https://arxiv.org/abs/2509.08826) | arXiv | — |
+| 2025 | [Self Forcing: Bridging the Train-Test Gap in Autoregressive Video Diffusion](https://arxiv.org/abs/2506.08009) | Advances in Neural Information Processing Systems | [Project](http://self-forcing.github.io/) |
+| 2025 | [Swap Attention in Spatiotemporal Diffusions for Text-to-Video Generation](https://arxiv.org/abs/2305.10874) | International Journal of Computer Vision | — |
+| 2025 | [T2V-Turbo-v2: Enhancing Video Generation Model Post-Training through Data, Reward, and Conditional Guidance Design](https://arxiv.org/abs/2410.05677) | International Conference on Learning Representations (ICLR) | [Project](https://t2v-turbo-v2.github.io/) |
+| 2025 | [VACE: All-in-One Video Creation and Editing](https://openaccess.thecvf.com/content/ICCV2025/html/Jiang_VACE_All-in-One_Video_Creation_and_Editing_ICCV_2025_paper.html) | Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV) | — |
+| 2025 | [VC-Agent: An Interactive Agent for Customized Video Dataset Collection](https://arxiv.org/abs/2509.21291) | Preprint | — |
+| 2025 | [VideoDPO: Omni-Preference Alignment for Video Diffusion Generation](https://arxiv.org/abs/2412.14167) | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition | [Project](https://videodpo.github.io/) |
+| 2025 | [VideoUFO: A Million-Scale User-Focused Dataset for Text-to-Video Generation](https://arxiv.org/abs/2503.01739) | Advances in Neural Information Processing Systems | [Code](https://github.com/WangWenhao0716/BenchUFO) · [Project](https://huggingface.co/datasets/WenhaoWang/VideoUFO) |
+| 2025 | [Wan: Open and advanced large-scale video generative models](https://arxiv.org/abs/2503.20314) | arXiv | — |
+| 2024 | [AnimateDiff: Animate Your Personalized Text-to-Image Diffusion Models without Specific Tuning](https://proceedings.iclr.cc/paper_files/paper/2024/hash/94894cf9bab20c00f6eaaff3b7f2be70-Abstract-Conference.html) | International Conference on Learning Representations | — |
+| 2024 | [DreamRunner: Fine-Grained Compositional Story-to-Video Generation with Retrieval-Augmented Motion Adaptation](https://arxiv.org/abs/2411.16657) | arXiv | — |
+| 2024 | [HunyuanVideo: A Systematic Framework For Large Video Generative Models](https://arxiv.org/abs/2412.03603) | arXiv | — |
+| 2024 | [InstructVideo: Instructing Video Diffusion Models with Human Feedback](https://arxiv.org/abs/2312.12490) | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition | [Project](https://instructvideo.github.io/) |
+| 2024 | [Motion Consistency Model: Accelerating Video Diffusion with Disentangled Motion-Appearance Distillation](https://arxiv.org/abs/2406.06890) | Advances in Neural Information Processing Systems | — |
+| 2024 | [MotionDirector: Motion Customization of Text-to-Video Diffusion Models](https://arxiv.org/abs/2310.08465) | Computer Vision -- ECCV 2024 | — |
+| 2024 | [Panda-70M: Captioning 70M Videos with Multiple Cross-Modality Teachers](https://arxiv.org/abs/2402.19479) | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition | [Project](https://snap-research.github.io/Panda-70M) |
+| 2024 | [ShareGPT4Video: Improving Video Understanding and Generation with Better Captions](https://arxiv.org/abs/2406.04325) | Advances in Neural Information Processing Systems | — |
+| 2024 | [T2V-Turbo: Breaking the Quality Bottleneck of Video Consistency Model with Mixed Reward Feedback](https://arxiv.org/abs/2405.18750) | Advances in Neural Information Processing Systems | [Project](https://t2v-turbo.github.io/) |
+| 2024 | [VideoCrafter2: Overcoming Data Limitations for High-Quality Video Diffusion Models](https://arxiv.org/abs/2401.09047) | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) | — |
+| 2024 | [VideoScore: Building Automatic Metrics to Simulate Fine-grained Human Feedback for Video Generation](https://arxiv.org/abs/2406.15252) | Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing | [Code](https://github.com/hotshotco/hotshot-xl) · [Project](https://tiger-ai-lab.github.io/MantisScore/) |
+| 2023 | [Make-a-video: Text-to-video generation without text-video data](https://arxiv.org/abs/2209.14792) | International Conference on Learning Representations | — |
+| 2023 | [Stable Video Diffusion: Scaling Latent Video Diffusion Models to Large Datasets](https://arxiv.org/abs/2311.15127) | arXiv | [Code](https://github.com/Stability-AI/generative-models) |
+| 2023 | [Tune-a-video: One-shot tuning of image diffusion models for text-to-video generation](https://doi.org/10.1109/ICCV51070.2023.00701) | 2023 IEEE/CVF International Conference on Computer Vision (ICCV) | — |
+| 2021 | [Frozen in Time: A Joint Video and Image Encoder for End-to-End Retrieval](https://arxiv.org/abs/2104.00650) | Proceedings of the IEEE/CVF International Conference on Computer Vision | — |
+
+## Agent Design
+
+Perception, tool use, feedback, memory, reusable skills, and multi-agent organization. **162 resources.**
+
+### Overview
+
+| Year | Paper / resource | Venue / source | Links |
+|:---:|:---|:---|:---|
+| 2026 | [A$^2$RD: Agentic Autoregressive Diffusion for Long Video Consistency](https://arxiv.org/abs/2605.06924) | Preprint | — |
+| 2026 | [Action Agent: Agentic Video Generation Meets Flow-Constrained Diffusion](https://arxiv.org/abs/2605.01477) | arXiv | — |
+| 2026 | [AgenticGen: Reward-Guided Agentic Video Generation for Advertising](https://arxiv.org/abs/2609.09187) | arXiv | — |
+| 2026 | [AgentMV: A State-Guided Multi-Agent Framework for Budget-Aware Music Video Generation](https://arxiv.org/abs/2605.10723) | Preprint | [Code](https://github.com/arXiv/html_feedback/issues) |
+| 2026 | [Agents' Last Exam](https://arxiv.org/abs/2606.05405) | arXiv | — |
+| 2026 | [ATVG: Agentic System for Factually Grounded Travel Advertisement Video Generation](https://doi.org/10.1145/3805712.3808387) | Proceedings of the 49th International ACM SIGIR Conference on Research and Development in Information Retrieval | — |
+| 2026 | [Better Call CineCrew: Consistent Ultra-Long Narrative-to-Film Generation](https://arxiv.org/abs/2609.07720) | ECCV | — |
+| 2026 | [Beyond Coherence: Benchmarking Professional Editing-Technique Execution in Multi-Shot Audio-Video Generation](https://arxiv.org/abs/2609.08275) | arXiv | — |
+| 2026 | [Beyond End-to-End Video Models: An LLM-Based Multi-Agent System for Educational Video Generation](https://doi.org/10.1145/3770855.3818323) | KDD 2026: Applied Data Science, Vol. 2 | — |
+| 2026 | [Beyond Trial-and-Error: Agentic Optimization for Image-to-Video Adherence](https://arxiv.org/abs/2608.12290) | arXiv | — |
+| 2026 | [Bridging Creative Intent and Visual Quality: Creator-Driven Recurrent Video Generation with Agentic Feedback Loops](https://arxiv.org/abs/2606.18591) | ICML Workshop on Human-AI Co-Creativity | — |
+| 2026 | [Camera Artist: A Multi-Agent Framework for Cinematic Language Storytelling Video Generation](https://arxiv.org/abs/2604.09195) | Preprint | [Code](https://github.com/arXiv/html_feedback/issues) |
+| 2026 | [CamPilot: A Multi-Agent Cinematic Assistant for Camera-Controlled Movie Generation](https://arxiv.org/abs/2609.10943) | EMNLP REALM Workshop | — |
+| 2026 | [CANVAS: Continuity-Aware Narratives via Visual Agentic Storyboarding](https://arxiv.org/abs/2604.13452) | arXiv | — |
+| 2026 | [CineAGI: Character-Consistent Movie Creation through LLM-Orchestrated Multi-Modal Generation and Cross-Scene Integration](https://arxiv.org/abs/2604.23579) | ICME | — |
+| 2026 | [CineForge: Self-Improving Agents for Long-Horizon Video Generation](https://arxiv.org/abs/2608.29621) | arXiv | — |
+| 2026 | [Co-Director: Agentic Generative Video Storytelling](https://arxiv.org/abs/2604.24842) | Preprint | — |
+| 2026 | [CutClaw: Agentic Hours-Long Video Editing via Music Synchronization](https://arxiv.org/abs/2603.29664) | Preprint | [Code](https://github.com/GVCLab/CutClaw) |
+| 2026 | [CutVerse: A Compositional GUI Agents Benchmark for Media Post-Production Editing](https://arxiv.org/abs/2605.19484) | arXiv | [Project](http://benchmark.While) |
+| 2026 | [DataMagic: Transforming Tabular Data into Data Insight Video](https://arxiv.org/abs/2606.20388) | VLDB | — |
+| 2026 | [DeepPresenter: Environment-Grounded Reflection for Agentic Presentation Generation](https://doi.org/10.18653/v1/2026.findings-acl.1578) | Findings of the Association for Computational Linguistics: ACL 2026 | — |
+| 2026 | [DirectorBench: Diagnosing Long-Form Video Generation with Personalized Multi-Agent Evaluation](https://arxiv.org/abs/2605.30090) | arXiv | — |
+| 2026 | [DramaDirector: Geometry-Guided Short Drama Generation](https://arxiv.org/abs/2606.24107) | arXiv | — |
+| 2026 | [ELLMPEG: An Edge-based Agentic LLM Video Processing Tool](https://doi.org/10.1145/3793853.3795760) | ACM MMSys 2026 | [Code](https://github.com/fraunhoferhhi/vvenc/wiki) · [Project](https://amiaopensource.github.io/ffmprovisr/) |
+| 2026 | [EM-Vid: Training-Free Entity-Centric Memory for Efficient and Consistent Multi-Shot Video Generation](https://arxiv.org/abs/2605.23610) | arXiv | — |
+| 2026 | [EvoState: Closed-Loop Visual State Management for Long-Form Video Generation](https://arxiv.org/abs/2606.16184) | arXiv | — |
+| 2026 | [FilmWeaver: Weaving Consistent Multi-Shot Videos with Cache-Guided Autoregressive Diffusion](https://doi.org/10.1609/aaai.v40i9.37711) | Proceedings of the AAAI Conference on Artificial Intelligence | — |
+| 2026 | [FilmWorld: Agentic Novel-to-Film Generation through Dynamic Cinematic World Modeling](https://arxiv.org/abs/2607.19038) | arXiv | — |
+| 2026 | [FRAMEWORKERS: A Dynamic Multi-Agent Framework for AI-Generated Video Production](https://arxiv.org/abs/2608.29814) | Preprint | [Code](https://github.com/arXiv/html_feedback/issues) |
+| 2026 | [FreeMem: Enhancing Consistency in Long Video Generation via Tuning-Free Memory](https://doi.org/10.1609/aaai.v40i10.37783) | Proceedings of the AAAI Conference on Artificial Intelligence | — |
+| 2026 | [From Clay 3D Render to a Real Action Short: A 3D-to-AI Pipeline with Total Control](https://blog.fal.ai/from-clay-3d-render-to-a-real-action-short-a-3d-to-ai-pipeline-with-total-control/) | fal.ai Blog | — |
+| 2026 | [GenMAC: Compositional Text-to-Video Generation with Multi-Agent Collaboration](https://doi.org/10.1609/aaai.v40i7.37418) | Proceedings of the AAAI Conference on Artificial Intelligence | [Project](https://karine-h.github.io/GenMAC/) |
+| 2026 | [GPT-6 Astra: A New Generation of Intelligence](https://openai.com/index/gpt-6-astra/) | Online resource | — |
+| 2026 | [GroundShot: Visually Consistent Multi-Shot Long Video Generation via Entity-Grounded Shot Scheduling](https://arxiv.org/abs/2606.20799) | Preprint | [Code](https://github.com/arXiv/html_feedback/issues) |
+| 2026 | [Identity-Preserving Text-to-Video Generation via Agentic Enhancement and Semantic Repair](https://arxiv.org/abs/2608.20749) | arXiv | [Code](https://github.com/oceanflowlab/AESR) |
+| 2026 | [InteracVid: Building a Real Interactive Audio-Visual Response Dataset from Live-Chat Videos](https://arxiv.org/abs/2608.01157) | arXiv | — |
+| 2026 | [Lighting-grounded Video Generation with Renderer-based Agent Reasoning](https://arxiv.org/abs/2604.07966) | arXiv | — |
+| 2026 | [MAViS: A Multi-Agent Framework for Long-Sequence Video Storytelling](https://aclanthology.org/2026.eacl-long.101/) | Proceedings of the 19th Conference of the European Chapter of the Association for Computational Linguistics (Volume 1: Long Papers) | [Code](https://github.com/black-forest-labs/flux) |
+| 2026 | [Memento: Reconstruct to Remember for Consistent Long Video Generation](https://arxiv.org/abs/2606.14667) | arXiv | — |
+| 2026 | [Memory-V2V: Memory-Augmented Video-to-Video Diffusion for Consistent Multi-turn Editing](https://doi.org/10.1007/978-3-032-37324-3_5) | Computer Vision -- ECCV 2026 | — |
+| 2026 | [MemRoPE: Training-Free Infinite Video Generation via Evolving Memory Tokens](https://doi.org/10.1007/978-3-032-37356-4_14) | Computer Vision -- ECCV 2026 | — |
+| 2026 | [MoReGen: Multi-Agent Motion-Reasoning Engine for Code-based Text-to-Video Synthesis](https://openaccess.thecvf.com/content/CVPR2026/html/Bai_MoReGen_Multi-Agent_Motion-Reasoning_Engine_for_Code-based_Text-to-Video_Synthesis_CVPR_2026_paper.html) | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition | — |
+| 2026 | [Multi-Agent CAD Code Generation](https://doi.org/10.1145/3799902.3811067) | ACM SIGGRAPH 2026 Conference Papers | — |
+| 2026 | [MVAgent: Multi-Agent Video Generation via Consistent Condition Construction and Shot-Level Policy Optimization](https://arxiv.org/abs/2609.30609) | Preprint | — |
+| 2026 | [MVWeaver: A Hierarchical Music Video Generation Agent with a Learned Song-to-Visual Bridge](https://arxiv.org/abs/2609.06478) | arXiv | — |
+| 2026 | [NEWTON: Agentic Planning for Physically Grounded Video Generation](https://arxiv.org/abs/2605.18396) | arXiv | — |
+| 2026 | [OmniDrive: An LLM-Choreographed Multi-Agent World Model with Unified Latent Co-Compression for Multi-View Driving Video Generation](https://arxiv.org/abs/2606.17536) | arXiv | — |
+| 2026 | [One Sentence, One Drama: Personalized Short-Form Drama Generation via Multi-Agent Systems](https://arxiv.org/abs/2605.22144) | Preprint | — |
+| 2026 | [One-take Creation, Flexible Referencing: Introducing Seedance 2.5](https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5) | Official product report | — |
+| 2026 | [OneStory: Coherent Multi-Shot Video Generation with Adaptive Memory](https://openaccess.thecvf.com/content/CVPR2026/html/An_OneStory_Coherent_Multi-Shot_Video_Generation_with_Adaptive_Memory_CVPR_2026_paper.html) | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) | — |
+| 2026 | [PhysAgent: Reflective Agentic Physics Control for Physically Plausible Video Generation](https://arxiv.org/abs/2607.16355) | arXiv | — |
+| 2026 | [PhysPlan: Grounded Physical State Reasoning and Graph-Guided Optimization for Physically Plausible Video Generation](https://arxiv.org/abs/2609.13006) | arXiv | — |
+| 2026 | [ReCA: Multi-Shot Long Video Extrapolation via Recursive Context Allocation](https://arxiv.org/abs/2605.26525) | arXiv | — |
+| 2026 | [Recommendation as Generation: Unifying Personalized Video Generation and Recommendation at Industrial Scale](https://arxiv.org/abs/2606.25496) | arXiv | — |
+| 2026 | [Ring Forcing: Towards Precise Long-Term Memory for Autoregressive Video Diffusion](https://doi.org/10.1007/978-3-032-37602-2_13) | Computer Vision -- ECCV 2026 | — |
+| 2026 | [Scene2Scene: LLM-driven 3D Spatial Blockout for Guided AI Video Synthesis](https://doi.org/10.1145/3807895.3807932) | Companion Proceedings of the Symposium on Interactive 3D Graphics and Games | — |
+| 2026 | [SCMAPR: Self-Correcting Multi-Agent Prompt Refinement for Complex-Scenario Text-to-Video Generation](https://aclanthology.org/2026.findings-acl.345/) | Findings of the Association for Computational Linguistics: ACL 2026 | — |
+| 2026 | [SimWorlds: A Multi-Agent System for Dynamic 3D Scene Creation](https://arxiv.org/abs/2607.01766) | arXiv | — |
+| 2026 | [Soap2Soap: Long Cinematic Video Remaking via Multi-Agent Collaboration](https://arxiv.org/abs/2605.17423) | arXiv | — |
+| 2026 | [SPIRAL: Self-Evolving Action-Conditioned Video Generation via Reflective Planning Agents](https://arxiv.org/abs/2603.08403) | arXiv | [Project](https://yuyang-cloud.github.io/spiral) |
+| 2026 | [Streaming Multi-Agent Autoregressive Diffusion Model with World State Registers](https://arxiv.org/abs/2607.21594) | arXiv | — |
+| 2026 | [TeachMaster: Generative Teaching via Code](https://aclanthology.org/2026.acl-industry.7/) | Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 6: Industry Track) | — |
+| 2026 | [Training and Agentic Inference Strategies for LLM-based Manim Animation Generation](https://arxiv.org/abs/2604.18364) | arXiv | — |
+| 2026 | [VideoAgent: All-in-One Framework for Video Understanding and Editing](https://arxiv.org/abs/2606.23327) | arXiv | — |
+| 2026 | [VideoArgus: Agentic Rubric-Grounded Unified Evaluation for Video Generation and Editing](https://arxiv.org/abs/2608.05485) | arXiv | [Project](https://zzzmyyzeng.github.io/VideoArgus) |
+| 2026 | [VideoCoCo: Code-as-CoT for Physically-Consistent Video Generation via an Agentic Dual-Engine System](https://arxiv.org/abs/2607.27380) | arXiv | [Code](https://github.com/micky-li-hd/VideoCoCo) |
+| 2026 | [VideoCreator: An Agentic System for Multi-turn Video Production](https://doi.org/10.1145/3805622.3810431) | Proceedings of the 2026 International Conference on Multimedia Retrieval | — |
+| 2026 | [VideoGen-Agent: Reinforcing Video Generation Agents](https://arxiv.org/abs/2609.24997) | Preprint | — |
+| 2026 | [VideoMemory: Toward Consistent Video Generation via Memory Integration](https://arxiv.org/abs/2601.03655) | arXiv | — |
+| 2026 | [VideoWeaver: Evaluating and Evolving Skills for Agentic Long Video Generation](https://arxiv.org/abs/2606.08091) | arXiv | [Code](https://github.com/JianhuiWei7/VideoWeaver) |
+| 2026 | [ViMax: Agentic Video Generation](https://arxiv.org/abs/2606.07649) | arXiv | [Code](https://github.com/HKUDS/ViMax) |
+| 2026 | [VINCIE-NExT: Unlocking Video Editing from Images via In-Context Modeling](https://arxiv.org/abs/2610.12104) | arXiv | — |
+| 2026 | [VIPER: Visual In-Context Physics Reasoning for Physically Plausible Video Generation](https://arxiv.org/abs/2607.23472) | arXiv | — |
+| 2026 | [Vision Wormhole: Latent-Space Communication in Heterogeneous Multi-Agent Systems](https://arxiv.org/abs/2602.15382) | arXiv | — |
+| 2026 | [VISTA: A Test-Time Self-Improving Video Generation Agent](https://openaccess.thecvf.com/content/CVPR2026/html/Long_VISTA_A_Test-Time_Self-Improving_Video_Generation_Agent_CVPR_2026_paper.html) | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition | — |
+| 2026 | [VQ-Insight: Teaching VLMs for AI-Generated Video Quality Understanding via Progressive Visual Reinforcement Learning](https://doi.org/10.1609/aaai.v40i15.38285) | Proceedings of the AAAI Conference on Artificial Intelligence | — |
+| 2026 | [VQQA: An Agentic Approach for Video Evaluation and Quality Improvement](https://arxiv.org/abs/2603.12310) | arXiv | — |
+| 2026 | [World Narrative Model for Highly Controllable Video Generation: A Paradigm Shift from Pixel Sampling to Physical World Orchestration](https://arxiv.org/abs/2606.31946) | arXiv | — |
+| 2025 | [3D Animation Generation Using Blender and Agentic AI](https://doi.org/10.5220/0014628000004852) | Proceedings of the 1st International Conference on Interdisciplinary Technology & Science Convergence (FusionX Global) | — |
+| 2025 | [Agent Workflow Memory](https://proceedings.mlr.press/v267/wang25bx.html) | Proceedings of the 42nd International Conference on Machine Learning | — |
+| 2025 | [AgentDropout: Dynamic Agent Elimination for Token-Efficient and High-Performance LLM-Based Multi-Agent Collaboration](https://doi.org/10.18653/v1/2025.acl-long.1170) | Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) | — |
+| 2025 | [AIGVE-MACS: Unified Multi-Aspect Commenting and Scoring Model for AI-Generated Video Evaluation](https://arxiv.org/abs/2507.01255) | arXiv | — |
+| 2025 | [AniMaker: Multi-Agent Animated Storytelling with MCTS-Driven Clip Generation](https://animaker-dev.github.io/) | SIGGRAPH Asia 2025: Conference Papers | — |
+| 2025 | [Automated Movie Generation via Multi-Agent CoT Planning](https://arxiv.org/abs/2503.07314) | Preprint | [Code](https://github.com/showlab/MovieAgent) · [Project](https://weijiawu.github.io/MovieAgent) |
+| 2025 | [AutoMV: An Automatic Multi-Agent System for Music Video Generation](https://arxiv.org/abs/2512.12196) | Preprint | — |
+| 2025 | [AutoMV: An Autonomous Agent Framework for Real Estate Marketing Video Generation](https://doi.org/10.1609/aaai.v39i28.35377) | AAAI 2025: Demonstration Track | [Project](https://ojs.aaai.org/index.php/AAAI/article/view/35377) |
+| 2025 | [Code2Video: A Code-centric Paradigm for Educational Video Generation](https://arxiv.org/abs/2510.01174) | arXiv | — |
+| 2025 | [ComfyGPT: A Self-Optimizing Multi-Agent System for Comprehensive ComfyUI Workflow Generation](https://arxiv.org/abs/2503.17671) | arXiv | — |
+| 2025 | [ComfyMind: Toward General-Purpose Generation via Tree-Based Planning and Reactive Feedback](https://arxiv.org/abs/2505.17908) | arXiv | — |
+| 2025 | [Context as Memory: Scene-Consistent Interactive Long Video Generation with Memory Retrieval](https://arxiv.org/abs/2506.03141) | Proceedings of the SIGGRAPH Asia 2025 Conference Papers | — |
+| 2025 | [Corgi: Cached Memory Guided Video Generation](https://doi.org/10.1109/WACV61041.2025.00450) | 2025 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) | — |
+| 2025 | [EditDuet: A Multi-Agent System for Video Non-Linear Editing](https://doi.org/10.1145/3721238.3730761) | SIGGRAPH 2025: Conference Papers | [Code](https://github.com/arXiv/html_feedback/issues) · [Project](https://mudtriangle.com/editduet) |
+| 2025 | [Evaluation Agent: Efficient and Promptable Evaluation Framework for Visual Generative Models](https://aclanthology.org/2025.acl-long.374/) | Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) | — |
+| 2025 | [FilmAgent: A Multi-Agent Framework for End-to-End Film Automation in Virtual 3D Spaces](https://arxiv.org/abs/2501.12909) | arXiv | — |
+| 2025 | [FullDiT2: Efficient In-Context Conditioning for Video Diffusion Transformers](https://arxiv.org/abs/2506.04213) | arXiv | — |
+| 2025 | [Hollywood Town: Long-Video Generation via Cross-Modal Multi-Agent Orchestration](https://arxiv.org/abs/2510.22431) | arXiv | — |
+| 2025 | [Latent Collaboration in Multi-Agent Systems](https://arxiv.org/abs/2511.20639) | arXiv | — |
+| 2025 | [LongAnimation: Long Animation Generation with Dynamic Global-Local Memory](https://arxiv.org/abs/2507.01945) | 2025 IEEE/CVF International Conference on Computer Vision (ICCV) | — |
+| 2025 | [Manimator: Transforming Research Papers into Visual Explanations](https://arxiv.org/abs/2507.14306) | arXiv | — |
+| 2025 | [MasRouter: Learning to Route LLMs for Multi-Agent Systems](https://doi.org/10.18653/v1/2025.acl-long.757) | Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) | — |
+| 2025 | [MG-Gen: Single Image to Motion Graphics Generation](https://arxiv.org/abs/2504.02361) | arXiv | — |
+| 2025 | [Model Context Protocol Specification: Tools](https://modelcontextprotocol.io/specification/2025-06-18/server/tools) | Online resource | — |
+| 2025 | [MotionAgent: Fine-grained Controllable Video Generation via Motion Field Agent](https://openaccess.thecvf.com/content/ICCV2025/html/Liao_MotionAgent_Fine-grained_Controllable_Video_Generation_via_Motion_Field_Agent_ICCV_2025_paper.html) | Proceedings of the IEEE/CVF International Conference on Computer Vision | — |
+| 2025 | [MoVer: Motion Verification for Motion Graphics Animations](https://arxiv.org/abs/2502.13372) | arXiv | — |
+| 2025 | [Paper2Video: Automatic Video Generation from Scientific Papers](https://arxiv.org/abs/2510.05096) | arXiv | — |
+| 2025 | [Preacher: Paper-to-Video Agentic System](https://arxiv.org/abs/2508.09632) | 2025 IEEE/CVF International Conference on Computer Vision (ICCV) | — |
+| 2025 | [PresentAgent: Multimodal Agent for Presentation Video Generation](https://doi.org/10.18653/v1/2025.emnlp-demos.58) | Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing: System Demonstrations | — |
+| 2025 | [Spotlight: Identifying and Localizing Video Generation Errors Using VLMs](https://arxiv.org/abs/2511.18102) | arXiv | [Code](https://github.com/SilentView/LVD-2M) |
+| 2025 | [StoryMem: Multi-shot Long Video Storytelling with Memory](https://arxiv.org/abs/2512.19539) | arXiv | — |
+| 2025 | [SVBench: Evaluation of Video Generation Models on Social Reasoning](https://arxiv.org/abs/2512.21507) | arXiv | — |
+| 2025 | [UniVA: Universal Video Agent towards Open-Source Next-Generation Video Generalist](https://arxiv.org/abs/2511.08521) | arXiv | — |
+| 2025 | [Video World Models with Long-term Spatial Memory](https://arxiv.org/abs/2506.05284) | Advances in Neural Information Processing Systems 38 | — |
+| 2025 | [Video-As-Prompt: Unified Semantic Control for Video Generation](https://arxiv.org/abs/2510.20888) | arXiv | — |
+| 2025 | [VideoTree: Adaptive Tree-based Video Representation for LLM Reasoning on Long Videos](https://arxiv.org/abs/2405.19209) | CVPR | — |
+| 2025 | [VMem: Consistent Interactive Video Scene Generation with Surfel-Indexed View Memory](https://arxiv.org/abs/2506.18903) | 2025 IEEE/CVF International Conference on Computer Vision (ICCV) | — |
+| 2025 | [WorldMem: Long-term Consistent World Simulation with Memory](https://arxiv.org/abs/2504.12369) | arXiv | — |
+| 2025 | [WorldWander: Bridging Egocentric and Exocentric Worlds in Video Generation](https://arxiv.org/abs/2511.22098) | arXiv | — |
+| 2024 | [AesopAgent: Agent-driven Evolutionary System on Story-to-Video Production](https://arxiv.org/abs/2403.07952) | arXiv | [Project](https://aesopai.github.io/) |
+| 2024 | [AICL: Action In-Context Learning for Video Diffusion Model](https://arxiv.org/abs/2403.11535) | arXiv | — |
+| 2024 | [Anim-Director: A Large Multimodal Model Powered Agent for Controllable Animation Video Generation](https://doi.org/10.1145/3680528.3687688) | SIGGRAPH Asia 2024: Conference Papers | — |
+| 2024 | [AssistEditor: Multi-Agent Collaboration for GUI Workflow Automation in Video Creation](https://doi.org/10.1145/3664647.3684998) | Proceedings of the 32nd ACM International Conference on Multimedia | — |
+| 2024 | [ComfyBench: Benchmarking LLM-based Agents in ComfyUI for Autonomously Designing Collaborative AI Systems](https://arxiv.org/abs/2409.01392) | arXiv | — |
+| 2024 | [DreamFactory: Pioneering Multi-Scene Long Video Generation with a Multi-Agent Framework](https://arxiv.org/abs/2408.11788) | arXiv | [Code](https://github.com/arXiv/html_feedback/issues) |
+| 2024 | [DreamRunner: Fine-Grained Compositional Story-to-Video Generation with Retrieval-Augmented Motion Adaptation](https://arxiv.org/abs/2411.16657) | arXiv | — |
+| 2024 | [ExpeL: LLM Agents Are Experiential Learners](https://doi.org/10.1609/aaai.v38i17.29936) | Proceedings of the AAAI Conference on Artificial Intelligence | — |
+| 2024 | [From Data to Story: Towards Automatic Animated Data Video Creation with LLM-based Multi-Agent Systems](https://arxiv.org/abs/2408.03876) | arXiv | — |
+| 2024 | [GPT4Motion: Scripting Physical Motions in Text-to-Video Generation via Blender-Oriented GPT Planning](https://arxiv.org/abs/2311.12631) | 2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW) | — |
+| 2024 | [Keyframer: Empowering Animation Design using Large Language Models](https://arxiv.org/abs/2402.06071) | arXiv | — |
+| 2024 | [Kubrick: Multimodal Agent Collaborations for Synthetic Video Generation](https://arxiv.org/abs/2408.10453) | Preprint | [Code](https://github.com/arXiv/html_feedback/issues) |
+| 2024 | [Language Agent Tree Search Unifies Reasoning, Acting, and Planning in Language Models](https://arxiv.org/abs/2310.04406) | ICML | — |
+| 2024 | [LAVE: LLM-Powered Agent Assistance and Language Augmentation for Video Editing](https://doi.org/10.1145/3640543.3645143) | IUI 2024 | [Code](https://github.com/arXiv/html_feedback/issues) |
+| 2024 | [LLM-grounded Video Diffusion Models](https://arxiv.org/abs/2309.17444) | ICLR | — |
+| 2024 | [MA-LMM: Memory-Augmented Large Multimodal Model for Long-Term Video Understanding](https://arxiv.org/abs/2404.05726) | CVPR | — |
+| 2024 | [Mora: Enabling Generalist Video Generation via A Multi-Agent Framework](https://arxiv.org/abs/2403.13248) | arXiv | [Code](https://github.com/lichao-sun/Mora) |
+| 2024 | [More Agents Is All You Need](https://arxiv.org/abs/2402.05120) | TMLR | — |
+| 2024 | [MovieChat: From Dense Token to Sparse Memory for Long Video Understanding](https://arxiv.org/abs/2307.16449) | CVPR | — |
+| 2024 | [OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments](https://arxiv.org/abs/2404.07972) | NeurIPS | — |
+| 2024 | [ScreenAgent: A Vision Language Model-driven Computer Control Agent](https://arxiv.org/abs/2402.07945) | Proceedings of the Thirty-Third International Joint Conference on Artificial Intelligence (IJCAI-24) | — |
+| 2024 | [StoryAgent: Customized Storytelling Video Generation via Multi-Agent Collaboration](https://arxiv.org/abs/2411.04925) | arXiv | [Code](https://github.com/storyagent123/Comparison-of-storytelling-video-results/blob/main/demo/readme.md) |
+| 2024 | [Video Diffusion Transformers are In-Context Learners](https://arxiv.org/abs/2412.10783) | arXiv | — |
+| 2024 | [Video In-context Learning: Autoregressive Transformers are Zero-Shot Video Imitators](https://arxiv.org/abs/2407.07356) | arXiv | — |
+| 2024 | [VideoAgent: A Memory-augmented Multimodal Agent for Video Understanding](https://arxiv.org/abs/2403.11481) | ECCV | — |
+| 2024 | [VideoAgent: Self-Improving Video Generation](https://arxiv.org/abs/2410.10076) | arXiv | [Project](https://video-as-agent.github.io) |
+| 2024 | [VideoDirectorGPT: Consistent Multi-scene Video Generation via LLM-Guided Planning](https://arxiv.org/abs/2309.15091) | COLM | [Project](https://videodirectorgpt.github.io) |
+| 2024 | [VideoGUI: A Benchmark for GUI Automation from Instructional Videos](https://arxiv.org/abs/2406.10227) | Advances in Neural Information Processing Systems 37 | — |
+| 2024 | [VideoStudio: Generating Consistent-Content and Multi-Scene Videos](https://arxiv.org/abs/2401.01256) | ECCV | [Code](https://github.com/FuchenUSTC/VideoStudio) |
+| 2024 | [Voyager: An Open-Ended Embodied Agent with Large Language Models](https://arxiv.org/abs/2305.16291) | TMLR | — |
+| 2023 | [Free-Bloom: Zero-Shot Text-to-Video Generator with LLM Director and LDM Animator](https://arxiv.org/abs/2309.14494) | NeurIPS | — |
+| 2023 | [Generative Agents: Interactive Simulacra of Human Behavior](https://arxiv.org/abs/2304.03442) | Proceedings of the 36th Annual ACM Symposium on User Interface Software and Technology | — |
+| 2023 | [Lost in the Middle: How Language Models Use Long Contexts](https://arxiv.org/abs/2307.03172) | arXiv | — |
+| 2023 | [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629) | ICLR | — |
+| 2023 | [Reflexion: Language Agents with Verbal Reinforcement Learning](https://arxiv.org/abs/2303.11366) | Advances in Neural Information Processing Systems | — |
+| 2023 | [ViperGPT: Visual Inference via Python Execution for Reasoning](https://arxiv.org/abs/2303.08128) | 2023 IEEE/CVF International Conference on Computer Vision (ICCV) | — |
+| 2023 | [Visual Programming: Compositional Visual Reasoning without Training](https://arxiv.org/abs/2211.11559) | 2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) | — |
+| 2022 | [FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness](https://arxiv.org/abs/2205.14135) | arXiv | — |
+| 2020 | [Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165) | arXiv | — |
+| n.d. | [Agent Skills Specification](https://agentskills.io/specification) | Living specification | — |
+| n.d. | [Comfy MCP](https://docs.comfy.org/agent-tools/mcp) | Official documentation | — |
+| n.d. | [Comfy Skills for Coding Agents](https://docs.comfy.org/agent-tools/skills) | Official documentation | — |
+| n.d. | [ComfyUI Nodes: Types, Inputs, and Outputs](https://docs.comfy.org/basic-concepts/nodes) | Official documentation | — |
+| n.d. | [FilmSwarm: AI Agent Swarm for Film Pre-production](https://github.com/AiMakers-co/filmswarm) | Open-source project documentation | [Code](https://github.com/AiMakers-co/filmswarm) |
+| n.d. | [Livepeer Youtube Video Generator Swarm](https://docs.swarmzero.ai/examples/swarms/livepeer-youtube-video-generator-swarm) | Implementation tutorial | — |
+
+### Agent Experience and Skill Reuse
+
+| Year | Paper / resource | Venue / source | Links |
+|:---:|:---|:---|:---|
+| 2026 | [A$^2$RD: Agentic Autoregressive Diffusion for Long Video Consistency](https://arxiv.org/abs/2605.06924) | Preprint | — |
+| 2026 | [Action Agent: Agentic Video Generation Meets Flow-Constrained Diffusion](https://arxiv.org/abs/2605.01477) | arXiv | — |
+| 2026 | [AgenticGen: Reward-Guided Agentic Video Generation for Advertising](https://arxiv.org/abs/2609.09187) | arXiv | — |
+| 2026 | [CineForge: Self-Improving Agents for Long-Horizon Video Generation](https://arxiv.org/abs/2608.29621) | arXiv | — |
+| 2026 | [Identity-Preserving Text-to-Video Generation via Agentic Enhancement and Semantic Repair](https://arxiv.org/abs/2608.20749) | arXiv | [Code](https://github.com/oceanflowlab/AESR) |
+| 2026 | [Recommendation as Generation: Unifying Personalized Video Generation and Recommendation at Industrial Scale](https://arxiv.org/abs/2606.25496) | arXiv | — |
+| 2026 | [SPIRAL: Self-Evolving Action-Conditioned Video Generation via Reflective Planning Agents](https://arxiv.org/abs/2603.08403) | arXiv | [Project](https://yuyang-cloud.github.io/spiral) |
+| 2026 | [VideoGen-Agent: Reinforcing Video Generation Agents](https://arxiv.org/abs/2609.24997) | Preprint | — |
+| 2026 | [VideoWeaver: Evaluating and Evolving Skills for Agentic Long Video Generation](https://arxiv.org/abs/2606.08091) | arXiv | [Code](https://github.com/JianhuiWei7/VideoWeaver) |
+| 2025 | [Agent Workflow Memory](https://proceedings.mlr.press/v267/wang25bx.html) | Proceedings of the 42nd International Conference on Machine Learning | — |
+| 2025 | [Model Context Protocol Specification: Tools](https://modelcontextprotocol.io/specification/2025-06-18/server/tools) | Online resource | — |
+| 2024 | [AesopAgent: Agent-driven Evolutionary System on Story-to-Video Production](https://arxiv.org/abs/2403.07952) | arXiv | [Project](https://aesopai.github.io/) |
+| 2024 | [DreamRunner: Fine-Grained Compositional Story-to-Video Generation with Retrieval-Augmented Motion Adaptation](https://arxiv.org/abs/2411.16657) | arXiv | — |
+| 2024 | [ExpeL: LLM Agents Are Experiential Learners](https://doi.org/10.1609/aaai.v38i17.29936) | Proceedings of the AAAI Conference on Artificial Intelligence | — |
+| 2024 | [Voyager: An Open-Ended Embodied Agent with Large Language Models](https://arxiv.org/abs/2305.16291) | TMLR | — |
+| 2020 | [Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165) | arXiv | — |
+| n.d. | [Agent Skills Specification](https://agentskills.io/specification) | Living specification | — |
+| n.d. | [Comfy MCP](https://docs.comfy.org/agent-tools/mcp) | Official documentation | — |
+| n.d. | [Comfy Skills for Coding Agents](https://docs.comfy.org/agent-tools/skills) | Official documentation | — |
+
+### Foundational Agent Capabilities
+
+| Year | Paper / resource | Venue / source | Links |
+|:---:|:---|:---|:---|
+| 2026 | [AgentMV: A State-Guided Multi-Agent Framework for Budget-Aware Music Video Generation](https://arxiv.org/abs/2605.10723) | Preprint | [Code](https://github.com/arXiv/html_feedback/issues) |
+| 2026 | [ATVG: Agentic System for Factually Grounded Travel Advertisement Video Generation](https://doi.org/10.1145/3805712.3808387) | Proceedings of the 49th International ACM SIGIR Conference on Research and Development in Information Retrieval | — |
+| 2026 | [Beyond Coherence: Benchmarking Professional Editing-Technique Execution in Multi-Shot Audio-Video Generation](https://arxiv.org/abs/2609.08275) | arXiv | — |
+| 2026 | [Bridging Creative Intent and Visual Quality: Creator-Driven Recurrent Video Generation with Agentic Feedback Loops](https://arxiv.org/abs/2606.18591) | ICML Workshop on Human-AI Co-Creativity | — |
+| 2026 | [Camera Artist: A Multi-Agent Framework for Cinematic Language Storytelling Video Generation](https://arxiv.org/abs/2604.09195) | Preprint | [Code](https://github.com/arXiv/html_feedback/issues) |
+| 2026 | [CamPilot: A Multi-Agent Cinematic Assistant for Camera-Controlled Movie Generation](https://arxiv.org/abs/2609.10943) | EMNLP REALM Workshop | — |
+| 2026 | [CANVAS: Continuity-Aware Narratives via Visual Agentic Storyboarding](https://arxiv.org/abs/2604.13452) | arXiv | — |
+| 2026 | [CineAGI: Character-Consistent Movie Creation through LLM-Orchestrated Multi-Modal Generation and Cross-Scene Integration](https://arxiv.org/abs/2604.23579) | ICME | — |
+| 2026 | [Co-Director: Agentic Generative Video Storytelling](https://arxiv.org/abs/2604.24842) | Preprint | — |
+| 2026 | [DramaDirector: Geometry-Guided Short Drama Generation](https://arxiv.org/abs/2606.24107) | arXiv | — |
+| 2026 | [EM-Vid: Training-Free Entity-Centric Memory for Efficient and Consistent Multi-Shot Video Generation](https://arxiv.org/abs/2605.23610) | arXiv | — |
+| 2026 | [EvoState: Closed-Loop Visual State Management for Long-Form Video Generation](https://arxiv.org/abs/2606.16184) | arXiv | — |
+| 2026 | [FilmWeaver: Weaving Consistent Multi-Shot Videos with Cache-Guided Autoregressive Diffusion](https://doi.org/10.1609/aaai.v40i9.37711) | Proceedings of the AAAI Conference on Artificial Intelligence | — |
+| 2026 | [FilmWorld: Agentic Novel-to-Film Generation through Dynamic Cinematic World Modeling](https://arxiv.org/abs/2607.19038) | arXiv | — |
+| 2026 | [FreeMem: Enhancing Consistency in Long Video Generation via Tuning-Free Memory](https://doi.org/10.1609/aaai.v40i10.37783) | Proceedings of the AAAI Conference on Artificial Intelligence | — |
+| 2026 | [GroundShot: Visually Consistent Multi-Shot Long Video Generation via Entity-Grounded Shot Scheduling](https://arxiv.org/abs/2606.20799) | Preprint | [Code](https://github.com/arXiv/html_feedback/issues) |
+| 2026 | [InteracVid: Building a Real Interactive Audio-Visual Response Dataset from Live-Chat Videos](https://arxiv.org/abs/2608.01157) | arXiv | — |
+| 2026 | [MAViS: A Multi-Agent Framework for Long-Sequence Video Storytelling](https://aclanthology.org/2026.eacl-long.101/) | Proceedings of the 19th Conference of the European Chapter of the Association for Computational Linguistics (Volume 1: Long Papers) | [Code](https://github.com/black-forest-labs/flux) |
+| 2026 | [Memento: Reconstruct to Remember for Consistent Long Video Generation](https://arxiv.org/abs/2606.14667) | arXiv | — |
+| 2026 | [Memory-V2V: Memory-Augmented Video-to-Video Diffusion for Consistent Multi-turn Editing](https://doi.org/10.1007/978-3-032-37324-3_5) | Computer Vision -- ECCV 2026 | — |
+| 2026 | [MemRoPE: Training-Free Infinite Video Generation via Evolving Memory Tokens](https://doi.org/10.1007/978-3-032-37356-4_14) | Computer Vision -- ECCV 2026 | — |
+| 2026 | [MVWeaver: A Hierarchical Music Video Generation Agent with a Learned Song-to-Visual Bridge](https://arxiv.org/abs/2609.06478) | arXiv | — |
+| 2026 | [OneStory: Coherent Multi-Shot Video Generation with Adaptive Memory](https://openaccess.thecvf.com/content/CVPR2026/html/An_OneStory_Coherent_Multi-Shot_Video_Generation_with_Adaptive_Memory_CVPR_2026_paper.html) | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) | — |
+| 2026 | [ReCA: Multi-Shot Long Video Extrapolation via Recursive Context Allocation](https://arxiv.org/abs/2605.26525) | arXiv | — |
+| 2026 | [Ring Forcing: Towards Precise Long-Term Memory for Autoregressive Video Diffusion](https://doi.org/10.1007/978-3-032-37602-2_13) | Computer Vision -- ECCV 2026 | — |
+| 2026 | [Soap2Soap: Long Cinematic Video Remaking via Multi-Agent Collaboration](https://arxiv.org/abs/2605.17423) | arXiv | — |
+| 2026 | [VideoArgus: Agentic Rubric-Grounded Unified Evaluation for Video Generation and Editing](https://arxiv.org/abs/2608.05485) | arXiv | [Project](https://zzzmyyzeng.github.io/VideoArgus) |
+| 2026 | [VideoCreator: An Agentic System for Multi-turn Video Production](https://doi.org/10.1145/3805622.3810431) | Proceedings of the 2026 International Conference on Multimedia Retrieval | — |
+| 2026 | [VideoMemory: Toward Consistent Video Generation via Memory Integration](https://arxiv.org/abs/2601.03655) | arXiv | — |
+| 2026 | [ViMax: Agentic Video Generation](https://arxiv.org/abs/2606.07649) | arXiv | [Code](https://github.com/HKUDS/ViMax) |
+| 2026 | [VQQA: An Agentic Approach for Video Evaluation and Quality Improvement](https://arxiv.org/abs/2603.12310) | arXiv | — |
+| 2025 | [AIGVE-MACS: Unified Multi-Aspect Commenting and Scoring Model for AI-Generated Video Evaluation](https://arxiv.org/abs/2507.01255) | arXiv | — |
+| 2025 | [AniMaker: Multi-Agent Animated Storytelling with MCTS-Driven Clip Generation](https://animaker-dev.github.io/) | SIGGRAPH Asia 2025: Conference Papers | — |
+| 2025 | [Automated Movie Generation via Multi-Agent CoT Planning](https://arxiv.org/abs/2503.07314) | Preprint | [Code](https://github.com/showlab/MovieAgent) · [Project](https://weijiawu.github.io/MovieAgent) |
+| 2025 | [AutoMV: An Automatic Multi-Agent System for Music Video Generation](https://arxiv.org/abs/2512.12196) | Preprint | — |
+| 2025 | [AutoMV: An Autonomous Agent Framework for Real Estate Marketing Video Generation](https://doi.org/10.1609/aaai.v39i28.35377) | AAAI 2025: Demonstration Track | [Project](https://ojs.aaai.org/index.php/AAAI/article/view/35377) |
+| 2025 | [Context as Memory: Scene-Consistent Interactive Long Video Generation with Memory Retrieval](https://arxiv.org/abs/2506.03141) | Proceedings of the SIGGRAPH Asia 2025 Conference Papers | — |
+| 2025 | [Corgi: Cached Memory Guided Video Generation](https://doi.org/10.1109/WACV61041.2025.00450) | 2025 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) | — |
+| 2025 | [LongAnimation: Long Animation Generation with Dynamic Global-Local Memory](https://arxiv.org/abs/2507.01945) | 2025 IEEE/CVF International Conference on Computer Vision (ICCV) | — |
+| 2025 | [MotionAgent: Fine-grained Controllable Video Generation via Motion Field Agent](https://openaccess.thecvf.com/content/ICCV2025/html/Liao_MotionAgent_Fine-grained_Controllable_Video_Generation_via_Motion_Field_Agent_ICCV_2025_paper.html) | Proceedings of the IEEE/CVF International Conference on Computer Vision | — |
+| 2025 | [Preacher: Paper-to-Video Agentic System](https://arxiv.org/abs/2508.09632) | 2025 IEEE/CVF International Conference on Computer Vision (ICCV) | — |
+| 2025 | [PresentAgent: Multimodal Agent for Presentation Video Generation](https://doi.org/10.18653/v1/2025.emnlp-demos.58) | Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing: System Demonstrations | — |
+| 2025 | [StoryMem: Multi-shot Long Video Storytelling with Memory](https://arxiv.org/abs/2512.19539) | arXiv | — |
+| 2025 | [SVBench: Evaluation of Video Generation Models on Social Reasoning](https://arxiv.org/abs/2512.21507) | arXiv | — |
+| 2025 | [UniVA: Universal Video Agent towards Open-Source Next-Generation Video Generalist](https://arxiv.org/abs/2511.08521) | arXiv | — |
+| 2025 | [Video World Models with Long-term Spatial Memory](https://arxiv.org/abs/2506.05284) | Advances in Neural Information Processing Systems 38 | — |
+| 2025 | [VideoTree: Adaptive Tree-based Video Representation for LLM Reasoning on Long Videos](https://arxiv.org/abs/2405.19209) | CVPR | — |
+| 2025 | [VMem: Consistent Interactive Video Scene Generation with Surfel-Indexed View Memory](https://arxiv.org/abs/2506.18903) | 2025 IEEE/CVF International Conference on Computer Vision (ICCV) | — |
+| 2025 | [WorldMem: Long-term Consistent World Simulation with Memory](https://arxiv.org/abs/2504.12369) | arXiv | — |
+| 2024 | [Anim-Director: A Large Multimodal Model Powered Agent for Controllable Animation Video Generation](https://doi.org/10.1145/3680528.3687688) | SIGGRAPH Asia 2024: Conference Papers | — |
+| 2024 | [DreamFactory: Pioneering Multi-Scene Long Video Generation with a Multi-Agent Framework](https://arxiv.org/abs/2408.11788) | arXiv | [Code](https://github.com/arXiv/html_feedback/issues) |
+| 2024 | [Language Agent Tree Search Unifies Reasoning, Acting, and Planning in Language Models](https://arxiv.org/abs/2310.04406) | ICML | — |
+| 2024 | [LLM-grounded Video Diffusion Models](https://arxiv.org/abs/2309.17444) | ICLR | — |
+| 2024 | [MA-LMM: Memory-Augmented Large Multimodal Model for Long-Term Video Understanding](https://arxiv.org/abs/2404.05726) | CVPR | — |
+| 2024 | [MovieChat: From Dense Token to Sparse Memory for Long Video Understanding](https://arxiv.org/abs/2307.16449) | CVPR | — |
+| 2024 | [StoryAgent: Customized Storytelling Video Generation via Multi-Agent Collaboration](https://arxiv.org/abs/2411.04925) | arXiv | [Code](https://github.com/storyagent123/Comparison-of-storytelling-video-results/blob/main/demo/readme.md) |
+| 2024 | [VideoAgent: A Memory-augmented Multimodal Agent for Video Understanding](https://arxiv.org/abs/2403.11481) | ECCV | — |
+| 2024 | [VideoDirectorGPT: Consistent Multi-scene Video Generation via LLM-Guided Planning](https://arxiv.org/abs/2309.15091) | COLM | [Project](https://videodirectorgpt.github.io) |
+| 2024 | [VideoStudio: Generating Consistent-Content and Multi-Scene Videos](https://arxiv.org/abs/2401.01256) | ECCV | [Code](https://github.com/FuchenUSTC/VideoStudio) |
+| 2023 | [Free-Bloom: Zero-Shot Text-to-Video Generator with LLM Director and LDM Animator](https://arxiv.org/abs/2309.14494) | NeurIPS | — |
+| 2023 | [Generative Agents: Interactive Simulacra of Human Behavior](https://arxiv.org/abs/2304.03442) | Proceedings of the 36th Annual ACM Symposium on User Interface Software and Technology | — |
+| 2023 | [Lost in the Middle: How Language Models Use Long Contexts](https://arxiv.org/abs/2307.03172) | arXiv | — |
+| 2022 | [FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness](https://arxiv.org/abs/2205.14135) | arXiv | — |
+
+### Feedback-Guided Agent Control
+
+| Year | Paper / resource | Venue / source | Links |
+|:---:|:---|:---|:---|
+| 2026 | [AgentMV: A State-Guided Multi-Agent Framework for Budget-Aware Music Video Generation](https://arxiv.org/abs/2605.10723) | Preprint | [Code](https://github.com/arXiv/html_feedback/issues) |
+| 2026 | [Beyond Trial-and-Error: Agentic Optimization for Image-to-Video Adherence](https://arxiv.org/abs/2608.12290) | arXiv | — |
+| 2026 | [Bridging Creative Intent and Visual Quality: Creator-Driven Recurrent Video Generation with Agentic Feedback Loops](https://arxiv.org/abs/2606.18591) | ICML Workshop on Human-AI Co-Creativity | — |
+| 2026 | [DeepPresenter: Environment-Grounded Reflection for Agentic Presentation Generation](https://doi.org/10.18653/v1/2026.findings-acl.1578) | Findings of the Association for Computational Linguistics: ACL 2026 | — |
+| 2026 | [DirectorBench: Diagnosing Long-Form Video Generation with Personalized Multi-Agent Evaluation](https://arxiv.org/abs/2605.30090) | arXiv | — |
+| 2026 | [GenMAC: Compositional Text-to-Video Generation with Multi-Agent Collaboration](https://doi.org/10.1609/aaai.v40i7.37418) | Proceedings of the AAAI Conference on Artificial Intelligence | [Project](https://karine-h.github.io/GenMAC/) |
+| 2026 | [GroundShot: Visually Consistent Multi-Shot Long Video Generation via Entity-Grounded Shot Scheduling](https://arxiv.org/abs/2606.20799) | Preprint | [Code](https://github.com/arXiv/html_feedback/issues) |
+| 2026 | [PhysAgent: Reflective Agentic Physics Control for Physically Plausible Video Generation](https://arxiv.org/abs/2607.16355) | arXiv | — |
+| 2026 | [SCMAPR: Self-Correcting Multi-Agent Prompt Refinement for Complex-Scenario Text-to-Video Generation](https://aclanthology.org/2026.findings-acl.345/) | Findings of the Association for Computational Linguistics: ACL 2026 | — |
+| 2026 | [SimWorlds: A Multi-Agent System for Dynamic 3D Scene Creation](https://arxiv.org/abs/2607.01766) | arXiv | — |
+| 2026 | [Soap2Soap: Long Cinematic Video Remaking via Multi-Agent Collaboration](https://arxiv.org/abs/2605.17423) | arXiv | — |
+| 2026 | [Training and Agentic Inference Strategies for LLM-based Manim Animation Generation](https://arxiv.org/abs/2604.18364) | arXiv | — |
+| 2026 | [VISTA: A Test-Time Self-Improving Video Generation Agent](https://openaccess.thecvf.com/content/CVPR2026/html/Long_VISTA_A_Test-Time_Self-Improving_Video_Generation_Agent_CVPR_2026_paper.html) | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition | — |
+| 2026 | [VQ-Insight: Teaching VLMs for AI-Generated Video Quality Understanding via Progressive Visual Reinforcement Learning](https://doi.org/10.1609/aaai.v40i15.38285) | Proceedings of the AAAI Conference on Artificial Intelligence | — |
+| 2026 | [VQQA: An Agentic Approach for Video Evaluation and Quality Improvement](https://arxiv.org/abs/2603.12310) | arXiv | — |
+| 2025 | [Evaluation Agent: Efficient and Promptable Evaluation Framework for Visual Generative Models](https://aclanthology.org/2025.acl-long.374/) | Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) | — |
+| 2025 | [MoVer: Motion Verification for Motion Graphics Animations](https://arxiv.org/abs/2502.13372) | arXiv | — |
+| 2025 | [Spotlight: Identifying and Localizing Video Generation Errors Using VLMs](https://arxiv.org/abs/2511.18102) | arXiv | [Code](https://github.com/SilentView/LVD-2M) |
+| 2024 | [VideoAgent: Self-Improving Video Generation](https://arxiv.org/abs/2410.10076) | arXiv | [Project](https://video-as-agent.github.io) |
+| 2023 | [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629) | ICLR | — |
+| 2023 | [Reflexion: Language Agents with Verbal Reinforcement Learning](https://arxiv.org/abs/2303.11366) | Advances in Neural Information Processing Systems | — |
+
+### Multi-Agent Organization
+
+| Year | Paper / resource | Venue / source | Links |
+|:---:|:---|:---|:---|
+| 2026 | [AgentMV: A State-Guided Multi-Agent Framework for Budget-Aware Music Video Generation](https://arxiv.org/abs/2605.10723) | Preprint | [Code](https://github.com/arXiv/html_feedback/issues) |
+| 2026 | [Better Call CineCrew: Consistent Ultra-Long Narrative-to-Film Generation](https://arxiv.org/abs/2609.07720) | ECCV | — |
+| 2026 | [DataMagic: Transforming Tabular Data into Data Insight Video](https://arxiv.org/abs/2606.20388) | VLDB | — |
+| 2026 | [FRAMEWORKERS: A Dynamic Multi-Agent Framework for AI-Generated Video Production](https://arxiv.org/abs/2608.29814) | Preprint | [Code](https://github.com/arXiv/html_feedback/issues) |
+| 2026 | [GenMAC: Compositional Text-to-Video Generation with Multi-Agent Collaboration](https://doi.org/10.1609/aaai.v40i7.37418) | Proceedings of the AAAI Conference on Artificial Intelligence | [Project](https://karine-h.github.io/GenMAC/) |
+| 2026 | [MAViS: A Multi-Agent Framework for Long-Sequence Video Storytelling](https://aclanthology.org/2026.eacl-long.101/) | Proceedings of the 19th Conference of the European Chapter of the Association for Computational Linguistics (Volume 1: Long Papers) | [Code](https://github.com/black-forest-labs/flux) |
+| 2026 | [MVAgent: Multi-Agent Video Generation via Consistent Condition Construction and Shot-Level Policy Optimization](https://arxiv.org/abs/2609.30609) | Preprint | — |
+| 2026 | [OmniDrive: An LLM-Choreographed Multi-Agent World Model with Unified Latent Co-Compression for Multi-View Driving Video Generation](https://arxiv.org/abs/2606.17536) | arXiv | — |
+| 2026 | [One Sentence, One Drama: Personalized Short-Form Drama Generation via Multi-Agent Systems](https://arxiv.org/abs/2605.22144) | Preprint | — |
+| 2026 | [Soap2Soap: Long Cinematic Video Remaking via Multi-Agent Collaboration](https://arxiv.org/abs/2605.17423) | arXiv | — |
+| 2026 | [Streaming Multi-Agent Autoregressive Diffusion Model with World State Registers](https://arxiv.org/abs/2607.21594) | arXiv | — |
+| 2026 | [Vision Wormhole: Latent-Space Communication in Heterogeneous Multi-Agent Systems](https://arxiv.org/abs/2602.15382) | arXiv | — |
+| 2025 | [AgentDropout: Dynamic Agent Elimination for Token-Efficient and High-Performance LLM-Based Multi-Agent Collaboration](https://doi.org/10.18653/v1/2025.acl-long.1170) | Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) | — |
+| 2025 | [Automated Movie Generation via Multi-Agent CoT Planning](https://arxiv.org/abs/2503.07314) | Preprint | [Code](https://github.com/showlab/MovieAgent) · [Project](https://weijiawu.github.io/MovieAgent) |
+| 2025 | [ComfyGPT: A Self-Optimizing Multi-Agent System for Comprehensive ComfyUI Workflow Generation](https://arxiv.org/abs/2503.17671) | arXiv | — |
+| 2025 | [ComfyMind: Toward General-Purpose Generation via Tree-Based Planning and Reactive Feedback](https://arxiv.org/abs/2505.17908) | arXiv | — |
+| 2025 | [EditDuet: A Multi-Agent System for Video Non-Linear Editing](https://doi.org/10.1145/3721238.3730761) | SIGGRAPH 2025: Conference Papers | [Code](https://github.com/arXiv/html_feedback/issues) · [Project](https://mudtriangle.com/editduet) |
+| 2025 | [FilmAgent: A Multi-Agent Framework for End-to-End Film Automation in Virtual 3D Spaces](https://arxiv.org/abs/2501.12909) | arXiv | — |
+| 2025 | [Hollywood Town: Long-Video Generation via Cross-Modal Multi-Agent Orchestration](https://arxiv.org/abs/2510.22431) | arXiv | — |
+| 2025 | [Latent Collaboration in Multi-Agent Systems](https://arxiv.org/abs/2511.20639) | arXiv | — |
+| 2025 | [MasRouter: Learning to Route LLMs for Multi-Agent Systems](https://doi.org/10.18653/v1/2025.acl-long.757) | Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) | — |
+| 2025 | [Paper2Video: Automatic Video Generation from Scientific Papers](https://arxiv.org/abs/2510.05096) | arXiv | — |
+| 2024 | [ComfyBench: Benchmarking LLM-based Agents in ComfyUI for Autonomously Designing Collaborative AI Systems](https://arxiv.org/abs/2409.01392) | arXiv | — |
+| 2024 | [Mora: Enabling Generalist Video Generation via A Multi-Agent Framework](https://arxiv.org/abs/2403.13248) | arXiv | [Code](https://github.com/lichao-sun/Mora) |
+| 2024 | [More Agents Is All You Need](https://arxiv.org/abs/2402.05120) | TMLR | — |
+| n.d. | [FilmSwarm: AI Agent Swarm for Film Pre-production](https://github.com/AiMakers-co/filmswarm) | Open-source project documentation | [Code](https://github.com/AiMakers-co/filmswarm) |
+| n.d. | [Livepeer Youtube Video Generator Swarm](https://docs.swarmzero.ai/examples/swarms/livepeer-youtube-video-generator-swarm) | Implementation tutorial | — |
+
+### Agent--Environment Interaction
+
+| Year | Paper / resource | Venue / source | Links |
+|:---:|:---|:---|:---|
+| 2026 | [Agents' Last Exam](https://arxiv.org/abs/2606.05405) | arXiv | — |
+| 2026 | [Beyond End-to-End Video Models: An LLM-Based Multi-Agent System for Educational Video Generation](https://doi.org/10.1145/3770855.3818323) | KDD 2026: Applied Data Science, Vol. 2 | — |
+| 2026 | [CutClaw: Agentic Hours-Long Video Editing via Music Synchronization](https://arxiv.org/abs/2603.29664) | Preprint | [Code](https://github.com/GVCLab/CutClaw) |
+| 2026 | [CutVerse: A Compositional GUI Agents Benchmark for Media Post-Production Editing](https://arxiv.org/abs/2605.19484) | arXiv | [Project](http://benchmark.While) |
+| 2026 | [DataMagic: Transforming Tabular Data into Data Insight Video](https://arxiv.org/abs/2606.20388) | VLDB | — |
+| 2026 | [ELLMPEG: An Edge-based Agentic LLM Video Processing Tool](https://doi.org/10.1145/3793853.3795760) | ACM MMSys 2026 | [Code](https://github.com/fraunhoferhhi/vvenc/wiki) · [Project](https://amiaopensource.github.io/ffmprovisr/) |
+| 2026 | [From Clay 3D Render to a Real Action Short: A 3D-to-AI Pipeline with Total Control](https://blog.fal.ai/from-clay-3d-render-to-a-real-action-short-a-3d-to-ai-pipeline-with-total-control/) | fal.ai Blog | — |
+| 2026 | [GPT-6 Astra: A New Generation of Intelligence](https://openai.com/index/gpt-6-astra/) | Online resource | — |
+| 2026 | [Lighting-grounded Video Generation with Renderer-based Agent Reasoning](https://arxiv.org/abs/2604.07966) | arXiv | — |
+| 2026 | [MoReGen: Multi-Agent Motion-Reasoning Engine for Code-based Text-to-Video Synthesis](https://openaccess.thecvf.com/content/CVPR2026/html/Bai_MoReGen_Multi-Agent_Motion-Reasoning_Engine_for_Code-based_Text-to-Video_Synthesis_CVPR_2026_paper.html) | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition | — |
+| 2026 | [Multi-Agent CAD Code Generation](https://doi.org/10.1145/3799902.3811067) | ACM SIGGRAPH 2026 Conference Papers | — |
+| 2026 | [MVAgent: Multi-Agent Video Generation via Consistent Condition Construction and Shot-Level Policy Optimization](https://arxiv.org/abs/2609.30609) | Preprint | — |
+| 2026 | [NEWTON: Agentic Planning for Physically Grounded Video Generation](https://arxiv.org/abs/2605.18396) | arXiv | — |
+| 2026 | [One-take Creation, Flexible Referencing: Introducing Seedance 2.5](https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5) | Official product report | — |
+| 2026 | [PhysPlan: Grounded Physical State Reasoning and Graph-Guided Optimization for Physically Plausible Video Generation](https://arxiv.org/abs/2609.13006) | arXiv | — |
+| 2026 | [Scene2Scene: LLM-driven 3D Spatial Blockout for Guided AI Video Synthesis](https://doi.org/10.1145/3807895.3807932) | Companion Proceedings of the Symposium on Interactive 3D Graphics and Games | — |
+| 2026 | [TeachMaster: Generative Teaching via Code](https://aclanthology.org/2026.acl-industry.7/) | Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 6: Industry Track) | — |
+| 2026 | [VideoAgent: All-in-One Framework for Video Understanding and Editing](https://arxiv.org/abs/2606.23327) | arXiv | — |
+| 2026 | [VideoCoCo: Code-as-CoT for Physically-Consistent Video Generation via an Agentic Dual-Engine System](https://arxiv.org/abs/2607.27380) | arXiv | [Code](https://github.com/micky-li-hd/VideoCoCo) |
+| 2026 | [VideoGen-Agent: Reinforcing Video Generation Agents](https://arxiv.org/abs/2609.24997) | Preprint | — |
+| 2026 | [VINCIE-NExT: Unlocking Video Editing from Images via In-Context Modeling](https://arxiv.org/abs/2610.12104) | arXiv | — |
+| 2026 | [VIPER: Visual In-Context Physics Reasoning for Physically Plausible Video Generation](https://arxiv.org/abs/2607.23472) | arXiv | — |
+| 2026 | [World Narrative Model for Highly Controllable Video Generation: A Paradigm Shift from Pixel Sampling to Physical World Orchestration](https://arxiv.org/abs/2606.31946) | arXiv | — |
+| 2025 | [3D Animation Generation Using Blender and Agentic AI](https://doi.org/10.5220/0014628000004852) | Proceedings of the 1st International Conference on Interdisciplinary Technology & Science Convergence (FusionX Global) | — |
+| 2025 | [Code2Video: A Code-centric Paradigm for Educational Video Generation](https://arxiv.org/abs/2510.01174) | arXiv | — |
+| 2025 | [ComfyMind: Toward General-Purpose Generation via Tree-Based Planning and Reactive Feedback](https://arxiv.org/abs/2505.17908) | arXiv | — |
+| 2025 | [EditDuet: A Multi-Agent System for Video Non-Linear Editing](https://doi.org/10.1145/3721238.3730761) | SIGGRAPH 2025: Conference Papers | [Code](https://github.com/arXiv/html_feedback/issues) · [Project](https://mudtriangle.com/editduet) |
+| 2025 | [FullDiT2: Efficient In-Context Conditioning for Video Diffusion Transformers](https://arxiv.org/abs/2506.04213) | arXiv | — |
+| 2025 | [Manimator: Transforming Research Papers into Visual Explanations](https://arxiv.org/abs/2507.14306) | arXiv | — |
+| 2025 | [MG-Gen: Single Image to Motion Graphics Generation](https://arxiv.org/abs/2504.02361) | arXiv | — |
+| 2025 | [Video-As-Prompt: Unified Semantic Control for Video Generation](https://arxiv.org/abs/2510.20888) | arXiv | — |
+| 2025 | [WorldWander: Bridging Egocentric and Exocentric Worlds in Video Generation](https://arxiv.org/abs/2511.22098) | arXiv | — |
+| 2024 | [AICL: Action In-Context Learning for Video Diffusion Model](https://arxiv.org/abs/2403.11535) | arXiv | — |
+| 2024 | [AssistEditor: Multi-Agent Collaboration for GUI Workflow Automation in Video Creation](https://doi.org/10.1145/3664647.3684998) | Proceedings of the 32nd ACM International Conference on Multimedia | — |
+| 2024 | [From Data to Story: Towards Automatic Animated Data Video Creation with LLM-based Multi-Agent Systems](https://arxiv.org/abs/2408.03876) | arXiv | — |
+| 2024 | [GPT4Motion: Scripting Physical Motions in Text-to-Video Generation via Blender-Oriented GPT Planning](https://arxiv.org/abs/2311.12631) | 2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW) | — |
+| 2024 | [Keyframer: Empowering Animation Design using Large Language Models](https://arxiv.org/abs/2402.06071) | arXiv | — |
+| 2024 | [Kubrick: Multimodal Agent Collaborations for Synthetic Video Generation](https://arxiv.org/abs/2408.10453) | Preprint | [Code](https://github.com/arXiv/html_feedback/issues) |
+| 2024 | [LAVE: LLM-Powered Agent Assistance and Language Augmentation for Video Editing](https://doi.org/10.1145/3640543.3645143) | IUI 2024 | [Code](https://github.com/arXiv/html_feedback/issues) |
+| 2024 | [OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments](https://arxiv.org/abs/2404.07972) | NeurIPS | — |
+| 2024 | [ScreenAgent: A Vision Language Model-driven Computer Control Agent](https://arxiv.org/abs/2402.07945) | Proceedings of the Thirty-Third International Joint Conference on Artificial Intelligence (IJCAI-24) | — |
+| 2024 | [Video Diffusion Transformers are In-Context Learners](https://arxiv.org/abs/2412.10783) | arXiv | — |
+| 2024 | [Video In-context Learning: Autoregressive Transformers are Zero-Shot Video Imitators](https://arxiv.org/abs/2407.07356) | arXiv | — |
+| 2024 | [VideoGUI: A Benchmark for GUI Automation from Instructional Videos](https://arxiv.org/abs/2406.10227) | Advances in Neural Information Processing Systems 37 | — |
+| 2023 | [ViperGPT: Visual Inference via Python Execution for Reasoning](https://arxiv.org/abs/2303.08128) | 2023 IEEE/CVF International Conference on Computer Vision (ICCV) | — |
+| 2023 | [Visual Programming: Compositional Visual Reasoning without Training](https://arxiv.org/abs/2211.11559) | 2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) | — |
+| n.d. | [ComfyUI Nodes: Types, Inputs, and Outputs](https://docs.comfy.org/basic-concepts/nodes) | Official documentation | — |
+
+## Foundations & Related Surveys
+
+Generative models, agents, the agent harness, and complementary research perspectives. **81 resources.**
+
+### Contributions and Positioning
+
+| Year | Paper / resource | Venue / source | Links |
+|:---:|:---|:---|:---|
+| 2026 | [Agentic Artifact Creation: Systems, Evaluation, Principles, and Opportunities](https://arxiv.org/abs/2608.28122) | arXiv | — |
+| 2026 | [Agentic Generative Systems: A Survey on Autonomous Multimodal Content Creation](https://doi.org/10.20944/preprints202607.1997.v1) | Preprints.org | — |
+| 2026 | [Agentic Video Understanding: A Survey](https://arxiv.org/abs/2609.31713) | arXiv | — |
+| 2026 | [Agentic Visual Generation: From Generative Models to Agentic Control](https://arxiv.org/abs/2609.06758) | arXiv | — |
+| 2026 | [Agentic World Modeling: Foundations, Capabilities, Laws, and Beyond](https://arxiv.org/abs/2604.22748) | arXiv | — |
+| 2026 | [Code as Agent Harness](https://arxiv.org/abs/2605.18747) | arXiv | — |
+| 2026 | [From Question Answering to Task Completion: A Survey on Agent System and Harness Design](https://arxiv.org/abs/2606.20683) | arXiv | — |
+| 2026 | [Quo Vadis, World Modeling?](https://arxiv.org/abs/2608.02713) | arXiv | — |
+| 2026 | [Recursive Self-Improvement in AI: From Bounded Self-Refinement to Autonomous Research Loops](https://arxiv.org/abs/2607.07663) | arXiv | — |
+| 2026 | [Robotic Video World Models: A Survey of Applications, Research Challenges, Future Directions](https://arxiv.org/abs/2601.07823) | arXiv | — |
+| 2026 | [Self-Improvements in Modern Agentic Systems: A Survey](https://arxiv.org/abs/2607.13104) | arXiv | — |
+| 2026 | [The Last AI Built by Humans: Toward Genuine Recursive Self-Improvement](https://arxiv.org/abs/2609.11873) | arXiv | — |
+| 2026 | [The Past Frames the Future: Memory for Autoregressive Video Generation](https://arxiv.org/abs/2609.28466) | arXiv | — |
+| 2026 | [Towards Interactive Video World Modeling: Frontiers, Challenges, Benchmarks, and Future Trends](https://arxiv.org/abs/2606.01164) | arXiv | — |
+| 2026 | [Video Generation Models: A Survey of Post-Training and Alignment](https://openreview.net/forum?id=YlUEWLESIu) | Transactions on Machine Learning Research | — |
+| 2026 | [Video-RSI: Recursive Self-Improvement of Video Understanding Agents via Harness Evolution](https://arxiv.org/abs/2609.37950) | arXiv | — |
+| 2026 | [Visual Generation in the New Era: An Evolution from Atomic Mapping to Agentic World Modeling](https://arxiv.org/abs/2604.28185) | arXiv | — |
+| 2026 | [World Model for Robot Learning: A Comprehensive Survey](https://arxiv.org/abs/2605.00080) | arXiv | — |
+| 2026 | [World Models for Embodied Intelligence: From Plausible to Controllable to Actionable](https://arxiv.org/abs/2609.16697) | arXiv | — |
+| 2026 | [World Models for Robotic Manipulation: A Survey](https://arxiv.org/abs/2606.00113) | arXiv | — |
+| 2026 | [World-Action Models for Robot Learning and Control: A Survey](https://arxiv.org/abs/2609.16074) | arXiv | — |
+| 2025 | [A Comprehensive Survey on World Models for Embodied AI](https://arxiv.org/abs/2510.16732) | arXiv | — |
+| 2025 | [A Step Toward World Models: A Survey on Robotic Manipulation](https://arxiv.org/abs/2511.02097) | arXiv | — |
+| 2025 | [A Survey of Interactive Generative Video](https://arxiv.org/abs/2504.21853) | arXiv | — |
+| 2025 | [A Survey of Self-Evolving Agents: What, When, How, and Where to Evolve on the Path to Artificial Super Intelligence](https://arxiv.org/abs/2507.21046) | arXiv | — |
+| 2025 | [A Survey: Spatiotemporal Consistency in Video Generation](https://arxiv.org/abs/2502.17863) | arXiv | — |
+| 2025 | [Controllable Video Generation: A Survey](https://arxiv.org/abs/2507.16869) | arXiv | — |
+| 2025 | [Exploring the Evolution of Physics Cognition in Video Generation: A Survey](https://arxiv.org/abs/2503.21765) | arXiv | — |
+| 2025 | [Preference Alignment on Diffusion Model: A Comprehensive Survey for Image Generation and Editing](https://arxiv.org/abs/2502.07829) | arXiv | — |
+| 2025 | [Simulating the Visual World with Artificial Intelligence: A Roadmap](https://arxiv.org/abs/2511.08585) | arXiv | — |
+| 2024 | [A Comprehensive Survey on Human Video Generation: Challenges, Methods, and Insights](https://arxiv.org/abs/2407.08428) | arXiv | — |
+| 2024 | [A Survey of AI-Generated Video Evaluation](https://arxiv.org/abs/2410.19884) | arXiv | — |
+| 2024 | [A Survey on Long Video Generation: Challenges, Methods, and Prospects](https://arxiv.org/abs/2403.16407) | arXiv | — |
+| 2024 | [A Survey on Self-Evolution of Large Language Models](https://arxiv.org/abs/2404.14387) | arXiv | — |
+| 2024 | [Alignment of Diffusion Models: Fundamentals, Challenges, and Future](https://arxiv.org/abs/2409.07253) | arXiv | — |
+| 2024 | [Autoregressive Models in Vision: A Survey](https://arxiv.org/abs/2411.05902) | arXiv | — |
+| 2024 | [Controllable Generation with Text-to-Image Diffusion Models: A Survey](https://arxiv.org/abs/2403.04279) | arXiv | — |
+| 2024 | [Diffusion Model-Based Image Editing: A Survey](https://arxiv.org/abs/2402.17525) | arXiv | — |
+| 2024 | [Diffusion Model-Based Video Editing: A Survey](https://arxiv.org/abs/2407.07111) | arXiv | — |
+| 2024 | [From Sora What We Can See: A Survey of Text-to-Video Generation](https://arxiv.org/abs/2405.10674) | arXiv | — |
+| 2024 | [LLMs Meet Multimodal Generation and Editing: A Survey](https://arxiv.org/abs/2405.19334) | arXiv | — |
+| 2024 | [Sora as a World Model? A Complete Survey on Text-to-Video Generation](https://arxiv.org/abs/2403.05131) | arXiv | — |
+| 2024 | [Understanding World or Predicting Future? A Comprehensive Survey of World Models](https://arxiv.org/abs/2411.14499) | arXiv | — |
+| 2024 | [Video Diffusion Models: A Survey](https://arxiv.org/abs/2405.03150) | Transactions on Machine Learning Research | — |
+| 2024 | [Video Is Worth a Thousand Images: Exploring the Latest Trends in Long Video Generation](https://arxiv.org/abs/2412.18688) | arXiv | — |
+| 2023 | [RenAIssance: A Survey into AI Text-to-Image Generation in the Era of Large Model](https://arxiv.org/abs/2309.00810) | arXiv | — |
+| 2023 | [Text-to-image Diffusion Models in Generative AI: A Survey](https://arxiv.org/abs/2303.07909) | arXiv | — |
+| 2022 | [Diffusion Models: A Comprehensive Survey of Methods and Applications](https://arxiv.org/abs/2209.00796) | arXiv | — |
+| 2021 | [Adversarial Text-to-Image Synthesis: A Review](https://arxiv.org/abs/2101.09983) | arXiv | — |
+| 2021 | [AI-Empowered Persuasive Video Generation: A Survey](https://arxiv.org/abs/2112.09401) | arXiv | — |
+
+### Motivation
+
+| Year | Paper / resource | Venue / source | Links |
+|:---:|:---|:---|:---|
+| 2026 | [Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models](https://arxiv.org/abs/2510.04618) | International Conference on Learning Representations | — |
+| 2026 | [autoresearch](https://github.com/karpathy/autoresearch) | GitHub repository | [Code](https://github.com/karpathy/autoresearch) |
+| 2026 | [Better Call CineCrew: Consistent Ultra-Long Narrative-to-Film Generation](https://arxiv.org/abs/2609.07720) | ECCV | — |
+| 2026 | [Code as Agent Harness](https://arxiv.org/abs/2605.18747) | arXiv | — |
+| 2026 | [Darwin Godel Machine: Open-Ended Evolution of Self-Improving Agents](https://arxiv.org/abs/2505.22954) | International Conference on Learning Representations | — |
+| 2026 | [Dual-IPO: Dual-Iterative Preference Optimization for Text-to-Video Generation](https://arxiv.org/abs/2502.02088) | International Conference on Learning Representations | [Code](https://github.com/SAIS-FUXI/IPO) |
+| 2026 | [Harness Engineering for Self-Improvement](https://lilianweng.github.io/posts/2026-07-04-harness/) | Lil'Log | — |
+| 2026 | [Infinite Worlds with Versatile Interactions](https://arxiv.org/abs/2607.07534) | arXiv | — |
+| 2026 | [PlayWorld: Benchmarking World Models with Agent Players over Long-Horizon Objectives](https://arxiv.org/abs/2608.13552) | arXiv | [Code](https://github.com/kxding/PlayWorld) · [Project](https://kxding.github.io/project/PlayWorld/) |
+| 2026 | [Recursive Self-Improvement in AI: From Bounded Self-Refinement to Autonomous Research Loops](https://arxiv.org/abs/2607.07663) | arXiv | — |
+| 2026 | [RRSI: Regularized Recursive Self-Improvement of Agent Harnesses](https://arxiv.org/abs/2609.24972) | arXiv | — |
+| 2026 | [The Last AI Built by Humans: Toward Genuine Recursive Self-Improvement](https://arxiv.org/abs/2609.11873) | arXiv | — |
+| 2026 | [VideoGen-Agent: Reinforcing Video Generation Agents](https://arxiv.org/abs/2609.24997) | Preprint | — |
+| 2026 | [VideoWeaver: Evaluating and Evolving Skills for Agentic Long Video Generation](https://arxiv.org/abs/2606.08091) | arXiv | [Code](https://github.com/JianhuiWei7/VideoWeaver) |
+| 2026 | [ViMax: Agentic Video Generation](https://arxiv.org/abs/2606.07649) | arXiv | [Code](https://github.com/HKUDS/ViMax) |
+| 2026 | [VISTA: A Test-Time Self-Improving Video Generation Agent](https://openaccess.thecvf.com/content/CVPR2026/html/Long_VISTA_A_Test-Time_Self-Improving_Video_Generation_Agent_CVPR_2026_paper.html) | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition | — |
+| 2025 | [Exploration-Driven Generative Interactive Environments](https://arxiv.org/abs/2504.02515) | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition | [Code](https://github.com/insait-institute/GenieRedux) |
+| 2025 | [Improving Video Generation with Human Feedback](https://arxiv.org/abs/2501.13918) | Advances in Neural Information Processing Systems | [Code](https://github.com/KwaiVGI/VideoAlign) |
+| 2024 | [A Survey of AI-Generated Video Evaluation](https://arxiv.org/abs/2410.19884) | arXiv | — |
+| 2024 | [HunyuanVideo: A Systematic Framework For Large Video Generative Models](https://arxiv.org/abs/2412.03603) | arXiv | — |
+| 2024 | [The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery](https://arxiv.org/abs/2408.06292) | arXiv | — |
+| 2023 | [LLM Powered Autonomous Agents](https://lilianweng.github.io/posts/2023-06-23-agent/) | Lil'Log | — |
+| 2023 | [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629) | ICLR | — |
+
+### Agents and Harness Engineering
+
+| Year | Paper / resource | Venue / source | Links |
+|:---:|:---|:---|:---|
+| 2026 | [Code as Agent Harness](https://arxiv.org/abs/2605.18747) | arXiv | — |
+| 2026 | [Harness Engineering for Self-Improvement](https://lilianweng.github.io/posts/2026-07-04-harness/) | Lil'Log | — |
+| 2025 | [Improving Video Generation with Human Feedback](https://arxiv.org/abs/2501.13918) | Advances in Neural Information Processing Systems | [Code](https://github.com/KwaiVGI/VideoAlign) |
+| 2025 | [Introduction to Training LLMs for AI Agents](https://rdi.berkeley.edu/agentic-ai/slides/lecture1.pdf) | LLM Agents MOOC, lecture slides | — |
+| 2023 | [LLM Powered Autonomous Agents](https://lilianweng.github.io/posts/2023-06-23-agent/) | Lil'Log | — |
+| 2023 | [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629) | ICLR | — |
+| 2023 | [Reflexion: Language Agents with Verbal Reinforcement Learning](https://arxiv.org/abs/2303.11366) | Advances in Neural Information Processing Systems | — |
+
+### Video Generation Foundations
+
+| Year | Paper / resource | Venue / source | Links |
+|:---:|:---|:---|:---|
+| 2026 | [PlayWorld: Benchmarking World Models with Agent Players over Long-Horizon Objectives](https://arxiv.org/abs/2608.13552) | arXiv | [Code](https://github.com/kxding/PlayWorld) · [Project](https://kxding.github.io/project/PlayWorld/) |
+| 2025 | [A Survey: Spatiotemporal Consistency in Video Generation](https://arxiv.org/abs/2502.17863) | arXiv | — |
+| 2025 | [Matrix-game 2.0: An open-source real-time and streaming interactive world model](https://arxiv.org/abs/2508.13009) | arXiv | [Project](https://matrix-game-v2.github.io) |
+| 2025 | [Self Forcing: Bridging the Train-Test Gap in Autoregressive Video Diffusion](https://arxiv.org/abs/2506.08009) | Advances in Neural Information Processing Systems | [Project](http://self-forcing.github.io/) |
+| 2024 | [A Survey of AI-Generated Video Evaluation](https://arxiv.org/abs/2410.19884) | arXiv | — |
+| 2024 | [Genie: Generative Interactive Environments](https://proceedings.mlr.press/v235/bruce24a.html) | Proceedings of the 41st International Conference on Machine Learning | — |
+| 2024 | [HunyuanVideo: A Systematic Framework For Large Video Generative Models](https://arxiv.org/abs/2412.03603) | arXiv | — |
+| 2024 | [Lumiere: A Space-Time Diffusion Model for Video Generation](https://arxiv.org/abs/2401.12945) | SIGGRAPH Asia 2024 Conference Papers | — |
+| 2024 | [VideoPoet: A Large Language Model for Zero-Shot Video Generation](https://arxiv.org/abs/2312.14125) | Proceedings of the 41st International Conference on Machine Learning | — |
+| 2023 | [Flow Matching for Generative Modeling](https://arxiv.org/abs/2210.02747) | International Conference on Learning Representations | — |
+| 2023 | [Phenaki: Variable Length Video Generation From Open Domain Textual Descriptions](https://arxiv.org/abs/2210.02399) | International Conference on Learning Representations | — |
+| 2023 | [Scalable Diffusion Models with Transformers](https://arxiv.org/abs/2212.09748) | Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV) | — |
+| 2022 | [High-Resolution Image Synthesis with Latent Diffusion Models](https://arxiv.org/abs/2112.10752) | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) | — |
+| 2022 | [Video Diffusion Models](https://arxiv.org/abs/2204.03458) | Advances in Neural Information Processing Systems | — |
+
+## Future Directions
+
+Autonomous production, lifelong memory, hybrid simulation, efficiency, provenance, safety, and emerging tasks. **13 resources.**
+
+### Provenance and Safety
+
+| Year | Paper / resource | Venue / source | Links |
+|:---:|:---|:---|:---|
+| 2026 | [Content Credentials: C2PA Technical Specification](https://spec.c2pa.org/specifications/specifications/2.4/specs/C2PA_Specification.html) | Online resource | — |
+
+### Fully End-to-end Video Production
+
+| Year | Paper / resource | Venue / source | Links |
+|:---:|:---|:---|:---|
+| 2026 | [DirectorBench: Diagnosing Long-Form Video Generation with Personalized Multi-Agent Evaluation](https://arxiv.org/abs/2605.30090) | arXiv | — |
+
+### Emerging Tasks
+
+| Year | Paper / resource | Venue / source | Links |
+|:---:|:---|:---|:---|
+| 2026 | [DirectorBench: Diagnosing Long-Form Video Generation with Personalized Multi-Agent Evaluation](https://arxiv.org/abs/2605.30090) | arXiv | — |
+| 2026 | [EvoHarnessBench: Can Your Agents Keep Pace with an Evolving Harness?](https://arxiv.org/abs/2609.04280) | arXiv | — |
+| 2026 | [PlayWorld: Benchmarking World Models with Agent Players over Long-Horizon Objectives](https://arxiv.org/abs/2608.13552) | arXiv | [Code](https://github.com/kxding/PlayWorld) · [Project](https://kxding.github.io/project/PlayWorld/) |
+| 2026 | [Rethinking the Evaluation of Harness Evolution for Agents](https://arxiv.org/abs/2607.12227) | arXiv | — |
+| 2025 | [Diffusion Models Are Real-Time Game Engines](https://arxiv.org/abs/2408.14837) | International Conference on Learning Representations | [Project](https://gamengen.github.io/) |
+| 2025 | [GameGen-X: Interactive Open-world Game Video Generation](https://arxiv.org/abs/2411.00769) | International Conference on Learning Representations | [Code](https://github.com/GameGen-X/GameGen-X) · [Project](https://gamegen-x.github.io/) |
+| 2025 | [WorldScore: A Unified Evaluation Benchmark for World Generation](https://openaccess.thecvf.com/content/ICCV2025/papers/Duan_WorldScore_A_Unified_Evaluation_Benchmark_for_World_Generation_ICCV_2025_paper.pdf) | Proceedings of the IEEE/CVF International Conference on Computer Vision | — |
+
+### Hybrid Code-Pixel Generation
+
+| Year | Paper / resource | Venue / source | Links |
+|:---:|:---|:---|:---|
+| 2026 | [Genie 4: A new generation of world simulation](https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/) | Google DeepMind blog | — |
+| 2026 | [PhysAgent: Reflective Agentic Physics Control for Physically Plausible Video Generation](https://arxiv.org/abs/2607.16355) | arXiv | — |
+| 2026 | [World Narrative Model for Highly Controllable Video Generation: A Paradigm Shift from Pixel Sampling to Physical World Orchestration](https://arxiv.org/abs/2606.31946) | arXiv | — |
+
+### Lifelong Memory
+
+| Year | Paper / resource | Venue / source | Links |
+|:---:|:---|:---|:---|
+| 2025 | [StoryMem: Multi-shot Long Video Storytelling with Memory](https://arxiv.org/abs/2512.19539) | arXiv | — |
+| 2025 | [WorldMem: Long-term Consistent World Simulation with Memory](https://arxiv.org/abs/2504.12369) | arXiv | — |
+
+## Benchmarks & Evaluation
+
+Evaluation resources from across the reading paths.
+
+| Year | Paper / resource | Venue / source | Links |
+|:---:|:---|:---|:---|
+| 2026 | [A Benchmark and Multi-Agent System for Instruction-driven Cinematic Video Compilation](https://arxiv.org/abs/2604.10456) | Preprint | [Code](https://github.com/deepinsight/insightface/) |
+| 2026 | [AVGen-Bench: A Task-Driven Benchmark for Multi-Granular Evaluation of Text-to-Audio-Video Generation](https://arxiv.org/abs/2604.08540) | arXiv | [Project](http://aka.ms/avgenbench) |
+| 2026 | [Beyond Coherence: Benchmarking Professional Editing-Technique Execution in Multi-Shot Audio-Video Generation](https://arxiv.org/abs/2609.08275) | arXiv | — |
+| 2026 | [CutVerse: A Compositional GUI Agents Benchmark for Media Post-Production Editing](https://arxiv.org/abs/2605.19484) | arXiv | [Project](http://benchmark.While) |
+| 2026 | [Do Video Generators Track the World Across Segments? A Benchmark and Method for World-State Reasoning in Video Continuation](https://arxiv.org/abs/2609.03673) | arXiv | — |
+| 2026 | [EvalVerse: Pipeline-Aware and Expert-Calibrated Benchmarking for Professional Cinematic Video Generation](https://arxiv.org/abs/2605.23271) | arXiv | — |
+| 2026 | [PhyGround: Benchmarking Physical Reasoning in Generative World Models](https://arxiv.org/abs/2605.10806) | arXiv | [Project](https://phyground.github.io/) |
+| 2026 | [PlayWorld: Benchmarking World Models with Agent Players over Long-Horizon Objectives](https://arxiv.org/abs/2608.13552) | arXiv | [Code](https://github.com/kxding/PlayWorld) · [Project](https://kxding.github.io/project/PlayWorld/) |
+| 2026 | [RAVEN-Eval: Rubric-Guided Automatic Evaluation for AI Video Generation Models Based on LMM Preference Judgement](https://arxiv.org/abs/2608.09111) | arXiv | [Code](https://github.com/arXiv/html_feedback/issues) |
+| 2026 | [SLVMEval: Synthetic Meta Evaluation Benchmark for Text-to-Long Video Generation](https://arxiv.org/abs/2603.29186) | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) | [Code](https://github.com/arXiv/html_feedback/issues) · [Project](https://slvmeval.github.io/) |
+| 2026 | [Towards Interactive Video World Modeling: Frontiers, Challenges, Benchmarks, and Future Trends](https://arxiv.org/abs/2606.01164) | arXiv | — |
+| 2026 | [V2V-Bench: A Comprehensive Benchmark for Video-to-Video Generation Evaluation](https://arxiv.org/abs/2606.05665) | arXiv | — |
+| 2026 | [WorldArena: A Unified Benchmark for Evaluating Perception and Functional Utility of Embodied World Models](https://arxiv.org/abs/2602.08971) | arXiv | [Project](https://world-arena.ai) |
+| 2025 | [Context as Memory: Scene-Consistent Interactive Long Video Generation with Memory Retrieval](https://arxiv.org/abs/2506.03141) | Proceedings of the SIGGRAPH Asia 2025 Conference Papers | — |
+| 2025 | [SVBench: Evaluation of Video Generation Models on Social Reasoning](https://arxiv.org/abs/2512.21507) | arXiv | — |
+| 2025 | [T2V-CompBench: A Comprehensive Benchmark for Compositional Text-to-video Generation](https://arxiv.org/abs/2407.14505) | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) | [Code](https://github.com/KaiyueSun98/T2V-CompBench/tree/V2) · [Project](https://t2v-compbench-2025.github.io/) |
+| 2025 | [VBench-2.0: Advancing Video Generation Benchmark Suite for Intrinsic Faithfulness](https://arxiv.org/abs/2503.21755) | arXiv | [Code](https://github.com/Vchitect/VBench) · [Project](https://vchitect.github.io/VBench-2.0-project/) |
+| 2025 | [Video-Bench: Human-Aligned Video Generation Benchmark](https://arxiv.org/abs/2504.04907) | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) | — |
+| 2025 | [VideoGen-Eval: Agent-based System for Video Generation Evaluation](https://arxiv.org/abs/2503.23452) | arXiv | [Code](https://github.com/AILab-CVC/VideoGen-Eval) |
+| 2025 | [WorldScore: A Unified Evaluation Benchmark for World Generation](https://openaccess.thecvf.com/content/ICCV2025/papers/Duan_WorldScore_A_Unified_Evaluation_Benchmark_for_World_Generation_ICCV_2025_paper.pdf) | Proceedings of the IEEE/CVF International Conference on Computer Vision | — |
+| 2024 | [ComfyBench: Benchmarking LLM-based Agents in ComfyUI for Autonomously Designing Collaborative AI Systems](https://arxiv.org/abs/2409.01392) | arXiv | — |
+| 2024 | [DreamRunner: Fine-Grained Compositional Story-to-Video Generation with Retrieval-Augmented Motion Adaptation](https://arxiv.org/abs/2411.16657) | arXiv | — |
+| 2024 | [EvalCrafter: Benchmarking and Evaluating Large Video Generation Models](https://openaccess.thecvf.com/content/CVPR2024/html/Liu_EvalCrafter_Benchmarking_and_Evaluating_Large_Video_Generation_Models_CVPR_2024_paper.html) | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition | [Project](https://evalcrafter.github.io/) |
+| 2024 | [OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments](https://arxiv.org/abs/2404.07972) | NeurIPS | — |
+| 2024 | [VBench: Comprehensive Benchmark Suite for Video Generative Models](https://arxiv.org/abs/2311.17982) | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) | [Code](https://github.com/Vchitect/VBench) · [Project](https://vchitect.github.io/VBench-project/) |
+| 2024 | [VideoGUI: A Benchmark for GUI Automation from Instructional Videos](https://arxiv.org/abs/2406.10227) | Advances in Neural Information Processing Systems 37 | — |
+| 2021 | [Frozen in Time: A Joint Video and Image Encoder for End-to-End Retrieval](https://arxiv.org/abs/2104.00650) | Proceedings of the IEEE/CVF International Conference on Computer Vision | — |
+
+## Contributing
+
+Suggest a paper, project, dataset, benchmark, or metadata correction through an [issue](https://github.com/agentic-videogen/awesome-agentic-videogen/issues/new?template=add-resource.yml) or pull request. Include a primary paper/resource URL and a reading path. Code and project links should be official.
+
+Bibliographic records were assembled from the survey bibliography. Source-checked timeline metadata is reused where available; other records retain their bibliography metadata. Inclusion does not imply endorsement, and missing code links do not imply that code is unavailable. Corrections are welcome.
+
+## Maintaining the catalogue
+
+Edit `data/catalogue.json`, then run:
+
+```sh
+node scripts/build.mjs
+node scripts/check.mjs
+node scripts/serve.mjs
+```
+
+The catalogue is the single source for this README and the searchable website. `docs/` contains a dependency-free static website; it can be served directly by GitHub Pages. See [DEPLOYMENT.md](DEPLOYMENT.md).
+
+## Acknowledgements
+
+The resource-list and companion-website organization is inspired by [Awesome Agentic World Modeling](https://github.com/matrix-agent/awesome-agentic-world-modeling). Our taxonomy follows the video-generation-centered scope of this survey; it does not reuse their levels or governing-law categories. Third-party papers and projects retain their original authorship and rights.

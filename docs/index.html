@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Video Generation Meets Agent Harness: a survey companion and research library for agentic video generation, world modeling, and recursive self-improvement.">
+  <meta name="theme-color" content="#f7f6f2">
+  <title>Agentic VideoGen — Video Generation Meets Agent Harness</title>
+  <link rel="canonical" href="https://agentic-videogen.github.io/">
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" type="module"></script>
+</head>
+<body>
+  <a class="skip" href="#library">Skip to paper library</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Agentic VideoGen home"><span class="brand-symbol" aria-hidden="true">▸</span><span>AGENTIC <b>VIDEOGEN</b></span></a>
+    <nav aria-label="Main navigation"><a href="#perspective">Perspective</a><a href="#library">Paper library</a><a href="#contribute">Contribute</a><a class="nav-github" href="https://github.com/agentic-videogen/awesome-agentic-videogen" target="_blank" rel="noopener noreferrer">GitHub ↗</a></nav>
+  </header>
+  <main id="top">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="eyebrow"><span class="status-dot"></span> A SURVEY & A LIVING RESEARCH LIBRARY <span class="edition">2026 EDITION</span></div>
+      <h1 id="hero-title">Video Generation<br>Meets <span>Agent Harness.</span></h1>
+      <p class="hero-lead">From creating videos to interacting with worlds<br class="desktop-break"> and improving the systems behind them.</p>
+      <p class="hero-detail">A unified reading map for agentic video generation, agentic world modeling, and recursive self-improvement in video generation model development.</p>
+      <div class="hero-actions"><a class="button primary" href="#library">Explore the literature <span aria-hidden="true">↗</span></a><a class="button outline" href="https://github.com/agentic-videogen/awesome-agentic-videogen" target="_blank" rel="noopener noreferrer">Awesome collection <span aria-hidden="true">↗</span></a></div>
+      <div class="hero-bottom"><div class="stats"><div><strong id="total-count">—</strong><span>PAPERS & RESOURCES</span></div><div><strong>03</strong><span>CORE READING PATHS</span></div><div><strong id="code-count">—</strong><span>CODE LINKS</span></div></div><img class="rebirth" src="logo.svg" alt="Video Rebirth" width="156" height="45"></div>
+    </section>
+
+    <section class="perspective" id="perspective" aria-labelledby="perspective-title">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="eyebrow">THE SHARED PERSPECTIVE</p><h2 id="perspective-title">One generative foundation.<br>Three ways to build around it.</h2></div><p>The video model is the common ground.<br>The agent harness connects goals, tools,<br>memory, feedback, and execution.</p></div>
+        <div class="paths">
+          <a class="path violet" href="#library" data-track="generation"><div class="path-top"><span>01 / CREATE</span><span aria-hidden="true">↗</span></div><div class="path-glyph" aria-hidden="true"><span class="frame"></span><span class="frame"></span><span class="frame"></span></div><h3>Agentic Video<br>Generation</h3><p>Plan the story. Coordinate assets and tools. Inspect and refine the final cut.</p><div class="path-footer"><span>Brief → workflow → video</span><span data-track-count="generation">—</span></div></a>
+          <a class="path teal" href="#library" data-track="world-modeling"><div class="path-top"><span>02 / INTERACT</span><span aria-hidden="true">↗</span></div><div class="path-glyph world-glyph" aria-hidden="true"><span></span><i></i><b></b></div><h3>Agentic World<br>Modeling</h3><p>Act in generated worlds. Maintain state and memory. Test what happens next.</p><div class="path-footer"><span>Action → world → observation</span><span data-track-count="world-modeling">—</span></div></a>
+          <a class="path orange" href="#library" data-track="development"><div class="path-top"><span>03 / IMPROVE</span><span aria-hidden="true">↗</span></div><div class="path-glyph improve-glyph" aria-hidden="true"><span>↻</span><i></i></div><h3>RSI for Video Generation<br>Model Development</h3><p>Improve data, models, evaluation, and the procedures that produce later updates.</p><div class="path-footer"><span>Experience → update → capability</span><span data-track-count="development">—</span></div></a>
+        </div>
+        <p class="perspective-note">Complementary research settings, not a hierarchy of capability levels.</p>
+      </div>
+    </section>
+
+    <section class="library wrap" id="library" aria-labelledby="library-title">
+      <div class="section-heading library-heading"><div><p class="eyebrow">THE OPEN READING ROOM</p><h2 id="library-title">Find your next paper.</h2></div><span class="updated" id="updated">Catalogue loading…</span></div>
+      <div class="library-layout">
+        <aside class="filters" aria-label="Filter the catalogue">
+          <p class="filter-label">READING PATH</p><div id="track-filters"><button class="track-filter active" data-filter-track="all" aria-pressed="true">All resources <span>—</span></button></div>
+          <label class="filter-label" for="year-filter">YEAR</label><select id="year-filter"><option value="all">All years</option></select>
+          <label class="filter-label" for="type-filter">RESOURCE TYPE</label><select id="type-filter"><option value="all">All types</option></select>
+          <label class="filter-label" for="group-filter">TOPIC</label><select id="group-filter"><option value="all">All topics</option></select>
+          <label class="checkbox"><input type="checkbox" id="code-filter"> With code link</label>
+          <button id="reset" class="reset">Reset filters ↺</button>
+          <a class="bib-download" href="references.bib" download>↓ Download bibliography</a>
+        </aside>
+        <div class="library-main">
+          <div class="search-row"><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search title, author, project, or keyword…" aria-label="Search papers"></label><label class="sort"><span class="sr-only">Sort papers</span><select id="sort"><option value="newest">Newest first</option><option value="oldest">Oldest first</option><option value="title">Title A–Z</option></select></label></div>
+          <div class="results-header"><p id="result-count" role="status" aria-live="polite">Loading the catalogue…</p><span>PRIMARY SOURCES · DIRECT LINKS</span></div>
+          <p class="track-description" id="track-description" hidden></p>
+          <div id="papers" class="paper-list" aria-busy="true"><div class="loading-row"></div><div class="loading-row"></div><div class="loading-row"></div></div>
+          <nav class="pagination" aria-label="Catalogue pages"><button id="previous" disabled>← Previous</button><span id="page-status">—</span><button id="next" disabled>Next →</button></nav>
+          <p class="catalogue-note">A paper can belong to several reading paths. Bibliography metadata is retained where a primary-source refresh is pending; corrections and official code links are welcome.</p>
+          <noscript><p>Please enable JavaScript to search, or browse the <a href="https://github.com/agentic-videogen/awesome-agentic-videogen">complete Markdown collection on GitHub</a>.</p></noscript>
+        </div>
+      </div>
+    </section>
+
+    <section class="contribute" id="contribute"><div class="wrap contribute-inner"><div><p class="eyebrow">BUILT TO KEEP GROWING</p><h2>Keep the map moving.</h2><p>Have a paper to add, an official code link,<br>or a bibliographic correction? Contribute to the collection.</p></div><a class="button primary" href="https://github.com/agentic-videogen/awesome-agentic-videogen/issues/new?template=add-resource.yml" target="_blank" rel="noopener noreferrer">Suggest a resource <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+  <footer class="wrap"><div><b>AGENTIC VIDEOGEN</b><p>Video Generation Meets Agent Harness</p></div><div><a href="https://github.com/agentic-videogen/awesome-agentic-videogen" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="#top">Back to top ↑</a><span>Survey manuscript link forthcoming.</span></div></footer>
+  <div id="toast" class="toast" role="status" hidden>Copied BibTeX</div>
+</body>
+</html>
