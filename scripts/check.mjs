@@ -29,12 +29,22 @@ assert(new URL(people.logoAssetBase).hostname==='raw.githubusercontent.com','Une
 assert(html.includes(read('docs/cover.css').trim()),'Stale embedded cover styles');
 assert.equal(people.institutions[0].id,'video-rebirth','Video Rebirth must appear first');
 assert.equal(people.authors.filter(a=>a.equalContribution).length,5,'Equal-contribution author count changed');
-assert.equal(people.authors.filter(a=>a.corresponding).map(a=>a.name).join(','),'Kevin Qinghong Lin','Corresponding-author mismatch');
+assert.equal(people.authors.length,20,'Author count differs from the manuscript');
+assert.equal(people.authors.filter(a=>a.corresponding).map(a=>a.name).join(','),'Kevin Qinghong Lin,Mike Zheng Shou,Wei Liu','Corresponding-author mismatch');
+assert.deepEqual(people.markers,{equalContribution:'*',corresponding:'✉'},'Author markers differ from the manuscript');
 const authorBlock=html.match(/<!-- people:start -->([\s\S]*?)<!-- people:end -->/)?.[1];
 assert(authorBlock,'Missing generated author block');
 assert(!authorBlock.includes('class="affiliation-name"'),'Institution captions must not appear below logos');
 let authorPosition=-1;
-for(const a of people.authors){const next=authorBlock.indexOf(a.name);assert(next>authorPosition,'Author omitted or out of order: '+a.name);authorPosition=next;}
+for(const a of people.authors){
+  const next=authorBlock.indexOf(a.name);assert(next>authorPosition,'Author omitted or out of order: '+a.name);authorPosition=next;
+  const authorItem=authorBlock.slice(authorBlock.lastIndexOf('<li>',next),authorBlock.indexOf('</li>',next));
+  assert.equal(authorItem.includes('aria-label="equal contribution"'),!!a.equalContribution,'Equal-contribution marker mismatch: '+a.name);
+  assert.equal(authorItem.includes('aria-label="corresponding author"'),!!a.corresponding,'Corresponding-author marker mismatch: '+a.name);
+}
+assert.equal((authorBlock.match(/aria-label="equal contribution"/g)||[]).length,5,'Incorrect rendered equal-contribution marks');
+assert.equal((authorBlock.match(/aria-label="corresponding author"/g)||[]).length,3,'Incorrect rendered correspondence marks');
+assert(!authorBlock.includes('†'),'Outdated corresponding-author symbol remains');
 let institutionPosition=-1;
 for(const i of people.institutions){
   const next=authorBlock.indexOf(`data-institution="${i.id}"`);assert(next>institutionPosition,'Institution omitted or out of order: '+i.name);institutionPosition=next;

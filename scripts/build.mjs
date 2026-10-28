@@ -11,12 +11,12 @@ const htmlEscape = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&l
 const peopleMarkup = `
       <div class="survey-people">
         <ul class="authors" aria-label="Survey authors, in manuscript order">
-${people.authors.map(a => `          <li>${htmlEscape(a.name)}${a.equalContribution ? '<sup aria-label="equal contribution">*</sup>' : ''}${a.corresponding ? '<sup aria-label="corresponding author">†</sup>' : ''}</li>`).join('\n')}
+${people.authors.map(a => `          <li>${htmlEscape(a.name)}${a.equalContribution ? `<sup aria-label="equal contribution">${htmlEscape(people.markers.equalContribution)}</sup>` : ''}${a.corresponding ? `<sup aria-label="corresponding author">${htmlEscape(people.markers.corresponding)}</sup>` : ''}</li>`).join('\n')}
         </ul>
         <ul class="affiliations" aria-label="Participating institutions, in manuscript order">
 ${people.institutions.map(i => `          <li><${i.url ? 'a' : 'div'} class="affiliation" data-institution="${i.id}"${i.url ? ` href="${htmlEscape(i.url)}" target="_blank" rel="noopener noreferrer"` : ''}><span class="affiliation-logo"><img src="${htmlEscape(new URL(i.logo,people.logoAssetBase).href)}" alt="${htmlEscape(i.name)} logo" decoding="async"></span></${i.url ? 'a' : 'div'}></li>`).join('\n')}
         </ul>
-        <p class="author-notes"><span><b>*</b>Equal contribution</span><span><b>†</b>Corresponding author</span></p>
+        <p class="author-notes"><span><b>${htmlEscape(people.markers.equalContribution)}</b>Equal contribution</span><span><b>${htmlEscape(people.markers.corresponding)}</b>Corresponding author</span></p>
       </div>
       `;
 const indexPath = path.join(root, 'docs/index.html');
