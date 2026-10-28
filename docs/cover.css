@@ -14,9 +14,9 @@ a.affiliation:hover .affiliation-name {color:var(--violet)}
 .affiliation-logo img {max-width:100%;width:auto;height:49px;max-height:51px;object-fit:contain}
 .affiliation[data-institution="video-rebirth"] img {width:48px;height:44px}
 .affiliation[data-institution="ntu"] img {height:49px}
-/* Show the university coat of arms from the intact official workshop asset. */
+/* Show the coat of arms from the intact university lockup asset. */
 .affiliation[data-institution="show-lab-nus"] .affiliation-logo {width:40px;height:49px;overflow:hidden;justify-content:flex-start}
-.affiliation[data-institution="show-lab-nus"] img {height:100%;width:auto;max-width:none;max-height:none;flex:none}
+.affiliation[data-institution="show-lab-nus"] img {height:225%;width:auto;max-width:none;max-height:none;flex:none}
 .affiliation-name {font-size:10px;font-weight:500;line-height:1.65;color:#5f615d;max-width:177px}
 .author-notes {display:flex;justify-content:center;gap:24px;flex-wrap:wrap;font-size:10px;color:var(--muted);margin:13px 0 23px}
 .author-notes b {color:var(--violet);font-weight:600;margin-right:4px}

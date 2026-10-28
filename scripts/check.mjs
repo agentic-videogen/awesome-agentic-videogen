@@ -39,6 +39,7 @@ for(const i of people.institutions){
   else if(i.logo.endsWith('.png'))assert.equal(logo.subarray(0,8).toString('hex'),'89504e470d0a1a0a','Invalid PNG logo: '+i.logo);
   else if(i.logo.endsWith('.jpg'))assert.equal(logo.subarray(0,3).toString('hex'),'ffd8ff','Invalid JPEG logo: '+i.logo);
   else if(i.logo.endsWith('.ico'))assert.equal(logo.subarray(0,4).toString('hex'),'00000100','Invalid icon logo: '+i.logo);
+  else if(i.logo.endsWith('.webp')){assert.equal(logo.subarray(0,4).toString(),'RIFF','Invalid WebP logo: '+i.logo);assert.equal(logo.subarray(8,12).toString(),'WEBP','Invalid WebP logo: '+i.logo);}
 }
 assert(html.includes('Find your next paper.'),'Requested library title changed');
 assert.equal(t.find(x=>x.id==='development').title,'RSI in Video Generation','Incorrect RSI title');
