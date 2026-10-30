@@ -31,7 +31,7 @@ if(process.argv.includes('--inline')){
   for(const file of [...new Set(['logo.svg','preview-figure2.svg',...people.institutions.map(i=>i.logo)])]){
     html=html.replaceAll(`src="${file}"`,`src="${assetBase+file}"`).replaceAll(`href="${file}"`,`href="${assetBase+file}"`);
   }
-  for(const file of ['survey.bib','references.bib'])html=html.replaceAll(`href="${file}"`,`href="data:text/plain;charset=utf-8,${encodeURIComponent(fs.readFileSync(path.join(docs,file),'utf8')).replaceAll("'",'%27')}"`);
+  for(const file of ['survey.bib'])html=html.replaceAll(`href="${file}"`,`href="data:text/plain;charset=utf-8,${encodeURIComponent(fs.readFileSync(path.join(docs,file),'utf8')).replaceAll("'",'%27')}"`);
 }
 const assets=[...new Set([
   'styles.css','app.js','logo.svg','references.bib','catalogue.json','survey.bib',

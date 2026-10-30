@@ -20,7 +20,7 @@ The approved dark studio homepage is built from `docs/preview.html` and its `pre
 
 The new opening preserves the preview's session-based autoplay, Skip/Escape, reduced-motion and deep-link behavior. The former homepage and opening remain recoverable in Git; the local preview is not renamed or deleted.
 
-If GitHub's browser uploader fails on the large figure asset, run `node scripts/build-website.mjs --inline`. This produces the same homepage with embedded styles, scripts, catalogue and bibliography downloads; images use the reviewed, immutable Awesome-repository revision. Only `index.html` is required for this deployment mode. `docs/preview.html` remains the separate multi-file preview. The normal package can still be regenerated without `--inline`.
+If GitHub's browser uploader fails on the large figure asset, run `node scripts/build-website.mjs --inline`. This produces the same homepage with embedded styles, scripts, catalogue and survey citation; images use the reviewed, immutable Awesome-repository revision. Only `index.html` needs replacing when the existing website's `references.bib` already matches the package. `docs/preview.html` remains the separate multi-file preview. The normal package can still be regenerated without `--inline`.
 
 ## Authors and institutional marks
 
