@@ -24,7 +24,6 @@ The survey manuscript and its citation will be linked here when released. This r
 - [Future Directions](#future-directions)
 - [Benchmarks & Evaluation](#benchmarks--evaluation)
 - [Contributing](#contributing)
-- [Maintaining the catalogue](#maintaining-the-catalogue)
 
 ## Overview
 
@@ -2327,18 +2326,6 @@ Evaluation resources from across the reading paths.
 Suggest a paper, project, dataset, benchmark, or metadata correction through an [issue](https://github.com/agentic-videogen/awesome-agentic-videogen/issues/new?template=add-resource.yml) or pull request. Include a primary paper/resource URL and a reading path. Code and project links should be official.
 
 Bibliographic records were assembled from the survey bibliography. Source-checked timeline metadata is reused where available; other records retain their bibliography metadata. Inclusion does not imply endorsement, and missing code links do not imply that code is unavailable. Corrections are welcome.
-
-## Maintaining the catalogue
-
-Edit `data/catalogue.json`, then run:
-
-```sh
-node scripts/build.mjs
-node scripts/check.mjs
-node scripts/serve.mjs
-```
-
-The catalogue is the single source for this README and the searchable website. `docs/` contains a dependency-free static website; it can be served directly by GitHub Pages. See [DEPLOYMENT.md](DEPLOYMENT.md).
 
 ## Acknowledgements
 
