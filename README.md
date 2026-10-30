@@ -26,6 +26,7 @@ This repository hosts the companion bibliography and resource links for the surv
 - [Future Directions](#future-directions)
 - [Benchmarks & Evaluation](#benchmarks--evaluation)
 - [Contributing](#contributing)
+- [Citation](#citation)
 
 ## Overview
 
@@ -2332,3 +2333,19 @@ Bibliographic records were assembled from the survey bibliography. Source-checke
 ## Acknowledgements
 
 Inspired by [Awesome-Video-Diffusion](https://github.com/showlab/Awesome-Video-Diffusion) and [Awesome Agentic World Modeling](https://github.com/matrix-agent/awesome-agentic-world-modeling).
+
+## Citation
+
+If you find our survey useful, please cite:
+
+```bibtex
+@misc{fan2026videogenerationmeetsagent,
+  title={Video Generation Meets Agent Harness: Agentic Video Generation, Agentic World Modeling and Recursive Self-Improvement},
+  author={Liaoyuan Fan and Yuhao Zheng and Dongxing Mao and Hangyu Ran and Siyuan Hu and Weijia Mao and Rui Zhao and Weijia Wu and Guian Fang and Yanzhe Chen and Zeyu Zhu and Yuxin Jiang and Yiren Song and Yuchao Gu and Junchao Yi and Qi Hu and Dan Kong and Alex Jinpeng Wang and Kevin Qinghong Lin and Mike Zheng Shou and Wei Liu},
+  year={2026},
+  eprint={2610.40191},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2610.40191},
+}
+```
