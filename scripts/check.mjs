@@ -104,7 +104,16 @@ assert(renderResourceBadges({type:'Report',url:'https://example.org/report'}).in
 assert(renderResourceBadges({type:'Paper',url:'https://doi.org/10.1234/example'}).includes('[![Paper]'),'Missing non-arXiv paper link');
 assert(!renderResourceBadges({...example,code:'https://github.com/arXiv/html_feedback/issues'}).includes('stars/'),'Issue list incorrectly assigned repository stars');
 const readme=read('README.md');
-assert(readme.includes('[Website](https://agentic-videogen.github.io/) · [Paper](https://arxiv.org/pdf/2610.40191) · [Contribute]('),'README top links must be Website, Paper, Contribute');
+const surveyHeader=readme.slice(0,readme.indexOf('A living collection'));
+const surveyBadgeLinks=[
+  '[![Project Page](https://img.shields.io/badge/Project-Page-5F38FF)](https://agentic-videogen.github.io/)',
+  '[![arXiv Paper](https://img.shields.io/badge/arXiv-Paper-b31b1b?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.40191)',
+  '[![GitHub Contribute](https://img.shields.io/badge/GitHub-Contribute-181717?logo=github&logoColor=white)](https://github.com/agentic-videogen/awesome-agentic-videogen/issues/new?template=add-resource.yml)',
+  '[![Hugging Face](https://img.shields.io/badge/Hugging%20Face-Paper-FFD21E?logo=huggingface&logoColor=FFD21E)](https://arxiv.org/abs/2610.40191)'
+];
+assert(surveyHeader.includes(surveyBadgeLinks.join(' ')),'Missing, reordered or incorrect survey link badges; Hugging Face temporarily targets arXiv');
+assert.equal((surveyHeader.match(/\[!\[/g)||[]).length,4,'The survey header must have four badges');
+assert(!surveyHeader.includes('[Website]('),'Old plain-text header links remain');
 assert(readme.includes('- **2026-10-30:** Our survey is now available on [arXiv](https://arxiv.org/abs/2610.40191).'),'Missing arXiv release news');
 assert(!readme.includes('will be linked here when released'),'Outdated unpublished-manuscript note remains');
 assert.equal(readme.split('## Acknowledgements\n\n')[1]?.split('\n## ')[0].trim(),'Inspired by [Awesome-Video-Diffusion](https://github.com/showlab/Awesome-Video-Diffusion) and [Awesome Agentic World Modeling](https://github.com/matrix-agent/awesome-agentic-world-modeling).','Acknowledgements must briefly credit both reference repositories');
