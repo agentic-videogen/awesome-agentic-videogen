@@ -104,6 +104,7 @@ assert(renderResourceBadges({type:'Report',url:'https://example.org/report'}).in
 assert(renderResourceBadges({type:'Paper',url:'https://doi.org/10.1234/example'}).includes('[![Paper]'),'Missing non-arXiv paper link');
 assert(!renderResourceBadges({...example,code:'https://github.com/arXiv/html_feedback/issues'}).includes('stars/'),'Issue list incorrectly assigned repository stars');
 const readme=read('README.md');
+assert.equal(readme.split('\n')[0],'# <img src="docs/logo.svg" alt="Video Rebirth" width="40" height="35" align="top"> Awesome Agentic Video Generation','README logo must remain compact and inline with the title');
 for(const p of c.papers)assert(readme.includes(renderResourceBadges(p)),'README badges omitted: '+p.id);
 const expectedEntryCount=c.papers.reduce((n,p)=>n+p.topics.length,0)+c.papers.filter(p=>p.type==='Benchmark').length;
 assert.equal(readme.split('\n').filter(l=>l.startsWith('- [')&&l.includes(' — **')).length,expectedEntryCount,'Resource entry count changed');

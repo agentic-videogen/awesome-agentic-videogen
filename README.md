@@ -1,6 +1,4 @@
-<p align="center"><img src="docs/logo.svg" alt="Video Rebirth" width="210"></p>
-
-# Awesome Agentic Video Generation
+# <img src="docs/logo.svg" alt="Video Rebirth" width="40" height="35" align="top"> Awesome Agentic Video Generation
 
 **Video Generation Meets Agent Harness: A Survey**
 
