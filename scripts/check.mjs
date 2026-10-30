@@ -4,6 +4,7 @@ import assert from 'node:assert/strict';
 import { fileURLToPath } from 'node:url';
 import {renderSurveyComparison} from './survey-comparison.mjs';
 import {githubRepositorySlug,renderResourceBadges} from './link-badges.mjs';
+import {checkStudioIntro} from './check-studio-intro.mjs';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const read=p=>fs.readFileSync(path.join(root,p),'utf8');
 const c=JSON.parse(read('data/catalogue.json')), t=JSON.parse(read('data/tracks.json'));
@@ -109,3 +110,4 @@ assert.equal(readme.split('\n').filter(l=>l.startsWith('- [')&&l.includes(' — 
 assert(!readme.includes('| Year | Paper / resource | Venue / source | Links |'),'Resource table would compress link badges');
 for(const file of ['README.md','DEPLOYMENT.md','CONTRIBUTING.md','docs/index.html','docs/app.js','docs/styles.css','docs/cover.css','docs/comparison.css','data/catalogue.json','data/people.json','data/survey-comparison.json'])assert(!/\/Users\/|fanliaoyuandeMacBook|\.codex\/skills|\uFFFD/.test(read(file)),'Private path or broken Unicode: '+file);
 console.log(`PASS: ${c.papers.length} unique records; valid links and categories; README/data parity; privacy and website assets.`);
+checkStudioIntro();

@@ -131,6 +131,102 @@
 }
 </style>
   <!-- comparison-style:end -->
+  <!-- studio-style:start -->
+  <style id="studio-intro-style">
+html.studio-opening {overflow:hidden}
+.studio-intro {position:fixed;inset:0;box-sizing:border-box;width:100%;height:100%;height:100dvh;max-width:none;max-height:none;margin:0;padding:0;border:0;background:#f7f6f2;color:#29272e;overflow:auto;overscroll-behavior:contain}
+.studio-intro::backdrop {background:#f7f6f2}
+.studio-intro[open] {display:block;animation:studio-arrive .28s ease-out both}
+.studio-intro.is-leaving {animation:studio-depart .32s ease-in both;pointer-events:none}
+.studio-shell {min-height:100%;display:grid;grid-template-rows:auto 1fr auto;max-width:1320px;margin:auto;padding:27px 45px 22px;box-sizing:border-box}
+.studio-topbar {display:flex;align-items:center;justify-content:space-between;gap:20px}
+.studio-wordmark {display:flex;align-items:center;gap:10px;font-size:11px;letter-spacing:1.3px;line-height:1.4}
+.studio-wordmark img {width:28px;height:25px;object-fit:contain}
+.studio-wordmark small {display:block;font-size:7px;font-weight:450;letter-spacing:2px;color:#918b98;margin-top:4px}
+.studio-skip {border:1px solid #dad5df;background:transparent;border-radius:99px;padding:9px 16px;color:#716878;font:11px/1.5 var(--sans);white-space:nowrap}
+.studio-skip span {margin-left:12px}
+.studio-skip:hover {border-color:#9f8abb;background:#ede8f3;color:#5e4887}
+.studio-main {align-self:center;text-align:center;width:100%;padding:15px 0 7px}
+.studio-eyebrow {display:flex;align-items:center;justify-content:center;gap:8px;font-size:8px;letter-spacing:2px;color:#9a8da8;margin:0 0 15px}
+.studio-eyebrow>span {width:5px;height:5px;flex:none;border-radius:50%;background:#a28bbb}
+.studio-intro h2 {font-size:clamp(31px,4.7vw,54px);font-weight:560;line-height:1.1;letter-spacing:-1.8px;margin:0}
+.studio-intro h2 br {display:none}
+.studio-intro h2 em {font-family:Georgia,'Times New Roman',serif;font-weight:400;color:#8870a7}
+.studio-artwork {width:min(870px,100%);margin:2px auto -24px}
+.studio-art {display:block;width:100%;height:auto;max-height:48vh;max-height:48dvh;overflow:visible}
+.studio-caption {min-height:49px;position:relative}
+.studio-caption p {margin:0 0 5px;font-size:15px;font-weight:500;color:#5e526d}
+.studio-caption>span {font-size:10px;letter-spacing:.1px;color:#999080}
+.studio-stages {list-style:none;display:flex;justify-content:center;gap:34px;margin:20px 0 0;padding:0}
+.studio-stages li {position:relative;display:flex;align-items:center;gap:7px;font-size:10px;color:#a6a0aa;padding-bottom:10px;min-width:73px;justify-content:center;transition:color .25s}
+.studio-stages li span {font-size:8px;color:#aaa1b3}
+.studio-stages li::after {content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:#e3dce9;transform-origin:left;transform:scaleX(0);transition:transform .5s ease}
+.studio-intro[data-phase="plan"] [data-studio-stage="plan"],.studio-intro[data-phase="generate"] [data-studio-stage="generate"],.studio-intro[data-phase="edit"] [data-studio-stage="edit"],.studio-intro[data-phase="ready"] .studio-stages li {color:#7161a0}
+.studio-intro[data-phase="plan"] [data-studio-stage="plan"]::after,.studio-intro[data-phase="generate"] [data-studio-stage="plan"]::after,.studio-intro[data-phase="generate"] [data-studio-stage="generate"]::after,.studio-intro[data-phase="edit"] .studio-stages li::after,.studio-intro[data-phase="ready"] .studio-stages li::after {transform:scaleX(1)}
+.studio-bottom {display:flex;justify-content:space-between;gap:15px;color:#a39caa;font-size:7px;letter-spacing:1.4px;padding:14px 0 0!important;border-top:1px solid #e6e1e9}
+.studio-bottom>span:last-child {letter-spacing:.2px;text-transform:none;font-size:8px}
+.studio-replay {border:0;background:transparent;padding:0;color:inherit;font:inherit;cursor:pointer;white-space:nowrap}
+.studio-replay:hover {color:var(--violet)}
+.studio-intro[open] .studio-robot-head {transform-origin:367px 240px;animation:studio-head-work 1.8s ease-in-out infinite}
+.studio-intro[open] .studio-robot-eyes {transform-box:fill-box;transform-origin:center;animation:studio-blink 3.2s ease infinite}
+.studio-intro[open] .studio-robot-arm-left {transform-origin:323px 273px;animation:studio-type-left .75s ease-in-out infinite alternate}
+.studio-intro[open] .studio-robot-arm-right {transform-origin:408px 275px;animation:studio-type-right .65s ease-in-out infinite alternate}
+.studio-intro[open] .studio-coffee-steam {animation:studio-steam 2.2s ease-in-out infinite}
+.studio-intro[open] .studio-board-card {animation:studio-board 1.6s ease both}
+.studio-intro[open] .studio-board-card-two {animation-delay:.18s}
+.studio-intro[open] .studio-board-card-three {animation-delay:.36s}
+.studio-generated-scene {opacity:0;transform:translateY(4px);transition:opacity .8s ease,transform .8s ease}
+.studio-timeline-clips {opacity:.2;transform:scaleX(.3);transform-origin:548px 267px;transition:opacity .5s,transform .7s ease}
+.studio-render-sweep,.studio-playhead,.studio-video-ready,.studio-screen-play,.studio-sparkles {opacity:0}
+.studio-intro[data-phase="generate"] .studio-generated-scene,.studio-intro[data-phase="edit"] .studio-generated-scene,.studio-intro[data-phase="ready"] .studio-generated-scene {opacity:1;transform:translateY(0)}
+.studio-intro[data-phase="generate"] .studio-render-sweep {animation:studio-render 1.3s ease-in-out both}
+.studio-intro[data-phase="edit"] .studio-timeline-clips,.studio-intro[data-phase="ready"] .studio-timeline-clips {opacity:1;transform:scaleX(1)}
+.studio-intro[data-phase="edit"] .studio-playhead {animation:studio-play 1.25s linear both}
+.studio-intro[data-phase="ready"] .studio-screen-play {animation:studio-pop .4s ease both}
+.studio-intro[data-phase="ready"] .studio-video-ready {animation:studio-pop .45s .08s ease both;transform-origin:800px 160px}
+.studio-intro[data-phase="ready"] .studio-sparkles {animation:studio-pop .4s ease both}
+.studio-intro[data-phase="ready"] .studio-robot-head {animation:studio-head-ready .5s ease both}
+.studio-intro[data-phase="ready"] .studio-robot-arm {animation:none}
+@keyframes studio-arrive {from{opacity:0}to{opacity:1}}
+@keyframes studio-depart {to{opacity:0;transform:translateY(-8px)}}
+@keyframes studio-head-work {0%,100%{transform:rotate(-2deg)}50%{transform:rotate(2deg) translateY(1px)}}
+@keyframes studio-head-ready {to{transform:rotate(-5deg) translateY(-3px)}}
+@keyframes studio-blink {0%,40%,46%,100%{transform:scaleY(1)}43%{transform:scaleY(.12)}}
+@keyframes studio-type-left {to{transform:rotate(-3deg) translateY(-2px)}}
+@keyframes studio-type-right {to{transform:rotate(3deg) translateY(-2px)}}
+@keyframes studio-steam {0%,100%{opacity:.35;transform:translateY(1px)}50%{opacity:.7;transform:translateY(-3px)}}
+@keyframes studio-board {0%{opacity:.2;transform:translateY(5px)}55%,100%{opacity:1;transform:translateY(0)}}
+@keyframes studio-render {0%{opacity:0;transform:translateX(0)}10%,85%{opacity:.7}100%{opacity:0;transform:translateX(227px)}}
+@keyframes studio-play {0%{opacity:1;transform:translateX(0)}90%{opacity:1}100%{opacity:0;transform:translateX(205px)}}
+@keyframes studio-pop {from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:650px) {
+  .studio-shell {padding:20px 20px 15px}
+  .studio-wordmark {font-size:9px;gap:7px;letter-spacing:.9px}
+  .studio-wordmark img {width:24px;height:23px}
+  .studio-wordmark small {font-size:6px;letter-spacing:1.4px}
+  .studio-skip {font-size:9px;padding:8px 10px}
+  .studio-skip span {margin-left:6px}
+  .studio-eyebrow {font-size:6px;letter-spacing:1.3px;margin-bottom:18px}
+  .studio-intro h2 {font-size:39px;line-height:1.12;letter-spacing:-1.6px}
+  .studio-intro h2 br {display:block}
+  .studio-artwork {width:calc(100% + 24px);margin:27px -12px 15px}
+  .studio-caption p {font-size:13px}
+  .studio-caption>span {font-size:9px}
+  .studio-stages {gap:20px;margin-top:22px}
+  .studio-stages li {font-size:9px;min-width:65px}
+  .studio-bottom {display:flex;flex-direction:row!important;font-size:6px;line-height:1.6;gap:13px;letter-spacing:.8px}
+  .studio-bottom>span:first-child {max-width:180px}
+  .studio-bottom>span:last-child {font-size:7px;text-align:right;max-width:110px}
+  footer.wrap>div:last-child {flex-wrap:wrap;gap:12px 20px}
+}
+@media(max-height:650px) and (min-width:651px) {.studio-shell{padding:18px 35px 12px}.studio-main{padding:8px 0}.studio-eyebrow{margin-bottom:9px}.studio-intro h2{font-size:35px}.studio-art{max-height:43dvh}.studio-artwork{margin-bottom:-16px}.studio-stages{margin-top:10px}.studio-caption p{font-size:12px}.studio-bottom{padding-top:9px!important}}
+@media(prefers-reduced-motion:reduce) {
+  .studio-intro,.studio-intro * {animation:none!important;transition:none!important}
+  .studio-generated-scene,.studio-timeline-clips,.studio-screen-play,.studio-video-ready {opacity:1;transform:none}
+  .studio-stages li::after {transform:scaleX(1)}
+}
+</style>
+  <!-- studio-style:end -->
   <script src="app.js" type="module"></script>
 </head>
 <body>
@@ -313,7 +409,176 @@
 
     <section class="contribute" id="contribute"><div class="wrap contribute-inner"><div><p class="eyebrow">BUILT TO KEEP GROWING</p><h2>Keep the map moving.</h2><p>Have a paper to add, an official code link,<br>or a bibliographic correction? Contribute to the collection.</p></div><a class="button primary" href="https://github.com/agentic-videogen/awesome-agentic-videogen/issues/new?template=add-resource.yml" target="_blank" rel="noopener noreferrer">Suggest a resource <span aria-hidden="true">↗</span></a></div></section>
   </main>
-  <footer class="wrap"><div><b>AGENTIC VIDEOGEN</b><p>Video Generation Meets Agent Harness</p></div><div><a href="https://github.com/agentic-videogen/awesome-agentic-videogen" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="#top">Back to top ↑</a><span>Survey manuscript link forthcoming.</span></div></footer>
+  <footer class="wrap"><div><b>AGENTIC VIDEOGEN</b><p>Video Generation Meets Agent Harness</p></div><div><a href="https://github.com/agentic-videogen/awesome-agentic-videogen" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="#top">Back to top ↑</a><button class="studio-replay" id="studio-replay" type="button" hidden>Replay opening ↻</button><span>Survey manuscript link forthcoming.</span></div></footer>
   <div id="toast" class="toast" role="status" hidden>Copied BibTeX</div>
+  <!-- studio:start -->
+<dialog id="studio-intro" class="studio-intro" aria-labelledby="studio-title" aria-describedby="studio-description">
+  <div class="studio-shell">
+    <header class="studio-topbar">
+      <div class="studio-wordmark"><img src="logo.svg" width="28" height="25" alt="Video Rebirth"><span>AGENTIC <b>VIDEOGEN</b><small>INSIDE THE STUDIO</small></span></div>
+      <button class="studio-skip" id="studio-skip" type="button" autofocus>Skip opening <span aria-hidden="true">↗</span></button>
+    </header>
+    <div class="studio-main">
+      <p class="studio-eyebrow"><span></span> A LITTLE ROBOT. A LOT OF IMAGINATION.</p>
+      <h2 id="studio-title">Every video starts<br> with an <em>idea.</em></h2>
+      <p id="studio-description" class="sr-only">A short animated illustration of a small robot planning, generating and editing a video in its studio. Skip the opening at any time, or press Escape.</p>
+      <div class="studio-artwork" aria-hidden="true">
+        <svg class="studio-art" viewBox="0 0 1000 470" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="studio-wall" x1="244" y1="35" x2="812" y2="370" gradientUnits="userSpaceOnUse"><stop stop-color="#eeebf5"/><stop offset="1" stop-color="#f2f0e9"/></linearGradient>
+            <linearGradient id="studio-sky" x1="602" y1="113" x2="602" y2="259" gradientUnits="userSpaceOnUse"><stop stop-color="#ece6f8"/><stop offset="1" stop-color="#f8ddd0"/></linearGradient>
+            <linearGradient id="studio-face" x1="316" y1="168" x2="424" y2="233" gradientUnits="userSpaceOnUse"><stop stop-color="#434050"/><stop offset="1" stop-color="#262431"/></linearGradient>
+            <clipPath id="studio-screen-clip"><rect x="542" y="117" width="227" height="128" rx="7"/></clipPath>
+          </defs>
+          <!-- A softly lit studio, rather than a loading screen. -->
+          <path d="M112 319C70 210 135 97 271 63C416 27 580 41 723 67C867 92 932 174 884 319Z" fill="url(#studio-wall)"/>
+          <ellipse cx="506" cy="427" rx="356" ry="17" fill="#e9e6df"/>
+          <path d="M95 338H915" stroke="#dbd8d1" stroke-width="2" stroke-linecap="round"/>
+          <!-- Storyboard: three little shots pinned to the wall. -->
+          <g class="studio-storyboard" stroke="#4d4a53" stroke-width="2" stroke-linejoin="round">
+            <rect x="139" y="100" width="146" height="136" rx="10" fill="#f9f7f2"/>
+            <path d="M157 122H201M157 129H183" stroke="#a7a1af" stroke-width="3" stroke-linecap="round"/>
+            <g class="studio-board-card"><rect x="156" y="145" width="48" height="34" rx="3" fill="#e5e0f1"/><path d="M160 175L172 160L180 168L188 155L200 175" stroke="#9c8bbb"/><circle cx="169" cy="153" r="3" fill="#b2a4ca" stroke="none"/></g>
+            <g class="studio-board-card studio-board-card-two"><rect x="213" y="145" width="48" height="34" rx="3" fill="#e0ebe3"/><path d="M219 174L233 155L256 174" stroke="#81a58f"/></g>
+            <g class="studio-board-card studio-board-card-three"><rect x="156" y="188" width="48" height="31" rx="3" fill="#f3e1ce"/><circle cx="179" cy="203" r="8" stroke="#c29970"/><path d="M216 197H257M216 205H244M216 213H252" stroke="#c6c1b7" stroke-width="3" stroke-linecap="round"/></g>
+            <circle cx="212" cy="107" r="4" fill="#7161c5" stroke="none"/>
+          </g>
+          <!-- Shelf and a small plant. -->
+          <g class="studio-room-details" stroke="#77746f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M772 86H870"/><rect x="782" y="57" width="9" height="27" rx="2" fill="#c4badb"/><rect x="794" y="51" width="13" height="33" rx="2" fill="#e6c5a4"/><path d="M815 59L821 84" stroke-width="7" stroke="#a5bfb1"/>
+            <path d="M848 64V50M848 59C835 56 834 45 835 43C846 42 851 53 848 59ZM848 54C857 53 862 45 861 41C851 41 845 45 848 54Z" fill="#abc5ad" stroke="#77947a"/>
+            <path d="M838 65H858L855 84H842Z" fill="#e1d6c8"/>
+          </g>
+          <!-- A warm task lamp. -->
+          <g stroke="#5d5962" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M185 323L198 258L234 229"/><circle cx="199" cy="258" r="5" fill="#f7f6f2"/>
+            <path d="M229 220L247 237L225 251L213 240Z" fill="#d9c8e6"/><path d="M165 324H204"/>
+          </g>
+          <path class="studio-lamplight" d="M222 246L194 322H304L235 244Z" fill="#f1ddb3" opacity=".25"/>
+          <!-- Stool and desk legs are behind the robot. -->
+          <path d="M316 378L308 425M385 377L397 425" stroke="#77716f" stroke-width="6" stroke-linecap="round"/>
+          <rect x="298" y="362" width="105" height="20" rx="10" fill="#b6a4ca" stroke="#595361" stroke-width="2.5"/>
+          <path d="M219 344L206 423M799 344L812 423" stroke="#8e857b" stroke-width="9" stroke-linecap="round"/>
+          <!-- The robot's body, with the Video Rebirth mark on its chest. -->
+          <path d="M333 350L326 402H350L363 351M373 351L378 402H402L397 347" fill="#d9d5e2" stroke="#514c5d" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M320 402H349V415H310C308 408 312 402 320 402ZM378 402H403C413 403 417 409 414 415H378Z" fill="#504b5d"/>
+          <rect x="317" y="247" width="97" height="105" rx="29" fill="#fdfbf6" stroke="#504b5c" stroke-width="3"/>
+          <path d="M330 340H400" stroke="#d2ccd9" stroke-width="2"/>
+          <rect x="340" y="267" width="50" height="44" rx="12" fill="#e8e1f1"/>
+          <path d="M110.038 129.487L164.205 23.0828H153.146L110.541 106.775L100.989 88.0123L140.703 10H196L115.568 168H90.4324L10 10H39.2699C45.37 10 50.9543 13.4248 53.7233 18.8642L110.038 129.487Z" transform="translate(351 277) scale(.14)" fill="#7161c5"/>
+          <circle cx="365" cy="326" r="3" fill="#a5bcac"/>
+          <!-- Rounded head, attentive eyes, and a springy antenna. -->
+          <g class="studio-robot-head">
+            <path d="M367 152V134" stroke="#504b5c" stroke-width="3" stroke-linecap="round"/>
+            <circle class="studio-antenna" cx="367" cy="129" r="7" fill="#c8b7e4" stroke="#504b5c" stroke-width="2.5"/>
+            <rect x="286" y="190" width="14" height="29" rx="6" fill="#c6b6db" stroke="#504b5c" stroke-width="2.5"/>
+            <rect x="434" y="190" width="14" height="29" rx="6" fill="#c6b6db" stroke="#504b5c" stroke-width="2.5"/>
+            <rect x="296" y="154" width="140" height="98" rx="32" fill="#fdfbf6" stroke="#504b5c" stroke-width="3"/>
+            <rect x="308" y="169" width="116" height="66" rx="22" fill="url(#studio-face)"/>
+            <g class="studio-robot-eyes" fill="#d9d0fb"><rect x="332" y="190" width="12" height="19" rx="6"/><rect x="388" y="190" width="12" height="19" rx="6"/></g>
+            <path d="M354 215Q366 225 378 215" stroke="#b9abd9" stroke-width="3" stroke-linecap="round"/>
+            <path d="M310 163H328" stroke="white" stroke-width="4" stroke-linecap="round"/>
+          </g>
+          <!-- Hands tapping a real editing keyboard. -->
+          <g class="studio-robot-arm studio-robot-arm-left" stroke="#514b5b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M323 273L297 304L343 324" stroke-width="16"/><path d="M323 273L297 304L343 324" stroke="#e1dbe9" stroke-width="10"/><rect x="337" y="314" width="30" height="17" rx="8" fill="#fdfbf6"/></g>
+          <g class="studio-robot-arm studio-robot-arm-right" stroke="#514b5b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M408 275L432 301L411 324" stroke-width="16"/><path d="M408 275L432 301L411 324" stroke="#e1dbe9" stroke-width="10"/><rect x="397" y="315" width="30" height="17" rx="8" fill="#fdfbf6"/></g>
+          <!-- Main monitor: storyboard becomes a generated world, then a cut. -->
+          <path d="M649 294V322M618 323H682" stroke="#5a5560" stroke-width="8" stroke-linecap="round"/>
+          <rect x="522" y="87" width="267" height="209" rx="15" fill="#fdfbf8" stroke="#514c5c" stroke-width="3"/>
+          <path d="M523 106H787" stroke="#d9d4df" stroke-width="2"/>
+          <circle cx="537" cy="98" r="3" fill="#d3bdcf"/><circle cx="548" cy="98" r="3" fill="#dbcda9"/><circle cx="559" cy="98" r="3" fill="#adc2b3"/>
+          <path d="M691 98H769" stroke="#ddd7e7" stroke-width="3" stroke-linecap="round"/>
+          <rect x="542" y="117" width="227" height="128" rx="7" fill="#f0edf5"/>
+          <g class="studio-scene-sketch" stroke="#c5bdd2" stroke-width="2" stroke-linejoin="round"><path d="M544 222L599 169L634 205L668 176L766 240M544 238L593 211L626 229L669 212L727 241"/><circle cx="710" cy="145" r="13"/><path d="M656 204V225M648 232L656 222L664 232M646 213L656 211L666 215" stroke="#b5a9c8" stroke-linecap="round"/></g>
+          <g clip-path="url(#studio-screen-clip)">
+            <g class="studio-generated-scene"><rect x="542" y="117" width="227" height="128" fill="url(#studio-sky)"/><circle cx="710" cy="147" r="16" fill="#eebc8d"/><path d="M536 225L596 163L640 212L671 174L777 248H536Z" fill="#b7c7bc"/><path d="M536 241L594 203L630 231L676 208L774 245H536Z" fill="#8aab9b"/><path d="M622 246L655 217L674 223L662 246Z" fill="#f1d5ae"/><ellipse cx="660" cy="232" rx="13" ry="3" fill="#7e9b89"/><circle cx="660" cy="197" r="6" fill="#4e4b57"/><path d="M660 205V222M660 211L650 216M660 211L669 214M660 222L653 231M660 222L665 231" stroke="#655875" stroke-width="5" stroke-linecap="round"/></g>
+            <path class="studio-render-sweep" d="M543 117V245" stroke="#b7a2ec" stroke-width="3"/>
+          </g>
+          <g class="studio-screen-play"><circle cx="655" cy="181" r="22" fill="#fdfbf3" fill-opacity=".92"/><path d="M650 170L666 181L650 192Z" fill="#7161c5"/></g>
+          <rect x="542" y="254" width="227" height="26" rx="4" fill="#f0edf5"/>
+          <g class="studio-timeline-clips"><rect x="548" y="260" width="58" height="14" rx="3" fill="#cbbce5"/><rect x="612" y="260" width="73" height="14" rx="3" fill="#a8c5b3"/><rect x="691" y="260" width="70" height="14" rx="3" fill="#e8c5a3"/><path d="M556 266H594M620 266H674M699 266H751" stroke="white" stroke-opacity=".6" stroke-width="2" stroke-linecap="round"/></g>
+          <path class="studio-playhead" d="M551 253V280" stroke="#7161c5" stroke-width="2"/>
+          <!-- Keyboard, coffee, speaker and a completed-video toast. -->
+          <path d="M329 320H468L480 331H318Z" fill="#e3dce9" stroke="#716a7b" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M339 324H457M360 327H439" stroke="#9c91aa" stroke-width="2" stroke-linecap="round"/>
+          <path d="M814 278H845V326H814Z" fill="#d4c9dd" stroke="#645c6e" stroke-width="2"/><circle cx="829" cy="303" r="9" fill="#9f91af"/><circle cx="829" cy="287" r="3" fill="#8a7c9a"/>
+          <path d="M250 300H276V324H250Z" fill="#e7c7a6" stroke="#70645c" stroke-width="2" stroke-linejoin="round"/><path d="M277 305H282C293 305 293 318 277 318" stroke="#70645c" stroke-width="2"/>
+          <path class="studio-coffee-steam" d="M258 291C251 283 265 280 259 272M268 293C261 285 275 282 269 274" stroke="#c7bcb2" stroke-width="2" stroke-linecap="round"/>
+          <rect x="156" y="332" width="720" height="19" rx="8" fill="#e7dac9" stroke="#73675f" stroke-width="2.5"/>
+          <path d="M166 338H864" stroke="#f5ecdf" stroke-width="2" stroke-linecap="round"/>
+          <g class="studio-video-ready"><rect x="740" y="140" width="124" height="40" rx="12" fill="#fdfbf6" stroke="#b8cbbd" stroke-width="1.5"/><circle cx="760" cy="160" r="8" fill="#dfebe1"/><path d="M756 160L759 163L764 157" stroke="#61876c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><text x="775" y="164" fill="#506958" font-family="system-ui,sans-serif" font-size="11">Video ready</text></g>
+          <g class="studio-sparkles" stroke="#b09acb" stroke-width="2" stroke-linecap="round"><path d="M465 135V147M459 141H471M468 247V255M464 251H472"/><path d="M487 181V189M483 185H491" stroke="#c4b08d"/></g>
+        </svg>
+      </div>
+      <div class="studio-caption"><p id="studio-status">Planning the next shot…</p><span>From an idea to the final frame.</span></div>
+      <ol class="studio-stages" aria-label="Illustrated video creation workflow"><li data-studio-stage="plan"><span>01</span> Plan</li><li data-studio-stage="generate"><span>02</span> Generate</li><li data-studio-stage="edit"><span>03</span> Edit</li></ol>
+    </div>
+    <footer class="studio-bottom"><span>VIDEO GENERATION MEETS AGENT HARNESS</span><span>A small scene before the big picture.</span></footer>
+  </div>
+</dialog>
+<script id="studio-intro-script">
+// Independent of the catalogue: a failed or disabled intro must never gate it.
+(() => {
+  'use strict';
+  const dialog=document.getElementById('studio-intro');
+  const replay=document.getElementById('studio-replay');
+  const skip=document.getElementById('studio-skip');
+  const status=document.getElementById('studio-status');
+  if(!dialog||!replay||!skip||!status||typeof dialog.showModal!=='function')return;
+  const seenKey='agentic-videogen:studio-intro:v1';
+  const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
+  const timers=new Set();
+  let previousFocus=null;
+  let leaving=false;
+  const later=(callback,delay)=>{const id=setTimeout(()=>{timers.delete(id);callback();},delay);timers.add(id);return id;};
+  const clearTimers=()=>{for(const id of timers)clearTimeout(id);timers.clear();};
+  const phase=(name,text)=>{dialog.dataset.phase=name;status.textContent=text;};
+  const cleanup=()=>{
+    clearTimers();
+    document.documentElement.classList.remove('studio-opening');
+    dialog.classList.remove('is-leaving');
+    leaving=false;
+    if(previousFocus&&previousFocus.isConnected&&typeof previousFocus.focus==='function')previousFocus.focus({preventScroll:true});
+    previousFocus=null;
+  };
+  const finish=()=>{try{if(dialog.open)dialog.close();}finally{cleanup();}};
+  const dismiss=(immediate=false)=>{
+    if(!dialog.open||leaving)return;
+    if(immediate||reducedMotion.matches){finish();return;}
+    leaving=true;
+    dialog.classList.add('is-leaving');
+    later(finish,340);
+  };
+  const play=()=>{
+    if(dialog.open)return;
+    clearTimers();
+    previousFocus=document.activeElement===document.body?null:document.activeElement;
+    dialog.classList.remove('is-leaving');
+    phase('plan','Planning the next shot…');
+    try{dialog.showModal();}catch{cleanup();return;}
+    document.documentElement.classList.add('studio-opening');
+    try{localStorage.setItem(seenKey,'seen');}catch{/* Storage restrictions must not prevent access. */}
+    skip.focus({preventScroll:true});
+    later(()=>phase('generate','Generating a little world…'),1450);
+    later(()=>phase('edit','Putting the story together…'),2800);
+    later(()=>phase('ready','Ready. Let’s explore.'),4100);
+    later(()=>dismiss(),4900);
+    // Fail-safe: never leave an overlay stuck after an interrupted transition.
+    later(finish,6500);
+  };
+  skip.addEventListener('click',()=>dismiss(true));
+  dialog.addEventListener('cancel',event=>{event.preventDefault();dismiss(true);});
+  dialog.addEventListener('close',cleanup);
+  replay.addEventListener('click',play);
+  replay.hidden=false;
+  const params=new URLSearchParams(location.search);
+  const force=params.get('intro')==='1';
+  const deepLink=(location.hash&&location.hash!=='#top')||['track','q','year','type','group','code','sort'].some(key=>params.has(key));
+  let seen=false;
+  try{seen=localStorage.getItem(seenKey)==='seen';}catch{/* Play once for this page if storage is unavailable. */}
+  if(!reducedMotion.matches&&(force||(!seen&&!deepLink)))play();
+})();
+</script>
+  <!-- studio:end -->
 </body>
 </html>

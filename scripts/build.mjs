@@ -27,11 +27,18 @@ const coverStyle=fs.readFileSync(path.join(root,'docs/cover.css'),'utf8');
 if(!/<!-- cover:start -->[\s\S]*?<!-- cover:end -->/.test(indexSource))throw new Error('Missing cover-style build markers');
 const comparisonStyle=fs.readFileSync(path.join(root,'docs/comparison.css'),'utf8');
 if(!/<!-- comparison:start -->[\s\S]*?<!-- comparison:end -->/.test(indexSource))throw new Error('Missing comparison build markers');
+const studioStyle=fs.readFileSync(path.join(root,'docs/studio-intro.css'),'utf8');
+const studioMarkup=fs.readFileSync(path.join(root,'docs/studio-intro.html'),'utf8');
+const studioScript=fs.readFileSync(path.join(root,'docs/studio-intro.js'),'utf8');
+for(const marker of ['studio-style','studio'])if(!new RegExp(`<!-- ${marker}:start -->[\\s\\S]*?<!-- ${marker}:end -->`).test(indexSource))throw new Error('Missing studio build marker: '+marker);
+if(/<\/script/i.test(studioScript))throw new Error('Unsafe closing script tag in studio source');
 fs.writeFileSync(indexPath, indexSource
   .replace(/(<!-- people:start -->)[\s\S]*?(<!-- people:end -->)/, `$1${peopleMarkup}$2`)
   .replace(/(<!-- cover:start -->)[\s\S]*?(<!-- cover:end -->)/, `$1\n  <style id="survey-cover-style">\n${coverStyle}</style>\n  $2`)
   .replace(/(<!-- comparison-style:start -->)[\s\S]*?(<!-- comparison-style:end -->)/,`$1\n  <style id="survey-comparison-style">\n${comparisonStyle}</style>\n  $2`)
-  .replace(/(<!-- comparison:start -->)[\s\S]*?(<!-- comparison:end -->)/,`$1${renderSurveyComparison(comparison,htmlEscape)}$2`));
+  .replace(/(<!-- comparison:start -->)[\s\S]*?(<!-- comparison:end -->)/,`$1${renderSurveyComparison(comparison,htmlEscape)}$2`)
+  .replace(/(<!-- studio-style:start -->)[\s\S]*?(<!-- studio-style:end -->)/,`$1\n  <style id="studio-intro-style">\n${studioStyle}</style>\n  $2`)
+  .replace(/(<!-- studio:start -->)[\s\S]*?(<!-- studio:end -->)/,`$1\n${studioMarkup}<script id="studio-intro-script">\n${studioScript}</script>\n  $2`));
 const repo = 'https://github.com/agentic-videogen/awesome-agentic-videogen';
 const slug = s => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const escape = s => String(s).replace(/\|/g, '\\|').replace(/\[/g, '\\[').replace(/\]/g, '\\]');

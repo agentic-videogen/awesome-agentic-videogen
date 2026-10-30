@@ -1,0 +1,104 @@
+<dialog id="studio-intro" class="studio-intro" aria-labelledby="studio-title" aria-describedby="studio-description">
+  <div class="studio-shell">
+    <header class="studio-topbar">
+      <div class="studio-wordmark"><img src="logo.svg" width="28" height="25" alt="Video Rebirth"><span>AGENTIC <b>VIDEOGEN</b><small>INSIDE THE STUDIO</small></span></div>
+      <button class="studio-skip" id="studio-skip" type="button" autofocus>Skip opening <span aria-hidden="true">↗</span></button>
+    </header>
+    <div class="studio-main">
+      <p class="studio-eyebrow"><span></span> A LITTLE ROBOT. A LOT OF IMAGINATION.</p>
+      <h2 id="studio-title">Every video starts<br> with an <em>idea.</em></h2>
+      <p id="studio-description" class="sr-only">A short animated illustration of a small robot planning, generating and editing a video in its studio. Skip the opening at any time, or press Escape.</p>
+      <div class="studio-artwork" aria-hidden="true">
+        <svg class="studio-art" viewBox="0 0 1000 470" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="studio-wall" x1="244" y1="35" x2="812" y2="370" gradientUnits="userSpaceOnUse"><stop stop-color="#eeebf5"/><stop offset="1" stop-color="#f2f0e9"/></linearGradient>
+            <linearGradient id="studio-sky" x1="602" y1="113" x2="602" y2="259" gradientUnits="userSpaceOnUse"><stop stop-color="#ece6f8"/><stop offset="1" stop-color="#f8ddd0"/></linearGradient>
+            <linearGradient id="studio-face" x1="316" y1="168" x2="424" y2="233" gradientUnits="userSpaceOnUse"><stop stop-color="#434050"/><stop offset="1" stop-color="#262431"/></linearGradient>
+            <clipPath id="studio-screen-clip"><rect x="542" y="117" width="227" height="128" rx="7"/></clipPath>
+          </defs>
+          <!-- A softly lit studio, rather than a loading screen. -->
+          <path d="M112 319C70 210 135 97 271 63C416 27 580 41 723 67C867 92 932 174 884 319Z" fill="url(#studio-wall)"/>
+          <ellipse cx="506" cy="427" rx="356" ry="17" fill="#e9e6df"/>
+          <path d="M95 338H915" stroke="#dbd8d1" stroke-width="2" stroke-linecap="round"/>
+          <!-- Storyboard: three little shots pinned to the wall. -->
+          <g class="studio-storyboard" stroke="#4d4a53" stroke-width="2" stroke-linejoin="round">
+            <rect x="139" y="100" width="146" height="136" rx="10" fill="#f9f7f2"/>
+            <path d="M157 122H201M157 129H183" stroke="#a7a1af" stroke-width="3" stroke-linecap="round"/>
+            <g class="studio-board-card"><rect x="156" y="145" width="48" height="34" rx="3" fill="#e5e0f1"/><path d="M160 175L172 160L180 168L188 155L200 175" stroke="#9c8bbb"/><circle cx="169" cy="153" r="3" fill="#b2a4ca" stroke="none"/></g>
+            <g class="studio-board-card studio-board-card-two"><rect x="213" y="145" width="48" height="34" rx="3" fill="#e0ebe3"/><path d="M219 174L233 155L256 174" stroke="#81a58f"/></g>
+            <g class="studio-board-card studio-board-card-three"><rect x="156" y="188" width="48" height="31" rx="3" fill="#f3e1ce"/><circle cx="179" cy="203" r="8" stroke="#c29970"/><path d="M216 197H257M216 205H244M216 213H252" stroke="#c6c1b7" stroke-width="3" stroke-linecap="round"/></g>
+            <circle cx="212" cy="107" r="4" fill="#7161c5" stroke="none"/>
+          </g>
+          <!-- Shelf and a small plant. -->
+          <g class="studio-room-details" stroke="#77746f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M772 86H870"/><rect x="782" y="57" width="9" height="27" rx="2" fill="#c4badb"/><rect x="794" y="51" width="13" height="33" rx="2" fill="#e6c5a4"/><path d="M815 59L821 84" stroke-width="7" stroke="#a5bfb1"/>
+            <path d="M848 64V50M848 59C835 56 834 45 835 43C846 42 851 53 848 59ZM848 54C857 53 862 45 861 41C851 41 845 45 848 54Z" fill="#abc5ad" stroke="#77947a"/>
+            <path d="M838 65H858L855 84H842Z" fill="#e1d6c8"/>
+          </g>
+          <!-- A warm task lamp. -->
+          <g stroke="#5d5962" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M185 323L198 258L234 229"/><circle cx="199" cy="258" r="5" fill="#f7f6f2"/>
+            <path d="M229 220L247 237L225 251L213 240Z" fill="#d9c8e6"/><path d="M165 324H204"/>
+          </g>
+          <path class="studio-lamplight" d="M222 246L194 322H304L235 244Z" fill="#f1ddb3" opacity=".25"/>
+          <!-- Stool and desk legs are behind the robot. -->
+          <path d="M316 378L308 425M385 377L397 425" stroke="#77716f" stroke-width="6" stroke-linecap="round"/>
+          <rect x="298" y="362" width="105" height="20" rx="10" fill="#b6a4ca" stroke="#595361" stroke-width="2.5"/>
+          <path d="M219 344L206 423M799 344L812 423" stroke="#8e857b" stroke-width="9" stroke-linecap="round"/>
+          <!-- The robot's body, with the Video Rebirth mark on its chest. -->
+          <path d="M333 350L326 402H350L363 351M373 351L378 402H402L397 347" fill="#d9d5e2" stroke="#514c5d" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M320 402H349V415H310C308 408 312 402 320 402ZM378 402H403C413 403 417 409 414 415H378Z" fill="#504b5d"/>
+          <rect x="317" y="247" width="97" height="105" rx="29" fill="#fdfbf6" stroke="#504b5c" stroke-width="3"/>
+          <path d="M330 340H400" stroke="#d2ccd9" stroke-width="2"/>
+          <rect x="340" y="267" width="50" height="44" rx="12" fill="#e8e1f1"/>
+          <path d="M110.038 129.487L164.205 23.0828H153.146L110.541 106.775L100.989 88.0123L140.703 10H196L115.568 168H90.4324L10 10H39.2699C45.37 10 50.9543 13.4248 53.7233 18.8642L110.038 129.487Z" transform="translate(351 277) scale(.14)" fill="#7161c5"/>
+          <circle cx="365" cy="326" r="3" fill="#a5bcac"/>
+          <!-- Rounded head, attentive eyes, and a springy antenna. -->
+          <g class="studio-robot-head">
+            <path d="M367 152V134" stroke="#504b5c" stroke-width="3" stroke-linecap="round"/>
+            <circle class="studio-antenna" cx="367" cy="129" r="7" fill="#c8b7e4" stroke="#504b5c" stroke-width="2.5"/>
+            <rect x="286" y="190" width="14" height="29" rx="6" fill="#c6b6db" stroke="#504b5c" stroke-width="2.5"/>
+            <rect x="434" y="190" width="14" height="29" rx="6" fill="#c6b6db" stroke="#504b5c" stroke-width="2.5"/>
+            <rect x="296" y="154" width="140" height="98" rx="32" fill="#fdfbf6" stroke="#504b5c" stroke-width="3"/>
+            <rect x="308" y="169" width="116" height="66" rx="22" fill="url(#studio-face)"/>
+            <g class="studio-robot-eyes" fill="#d9d0fb"><rect x="332" y="190" width="12" height="19" rx="6"/><rect x="388" y="190" width="12" height="19" rx="6"/></g>
+            <path d="M354 215Q366 225 378 215" stroke="#b9abd9" stroke-width="3" stroke-linecap="round"/>
+            <path d="M310 163H328" stroke="white" stroke-width="4" stroke-linecap="round"/>
+          </g>
+          <!-- Hands tapping a real editing keyboard. -->
+          <g class="studio-robot-arm studio-robot-arm-left" stroke="#514b5b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M323 273L297 304L343 324" stroke-width="16"/><path d="M323 273L297 304L343 324" stroke="#e1dbe9" stroke-width="10"/><rect x="337" y="314" width="30" height="17" rx="8" fill="#fdfbf6"/></g>
+          <g class="studio-robot-arm studio-robot-arm-right" stroke="#514b5b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M408 275L432 301L411 324" stroke-width="16"/><path d="M408 275L432 301L411 324" stroke="#e1dbe9" stroke-width="10"/><rect x="397" y="315" width="30" height="17" rx="8" fill="#fdfbf6"/></g>
+          <!-- Main monitor: storyboard becomes a generated world, then a cut. -->
+          <path d="M649 294V322M618 323H682" stroke="#5a5560" stroke-width="8" stroke-linecap="round"/>
+          <rect x="522" y="87" width="267" height="209" rx="15" fill="#fdfbf8" stroke="#514c5c" stroke-width="3"/>
+          <path d="M523 106H787" stroke="#d9d4df" stroke-width="2"/>
+          <circle cx="537" cy="98" r="3" fill="#d3bdcf"/><circle cx="548" cy="98" r="3" fill="#dbcda9"/><circle cx="559" cy="98" r="3" fill="#adc2b3"/>
+          <path d="M691 98H769" stroke="#ddd7e7" stroke-width="3" stroke-linecap="round"/>
+          <rect x="542" y="117" width="227" height="128" rx="7" fill="#f0edf5"/>
+          <g class="studio-scene-sketch" stroke="#c5bdd2" stroke-width="2" stroke-linejoin="round"><path d="M544 222L599 169L634 205L668 176L766 240M544 238L593 211L626 229L669 212L727 241"/><circle cx="710" cy="145" r="13"/><path d="M656 204V225M648 232L656 222L664 232M646 213L656 211L666 215" stroke="#b5a9c8" stroke-linecap="round"/></g>
+          <g clip-path="url(#studio-screen-clip)">
+            <g class="studio-generated-scene"><rect x="542" y="117" width="227" height="128" fill="url(#studio-sky)"/><circle cx="710" cy="147" r="16" fill="#eebc8d"/><path d="M536 225L596 163L640 212L671 174L777 248H536Z" fill="#b7c7bc"/><path d="M536 241L594 203L630 231L676 208L774 245H536Z" fill="#8aab9b"/><path d="M622 246L655 217L674 223L662 246Z" fill="#f1d5ae"/><ellipse cx="660" cy="232" rx="13" ry="3" fill="#7e9b89"/><circle cx="660" cy="197" r="6" fill="#4e4b57"/><path d="M660 205V222M660 211L650 216M660 211L669 214M660 222L653 231M660 222L665 231" stroke="#655875" stroke-width="5" stroke-linecap="round"/></g>
+            <path class="studio-render-sweep" d="M543 117V245" stroke="#b7a2ec" stroke-width="3"/>
+          </g>
+          <g class="studio-screen-play"><circle cx="655" cy="181" r="22" fill="#fdfbf3" fill-opacity=".92"/><path d="M650 170L666 181L650 192Z" fill="#7161c5"/></g>
+          <rect x="542" y="254" width="227" height="26" rx="4" fill="#f0edf5"/>
+          <g class="studio-timeline-clips"><rect x="548" y="260" width="58" height="14" rx="3" fill="#cbbce5"/><rect x="612" y="260" width="73" height="14" rx="3" fill="#a8c5b3"/><rect x="691" y="260" width="70" height="14" rx="3" fill="#e8c5a3"/><path d="M556 266H594M620 266H674M699 266H751" stroke="white" stroke-opacity=".6" stroke-width="2" stroke-linecap="round"/></g>
+          <path class="studio-playhead" d="M551 253V280" stroke="#7161c5" stroke-width="2"/>
+          <!-- Keyboard, coffee, speaker and a completed-video toast. -->
+          <path d="M329 320H468L480 331H318Z" fill="#e3dce9" stroke="#716a7b" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M339 324H457M360 327H439" stroke="#9c91aa" stroke-width="2" stroke-linecap="round"/>
+          <path d="M814 278H845V326H814Z" fill="#d4c9dd" stroke="#645c6e" stroke-width="2"/><circle cx="829" cy="303" r="9" fill="#9f91af"/><circle cx="829" cy="287" r="3" fill="#8a7c9a"/>
+          <path d="M250 300H276V324H250Z" fill="#e7c7a6" stroke="#70645c" stroke-width="2" stroke-linejoin="round"/><path d="M277 305H282C293 305 293 318 277 318" stroke="#70645c" stroke-width="2"/>
+          <path class="studio-coffee-steam" d="M258 291C251 283 265 280 259 272M268 293C261 285 275 282 269 274" stroke="#c7bcb2" stroke-width="2" stroke-linecap="round"/>
+          <rect x="156" y="332" width="720" height="19" rx="8" fill="#e7dac9" stroke="#73675f" stroke-width="2.5"/>
+          <path d="M166 338H864" stroke="#f5ecdf" stroke-width="2" stroke-linecap="round"/>
+          <g class="studio-video-ready"><rect x="740" y="140" width="124" height="40" rx="12" fill="#fdfbf6" stroke="#b8cbbd" stroke-width="1.5"/><circle cx="760" cy="160" r="8" fill="#dfebe1"/><path d="M756 160L759 163L764 157" stroke="#61876c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><text x="775" y="164" fill="#506958" font-family="system-ui,sans-serif" font-size="11">Video ready</text></g>
+          <g class="studio-sparkles" stroke="#b09acb" stroke-width="2" stroke-linecap="round"><path d="M465 135V147M459 141H471M468 247V255M464 251H472"/><path d="M487 181V189M483 185H491" stroke="#c4b08d"/></g>
+        </svg>
+      </div>
+      <div class="studio-caption"><p id="studio-status">Planning the next shot…</p><span>From an idea to the final frame.</span></div>
+      <ol class="studio-stages" aria-label="Illustrated video creation workflow"><li data-studio-stage="plan"><span>01</span> Plan</li><li data-studio-stage="generate"><span>02</span> Generate</li><li data-studio-stage="edit"><span>03</span> Edit</li></ol>
+    </div>
+    <footer class="studio-bottom"><span>VIDEO GENERATION MEETS AGENT HARNESS</span><span>A small scene before the big picture.</span></footer>
+  </div>
+</dialog>
