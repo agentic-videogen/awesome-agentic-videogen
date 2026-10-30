@@ -14,7 +14,7 @@ This repository hosts the companion bibliography and resource links for the surv
 
 - **2026-10-30:** Our survey is now available on [arXiv](https://arxiv.org/abs/2610.40191).
 
-- **2026-10-28:** Initial bibliography-backed catalogue and companion website draft.
+- **2026-10-28:** Repository released.
 
 ## Contents
 
