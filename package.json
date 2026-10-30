@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs",
+    "build:website": "node scripts/build-website.mjs",
     "check": "node scripts/check.mjs",
+    "check:website": "node scripts/check-website.mjs",
     "preview": "node scripts/serve.mjs"
   },
   "engines": { "node": ">=18" }

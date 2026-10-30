@@ -4,7 +4,7 @@ The target website is `https://agentic-videogen.github.io/`, owned by the `agent
 
 ## Website repository
 
-Use a public repository named `agentic-videogen.github.io` under the matching account. Copy the contents of `docs/` (not its enclosing directory) to that repository's publishing root. In Settings → Pages, publish the `main` branch from `/ (root)`.
+Use a public repository named `agentic-videogen.github.io` under the matching account. Run `node scripts/build-website.mjs`, then copy the contents of `build/website/` (not its enclosing directory) to that repository's publishing root. In Settings → Pages, publish the `main` branch from `/ (root)`. Pull the latest website revision before publishing and preserve unrelated files; normal Git history retains the previous design for rollback.
 
 No `CNAME` file is required for the default `github.io` address. A repository under another owner cannot claim this address merely by changing its name.
 
@@ -12,7 +12,13 @@ No `CNAME` file is required for the default `github.io` address. A repository un
 
 Run `node scripts/build.mjs`, then `node scripts/check.mjs`. Run `node scripts/serve.mjs` to preview the static site locally. There are no runtime packages, build services, secrets, or external font dependencies.
 
-Update the canonical `data/catalogue.json` first, regenerate, and then synchronize `docs/` with the website repository. The survey's arXiv/PDF link and citation should be added when the authors release them; do not invent an identifier or publish a private draft.
+Update the canonical `data/catalogue.json` first, regenerate, and then synchronize `build/website/` with the website repository. The survey's released paper and citation are maintained in `citation.bib` and the generated resource links.
+
+## Approved homepage design
+
+The approved dark studio homepage is built from `docs/preview.html` and its `preview-*` assets. `scripts/build-preview.mjs` retains the editable, separate preview; `scripts/build-website.mjs` builds the base content and preview, removes the preview title and `noindex` marker, uses a production-specific opening key, and packages all runtime assets into `build/website/`. Source previews and local figure-preparation tools are not deployed. `scripts/check-website.mjs` verifies the production package, including the 96 linked works in Figure 2, Table 1, authors, citation, internal anchors and local assets. The original base homepage stays in `docs/index.html`; do not copy it over the approved production design.
+
+The new opening preserves the preview's session-based autoplay, Skip/Escape, reduced-motion and deep-link behavior. The former homepage and opening remain recoverable in Git; the local preview is not renamed or deleted.
 
 ## Authors and institutional marks
 

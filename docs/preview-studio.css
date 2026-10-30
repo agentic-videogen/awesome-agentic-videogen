@@ -1,0 +1,87 @@
+/* An original vector studio illustration for the local homepage preview. */
+.robot-studio {
+  margin: 0;
+  min-width: 0;
+  border: 1px solid #ffffff16;
+  border-radius: 18px;
+  padding: 19px 19px 20px;
+  background: linear-gradient(145deg, #20243b, #171d31);
+  box-shadow: 0 25px 90px #060a1833;
+}
+.workstudio-heading { display: flex; align-items: center; justify-content: space-between; gap: 15px; min-height: 25px; }
+.workstudio-heading > span { display: flex; align-items: center; gap: 9px; color: #b5bdd6; font-size: 8px; letter-spacing: 1.6px; }
+.workstudio-heading i { width: 5px; height: 5px; border-radius: 50%; background: #a78bfa; }
+.workstudio-motion { display: inline-flex; align-items: center; gap: 5px; border: 1px solid #ffffff17; border-radius: 5px; background: #ffffff03; color: #b8c1d8; padding: 5px 7px; font-size: 9px; line-height: 1.1; }
+.workstudio-motion:hover { background: #a78bfa16; border-color: #a78bfa70; color: #f5f3ff; }
+.workstudio-motion svg { display: block; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.workstudio-play-icon { display: none; }
+.robot-studio[data-motion="paused"] .workstudio-play-icon { display: block; }
+.robot-studio[data-motion="paused"] .workstudio-pause-icon { display: none; }
+.workstudio-art { display: block; width: 100%; height: auto; margin: 12px 0 0; overflow: visible; }
+.workstudio-caption { border-top: 1px solid #ffffff10; padding: 18px 4px 0; margin-top: 4px; }
+.design-preview .workstudio-caption h2 { color: #e9eaf5; font-size: 14px; font-weight: 550; letter-spacing: -.15px; line-height: 1.5; margin: 0; text-wrap: pretty; }
+.workstudio-caption p { font-size: 11px; color: #a7b1cc; line-height: 1.6; margin: 5px 0 0; }
+.work-robot-head { transform-origin: 233px 229px; }
+.work-robot-eyes { transform-box: fill-box; transform-origin: center; }
+.work-arm-near { transform-origin: 210px 267px; }
+.work-arm-far { transform-origin: 255px 263px; }
+.work-fingers-near { transform-origin: 274px 315px; }
+.work-fingers-far { transform-origin: 309px 310px; }
+.work-shot-sketch { opacity: .12; }
+.work-render-sweep { opacity: 0; }
+.robot-studio[data-motion="paused"] * { animation-play-state: paused !important; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .robot-studio { animation: preview-arrive .7s .1s ease-out both; }
+  .work-robot-head { animation: workstudio-concentrate 5.8s ease-in-out infinite; }
+  .work-robot-eyes { animation: workstudio-blink 4.6s ease-in-out infinite; }
+  .work-arm-near { animation: workstudio-type-near .76s ease-in-out infinite alternate; }
+  .work-arm-far { animation: workstudio-type-far .64s -.3s ease-in-out infinite alternate; }
+  .work-fingers-near { animation: workstudio-fingers .38s ease-in-out infinite alternate; }
+  .work-fingers-far { animation: workstudio-fingers .32s -.15s ease-in-out infinite alternate-reverse; }
+  .work-antenna, .work-keyboard-light { animation: workstudio-breathe 3s ease-in-out infinite; }
+  .work-coffee-steam { animation: workstudio-steam 3.8s ease-in-out infinite; }
+  .work-generated-shot { animation: workstudio-generate 12s ease-in-out infinite; }
+  .work-shot-sketch { animation: workstudio-sketch 12s ease-in-out infinite; }
+  .work-render-sweep { animation: workstudio-render 12s linear infinite; }
+  .work-distant-hills { animation: workstudio-pan-far 15s ease-in-out infinite; }
+  .work-near-hills { animation: workstudio-pan-near 15s ease-in-out infinite; }
+  .work-video-walker { animation: workstudio-walker 3s ease-in-out infinite; }
+  .work-playhead { animation: workstudio-play 8s linear infinite; }
+  .work-editor-cursor { animation: workstudio-edit 12s ease-in-out infinite; }
+}
+@keyframes workstudio-concentrate { 0%, 100% { transform: rotate(0deg); } 30% { transform: rotate(2deg) translateY(1px); } 68% { transform: rotate(-1.5deg); } }
+@keyframes workstudio-blink { 0%, 43%, 49%, 100% { transform: scaleY(1); } 46% { transform: scaleY(.12); } }
+@keyframes workstudio-type-near { from { transform: rotate(-1.4deg); } to { transform: rotate(1.4deg) translateY(.6px); } }
+@keyframes workstudio-type-far { from { transform: rotate(1deg); } to { transform: rotate(-1.8deg) translateY(1px); } }
+@keyframes workstudio-fingers { from { transform: translateY(-.9px); } to { transform: translateY(1.1px); } }
+@keyframes workstudio-breathe { 0%, 100% { opacity: .5; } 50% { opacity: 1; } }
+@keyframes workstudio-steam { 0%, 100% { transform: translateY(1px); opacity: .25; } 50% { transform: translateY(-4px); opacity: .65; } }
+@keyframes workstudio-generate { 0%, 8%, 100% { opacity: .32; } 35%, 90% { opacity: 1; } }
+@keyframes workstudio-sketch { 0%, 10%, 100% { opacity: .8; } 38%, 90% { opacity: 0; } }
+@keyframes workstudio-render { 0%, 13% { transform: translateX(0); opacity: 0; } 16% { opacity: 1; } 43% { transform: translateX(175px); opacity: .8; } 46%, 100% { transform: translateX(220px); opacity: 0; } }
+@keyframes workstudio-pan-far { 0%, 100% { transform: translateX(0); } 50% { transform: translateX(-5px); } }
+@keyframes workstudio-pan-near { 0%, 100% { transform: translateX(0); } 50% { transform: translateX(4px); } }
+@keyframes workstudio-walker { 0%, 100% { transform: translateY(0) rotate(.4deg); transform-origin: 477px 222px; } 50% { transform: translateY(-1px) rotate(-.4deg); transform-origin: 477px 222px; } }
+@keyframes workstudio-play { 0% { transform: translateX(0); opacity: 0; } 3%, 94% { opacity: 1; } 99%, 100% { transform: translateX(204px); opacity: 0; } }
+@keyframes workstudio-edit { 0%, 18%, 100% { transform: translate(0, 0); } 30%, 42% { transform: translate(-20px, 47px); } 52%, 64% { transform: translate(-93px, 41px); } 77%, 88% { transform: translate(-14px, -21px); } }
+@media (max-width: 850px) {
+  .robot-studio { padding: 15px 12px 17px; border-radius: 12px; }
+  .workstudio-heading > span { font-size: 7px; letter-spacing: 1px; }
+  .workstudio-motion { font-size: 8px; gap: 3px; padding: 4px 5px; }
+  .workstudio-caption { padding-top: 14px; }
+  .design-preview .workstudio-caption h2 { font-size: 12px; }
+  .workstudio-caption p { font-size: 10px; }
+}
+@media (max-width: 650px) {
+  .robot-studio { max-width: 480px; width: 100%; margin: 2px auto 0; padding: 15px 12px 17px; }
+  .workstudio-heading > span { font-size: 8px; letter-spacing: 1.2px; }
+  .workstudio-motion { font-size: 9px; padding: 5px 7px; }
+  .workstudio-art { margin: 9px -6px 0; width: calc(100% + 12px); }
+  .workstudio-caption { padding: 15px 3px 0; margin-top: 7px; }
+  .design-preview .workstudio-caption h2 { font-size: 13px; }
+  .workstudio-caption p { font-size: 10px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .workstudio-motion { display: none; }
+}
