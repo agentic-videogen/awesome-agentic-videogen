@@ -20,6 +20,8 @@ The approved dark studio homepage is built from `docs/preview.html` and its `pre
 
 The new opening preserves the preview's session-based autoplay, Skip/Escape, reduced-motion and deep-link behavior. The former homepage and opening remain recoverable in Git; the local preview is not renamed or deleted.
 
+If GitHub's browser uploader fails on the large figure asset, run `node scripts/build-website.mjs --inline`. This produces the same homepage with embedded styles, scripts, catalogue and bibliography downloads; images use the reviewed, immutable Awesome-repository revision. Only `index.html` is required for this deployment mode. `docs/preview.html` remains the separate multi-file preview. The normal package can still be regenerated without `--inline`.
+
 ## Authors and institutional marks
 
 `data/people.json` records the manuscript's author order, contribution notes, institution order, and logo provenance. The build renders this information into the homepage. Update it from the latest Overleaf author block, then rebuild; do not infer individual institution assignments when the manuscript does not provide them. Institutional marks remain their owners' property and are used here to identify participating institutions. The title–authors–institutions layout takes inspiration from the [Affordance Survey website](https://jingliangli.com/affordance-survey/); the existing paper library remains unchanged.

@@ -29,7 +29,7 @@ assert(html.includes('studio-art workstudio-art'),'New robot is missing from the
 const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);
 assert.equal(new Set(ids).size,ids.length,'Duplicate HTML IDs');
 for(const match of html.matchAll(/href="#([^"]+)"/g))assert(ids.includes(match[1]),'Broken anchor: '+match[1]);
-for(const match of html.matchAll(/\b(?:src|href)="([^"]+)"/g)){
+for(const match of html.replace(/<script\b[\s\S]*?<\/script>/gi,'').matchAll(/\b(?:src|href)="([^"]+)"/g)){
   const url=match[1];
   if(/^(?:https?:|mailto:|data:|#)/.test(url))continue;
   const file=decodeURIComponent(url.split(/[?#]/)[0]);
@@ -39,4 +39,12 @@ for(const file of ['preview-design.css','preview-studio.css','preview-tree.css']
 const svg=read('preview-figure2.svg');
 assert(/<svg\b/.test(svg)&&!/<script|<foreignObject|\bonload\s*=/i.test(svg),'Invalid or active research-tree SVG');
 assert.equal(read('survey.bib').trim(),fs.readFileSync(path.join(root,'citation.bib'),'utf8').trim(),'Survey citation is stale');
+if(html.includes('id="bundled-catalogue"')){
+  const bundled=JSON.parse(html.match(/<script id="bundled-catalogue" type="application\/json">([\s\S]*?)<\/script>/)[1]);
+  assert.deepEqual(bundled,catalogue,'Embedded catalogue is stale');
+  assert(!/<script[^>]+src=|<link rel="stylesheet"/.test(html),'Single-page deployment still needs external code');
+  assert(!html.includes("fetch('./catalogue.json')"),'Single-page deployment still fetches an unversioned catalogue');
+  assert(html.includes('1392608310e3da2cb2c9ae19e21c84095cc12238/docs/preview-figure2.svg'),'Research figure must use its reviewed asset revision');
+  for(const match of html.matchAll(/<script type="module" data-bundled-script="[^"]+">([\s\S]*?)<\/script>/g))new vm.Script(match[1]);
+}
 console.log('PASS: production assets, 96 tree links, 52 comparison studies, authors, anchors, catalogue, citation and opening safeguards.');
