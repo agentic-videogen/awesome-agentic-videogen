@@ -2,8 +2,12 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import {githubRepositorySlug} from './link-badges.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const auditPath = path.join(root, 'data/link-audit.json');
+const linkAudit = fs.existsSync(auditPath) ? JSON.parse(fs.readFileSync(auditPath, 'utf8')) : null;
+const auditedLinks = new Map((linkAudit?.records || []).map(r => [r.id, r]));
 const args = process.argv.slice(2);
 const option = (name) => { const i = args.indexOf(name); return i < 0 ? null : args[i + 1]; };
 const manuscript = option('--manuscript');
@@ -116,17 +120,21 @@ for (const [key, topics] of cites) {
   const p = {
     id: key, aliases: [], name: c?.name || null, title, authors: plain(b.author), year,
     date: c?.date || null, venue: venue || (id ? 'arXiv' : 'Online resource'), type,
-    url, arxiv: id, code: links.find(u => /^https?:\/\/github\.com\/[^/]+\/[^/#?]+/.test(u)) || null,
-    project: links.find(u => u !== url && !/arxiv\.org|doi\.org|github\.com|proceedings\.mlr\.press|openaccess\.thecvf\.com|openreview\.net|aclanthology\.org|dl\.acm\.org|ieeexplore\.ieee\.org/.test(u)) || null,
+    // Scraped paper links may identify baselines, dependencies or platform feedback.
+    // Only a primary repository URL or an audited decision may populate code.
+    url, arxiv: id, code: githubRepositorySlug(url) ? url : null,
+    project: null,
     topics, metadata: c ? 'Previously source checked' : 'Survey bibliography',
     checkedOn: c?.verified_on || null,
   };
+  const audited = auditedLinks.get(key);
+  if (audited) Object.assign(p, {code: audited.code, project: audited.project});
   identities.set(identity, p); papers.push(p);
 }
 const genie = papers.find(p => p.id === 'hadsell2026genie4');
 if (genie) Object.assign(genie, { name: 'Genie 4', date: '2026-10-27', metadata: 'Previously source checked', checkedOn: '2026-10-28' });
 papers.sort((a, b) => (b.year || 0) - (a.year || 0) || a.title.localeCompare(b.title));
-const catalogue = { updated: '2026-10-28', source: 'Bibliographic records cited in the survey; source-checked timeline records reused where available.', papers };
+const catalogue = { updated: linkAudit?.checkedOn || '2026-10-28', source: 'Bibliographic records cited in the survey; source-checked timeline records reused where available.', papers };
 fs.mkdirSync(path.join(root, 'data'), { recursive: true });
 fs.writeFileSync(path.join(root, 'data/catalogue.json'), JSON.stringify(catalogue, null, 2) + '\n', 'utf8');
 console.log(JSON.stringify({ papers: papers.length, cachedMetadata: papers.filter(p => p.checkedOn).length, byTrack: Object.fromEntries(['generation','world-modeling','development','agent-design','foundations','frontiers'].map(t => [t,papers.filter(p => p.topics.some(x => x.track === t)).length])), missing, noUrl, ignoredDuplicateKeys: [...new Set(duplicateKeys)] }, null, 2));

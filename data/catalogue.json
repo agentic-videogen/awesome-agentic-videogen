@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-28",
+  "updated": "2026-10-30",
   "source": "Bibliographic records cited in the survey; source-checked timeline records reused where available.",
   "papers": [
     {
@@ -14,7 +14,7 @@
       "type": "Benchmark",
       "url": "https://arxiv.org/abs/2604.10456",
       "arxiv": "2604.10456",
-      "code": "https://github.com/deepinsight/insightface/",
+      "code": null,
       "project": null,
       "topics": [
         {
@@ -65,7 +65,7 @@
       "url": "https://arxiv.org/abs/2605.06924",
       "arxiv": "2605.06924",
       "code": null,
-      "project": null,
+      "project": "http://dxlong2000.github.io/AARD",
       "topics": [
         {
           "track": "development",
@@ -96,7 +96,7 @@
       "url": "https://arxiv.org/abs/2607.19191",
       "arxiv": "2607.19191",
       "code": "https://github.com/amap-cvlab/ABot-World",
-      "project": "https://oasis-model.github.io/",
+      "project": null,
       "topics": [
         {
           "track": "world-modeling",
@@ -145,7 +145,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2601.20540",
       "arxiv": "2601.20540",
-      "code": null,
+      "code": "https://github.com/robbyant/lingbot-world",
       "project": null,
       "topics": [
         {
@@ -168,8 +168,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2610.12374",
       "arxiv": "2610.12374",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/MirroS-Lab/AgentGarten",
+      "project": "https://mirros-lab.github.io/agent-garten",
       "topics": [
         {
           "track": "world-modeling",
@@ -191,7 +191,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2608.28122",
       "arxiv": "2608.28122",
-      "code": null,
+      "code": "https://github.com/GeminiLight/awesome-agentic-artifact-creation",
       "project": null,
       "topics": [
         {
@@ -214,7 +214,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2510.04618",
       "arxiv": "2510.04618",
-      "code": null,
+      "code": "https://github.com/ace-agent/ace",
       "project": null,
       "topics": [
         {
@@ -264,7 +264,7 @@
       "type": "Survey",
       "url": "https://arxiv.org/abs/2609.31713",
       "arxiv": "2609.31713",
-      "code": null,
+      "code": "https://github.com/DXY0711/Awesome-Agentic-Video-Understanding",
       "project": null,
       "topics": [
         {
@@ -287,7 +287,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2609.06758",
       "arxiv": "2609.06758",
-      "code": null,
+      "code": "https://github.com/YinmingHuang/Awesome-agentic-visual-generation-model",
       "project": null,
       "topics": [
         {
@@ -310,7 +310,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2604.22748",
       "arxiv": "2604.22748",
-      "code": null,
+      "code": "https://github.com/matrix-agent/awesome-agentic-world-modeling",
       "project": null,
       "topics": [
         {
@@ -372,7 +372,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2605.10723",
       "arxiv": "2605.10723",
-      "code": "https://github.com/arXiv/html_feedback/issues",
+      "code": null,
       "project": null,
       "topics": [
         {
@@ -411,7 +411,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2606.05405",
       "arxiv": "2606.05405",
-      "code": null,
+      "code": "https://github.com/rdi-berkeley/agents-last-exam",
       "project": null,
       "topics": [
         {
@@ -438,8 +438,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2605.13724",
       "arxiv": "2605.13724",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/NVlabs/AnyFlow",
+      "project": "https://nvlabs.github.io/AnyFlow/",
       "topics": [
         {
           "track": "development",
@@ -488,8 +488,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2605.18748",
       "arxiv": "2605.18748",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/yeates/Aurora",
+      "project": "https://yeates.github.io/Aurora-Page",
       "topics": [
         {
           "track": "generation",
@@ -561,8 +561,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2608.12313",
       "arxiv": "2608.12313",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/HBDYW/AVA-Encoder",
+      "project": "https://ava-encoder.github.io/",
       "topics": [
         {
           "track": "development",
@@ -584,7 +584,7 @@
       "type": "Benchmark",
       "url": "https://arxiv.org/abs/2604.08540",
       "arxiv": "2604.08540",
-      "code": null,
+      "code": "https://github.com/microsoft/AVGen-Bench",
       "project": "http://aka.ms/avgenbench",
       "topics": [
         {
@@ -607,8 +607,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2609.07720",
       "arxiv": "2609.07720",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/Ironieser/CineCrew",
+      "project": "https://jiabenchen.github.io/cinecrew/",
       "topics": [
         {
           "track": "agent-design",
@@ -638,7 +638,7 @@
       "type": "Benchmark",
       "url": "https://arxiv.org/abs/2609.08275",
       "arxiv": "2609.08275",
-      "code": null,
+      "code": "https://github.com/AlibabaResearch/cut-craft-bench",
       "project": null,
       "topics": [
         {
@@ -766,7 +766,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2604.09195",
       "arxiv": "2604.09195",
-      "code": "https://github.com/arXiv/html_feedback/issues",
+      "code": null,
       "project": null,
       "topics": [
         {
@@ -859,8 +859,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2602.02214",
       "arxiv": "2602.02214",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/thu-ml/Causal-Forcing",
+      "project": "https://thu-ml.github.io/CausalForcing.github.io/",
       "topics": [
         {
           "track": "development",
@@ -940,8 +940,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2604.24842",
       "arxiv": "2604.24842",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/GoogleCloudPlatform/genmedia-izumi-agent/tree/main/demos/backend/ads_codirector",
+      "project": "https://co-director-agent.github.io/",
       "topics": [
         {
           "track": "generation",
@@ -975,8 +975,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2601.22301",
       "arxiv": "2601.22301",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/GonzaloGNogales/coarse2real",
+      "project": "https://gonzalognogales.github.io/coarse2real/",
       "topics": [
         {
           "track": "world-modeling",
@@ -998,7 +998,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2605.18747",
       "arxiv": "2605.18747",
-      "code": null,
+      "code": "https://github.com/YennNing/Awesome-Code-as-Agent-Harness-Papers",
       "project": null,
       "topics": [
         {
@@ -1029,7 +1029,7 @@
       "type": "Report",
       "url": "https://doi.org/10.13140/RG.2.2.34014.80961",
       "arxiv": null,
-      "code": null,
+      "code": "https://github.com/code-video-model/CodeVideoModel",
       "project": "https://code-video-model.github.io/",
       "topics": [
         {
@@ -1056,8 +1056,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2608.25927",
       "arxiv": "2608.25927",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/buaacyw/code-world-model",
+      "project": "https://buaacyw.github.io/cwm/",
       "topics": [
         {
           "track": "world-modeling",
@@ -1079,7 +1079,7 @@
       "type": "Paper",
       "url": "https://icml.cc/virtual/2026/poster/65050",
       "arxiv": null,
-      "code": null,
+      "code": "https://github.com/showlab/Code2Video",
       "project": null,
       "topics": [
         {
@@ -1152,7 +1152,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2608.02694",
       "arxiv": "2608.02694",
-      "code": null,
+      "code": "https://github.com/idwts/Crayotter",
       "project": null,
       "topics": [
         {
@@ -1175,7 +1175,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2606.07636",
       "arxiv": "2606.07636",
-      "code": null,
+      "code": "https://github.com/idwts/Crayotter",
       "project": null,
       "topics": [
         {
@@ -1256,8 +1256,8 @@
       "type": "Benchmark",
       "url": "https://arxiv.org/abs/2605.19484",
       "arxiv": "2605.19484",
-      "code": null,
-      "project": "http://benchmark.While",
+      "code": "https://github.com/CUC-MIPG/CutVerse",
+      "project": null,
       "topics": [
         {
           "track": "agent-design",
@@ -1283,7 +1283,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2505.22954",
       "arxiv": "2505.22954",
-      "code": null,
+      "code": "https://github.com/jennyzzt/dgm",
       "project": null,
       "topics": [
         {
@@ -1310,8 +1310,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2606.20388",
       "arxiv": "2606.20388",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/HKUSTDial/DataMagic",
+      "project": "https://datamagic-home.github.io/",
       "topics": [
         {
           "track": "agent-design",
@@ -1341,7 +1341,7 @@
       "type": "Paper",
       "url": "https://doi.org/10.18653/v1/2026.findings-acl.1578",
       "arxiv": null,
-      "code": null,
+      "code": "https://github.com/icip-cas/PPTAgent",
       "project": null,
       "topics": [
         {
@@ -1368,7 +1368,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2604.04875",
       "arxiv": "2604.04875",
-      "code": null,
+      "code": "https://github.com/AK-DREAM/DIRECT",
       "project": null,
       "topics": [
         {
@@ -1391,7 +1391,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2605.30090",
       "arxiv": "2605.30090",
-      "code": null,
+      "code": "https://github.com/jiaminchen-1031/DirectorBench",
       "project": null,
       "topics": [
         {
@@ -1427,7 +1427,7 @@
       "url": "https://arxiv.org/abs/2511.20647",
       "arxiv": "2511.20647",
       "code": null,
-      "project": null,
+      "project": "https://diverse-video.github.io/",
       "topics": [
         {
           "track": "development",
@@ -1449,7 +1449,7 @@
       "type": "Benchmark",
       "url": "https://arxiv.org/abs/2609.03673",
       "arxiv": "2609.03673",
-      "code": null,
+      "code": "https://github.com/AMAP-ML/StateAgent",
       "project": null,
       "topics": [
         {
@@ -1495,7 +1495,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2606.24107",
       "arxiv": "2606.24107",
-      "code": null,
+      "code": "https://github.com/iLearn-Lab/DramaDirector",
       "project": null,
       "topics": [
         {
@@ -1576,8 +1576,8 @@
       "type": "Paper",
       "url": "https://doi.org/10.1145/3793853.3795760",
       "arxiv": null,
-      "code": "https://github.com/fraunhoferhhi/vvenc/wiki",
-      "project": "https://amiaopensource.github.io/ffmprovisr/",
+      "code": null,
+      "project": null,
       "topics": [
         {
           "track": "generation",
@@ -1657,7 +1657,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2608.09096",
       "arxiv": "2608.09096",
-      "code": null,
+      "code": "https://github.com/RUCAIBox/Evo-Bench",
       "project": null,
       "topics": [
         {
@@ -1680,7 +1680,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2608.15071",
       "arxiv": "2608.15071",
-      "code": null,
+      "code": "https://github.com/A-EVO-Lab/a-evolve/tree/release/evo-harness",
       "project": null,
       "topics": [
         {
@@ -1781,7 +1781,7 @@
       "url": "https://doi.org/10.1609/aaai.v40i10.37758",
       "arxiv": null,
       "code": null,
-      "project": "https://ojs.aaai.org/index.php/AAAI/article/view/37758",
+      "project": null,
       "topics": [
         {
           "track": "generation",
@@ -1804,7 +1804,7 @@
       "url": "https://filmaster-ai.github.io/",
       "arxiv": null,
       "code": null,
-      "project": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/fb8e52adcd9b59bad73f109c53afc43a-Abstract-Conference.html",
+      "project": "https://filmaster-ai.github.io/",
       "topics": [
         {
           "track": "generation",
@@ -1827,7 +1827,7 @@
       "url": "https://doi.org/10.1609/aaai.v40i9.37711",
       "arxiv": null,
       "code": null,
-      "project": null,
+      "project": "https://luoxyhappy.github.io/FilmWeaver/",
       "topics": [
         {
           "track": "agent-design",
@@ -1854,7 +1854,7 @@
       "url": "https://arxiv.org/abs/2607.19038",
       "arxiv": "2607.19038",
       "code": null,
-      "project": null,
+      "project": "https://filmworld-ai.github.io",
       "topics": [
         {
           "track": "agent-design",
@@ -1880,7 +1880,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2608.29814",
       "arxiv": "2608.29814",
-      "code": "https://github.com/arXiv/html_feedback/issues",
+      "code": null,
       "project": null,
       "topics": [
         {
@@ -1965,7 +1965,7 @@
       "type": "Survey",
       "url": "https://arxiv.org/abs/2606.20683",
       "arxiv": "2606.20683",
-      "code": null,
+      "code": "https://github.com/ggjy/Awesome-Agent-Engineering",
       "project": null,
       "topics": [
         {
@@ -1988,8 +1988,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2604.02329",
       "arxiv": "2604.02329",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/ShandaAI/AlayaRenderer",
+      "project": "https://alaya-studio.github.io/renderer/",
       "topics": [
         {
           "track": "world-modeling",
@@ -2011,8 +2011,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2607.18703",
       "arxiv": "2607.18703",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/AlayaLab/AlayaRenderer-Flash",
+      "project": "https://alaya-renderer-flash.alayalab.ai/",
       "topics": [
         {
           "track": "world-modeling",
@@ -2057,7 +2057,7 @@
       "type": "Paper",
       "url": "https://doi.org/10.1609/aaai.v40i7.37418",
       "arxiv": null,
-      "code": null,
+      "code": "https://github.com/Karine-Huang/GenMAC",
       "project": "https://karine-h.github.io/GenMAC/",
       "topics": [
         {
@@ -2096,7 +2096,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2507.19457",
       "arxiv": "2507.19457",
-      "code": null,
+      "code": "https://github.com/gepa-ai/gepa",
       "project": null,
       "topics": [
         {
@@ -2146,7 +2146,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2606.20799",
       "arxiv": "2606.20799",
-      "code": "https://github.com/arXiv/html_feedback/issues",
+      "code": null,
       "project": null,
       "topics": [
         {
@@ -2208,8 +2208,8 @@
       "type": "Paper",
       "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Meng_HoloCine_Holistic_Generation_of_Cinematic_Multi-Shot_Long_Video_Narratives_CVPR_2026_paper.html",
       "arxiv": null,
-      "code": null,
-      "project": null,
+      "code": "https://github.com/yihao-meng/HoloCine",
+      "project": "https://holo-cine.github.io/",
       "topics": [
         {
           "track": "generation",
@@ -2262,7 +2262,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2607.07534",
       "arxiv": "2607.07534",
-      "code": null,
+      "code": "https://github.com/robbyant/lingbot-world-v2",
       "project": null,
       "topics": [
         {
@@ -2289,7 +2289,7 @@
       "type": "Dataset",
       "url": "https://arxiv.org/abs/2608.01157",
       "arxiv": "2608.01157",
-      "code": null,
+      "code": "https://github.com/InteracVid/InteracVid",
       "project": null,
       "topics": [
         {
@@ -2317,7 +2317,7 @@
       "url": "https://arxiv.org/abs/2509.22292",
       "arxiv": "2509.22292",
       "code": null,
-      "project": "https://velpegor.github.io/SceneSplit/",
+      "project": null,
       "topics": [
         {
           "track": "development",
@@ -2339,8 +2339,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2606.03168",
       "arxiv": "2606.03168",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/RyanChenYN/JAVEdit",
+      "project": "https://ryanchenyn.github.io/projects/JAVEdit",
       "topics": [
         {
           "track": "development",
@@ -2416,7 +2416,7 @@
       "type": "Paper",
       "url": "https://doi.org/10.1109/TIFS.2026.3688194",
       "arxiv": null,
-      "code": "https://github.com/arXiv/html_feedback/issues",
+      "code": "https://github.com/kuai-lab/TIFS26_lvmark",
       "project": null,
       "topics": [
         {
@@ -2462,8 +2462,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2610.27999",
       "arxiv": "2610.27999",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/SkyworkAI/Matrix-Game",
+      "project": "https://matrix-game-v4-0.github.io/page/",
       "topics": [
         {
           "track": "world-modeling",
@@ -2485,7 +2485,7 @@
       "type": "Paper",
       "url": "https://aclanthology.org/2026.eacl-long.101/",
       "arxiv": null,
-      "code": "https://github.com/black-forest-labs/flux",
+      "code": null,
       "project": null,
       "topics": [
         {
@@ -2520,8 +2520,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2606.14667",
       "arxiv": "2606.14667",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/ernie-research/Memento",
+      "project": "https://ernie-research.github.io/Memento/",
       "topics": [
         {
           "track": "agent-design",
@@ -2574,7 +2574,7 @@
       "type": "Paper",
       "url": "https://doi.org/10.1007/978-3-032-37356-4_14",
       "arxiv": null,
-      "code": null,
+      "code": "https://github.com/YoungRaeKimm/MemRoPE",
       "project": null,
       "topics": [
         {
@@ -2601,7 +2601,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2603.28052",
       "arxiv": "2603.28052",
-      "code": null,
+      "code": "https://github.com/stanford-iris-lab/meta-harness-tbench2-artifact",
       "project": null,
       "topics": [
         {
@@ -2624,8 +2624,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2603.14790",
       "arxiv": "2603.14790",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/pharlency/Mind-of-Director",
+      "project": "https://pharlency.github.io/Mind-of-Director/",
       "topics": [
         {
           "track": "generation",
@@ -2729,7 +2729,7 @@
       "url": "https://arxiv.org/abs/2602.03028",
       "arxiv": "2602.03028",
       "code": null,
-      "project": null,
+      "project": "https://sunwenzhang1996.github.io/MUSE/",
       "topics": [
         {
           "track": "generation",
@@ -2817,8 +2817,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2605.18396",
       "arxiv": "2605.18396",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/CUTEPKQ/NEWTON",
+      "project": "https://Newton026.github.io/newton",
       "topics": [
         {
           "track": "development",
@@ -2983,8 +2983,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2610.20693",
       "arxiv": "2610.20693",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/worldbench/Orbia",
+      "project": "https://orbia-bench.github.io/",
       "topics": [
         {
           "track": "world-modeling",
@@ -3029,8 +3029,8 @@
       "type": "Dataset",
       "url": "https://arxiv.org/abs/2506.18851",
       "arxiv": "2506.18851",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/Phantom-video/Phantom-Data",
+      "project": "https://phantom-video.github.io/Phantom-Data/",
       "topics": [
         {
           "track": "development",
@@ -3052,7 +3052,7 @@
       "type": "Benchmark",
       "url": "https://arxiv.org/abs/2605.10806",
       "arxiv": "2605.10806",
-      "code": null,
+      "code": "https://github.com/NU-World-Model-Embodied-AI/PhyGround",
       "project": "https://phyground.github.io/",
       "topics": [
         {
@@ -3098,8 +3098,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2607.16355",
       "arxiv": "2607.16355",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/IApple233/PhysAgent",
+      "project": "https://iapple233.github.io/PhysAgent",
       "topics": [
         {
           "track": "development",
@@ -3161,7 +3161,7 @@
       "url": "https://arxiv.org/abs/2609.13006",
       "arxiv": "2609.13006",
       "code": null,
-      "project": null,
+      "project": "https://physplan.github.io/",
       "topics": [
         {
           "track": "agent-design",
@@ -3246,7 +3246,7 @@
       "url": "https://arxiv.org/abs/2609.10540",
       "arxiv": "2609.10540",
       "code": null,
-      "project": null,
+      "project": "https://alaya-lab.github.io/pwm",
       "topics": [
         {
           "track": "world-modeling",
@@ -3273,7 +3273,7 @@
       "url": "https://arxiv.org/abs/2609.35023",
       "arxiv": "2609.35023",
       "code": null,
-      "project": null,
+      "project": "https://dumdumgura.github.io/proxy2world/",
       "topics": [
         {
           "track": "world-modeling",
@@ -3295,8 +3295,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2608.02713",
       "arxiv": "2608.02713",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/worldbench/awesome-agentic-world-model",
+      "project": "https://worldbench.github.io/awesome-agentic-world-model",
       "topics": [
         {
           "track": "foundations",
@@ -3318,7 +3318,7 @@
       "type": "Benchmark",
       "url": "https://arxiv.org/abs/2608.09111",
       "arxiv": "2608.09111",
-      "code": "https://github.com/arXiv/html_feedback/issues",
+      "code": null,
       "project": null,
       "topics": [
         {
@@ -3369,7 +3369,7 @@
       "url": "https://arxiv.org/abs/2606.25496",
       "arxiv": "2606.25496",
       "code": null,
-      "project": null,
+      "project": "https://recommendation-as-generation.github.io/",
       "topics": [
         {
           "track": "development",
@@ -3399,7 +3399,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2607.07663",
       "arxiv": "2607.07663",
-      "code": null,
+      "code": "https://github.com/deepgrounding/recursive-self-improvement",
       "project": null,
       "topics": [
         {
@@ -3538,7 +3538,7 @@
       "type": "Survey",
       "url": "https://arxiv.org/abs/2601.07823",
       "arxiv": "2601.07823",
-      "code": null,
+      "code": "https://github.com/irom-princeton/awesome-robotics-video-world-model-papers",
       "project": null,
       "topics": [
         {
@@ -3561,7 +3561,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2609.24972",
       "arxiv": "2609.24972",
-      "code": null,
+      "code": "https://github.com/google-research/rrsi",
       "project": null,
       "topics": [
         {
@@ -3642,7 +3642,7 @@
       "type": "Paper",
       "url": "https://aclanthology.org/2026.findings-acl.345/",
       "arxiv": null,
-      "code": null,
+      "code": "https://github.com/HiThink-Research/SCMAPR",
       "project": null,
       "topics": [
         {
@@ -3677,7 +3677,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2608.15043",
       "arxiv": "2608.15043",
-      "code": null,
+      "code": "https://github.com/YuhuaJiang2002/SCOPE",
       "project": null,
       "topics": [
         {
@@ -3704,8 +3704,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2411.15115",
       "arxiv": "2411.15115",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/daeunni/VideoRepair",
+      "project": "https://video-repair.github.io",
       "topics": [
         {
           "track": "development",
@@ -3731,8 +3731,8 @@
       "type": "Survey",
       "url": "https://arxiv.org/abs/2607.13104",
       "arxiv": "2607.13104",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/selfimproving-agent/awesome-Self-Improving-Agents",
+      "project": "https://selfimproving-agent.github.io/",
       "topics": [
         {
           "track": "foundations",
@@ -3754,7 +3754,7 @@
       "type": "Paper",
       "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/f3f6f1739b646e0bd20111261ce23adb-Abstract-Conference.html",
       "arxiv": null,
-      "code": null,
+      "code": "https://github.com/JeremyZhao1998/SIGMark-release",
       "project": null,
       "topics": [
         {
@@ -3778,7 +3778,7 @@
       "url": "https://arxiv.org/abs/2607.01766",
       "arxiv": "2607.01766",
       "code": null,
-      "project": null,
+      "project": "https://dynsimworlds.github.io/",
       "topics": [
         {
           "track": "agent-design",
@@ -3804,7 +3804,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2609.34335",
       "arxiv": "2609.34335",
-      "code": null,
+      "code": "https://github.com/Ais0n/SkillPE",
       "project": null,
       "topics": [
         {
@@ -3827,7 +3827,7 @@
       "type": "Benchmark",
       "url": "https://arxiv.org/abs/2603.29186",
       "arxiv": "2603.29186",
-      "code": "https://github.com/arXiv/html_feedback/issues",
+      "code": "https://github.com/tohoku-nlp/SLVMEval",
       "project": "https://slvmeval.github.io/",
       "topics": [
         {
@@ -3850,7 +3850,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2605.17423",
       "arxiv": "2605.17423",
-      "code": null,
+      "code": "https://github.com/showlab/Soap2Soap",
       "project": null,
       "topics": [
         {
@@ -3885,7 +3885,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2610.28630",
       "arxiv": "2610.28630",
-      "code": null,
+      "code": "https://github.com/Enderfga/SolarRenderer",
       "project": null,
       "topics": [
         {
@@ -3912,8 +3912,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2609.02886",
       "arxiv": "2609.02886",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/Junchao-cs/SolarWM",
+      "project": "https://junchao-cs.github.io/SolarWM-Web/",
       "topics": [
         {
           "track": "development",
@@ -4040,7 +4040,7 @@
       "url": "https://arxiv.org/abs/2607.21594",
       "arxiv": "2607.21594",
       "code": null,
-      "project": null,
+      "project": "https://vail-ucla.github.io/worldweaver/",
       "topics": [
         {
           "track": "agent-design",
@@ -4066,7 +4066,7 @@
       "type": "Paper",
       "url": "https://nvlabs.github.io/Sana/Sol-Engine/StreamRender-H3/",
       "arxiv": null,
-      "code": null,
+      "code": "https://github.com/NVlabs/Sana/tree/sol-engine/models/streamrender_h3",
       "project": null,
       "topics": [
         {
@@ -4090,7 +4090,7 @@
       "url": "https://aclanthology.org/2026.acl-industry.7/",
       "arxiv": null,
       "code": null,
-      "project": null,
+      "project": "https://www.teachmaster.cn/",
       "topics": [
         {
           "track": "generation",
@@ -4120,7 +4120,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2511.21145",
       "arxiv": "2511.21145",
-      "code": "https://github.com/QwenLM/Qwen3-VL",
+      "code": "https://github.com/Orangestella/Video_RedTeam",
       "project": null,
       "topics": [
         {
@@ -4143,7 +4143,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2609.11873",
       "arxiv": "2609.11873",
-      "code": null,
+      "code": "https://github.com/theseus-labs-rsi/awesome-rsi",
       "project": null,
       "topics": [
         {
@@ -4170,7 +4170,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2609.28466",
       "arxiv": "2609.28466",
-      "code": null,
+      "code": "https://github.com/HaroldChen19/Awesome-AR-Video-Memory",
       "project": null,
       "topics": [
         {
@@ -4193,7 +4193,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2601.17737",
       "arxiv": "2601.17737",
-      "code": null,
+      "code": "https://github.com/Tencent/digitalhuman/tree/main/ScriptAgent",
       "project": null,
       "topics": [
         {
@@ -4216,8 +4216,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2608.26809",
       "arxiv": "2608.26809",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/Wucy0519/MMLVE",
+      "project": "https://wucy0519.github.io/MMLVE/",
       "topics": [
         {
           "track": "generation",
@@ -4239,7 +4239,7 @@
       "type": "Benchmark",
       "url": "https://arxiv.org/abs/2606.01164",
       "arxiv": "2606.01164",
-      "code": null,
+      "code": "https://github.com/liujiuming123/Awesome-Interactive-World-Model",
       "project": null,
       "topics": [
         {
@@ -4262,7 +4262,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2604.18364",
       "arxiv": "2604.18364",
-      "code": null,
+      "code": "https://github.com/SuienS/manim-trainer",
       "project": null,
       "topics": [
         {
@@ -4358,7 +4358,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2609.37950",
       "arxiv": "2609.37950",
-      "code": null,
+      "code": "https://github.com/bingjunluo/Video-RSI",
       "project": null,
       "topics": [
         {
@@ -4385,7 +4385,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2606.23327",
       "arxiv": "2606.23327",
-      "code": null,
+      "code": "https://github.com/HKUDS/VideoAgent",
       "project": null,
       "topics": [
         {
@@ -4504,7 +4504,7 @@
       "url": "https://arxiv.org/abs/2609.24997",
       "arxiv": "2609.24997",
       "code": null,
-      "project": null,
+      "project": "https://andyca111.github.io/VideoGen_Agent/",
       "topics": [
         {
           "track": "generation",
@@ -4550,8 +4550,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2601.03655",
       "arxiv": "2601.03655",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/EnVision-Research/VideoMemory",
+      "project": "https://hit-perfect.github.io/VideoMemory/",
       "topics": [
         {
           "track": "agent-design",
@@ -4577,8 +4577,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2503.06800",
       "arxiv": "2503.06800",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/Hritikbansal/videophy/tree/main/VIDEOPHY2",
+      "project": "https://videophy2.github.io/",
       "topics": [
         {
           "track": "development",
@@ -4600,8 +4600,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2509.22799",
       "arxiv": "2509.22799",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/TIGER-AI-Lab/VideoScore2",
+      "project": "https://tiger-ai-lab.github.io/VideoScore2/",
       "topics": [
         {
           "track": "development",
@@ -4726,8 +4726,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2610.12104",
       "arxiv": "2610.12104",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/LgQu/VINCIE-NExT",
+      "project": "https://vincie-next.github.io/",
       "topics": [
         {
           "track": "agent-design",
@@ -4808,7 +4808,7 @@
       "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Long_VISTA_A_Test-Time_Self-Improving_Video_Generation_Agent_CVPR_2026_paper.html",
       "arxiv": null,
       "code": null,
-      "project": null,
+      "project": "https://g-vista.github.io/",
       "topics": [
         {
           "track": "generation",
@@ -4850,7 +4850,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2604.28185",
       "arxiv": "2604.28185",
-      "code": null,
+      "code": "https://github.com/EvolvingLMMs-Lab/Evolving-Visual-Generation",
       "project": null,
       "topics": [
         {
@@ -4965,7 +4965,7 @@
       "url": "https://arxiv.org/abs/2510.10518",
       "arxiv": "2510.10518",
       "code": null,
-      "project": null,
+      "project": "https://vr-thinker.github.io/",
       "topics": [
         {
           "track": "development",
@@ -5014,7 +5014,7 @@
       "type": "Survey",
       "url": "https://arxiv.org/abs/2605.00080",
       "arxiv": "2605.00080",
-      "code": null,
+      "code": "https://github.com/NTUMARS/Awesome-World-Model-for-Robotics-Policy",
       "project": null,
       "topics": [
         {
@@ -5038,7 +5038,7 @@
       "url": "https://arxiv.org/abs/2609.16697",
       "arxiv": "2609.16697",
       "code": null,
-      "project": null,
+      "project": "https://3dagentworld.github.io/EmbodiedWM/",
       "topics": [
         {
           "track": "foundations",
@@ -5118,8 +5118,8 @@
       "type": "Survey",
       "url": "https://arxiv.org/abs/2609.16074",
       "arxiv": "2609.16074",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/RCL-Robotics/Awesome-World-Action-Models",
+      "project": "https://rcl-robotics.github.io/Awesome-World-Action-Models",
       "topics": [
         {
           "track": "foundations",
@@ -5218,7 +5218,7 @@
       "type": "Survey",
       "url": "https://arxiv.org/abs/2510.16732",
       "arxiv": "2510.16732",
-      "code": null,
+      "code": "https://github.com/Li-Zn-H/AwesomeWorldModels",
       "project": null,
       "topics": [
         {
@@ -5241,7 +5241,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2504.15228",
       "arxiv": "2504.15228",
-      "code": null,
+      "code": "https://github.com/MaximeRobeyns/self_improving_coding_agent",
       "project": null,
       "topics": [
         {
@@ -5310,7 +5310,7 @@
       "type": "Survey",
       "url": "https://arxiv.org/abs/2507.21046",
       "arxiv": "2507.21046",
-      "code": null,
+      "code": "https://github.com/CharlesQ9/Self-Evolving-Agents",
       "project": null,
       "topics": [
         {
@@ -5333,7 +5333,7 @@
       "type": "Survey",
       "url": "https://arxiv.org/abs/2502.17863",
       "arxiv": "2502.17863",
-      "code": null,
+      "code": "https://github.com/Yin-Z-Y/A-Survey-Spatiotemporal-Consistency-in-Video-Generation",
       "project": null,
       "topics": [
         {
@@ -5383,7 +5383,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2410.10762",
       "arxiv": "2410.10762",
-      "code": null,
+      "code": "https://github.com/FoundationAgents/AFlow",
       "project": null,
       "topics": [
         {
@@ -5406,7 +5406,7 @@
       "type": "Paper",
       "url": "https://proceedings.mlr.press/v267/wang25bx.html",
       "arxiv": null,
-      "code": null,
+      "code": "https://github.com/zorazrw/agent-workflow-memory",
       "project": null,
       "topics": [
         {
@@ -5433,7 +5433,7 @@
       "type": "Paper",
       "url": "https://doi.org/10.18653/v1/2025.acl-long.1170",
       "arxiv": null,
-      "code": null,
+      "code": "https://github.com/wangzx1219/AgentDropout",
       "project": null,
       "topics": [
         {
@@ -5491,7 +5491,7 @@
       "type": "Paper",
       "url": "https://animaker-dev.github.io/",
       "arxiv": null,
-      "code": null,
+      "code": "https://github.com/HITsz-TMG/Anim-Director/tree/main/AniMaker",
       "project": null,
       "topics": [
         {
@@ -5545,7 +5545,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2408.08435",
       "arxiv": "2408.08435",
-      "code": null,
+      "code": "https://github.com/ShengranHu/ADAS",
       "project": null,
       "topics": [
         {
@@ -5607,7 +5607,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2512.12196",
       "arxiv": "2512.12196",
-      "code": null,
+      "code": "https://github.com/multimodal-art-projection/AutoMV",
       "project": null,
       "topics": [
         {
@@ -5639,7 +5639,7 @@
       "url": "https://doi.org/10.1609/aaai.v39i28.35377",
       "arxiv": null,
       "code": null,
-      "project": "https://ojs.aaai.org/index.php/AAAI/article/view/35377",
+      "project": null,
       "topics": [
         {
           "track": "generation",
@@ -5669,8 +5669,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2510.01174",
       "arxiv": "2510.01174",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/showlab/Code2Video",
+      "project": "https://showlab.github.io/Code2Video/",
       "topics": [
         {
           "track": "agent-design",
@@ -5696,7 +5696,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2408.06072",
       "arxiv": "2408.06072",
-      "code": null,
+      "code": "https://github.com/THUDM/CogVideo",
       "project": null,
       "topics": [
         {
@@ -5719,7 +5719,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2503.17671",
       "arxiv": "2503.17671",
-      "code": null,
+      "code": "https://github.com/comfygpt/comfygpt",
       "project": null,
       "topics": [
         {
@@ -5746,7 +5746,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2505.17908",
       "arxiv": "2505.17908",
-      "code": null,
+      "code": "https://github.com/LitaoGuo/ComfyMind",
       "project": null,
       "topics": [
         {
@@ -5778,7 +5778,7 @@
       "url": "https://arxiv.org/abs/2506.03141",
       "arxiv": "2506.03141",
       "code": null,
-      "project": null,
+      "project": "https://context-as-memory.github.io/",
       "topics": [
         {
           "track": "agent-design",
@@ -5804,7 +5804,7 @@
       "type": "Survey",
       "url": "https://arxiv.org/abs/2507.16869",
       "arxiv": "2507.16869",
-      "code": null,
+      "code": "https://github.com/mayuelala/Awesome-Controllable-Video-Generation",
       "project": null,
       "topics": [
         {
@@ -5877,8 +5877,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2505.07818",
       "arxiv": "2505.07818",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/XueZeyue/DanceGRPO",
+      "project": "https://dancegrpo.github.io/",
       "topics": [
         {
           "track": "development",
@@ -5935,7 +5935,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2501.18590",
       "arxiv": "2501.18590",
-      "code": null,
+      "code": "https://github.com/nv-tlabs/diffusion-renderer",
       "project": null,
       "topics": [
         {
@@ -5958,7 +5958,7 @@
       "type": "Paper",
       "url": "https://doi.org/10.1145/3721238.3730761",
       "arxiv": null,
-      "code": "https://github.com/arXiv/html_feedback/issues",
+      "code": null,
       "project": "https://mudtriangle.com/editduet",
       "topics": [
         {
@@ -6020,7 +6020,7 @@
       "type": "Paper",
       "url": "https://aclanthology.org/2025.acl-long.374/",
       "arxiv": null,
-      "code": null,
+      "code": "https://github.com/Vchitect/Evaluation-Agent",
       "project": null,
       "topics": [
         {
@@ -6078,7 +6078,7 @@
       "type": "Survey",
       "url": "https://arxiv.org/abs/2503.21765",
       "arxiv": "2503.21765",
-      "code": null,
+      "code": "https://github.com/minnie-lin/Awesome-Physics-Cognition-based-Video-Generation",
       "project": null,
       "topics": [
         {
@@ -6101,8 +6101,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2501.12909",
       "arxiv": "2501.12909",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/HITsz-TMG/VideoClaw/tree/main/FilmAgent",
+      "project": "https://filmagent.github.io/",
       "topics": [
         {
           "track": "agent-design",
@@ -6128,7 +6128,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2508.05580",
       "arxiv": "2508.05580",
-      "code": "https://github.com/black-forest-labs/flux",
+      "code": null,
       "project": null,
       "topics": [
         {
@@ -6155,8 +6155,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2412.07772",
       "arxiv": "2412.07772",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/tianweiy/CausVid",
+      "project": "https://causvid.github.io/",
       "topics": [
         {
           "track": "development",
@@ -6179,7 +6179,7 @@
       "url": "https://arxiv.org/abs/2506.04213",
       "arxiv": "2506.04213",
       "code": null,
-      "project": null,
+      "project": "https://fulldit2.github.io/",
       "topics": [
         {
           "track": "agent-design",
@@ -6341,7 +6341,7 @@
       "url": "https://arxiv.org/abs/2410.08260",
       "arxiv": "2410.08260",
       "code": null,
-      "project": null,
+      "project": "https://koala36m.github.io/",
       "topics": [
         {
           "track": "development",
@@ -6363,7 +6363,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2511.20639",
       "arxiv": "2511.20639",
-      "code": null,
+      "code": "https://github.com/Gen-Verse/LatentMAS",
       "project": null,
       "topics": [
         {
@@ -6391,7 +6391,7 @@
       "url": "https://arxiv.org/abs/2503.10589",
       "arxiv": "2503.10589",
       "code": null,
-      "project": null,
+      "project": "https://guoyww.github.io/projects/long-context-video/",
       "topics": [
         {
           "track": "generation",
@@ -6413,8 +6413,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2507.01945",
       "arxiv": "2507.01945",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/CN-makers/LongAnimation",
+      "project": "https://cn-makers.github.io/long_animation_web/",
       "topics": [
         {
           "track": "agent-design",
@@ -6467,7 +6467,7 @@
       "type": "Paper",
       "url": "https://doi.org/10.18653/v1/2025.acl-long.757",
       "arxiv": null,
-      "code": null,
+      "code": "https://github.com/yanweiyue/masrouter",
       "project": null,
       "topics": [
         {
@@ -6494,7 +6494,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2508.13009",
       "arxiv": "2508.13009",
-      "code": null,
+      "code": "https://github.com/SkyworkAI/Matrix-Game/tree/main/Matrix-Game-2",
       "project": "https://matrix-game-v2.github.io",
       "topics": [
         {
@@ -6521,7 +6521,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2504.02361",
       "arxiv": "2504.02361",
-      "code": null,
+      "code": "https://github.com/CyberAgentAILab/MG-GEN",
       "project": null,
       "topics": [
         {
@@ -6598,7 +6598,7 @@
       "type": "Paper",
       "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Liao_MotionAgent_Fine-grained_Controllable_Video_Generation_via_Motion_Field_Agent_ICCV_2025_paper.html",
       "arxiv": null,
-      "code": null,
+      "code": "https://github.com/leoisufa/MotionAgent",
       "project": null,
       "topics": [
         {
@@ -6633,8 +6633,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2502.13372",
       "arxiv": "2502.13372",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/jama1017/MoVer",
+      "project": "https://mover-dsl.github.io/",
       "topics": [
         {
           "track": "agent-design",
@@ -6660,8 +6660,8 @@
       "type": "Dataset",
       "url": "https://arxiv.org/abs/2407.02371",
       "arxiv": "2407.02371",
-      "code": "https://github.com/snap-research/Panda-70M/tree/main?tab=readme-ov-file#license-of-panda-70m",
-      "project": "https://nju-pcalab.github.io/projects/openvid",
+      "code": "https://github.com/NJU-PCALab/OpenVid-1M",
+      "project": null,
       "topics": [
         {
           "track": "development",
@@ -6683,8 +6683,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2510.05096",
       "arxiv": "2510.05096",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/showlab/Paper2Video",
+      "project": "https://showlab.github.io/Paper2Video/",
       "topics": [
         {
           "track": "agent-design",
@@ -6710,7 +6710,7 @@
       "type": "Paper",
       "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Xue_PhyT2V_LLM-Guided_Iterative_Self-Refinement_for_Physics-Grounded_Text-to-Video_Generation_CVPR_2025_paper.html",
       "arxiv": null,
-      "code": null,
+      "code": "https://github.com/pittisl/PhyT2V",
       "project": null,
       "topics": [
         {
@@ -6733,7 +6733,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2508.09632",
       "arxiv": "2508.09632",
-      "code": null,
+      "code": "https://github.com/Gen-Verse/Paper2Video",
       "project": null,
       "topics": [
         {
@@ -6783,7 +6783,7 @@
       "type": "Paper",
       "url": "https://doi.org/10.18653/v1/2025.emnlp-demos.58",
       "arxiv": null,
-      "code": null,
+      "code": "https://github.com/AIGeeksGroup/PresentAgent",
       "project": null,
       "topics": [
         {
@@ -6856,7 +6856,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2506.08009",
       "arxiv": "2506.08009",
-      "code": null,
+      "code": "https://github.com/guandeh17/Self-Forcing",
       "project": "http://self-forcing.github.io/",
       "topics": [
         {
@@ -6910,7 +6910,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2512.04797",
       "arxiv": "2512.04797",
-      "code": "https://github.com/arXiv/html_feedback/issues",
+      "code": null,
       "project": null,
       "topics": [
         {
@@ -6933,8 +6933,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2511.08585",
       "arxiv": "2511.08585",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/ziqihuangg/Awesome-From-Video-Generation-to-World-Model",
+      "project": "https://world-model-roadmap.github.io/",
       "topics": [
         {
           "track": "foundations",
@@ -6956,8 +6956,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2511.18102",
       "arxiv": "2511.18102",
-      "code": "https://github.com/SilentView/LVD-2M",
-      "project": null,
+      "code": null,
+      "project": "https://spotlight-video.github.io/",
       "topics": [
         {
           "track": "development",
@@ -6987,8 +6987,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2512.19539",
       "arxiv": "2512.19539",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/Kevin-thu/StoryMem",
+      "project": "https://kevin-thu.github.io/StoryMem",
       "topics": [
         {
           "track": "agent-design",
@@ -7018,7 +7018,7 @@
       "type": "Benchmark",
       "url": "https://arxiv.org/abs/2512.21507",
       "arxiv": "2512.21507",
-      "code": null,
+      "code": "https://github.com/Gloria2tt/SVBench-Evaluation",
       "project": null,
       "topics": [
         {
@@ -7091,7 +7091,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2410.05677",
       "arxiv": "2410.05677",
-      "code": null,
+      "code": "https://github.com/Ji4chenLi/t2v-turbo",
       "project": "https://t2v-turbo-v2.github.io/",
       "topics": [
         {
@@ -7114,7 +7114,7 @@
       "type": "Paper",
       "url": "https://aclanthology.org/2025.acl-long.332/",
       "arxiv": null,
-      "code": null,
+      "code": "https://github.com/TIGER-AI-Lab/TheoremExplainAgent",
       "project": null,
       "topics": [
         {
@@ -7165,7 +7165,7 @@
       "url": "https://arxiv.org/abs/2503.09949",
       "arxiv": "2503.09949",
       "code": "https://github.com/bytedance/UVE",
-      "project": "https://llava-vl.github.io/blog/2024-01-30-llava-next/",
+      "project": null,
       "topics": [
         {
           "track": "development",
@@ -7187,7 +7187,7 @@
       "type": "Paper",
       "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Jiang_VACE_All-in-One_Video_Creation_and_Editing_ICCV_2025_paper.html",
       "arxiv": null,
-      "code": null,
+      "code": "https://github.com/ali-vilab/VACE",
       "project": null,
       "topics": [
         {
@@ -7234,7 +7234,7 @@
       "url": "https://arxiv.org/abs/2509.21291",
       "arxiv": "2509.21291",
       "code": null,
-      "project": null,
+      "project": "https://allenyidan.github.io/vcagent_page/",
       "topics": [
         {
           "track": "development",
@@ -7260,8 +7260,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2506.05284",
       "arxiv": "2506.05284",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/spmem/spmem",
+      "project": "https://spmem.github.io/",
       "topics": [
         {
           "track": "agent-design",
@@ -7287,8 +7287,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2510.20888",
       "arxiv": "2510.20888",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/bytedance/Video-As-Prompt",
+      "project": "https://bytedance.github.io/Video-As-Prompt",
       "topics": [
         {
           "track": "agent-design",
@@ -7314,7 +7314,7 @@
       "type": "Benchmark",
       "url": "https://arxiv.org/abs/2504.04907",
       "arxiv": "2504.04907",
-      "code": null,
+      "code": "https://github.com/Video-Bench/Video-Bench",
       "project": null,
       "topics": [
         {
@@ -7337,7 +7337,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2412.14167",
       "arxiv": "2412.14167",
-      "code": null,
+      "code": "https://github.com/CIntellifusion/VideoDPO",
       "project": "https://videodpo.github.io/",
       "topics": [
         {
@@ -7387,8 +7387,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2406.03520",
       "arxiv": "2406.03520",
-      "code": "https://github.com/X-PLUG/mPLUG-Owl/tree/main/mPLUG-Owl/mplug_owl_video",
-      "project": "https://videophy.github.io/",
+      "code": "https://github.com/Hritikbansal/videophy",
+      "project": null,
       "topics": [
         {
           "track": "development",
@@ -7410,7 +7410,7 @@
       "type": "Paper",
       "url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/8227285e32f70e07fa3a247f3a48006d-Abstract-Conference.html",
       "arxiv": null,
-      "code": null,
+      "code": "https://github.com/hurunyi/VideoShield",
       "project": null,
       "topics": [
         {
@@ -7433,8 +7433,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2405.19209",
       "arxiv": "2405.19209",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/Ziyang412/VideoTree",
+      "project": "https://videotree2024.github.io/",
       "topics": [
         {
           "track": "agent-design",
@@ -7487,8 +7487,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2506.18903",
       "arxiv": "2506.18903",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/runjiali-rl/vmem",
+      "project": "https://v-mem.github.io",
       "topics": [
         {
           "track": "agent-design",
@@ -7514,7 +7514,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2503.20314",
       "arxiv": "2503.20314",
-      "code": null,
+      "code": "https://github.com/Wan-Video/Wan2.1",
       "project": null,
       "topics": [
         {
@@ -7537,8 +7537,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2504.12369",
       "arxiv": "2504.12369",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/xizaoqu/WorldMem",
+      "project": "https://xizaoqu.github.io/worldmem/",
       "topics": [
         {
           "track": "world-modeling",
@@ -7576,8 +7576,8 @@
       "type": "Benchmark",
       "url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Duan_WorldScore_A_Unified_Evaluation_Benchmark_for_World_Generation_ICCV_2025_paper.pdf",
       "arxiv": null,
-      "code": null,
-      "project": null,
+      "code": "https://github.com/haoyi-duan/WorldScore",
+      "project": "https://haoyi-duan.github.io/WorldScore/",
       "topics": [
         {
           "track": "world-modeling",
@@ -7603,7 +7603,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2511.22098",
       "arxiv": "2511.22098",
-      "code": null,
+      "code": "https://github.com/showlab/WorldWander",
       "project": null,
       "topics": [
         {
@@ -7630,7 +7630,7 @@
       "type": "Survey",
       "url": "https://arxiv.org/abs/2407.08428",
       "arxiv": "2407.08428",
-      "code": null,
+      "code": "https://github.com/wentaoL86/Awesome-Human-Body-Video-Generation",
       "project": null,
       "topics": [
         {
@@ -7707,7 +7707,7 @@
       "type": "Survey",
       "url": "https://arxiv.org/abs/2404.14387",
       "arxiv": "2404.14387",
-      "code": null,
+      "code": "https://github.com/AlibabaResearch/DAMO-ConvAI/tree/main/Awesome-Self-Evolution-of-LLM",
       "project": null,
       "topics": [
         {
@@ -7788,7 +7788,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2409.07253",
       "arxiv": "2409.07253",
-      "code": null,
+      "code": "https://github.com/xie-lab-ml/awesome-alignment-of-diffusion-models",
       "project": null,
       "topics": [
         {
@@ -7811,7 +7811,7 @@
       "type": "Paper",
       "url": "https://doi.org/10.1145/3680528.3687688",
       "arxiv": null,
-      "code": null,
+      "code": "https://github.com/HITsz-TMG/Anim-Director/tree/main/Anim-Director",
       "project": null,
       "topics": [
         {
@@ -7842,7 +7842,7 @@
       "type": "Paper",
       "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/94894cf9bab20c00f6eaaff3b7f2be70-Abstract-Conference.html",
       "arxiv": null,
-      "code": null,
+      "code": "https://github.com/guoyww/AnimateDiff",
       "project": null,
       "topics": [
         {
@@ -7892,7 +7892,7 @@
       "type": "Survey",
       "url": "https://arxiv.org/abs/2411.05902",
       "arxiv": "2411.05902",
-      "code": null,
+      "code": "https://github.com/ChaofanTao/Autoregressive-Models-in-Vision-Survey",
       "project": null,
       "topics": [
         {
@@ -7915,7 +7915,7 @@
       "type": "Benchmark",
       "url": "https://arxiv.org/abs/2409.01392",
       "arxiv": "2409.01392",
-      "code": null,
+      "code": "https://github.com/xxyQwQ/ComfyBench",
       "project": null,
       "topics": [
         {
@@ -7942,7 +7942,7 @@
       "type": "Survey",
       "url": "https://arxiv.org/abs/2403.04279",
       "arxiv": "2403.04279",
-      "code": null,
+      "code": "https://github.com/PRIV-Creation/Awesome-Controllable-T2I-Diffusion-Models",
       "project": null,
       "topics": [
         {
@@ -7965,7 +7965,7 @@
       "type": "Survey",
       "url": "https://arxiv.org/abs/2402.17525",
       "arxiv": "2402.17525",
-      "code": null,
+      "code": "https://github.com/SiatMMLab/Awesome-Diffusion-Model-Based-Image-Editing-Methods",
       "project": null,
       "topics": [
         {
@@ -7988,7 +7988,7 @@
       "type": "Survey",
       "url": "https://arxiv.org/abs/2407.07111",
       "arxiv": "2407.07111",
-      "code": null,
+      "code": "https://github.com/wenhao728/awesome-diffusion-v2v",
       "project": null,
       "topics": [
         {
@@ -8011,7 +8011,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2408.11788",
       "arxiv": "2408.11788",
-      "code": "https://github.com/arXiv/html_feedback/issues",
+      "code": null,
       "project": null,
       "topics": [
         {
@@ -8042,8 +8042,8 @@
       "type": "Benchmark",
       "url": "https://arxiv.org/abs/2411.16657",
       "arxiv": "2411.16657",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/wz0919/DreamRunner",
+      "project": "https://zunwang1.github.io/DreamRunner",
       "topics": [
         {
           "track": "development",
@@ -8073,7 +8073,7 @@
       "type": "Benchmark",
       "url": "https://openaccess.thecvf.com/content/CVPR2024/html/Liu_EvalCrafter_Benchmarking_and_Evaluating_Large_Video_Generation_Models_CVPR_2024_paper.html",
       "arxiv": null,
-      "code": null,
+      "code": "https://github.com/EvalCrafter/EvalCrafter",
       "project": "https://evalcrafter.github.io/",
       "topics": [
         {
@@ -8096,7 +8096,7 @@
       "type": "Paper",
       "url": "https://doi.org/10.1609/aaai.v38i17.29936",
       "arxiv": null,
-      "code": null,
+      "code": "https://github.com/LeapLabTHU/ExpeL",
       "project": null,
       "topics": [
         {
@@ -8146,7 +8146,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2407.16124",
       "arxiv": "2407.16124",
-      "code": null,
+      "code": "https://github.com/ljh0v0/FMD-frechet-motion-distance",
       "project": null,
       "topics": [
         {
@@ -8196,7 +8196,7 @@
       "type": "Survey",
       "url": "https://arxiv.org/abs/2405.10674",
       "arxiv": "2405.10674",
-      "code": null,
+      "code": "https://github.com/soraw-ai/Awesome-Text-to-Video-Generation",
       "project": null,
       "topics": [
         {
@@ -8250,8 +8250,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2311.12631",
       "arxiv": "2311.12631",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/jiaxilv/GPT4Motion",
+      "project": "https://gpt4motion.github.io/",
       "topics": [
         {
           "track": "agent-design",
@@ -8277,7 +8277,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2412.03603",
       "arxiv": "2412.03603",
-      "code": null,
+      "code": "https://github.com/Tencent/HunyuanVideo",
       "project": null,
       "topics": [
         {
@@ -8308,7 +8308,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2312.12490",
       "arxiv": "2312.12490",
-      "code": null,
+      "code": "https://github.com/damo-vilab/i2vgen-xl/blob/main/doc/InstructVideo.md",
       "project": "https://instructvideo.github.io/",
       "topics": [
         {
@@ -8331,7 +8331,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2402.06071",
       "arxiv": "2402.06071",
-      "code": null,
+      "code": "https://github.com/apple/ml-keyframer",
       "project": null,
       "topics": [
         {
@@ -8358,7 +8358,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2408.10453",
       "arxiv": "2408.10453",
-      "code": "https://github.com/arXiv/html_feedback/issues",
+      "code": null,
       "project": null,
       "topics": [
         {
@@ -8389,7 +8389,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2310.04406",
       "arxiv": "2310.04406",
-      "code": null,
+      "code": "https://github.com/lapisrocks/LanguageAgentTreeSearch",
       "project": null,
       "topics": [
         {
@@ -8416,8 +8416,8 @@
       "type": "Paper",
       "url": "https://doi.org/10.1145/3640543.3645143",
       "arxiv": null,
-      "code": "https://github.com/arXiv/html_feedback/issues",
-      "project": null,
+      "code": null,
+      "project": "https://www.dgp.toronto.edu/~bryanw/lave/",
       "topics": [
         {
           "track": "generation",
@@ -8470,8 +8470,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2309.17444",
       "arxiv": "2309.17444",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/TonyLianLong/LLM-groundedVideoDiffusion",
+      "project": "https://llm-grounded-video-diffusion.github.io/",
       "topics": [
         {
           "track": "agent-design",
@@ -8497,7 +8497,7 @@
       "type": "Survey",
       "url": "https://arxiv.org/abs/2405.19334",
       "arxiv": "2405.19334",
-      "code": null,
+      "code": "https://github.com/YingqingHe/Awesome-LLMs-meet-Multimodal-Generation",
       "project": null,
       "topics": [
         {
@@ -8521,7 +8521,7 @@
       "url": "https://arxiv.org/abs/2401.12945",
       "arxiv": "2401.12945",
       "code": null,
-      "project": null,
+      "project": "https://lumiere-video.github.io/",
       "topics": [
         {
           "track": "foundations",
@@ -8543,8 +8543,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2404.05726",
       "arxiv": "2404.05726",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/boheumd/MA-LMM",
+      "project": "https://boheumd.github.io/MA-LMM/",
       "topics": [
         {
           "track": "agent-design",
@@ -8597,7 +8597,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2402.05120",
       "arxiv": "2402.05120",
-      "code": null,
+      "code": "https://github.com/MoreAgentsIsAllYouNeed/AgentForest",
       "project": null,
       "topics": [
         {
@@ -8624,8 +8624,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2406.06890",
       "arxiv": "2406.06890",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/yhZhai/mcm",
+      "project": "https://yhzhai.github.io/mcm/",
       "topics": [
         {
           "track": "development",
@@ -8647,8 +8647,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2310.08465",
       "arxiv": "2310.08465",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/showlab/MotionDirector",
+      "project": "https://showlab.github.io/MotionDirector/",
       "topics": [
         {
           "track": "development",
@@ -8670,7 +8670,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2307.16449",
       "arxiv": "2307.16449",
-      "code": null,
+      "code": "https://github.com/wenhaochai/MovieChat",
       "project": null,
       "topics": [
         {
@@ -8697,8 +8697,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2404.12391",
       "arxiv": "2404.12391",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/songweige/content-debiased-fvd",
+      "project": "https://content-debiased-fvd.github.io/",
       "topics": [
         {
           "track": "development",
@@ -8720,8 +8720,8 @@
       "type": "Benchmark",
       "url": "https://arxiv.org/abs/2404.07972",
       "arxiv": "2404.07972",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/xlang-ai/OSWorld",
+      "project": "https://os-world.github.io/",
       "topics": [
         {
           "track": "agent-design",
@@ -8747,7 +8747,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2402.19479",
       "arxiv": "2402.19479",
-      "code": null,
+      "code": "https://github.com/snap-research/Panda-70M",
       "project": "https://snap-research.github.io/Panda-70M",
       "topics": [
         {
@@ -8793,7 +8793,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2402.07945",
       "arxiv": "2402.07945",
-      "code": null,
+      "code": "https://github.com/niuzaisheng/ScreenAgent",
       "project": null,
       "topics": [
         {
@@ -8843,8 +8843,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2406.04325",
       "arxiv": "2406.04325",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/ShareGPT4Omni/ShareGPT4Video",
+      "project": "https://sharegpt4video.github.io/",
       "topics": [
         {
           "track": "development",
@@ -8889,8 +8889,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2411.04925",
       "arxiv": "2411.04925",
-      "code": "https://github.com/storyagent123/Comparison-of-storytelling-video-results/blob/main/demo/readme.md",
-      "project": null,
+      "code": null,
+      "project": "https://github.com/storyagent123/Comparison-of-storytelling-video-results",
       "topics": [
         {
           "track": "agent-design",
@@ -8916,7 +8916,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2405.18750",
       "arxiv": "2405.18750",
-      "code": null,
+      "code": "https://github.com/Ji4chenLi/t2v-turbo",
       "project": "https://t2v-turbo.github.io/",
       "topics": [
         {
@@ -8939,7 +8939,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2408.06292",
       "arxiv": "2408.06292",
-      "code": null,
+      "code": "https://github.com/SakanaAI/AI-Scientist",
       "project": null,
       "topics": [
         {
@@ -8962,7 +8962,7 @@
       "type": "Survey",
       "url": "https://arxiv.org/abs/2411.14499",
       "arxiv": "2411.14499",
-      "code": null,
+      "code": "https://github.com/tsinghua-fib-lab/World-Model",
       "project": null,
       "topics": [
         {
@@ -9008,7 +9008,7 @@
       "type": "Survey",
       "url": "https://arxiv.org/abs/2405.03150",
       "arxiv": "2405.03150",
-      "code": null,
+      "code": "https://github.com/ndrwmlnk/Awesome-Video-Diffusion-Models",
       "project": null,
       "topics": [
         {
@@ -9031,7 +9031,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2412.10783",
       "arxiv": "2412.10783",
-      "code": null,
+      "code": "https://github.com/feizc/Video-In-Context",
       "project": null,
       "topics": [
         {
@@ -9108,8 +9108,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2403.11481",
       "arxiv": "2403.11481",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/YueFan1014/VideoAgent",
+      "project": "https://videoagent.github.io/",
       "topics": [
         {
           "track": "agent-design",
@@ -9135,8 +9135,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2410.10076",
       "arxiv": "2410.10076",
-      "code": null,
-      "project": "https://video-as-agent.github.io",
+      "code": "https://github.com/Video-as-Agent/VideoAgent",
+      "project": "https://video-as-agent.github.io/",
       "topics": [
         {
           "track": "agent-design",
@@ -9162,8 +9162,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2401.09047",
       "arxiv": "2401.09047",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/AILab-CVC/VideoCrafter",
+      "project": "https://ailab-cvc.github.io/videocrafter",
       "topics": [
         {
           "track": "development",
@@ -9185,7 +9185,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2309.15091",
       "arxiv": "2309.15091",
-      "code": null,
+      "code": "https://github.com/HL-hanlin/VideoDirectorGPT",
       "project": "https://videodirectorgpt.github.io",
       "topics": [
         {
@@ -9212,8 +9212,8 @@
       "type": "Benchmark",
       "url": "https://arxiv.org/abs/2406.10227",
       "arxiv": "2406.10227",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/showlab/videogui",
+      "project": "https://showlab.github.io/videogui/",
       "topics": [
         {
           "track": "agent-design",
@@ -9262,8 +9262,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2406.15252",
       "arxiv": "2406.15252",
-      "code": "https://github.com/hotshotco/hotshot-xl",
-      "project": "https://tiger-ai-lab.github.io/MantisScore/",
+      "code": "https://github.com/TIGER-AI-Lab/VideoScore",
+      "project": "https://tiger-ai-lab.github.io/VideoScore/",
       "topics": [
         {
           "track": "development",
@@ -9316,8 +9316,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2305.16291",
       "arxiv": "2305.16291",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/MineDojo/Voyager",
+      "project": "https://voyager.minedojo.org/",
       "topics": [
         {
           "track": "agent-design",
@@ -9343,7 +9343,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2210.02747",
       "arxiv": "2210.02747",
-      "code": null,
+      "code": "https://github.com/facebookresearch/flow_matching",
       "project": null,
       "topics": [
         {
@@ -9366,7 +9366,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2309.14494",
       "arxiv": "2309.14494",
-      "code": null,
+      "code": "https://github.com/SooLab/Free-Bloom",
       "project": null,
       "topics": [
         {
@@ -9393,7 +9393,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2304.03442",
       "arxiv": "2304.03442",
-      "code": null,
+      "code": "https://github.com/joonspk-research/generative_agents",
       "project": null,
       "topics": [
         {
@@ -9447,7 +9447,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2307.03172",
       "arxiv": "2307.03172",
-      "code": null,
+      "code": "https://github.com/nelson-liu/lost-in-the-middle",
       "project": null,
       "topics": [
         {
@@ -9520,8 +9520,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2210.03629",
       "arxiv": "2210.03629",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/ysymyth/ReAct",
+      "project": "https://react-lm.github.io",
       "topics": [
         {
           "track": "agent-design",
@@ -9555,7 +9555,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2303.11366",
       "arxiv": "2303.11366",
-      "code": null,
+      "code": "https://github.com/noahshinn/reflexion",
       "project": null,
       "topics": [
         {
@@ -9609,7 +9609,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2212.09748",
       "arxiv": "2212.09748",
-      "code": null,
+      "code": "https://github.com/facebookresearch/DiT",
       "project": null,
       "topics": [
         {
@@ -9724,7 +9724,7 @@
       "type": "Paper",
       "url": "https://doi.org/10.1109/ICCV51070.2023.00701",
       "arxiv": null,
-      "code": null,
+      "code": "https://github.com/showlab/Tune-A-Video",
       "project": null,
       "topics": [
         {
@@ -9747,8 +9747,8 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2303.08128",
       "arxiv": "2303.08128",
-      "code": null,
-      "project": null,
+      "code": "https://github.com/cvlab-columbia/viper",
+      "project": "https://viper.cs.columbia.edu/",
       "topics": [
         {
           "track": "agent-design",
@@ -9774,7 +9774,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2211.11559",
       "arxiv": "2211.11559",
-      "code": null,
+      "code": "https://github.com/allenai/visprog",
       "project": null,
       "topics": [
         {
@@ -9801,7 +9801,7 @@
       "type": "Survey",
       "url": "https://arxiv.org/abs/2209.00796",
       "arxiv": "2209.00796",
-      "code": null,
+      "code": "https://github.com/YangLing0818/Diffusion-Models-Papers-Survey-Taxonomy",
       "project": null,
       "topics": [
         {
@@ -9824,7 +9824,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2205.14135",
       "arxiv": "2205.14135",
-      "code": null,
+      "code": "https://github.com/HazyResearch/flash-attention",
       "project": null,
       "topics": [
         {
@@ -9851,7 +9851,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2112.10752",
       "arxiv": "2112.10752",
-      "code": null,
+      "code": "https://github.com/CompVis/latent-diffusion",
       "project": null,
       "topics": [
         {
@@ -9875,7 +9875,7 @@
       "url": "https://arxiv.org/abs/2204.03458",
       "arxiv": "2204.03458",
       "code": null,
-      "project": null,
+      "project": "https://video-diffusion.github.io/",
       "topics": [
         {
           "track": "foundations",
@@ -9897,7 +9897,7 @@
       "type": "Paper",
       "url": "https://proceedings.mlr.press/v139/kossen21a.html",
       "arxiv": null,
-      "code": null,
+      "code": "https://github.com/jlko/active-testing",
       "project": null,
       "topics": [
         {
@@ -9966,7 +9966,7 @@
       "type": "Benchmark",
       "url": "https://arxiv.org/abs/2104.00650",
       "arxiv": "2104.00650",
-      "code": null,
+      "code": "https://github.com/m-bain/frozen-in-time",
       "project": null,
       "topics": [
         {
@@ -9989,7 +9989,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/2005.14165",
       "arxiv": "2005.14165",
-      "code": null,
+      "code": "https://github.com/openai/gpt-3",
       "project": null,
       "topics": [
         {
@@ -10016,7 +10016,7 @@
       "type": "Paper",
       "url": "https://arxiv.org/abs/1812.01717",
       "arxiv": "1812.01717",
-      "code": null,
+      "code": "https://github.com/google-research/google-research/tree/master/frechet_video_distance",
       "project": null,
       "topics": [
         {
@@ -10039,7 +10039,7 @@
       "type": "Tool / standard",
       "url": "https://agentskills.io/specification",
       "arxiv": null,
-      "code": null,
+      "code": "https://github.com/agentskills/agentskills/tree/main/skills-ref",
       "project": null,
       "topics": [
         {
@@ -10066,7 +10066,7 @@
       "type": "Tool / standard",
       "url": "https://docs.comfy.org/agent-tools/mcp",
       "arxiv": null,
-      "code": null,
+      "code": "https://github.com/Comfy-Org/comfy-mcp",
       "project": null,
       "topics": [
         {
@@ -10093,7 +10093,7 @@
       "type": "Tool / standard",
       "url": "https://docs.comfy.org/agent-tools/skills",
       "arxiv": null,
-      "code": null,
+      "code": "https://github.com/Comfy-Org/comfy-skills",
       "project": null,
       "topics": [
         {
@@ -10174,7 +10174,7 @@
       "type": "Paper",
       "url": "https://docs.swarmzero.ai/examples/swarms/livepeer-youtube-video-generator-swarm",
       "arxiv": null,
-      "code": null,
+      "code": "https://github.com/swarmzero/examples",
       "project": null,
       "topics": [
         {
