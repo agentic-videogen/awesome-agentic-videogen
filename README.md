@@ -2329,4 +2329,4 @@ Bibliographic records were assembled from the survey bibliography. Source-checke
 
 ## Acknowledgements
 
-The resource-list and companion-website organization is inspired by [Awesome Agentic World Modeling](https://github.com/matrix-agent/awesome-agentic-world-modeling). Our taxonomy follows the video-generation-centered scope of this survey; it does not reuse their levels or governing-law categories. Third-party papers and projects retain their original authorship and rights.
+Inspired by [Awesome-Video-Diffusion](https://github.com/showlab/Awesome-Video-Diffusion) and [Awesome Agentic World Modeling](https://github.com/matrix-agent/awesome-agentic-world-modeling).

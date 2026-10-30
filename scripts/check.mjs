@@ -104,6 +104,7 @@ assert(renderResourceBadges({type:'Report',url:'https://example.org/report'}).in
 assert(renderResourceBadges({type:'Paper',url:'https://doi.org/10.1234/example'}).includes('[![Paper]'),'Missing non-arXiv paper link');
 assert(!renderResourceBadges({...example,code:'https://github.com/arXiv/html_feedback/issues'}).includes('stars/'),'Issue list incorrectly assigned repository stars');
 const readme=read('README.md');
+assert.equal(readme.split('## Acknowledgements\n\n')[1]?.trim(),'Inspired by [Awesome-Video-Diffusion](https://github.com/showlab/Awesome-Video-Diffusion) and [Awesome Agentic World Modeling](https://github.com/matrix-agent/awesome-agentic-world-modeling).','Acknowledgements must briefly credit both reference repositories');
 assert(!/Maintaining the catalogue|maintaining-the-catalogue/.test(readme),'Removed maintenance section or its TOC entry returned');
 assert.equal(readme.split('\n')[0],'# <img src="docs/logo.svg" alt="Video Rebirth" width="40" height="35" align="top"> Awesome Agentic Video Generation','README logo must remain compact and inline with the title');
 for(const p of c.papers)assert(readme.includes(renderResourceBadges(p)),'README badges omitted: '+p.id);
