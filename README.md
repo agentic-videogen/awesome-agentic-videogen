@@ -4,13 +4,15 @@
 
 Agentic video generation · Agentic world modeling · Recursive self-improvement
 
-[Website](https://agentic-videogen.github.io/) · [Browse the catalogue](data/catalogue.json) · [Contribute](https://github.com/agentic-videogen/awesome-agentic-videogen/issues/new?template=add-resource.yml)
+[Website](https://agentic-videogen.github.io/) · [Paper](https://arxiv.org/pdf/2610.40191) · [Contribute](https://github.com/agentic-videogen/awesome-agentic-videogen/issues/new?template=add-resource.yml)
 
 A living collection of **387 unique papers and resources**, organized around how the agent harness meets video generation in creation, interaction, and model development. The catalogue also includes shared agent capabilities, foundations, and evaluation resources.
 
-The survey manuscript and its citation will be linked here when released. This repository currently publishes bibliographic records and links, not manuscript sources or paper PDFs.
+This repository hosts the companion bibliography and resource links for the survey.
 
 ## News
+
+- **2026-10-30:** Our survey is now available on [arXiv](https://arxiv.org/abs/2610.40191).
 
 - **2026-10-28:** Initial bibliography-backed catalogue and companion website draft.
 

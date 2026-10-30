@@ -104,6 +104,9 @@ assert(renderResourceBadges({type:'Report',url:'https://example.org/report'}).in
 assert(renderResourceBadges({type:'Paper',url:'https://doi.org/10.1234/example'}).includes('[![Paper]'),'Missing non-arXiv paper link');
 assert(!renderResourceBadges({...example,code:'https://github.com/arXiv/html_feedback/issues'}).includes('stars/'),'Issue list incorrectly assigned repository stars');
 const readme=read('README.md');
+assert(readme.includes('[Website](https://agentic-videogen.github.io/) · [Paper](https://arxiv.org/pdf/2610.40191) · [Contribute]('),'README top links must be Website, Paper, Contribute');
+assert(readme.includes('- **2026-10-30:** Our survey is now available on [arXiv](https://arxiv.org/abs/2610.40191).'),'Missing arXiv release news');
+assert(!readme.includes('will be linked here when released'),'Outdated unpublished-manuscript note remains');
 assert.equal(readme.split('## Acknowledgements\n\n')[1]?.trim(),'Inspired by [Awesome-Video-Diffusion](https://github.com/showlab/Awesome-Video-Diffusion) and [Awesome Agentic World Modeling](https://github.com/matrix-agent/awesome-agentic-world-modeling).','Acknowledgements must briefly credit both reference repositories');
 assert(!/Maintaining the catalogue|maintaining-the-catalogue/.test(readme),'Removed maintenance section or its TOC entry returned');
 assert.equal(readme.split('\n')[0],'# <img src="docs/logo.svg" alt="Video Rebirth" width="40" height="35" align="top"> Awesome Agentic Video Generation','README logo must remain compact and inline with the title');
