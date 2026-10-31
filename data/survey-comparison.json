@@ -1,10 +1,15 @@
 {
   "source": {
-    "manuscriptCommit": "63d5fc5680c2bb2cdca3f6249a72dd484d97ebdc",
+    "arxiv": "2610.40191v1",
+    "url": "https://arxiv.org/pdf/2610.40191v1",
+    "page": 6,
     "path": "tables/survey_comparison_overview.tex",
-    "importedOn": "2026-10-28"
+    "snapshot": "data/sources/arxiv-2610.40191v1-table1.tex",
+    "tableSha256": "1bfa7c39e224239849ea4d8ec89ac6bc6e02d5e2aaaa5a51b859bbbc0fd0c21e",
+    "pdfSha256": "5641189e8d614201957cafc58104e8e8f6b2e1212287b19db6de9dd54cbfb4c5",
+    "importedOn": "2026-10-31"
   },
-  "caption": "Comparison with related literature",
+  "caption": "Comparison with related surveys and studies",
   "columns": [
     {
       "label": "Video Generation",
@@ -19,7 +24,7 @@
       "group": "Thematic Coverage"
     },
     {
-      "label": "Agentic Video Generation",
+      "label": "Agentic Video Gen.",
       "group": "Thematic Coverage"
     },
     {
@@ -27,11 +32,15 @@
       "group": "Thematic Coverage"
     },
     {
-      "label": "Agentic Design",
+      "label": "RSI",
+      "group": "Thematic Coverage"
+    },
+    {
+      "label": "Agent Design",
       "group": null
     }
   ],
-  "notes": "Agentic Design covers agent-based methods; thematic coverage includes enabling methods. Years indicate first release (Ours: manuscript year), and coverage follows the cited version. Titles are abbreviated. Video-RSI is a method paper, so its symbols indicate method scope.",
+  "notes": "Studies are grouped by primary research focus and compared in terms of scope, thematic coverage, and agent design. Our survey connects agentic video generation, agent–world interaction, and video model development toward Recursive Self-Improvement (RSI) through a unified agent-harness framework.",
   "groups": [
     {
       "name": "Visual Generative Modeling",
@@ -42,9 +51,10 @@
           "year": 2021,
           "url": "https://arxiv.org/abs/2101.09983v2",
           "coverage": [
-            "partial",
+            "outside",
             "outside",
             "systematic",
+            "outside",
             "outside",
             "outside",
             "outside"
@@ -61,6 +71,7 @@
             "systematic",
             "partial",
             "outside",
+            "outside",
             "partial"
           ]
         },
@@ -75,6 +86,7 @@
             "systematic",
             "outside",
             "outside",
+            "outside",
             "outside"
           ]
         },
@@ -84,9 +96,10 @@
           "year": 2023,
           "url": "https://arxiv.org/abs/2303.07909v3",
           "coverage": [
-            "partial",
+            "systematic",
             "outside",
             "systematic",
+            "outside",
             "outside",
             "outside",
             "outside"
@@ -101,8 +114,9 @@
             "systematic",
             "partial",
             "systematic",
+            "systematic",
             "partial",
-            "partial",
+            "outside",
             "partial"
           ]
         },
@@ -113,10 +127,11 @@
           "url": "https://arxiv.org/abs/2411.05902v2",
           "coverage": [
             "systematic",
-            "partial",
+            "systematic",
             "systematic",
             "outside",
-            "partial",
+            "systematic",
+            "outside",
             "partial"
           ]
         },
@@ -127,10 +142,11 @@
           "url": "https://openreview.net/forum?id=rJSHjhEYJx",
           "coverage": [
             "systematic",
-            "partial",
             "systematic",
+            "systematic",
+            "outside",
             "partial",
-            "partial",
+            "outside",
             "partial"
           ]
         }
@@ -150,6 +166,7 @@
             "systematic",
             "outside",
             "outside",
+            "outside",
             "outside"
           ]
         },
@@ -164,6 +181,7 @@
             "systematic",
             "outside",
             "outside",
+            "outside",
             "outside"
           ]
         },
@@ -176,7 +194,8 @@
             "systematic",
             "outside",
             "systematic",
-            "partial",
+            "outside",
+            "outside",
             "outside",
             "outside"
           ]
@@ -197,6 +216,7 @@
             "systematic",
             "outside",
             "outside",
+            "outside",
             "outside"
           ]
         },
@@ -211,7 +231,8 @@
             "systematic",
             "systematic",
             "outside",
-            "partial"
+            "outside",
+            "systematic"
           ]
         },
         {
@@ -225,6 +246,7 @@
             "systematic",
             "partial",
             "partial",
+            "outside",
             "partial"
           ]
         },
@@ -237,8 +259,9 @@
             "systematic",
             "systematic",
             "systematic",
+            "outside",
             "partial",
-            "partial",
+            "outside",
             "outside"
           ]
         }
@@ -258,6 +281,7 @@
             "systematic",
             "outside",
             "outside",
+            "outside",
             "outside"
           ]
         },
@@ -272,6 +296,7 @@
             "systematic",
             "partial",
             "partial",
+            "outside",
             "partial"
           ]
         },
@@ -284,9 +309,10 @@
             "systematic",
             "systematic",
             "systematic",
-            "partial",
             "systematic",
-            "partial"
+            "systematic",
+            "outside",
+            "systematic"
           ]
         }
       ]
@@ -300,9 +326,10 @@
           "year": 2024,
           "url": "https://arxiv.org/abs/2409.07253v4",
           "coverage": [
-            "partial",
+            "systematic",
             "outside",
             "systematic",
+            "outside",
             "outside",
             "outside",
             "outside"
@@ -319,7 +346,8 @@
             "systematic",
             "outside",
             "outside",
-            "outside"
+            "outside",
+            "partial"
           ]
         },
         {
@@ -333,6 +361,7 @@
             "systematic",
             "outside",
             "partial",
+            "outside",
             "partial"
           ]
         },
@@ -345,9 +374,10 @@
             "systematic",
             "partial",
             "systematic",
+            "systematic",
             "partial",
-            "partial",
-            "partial"
+            "outside",
+            "systematic"
           ]
         }
       ]
@@ -364,7 +394,8 @@
             "systematic",
             "outside",
             "systematic",
-            "systematic",
+            "outside",
+            "outside",
             "outside",
             "outside"
           ]
@@ -376,9 +407,10 @@
           "url": "https://arxiv.org/html/2405.19334v2",
           "coverage": [
             "systematic",
-            "partial",
+            "outside",
             "systematic",
             "systematic",
+            "outside",
             "outside",
             "systematic"
           ]
@@ -393,7 +425,8 @@
             "systematic",
             "systematic",
             "partial",
-            "partial",
+            "systematic",
+            "outside",
             "systematic"
           ]
         },
@@ -404,9 +437,10 @@
           "url": "https://doi.org/10.20944/preprints202607.1997.v1",
           "coverage": [
             "systematic",
-            "outside",
+            "partial",
             "partial",
             "systematic",
+            "partial",
             "outside",
             "systematic"
           ]
@@ -417,9 +451,10 @@
           "year": 2026,
           "url": "https://arxiv.org/abs/2608.28122",
           "coverage": [
+            "systematic",
+            "systematic",
             "partial",
-            "outside",
-            "partial",
+            "systematic",
             "systematic",
             "outside",
             "systematic"
@@ -432,9 +467,10 @@
           "url": "https://www.preprints.org/manuscript/202609.0682",
           "coverage": [
             "systematic",
-            "partial",
+            "outside",
             "systematic",
             "systematic",
+            "outside",
             "outside",
             "systematic"
           ]
@@ -450,6 +486,7 @@
             "systematic",
             "systematic",
             "partial",
+            "systematic",
             "systematic"
           ]
         },
@@ -457,12 +494,13 @@
           "citation": "xing2026agenticvisualsurvey",
           "title": "Agentic Visual Generation",
           "year": 2026,
-          "url": "https://www.preprints.org/manuscript/202609.0173",
+          "url": "https://www.preprints.org/manuscript/202609.0173/v1",
           "coverage": [
             "systematic",
             "systematic",
             "systematic",
             "systematic",
+            "partial",
             "partial",
             "systematic"
           ]
@@ -479,10 +517,11 @@
           "url": "https://arxiv.org/abs/2609.31713v1",
           "coverage": [
             "outside",
-            "outside",
+            "partial",
             "systematic",
             "outside",
             "partial",
+            "outside",
             "systematic"
           ]
         },
@@ -494,6 +533,7 @@
           "coverage": [
             "outside",
             "outside",
+            "partial",
             "outside",
             "outside",
             "outside",
@@ -515,8 +555,9 @@
             "systematic",
             "systematic",
             "partial",
-            "partial",
-            "partial"
+            "systematic",
+            "outside",
+            "systematic"
           ]
         },
         {
@@ -530,6 +571,7 @@
             "systematic",
             "outside",
             "systematic",
+            "outside",
             "systematic"
           ]
         },
@@ -544,6 +586,7 @@
             "systematic",
             "outside",
             "systematic",
+            "outside",
             "systematic"
           ]
         },
@@ -558,6 +601,7 @@
             "systematic",
             "outside",
             "systematic",
+            "outside",
             "systematic"
           ]
         },
@@ -572,6 +616,7 @@
             "systematic",
             "outside",
             "systematic",
+            "partial",
             "systematic"
           ]
         },
@@ -581,11 +626,12 @@
           "year": 2026,
           "url": "https://arxiv.org/abs/2608.02713",
           "coverage": [
-            "partial",
-            "systematic",
-            "partial",
             "outside",
             "systematic",
+            "systematic",
+            "outside",
+            "systematic",
+            "outside",
             "systematic"
           ]
         }
@@ -603,8 +649,9 @@
             "systematic",
             "systematic",
             "systematic",
-            "outside",
+            "partial",
             "systematic",
+            "outside",
             "systematic"
           ]
         },
@@ -619,6 +666,7 @@
             "systematic",
             "outside",
             "systematic",
+            "outside",
             "systematic"
           ]
         },
@@ -633,6 +681,7 @@
             "systematic",
             "outside",
             "systematic",
+            "outside",
             "systematic"
           ]
         },
@@ -647,6 +696,7 @@
             "systematic",
             "outside",
             "systematic",
+            "outside",
             "systematic"
           ]
         },
@@ -661,6 +711,7 @@
             "systematic",
             "outside",
             "systematic",
+            "outside",
             "systematic"
           ]
         },
@@ -675,6 +726,7 @@
             "systematic",
             "outside",
             "systematic",
+            "outside",
             "systematic"
           ]
         },
@@ -689,6 +741,7 @@
             "systematic",
             "outside",
             "systematic",
+            "outside",
             "systematic"
           ]
         }
@@ -704,10 +757,11 @@
           "url": "https://arxiv.org/abs/2605.18747",
           "coverage": [
             "outside",
-            "partial",
+            "systematic",
             "partial",
             "outside",
-            "partial",
+            "systematic",
+            "outside",
             "systematic"
           ]
         },
@@ -722,6 +776,7 @@
             "partial",
             "outside",
             "outside",
+            "partial",
             "systematic"
           ]
         }
@@ -741,6 +796,7 @@
             "systematic",
             "outside",
             "outside",
+            "partial",
             "systematic"
           ]
         },
@@ -755,6 +811,7 @@
             "systematic",
             "outside",
             "partial",
+            "partial",
             "systematic"
           ]
         },
@@ -765,10 +822,11 @@
           "url": "https://arxiv.org/abs/2607.07663v2",
           "coverage": [
             "partial",
-            "partial",
+            "outside",
             "systematic",
             "outside",
-            "partial",
+            "outside",
+            "systematic",
             "systematic"
           ]
         },
@@ -778,11 +836,12 @@
           "year": 2026,
           "url": "https://www.preprints.org/manuscript/202609.2680/v1",
           "coverage": [
-            "partial",
-            "partial",
+            "outside",
+            "outside",
             "systematic",
             "outside",
-            "partial",
+            "outside",
+            "systematic",
             "systematic"
           ]
         },
@@ -796,6 +855,7 @@
             "systematic",
             "systematic",
             "outside",
+            "systematic",
             "systematic",
             "systematic"
           ]
@@ -811,6 +871,7 @@
             "systematic",
             "outside",
             "systematic",
+            "systematic",
             "systematic"
           ]
         }
@@ -821,6 +882,7 @@
     "title": "Ours",
     "year": 2026,
     "coverage": [
+      "systematic",
       "systematic",
       "systematic",
       "systematic",

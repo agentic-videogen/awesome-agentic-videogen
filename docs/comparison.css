@@ -13,7 +13,7 @@
 .coverage-outside {color:#b92338}
 .comparison-scroll {max-height:660px;overflow:auto;overscroll-behavior:contain;border:1px solid #d5d8df;border-radius:7px;background:#fff;scrollbar-color:#bcb8cb #f4f2f7;scrollbar-width:thin}
 .comparison-scroll:focus-visible {outline:3px solid #8d7cda;outline-offset:4px}
-.comparison-table {border-collapse:separate;border-spacing:0;width:100%;min-width:940px;table-layout:fixed;font-size:11px;line-height:1.5;text-align:center}
+.comparison-table {border-collapse:separate;border-spacing:0;width:100%;min-width:1060px;table-layout:fixed;font-size:11px;line-height:1.5;text-align:center}
 .comparison-study-col {width:32%}
 .comparison-year-col {width:6%}
 .comparison-table th,.comparison-table td {padding:9px 10px;border-bottom:1px solid #ececf0}
@@ -47,7 +47,7 @@
   .comparison-legend>span {gap:3px}
   .comparison-hint {font-size:9px}
   .comparison-scroll {max-height:550px}
-  .comparison-table {min-width:980px}
+  .comparison-table {min-width:1060px}
   .comparison-study-col {width:23%}
   .comparison-table th[scope="row"] {padding-left:12px;padding-right:12px}
   .comparison-table .comparison-study {padding-left:12px}

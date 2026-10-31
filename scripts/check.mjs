@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import assert from 'node:assert/strict';
 import { fileURLToPath } from 'node:url';
+import {createHash} from 'node:crypto';
 import {renderSurveyComparison} from './survey-comparison.mjs';
 import {githubRepositorySlug,renderResourceBadges} from './link-badges.mjs';
 import {checkStudioIntro} from './check-studio-intro.mjs';
@@ -65,24 +66,47 @@ for(const i of people.institutions){
 }
 assert(html.includes('Find your next paper.'),'Requested library title changed');
 const comparison=JSON.parse(read('data/survey-comparison.json'));
-assert.equal(comparison.source.manuscriptCommit,'63d5fc5680c2bb2cdca3f6249a72dd484d97ebdc','Unreviewed Table 1 source revision');
-assert.equal(comparison.columns.length,6,'Table 1 coverage dimensions changed');
+assert.equal(comparison.source.arxiv,'2610.40191v1','Unreviewed Table 1 source revision');
+const comparisonTex=read(comparison.source.snapshot);
+assert.equal(createHash('sha256').update(comparisonTex).digest('hex'),'1bfa7c39e224239849ea4d8ec89ac6bc6e02d5e2aaaa5a51b859bbbc0fd0c21e','Table 1 source snapshot changed');
+assert.equal(comparison.source.tableSha256,'1bfa7c39e224239849ea4d8ec89ac6bc6e02d5e2aaaa5a51b859bbbc0fd0c21e');
+assert.equal(comparison.source.pdfSha256,'5641189e8d614201957cafc58104e8e8f6b2e1212287b19db6de9dd54cbfb4c5');
+assert.deepEqual(comparison.columns.map(c=>c.label),['Video Generation','World Models','Model Development','Agentic Video Gen.','Agent–World Interaction','RSI','Agent Design'],'Table 1 headers must match the paper');
 assert.equal(comparison.groups.length,11,'Table 1 families changed');
 const comparisonRows=comparison.groups.flatMap(g=>g.rows);
 assert.equal(comparisonRows.length,52,'Table 1 study count changed');
 assert.equal(new Set(comparisonRows.map(r=>r.citation)).size,52,'Duplicate Table 1 citation');
 for(const r of [...comparisonRows,comparison.ours]){
   assert(r.title&&r.year>=2021&&r.year<=2026,'Invalid Table 1 title/year');
-  assert.equal(r.coverage.length,6,'Incomplete coverage row: '+r.title);
+  assert.equal(r.coverage.length,7,'Incomplete coverage row: '+r.title);
   assert(r.coverage.every(s=>['systematic','partial','outside'].includes(s)),'Invalid Table 1 coverage: '+r.title);
   if(r.url)assert(['https:','http:'].includes(new URL(r.url).protocol),'Unsafe Table 1 URL');
 }
+// Check every group, title, year and all 371 coverage cells against the released
+// paper's frozen TeX, not against inferred catalogue categories.
+const sourceGroups=[];
+let sourceOurs;
+const coverageState={scOverviewYes:'systematic',scOverviewPartial:'partial',scOverviewNo:'outside'};
+for(const line of comparisonTex.split('\n')){
+  const group=line.match(/\\bfseries\\itshape ([^}]+)/)?.[1];
+  if(group){sourceGroups.push({name:group,rows:[]});continue;}
+  if(!/ & 20\d\d & /.test(line))continue;
+  const cells=line.split(' & ');
+  const coverage=cells.slice(2).map(cell=>coverageState[cell.match(/scOverview\w+/)?.[0]]);
+  const citation=cells[0].match(/\\citep\{([^}]+)\}/)?.[1];
+  if(citation)sourceGroups.at(-1).rows.push({citation,title:cells[0].split('~\\citep')[0].replace(/\\&/g,'&').trim(),year:Number(cells[1]),coverage});
+  else sourceOurs={title:'Ours',year:Number(cells[1]),coverage};
+}
+assert.deepEqual(comparison.groups.map(g=>({name:g.name,rows:g.rows.map(({url,...row})=>row)})),sourceGroups,'Website Table 1 differs from the released paper');
+assert.deepEqual(comparison.ours,sourceOurs,'Ours row differs from the released paper');
 const comparisonBlock=html.match(/<!-- comparison:start -->([\s\S]*?)<!-- comparison:end -->/)?.[1];
 const htmlEscape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 assert.equal(comparisonBlock,renderSurveyComparison(comparison,htmlEscape),'Stale Table 1 markup');
 assert(html.includes(read('docs/comparison.css').trim()),'Stale Table 1 styles');
 assert.equal((comparisonBlock.match(/data-citation=/g)||[]).length,52,'Missing Table 1 rows');
-assert.equal((comparisonBlock.match(/class="coverage-mark /g)||[]).length,321,'Missing coverage cells/legend');
+assert.equal((comparisonBlock.match(/class="coverage-mark /g)||[]).length,374,'Missing coverage cells/legend');
+assert(comparisonBlock.includes('colspan="4">Thematic Coverage'),'RSI must belong to Thematic Coverage');
+assert(comparisonBlock.includes('https://arxiv.org/pdf/2610.40191v1#page=6'),'Missing released-paper provenance');
 assert(comparisonBlock.includes('Video-RSI: Harness Evolution (method)'),'Adjacent method omitted');
 assert(html.includes('href="#comparison"'),'Missing Table 1 navigation');
 assert.equal(t.find(x=>x.id==='development').title,'RSI in Video Generation','Incorrect RSI title');

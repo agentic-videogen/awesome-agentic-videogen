@@ -1,0 +1,221 @@
+% All coverage cells are audited in research/2026-10-29-table1-full-audit/coverage.json.
+% Native LaTeX table: all text, links and cells remain editable; no PDF/image is embedded.
+% Layout reference: arXiv:2505.05474v2, Tables 1--3 (booktabs, aligned columns, separate year).
+% Within each family: ascending first-release year, then coverage progression;
+% identical or similar coverage patterns are ordered by first public release.
+\begin{table}[!htbp]
+\centering
+\begingroup
+\color{black}
+\hypersetup{allcolors=black,citecolor=SurveyLinkBlue}
+% Keep exact Times New Roman local to this table, including its caption.
+\SurveyTableSetup
+\definecolor{scOverviewFamily}{HTML}{F0F5FB}
+\definecolor{scOverviewOurs}{HTML}{C9DDF2}
+\definecolor{scOverviewDivider}{HTML}{777777}
+\definecolor{scOverviewGreen}{HTML}{00845A}
+\definecolor{scOverviewRed}{HTML}{B92338}
+\definecolor{scOverviewPartialGray}{HTML}{929292}
+% Fixed vector-symbol boxes keep all three coverage states aligned.
+\DeclareRobustCommand{\scOverviewMark}[2]{\makebox[9pt][c]{%
+  \tikz[x=0.7pt,y=0.7pt,baseline=-1.9pt]{%
+    \path[use as bounding box] (-5,-4.8) rectangle (5,4.8);
+    \begin{scope}[draw=#1,line width=1.15pt,line cap=round,line join=round]
+      #2
+    \end{scope}}}}
+\DeclareRobustCommand{\scOverviewYes}{\scOverviewMark{scOverviewGreen}{%
+  \draw (-3.3,-0.3) .. controls (-2.9,-1.2) and (-2.2,-2.5) .. (-1.7,-3.0)
+    .. controls (-0.1,0.0) and (1.9,2.4) .. (3.5,3.8);}}
+\DeclareRobustCommand{\scOverviewNo}{\scOverviewMark{scOverviewRed}{%
+  \draw (-2.1,3.4) .. controls (-1.2,1.8) and (0.4,-1.5) .. (2.2,-3.3)
+    (3.1,4.2) .. controls (1.2,2.0) and (-1.6,-1.2) .. (-3,-4);}}
+\DeclareRobustCommand{\scOverviewPartial}{\scOverviewMark{scOverviewPartialGray}{%
+  \draw (-3.3,-0.3) .. controls (-2.9,-1.2) and (-2.2,-2.5) .. (-1.7,-3.0)
+    .. controls (-0.1,0.0) and (1.9,2.4) .. (3.5,3.8);}}
+\newcommand{\scOverviewHeader}[1]{\makebox[\linewidth][c]{%
+  \fontsize{7.0}{7.7}\selectfont\bfseries\makecell[c]{#1}}}
+\captionsetup{position=top,labelfont={bf,color=black},
+  textfont={rm,color=black},labelsep=colon,justification=raggedright,
+  singlelinecheck=false,skip=7pt}
+\caption[Comparison with related surveys and studies]{%
+{\bfseries Comparison with related surveys and studies.}
+Studies are grouped by primary research focus and compared in terms of
+scope, thematic coverage, and agent design.
+Our survey connects agentic video generation, agent--world interaction,
+and video model development toward Recursive Self-Improvement (RSI)
+through a unified agent-harness framework.
+Green checks (\scOverviewYes), gray checks (\scOverviewPartial), and red crosses
+(\scOverviewNo) indicate systematic coverage, partial coverage, and topics
+outside a study's scope, respectively.}
+\label{tab:survey-comparison-overview}
+\fontsize{7.5}{8.35}\selectfont
+\setlength{\tabcolsep}{1.7pt}
+\setlength{\parskip}{0pt}
+\renewcommand{\arraystretch}{1.00}
+\arrayrulecolor{black}
+\pgfmathsetlengthmacro{\scStudyWidth}{0.40*\linewidth+2*\tabcolsep}
+\pgfmathsetlengthmacro{\scYearWidth}{0.055*\linewidth+2*\tabcolsep}
+\pgfmathsetlengthmacro{\scRsiWidth}{0.035*\linewidth+2*\tabcolsep}
+\pgfmathsetlengthmacro{\scStateWidth}{(\linewidth-\scStudyWidth-\scYearWidth-\scRsiWidth)/6}
+\newcommand{\scOverviewHeaderPanel}{%
+  \begin{tikzpicture}[x=1pt,y=1pt,baseline=0pt,
+    every node/.style={inner sep=0pt,outer sep=0pt,align=center,
+      font=\rmfamily\bfseries\fontsize{7.5}{8.35}\selectfont}]
+    \path[use as bounding box] (0,0) rectangle (\linewidth,33pt);
+    \draw[black,line width=0.8pt] (0,33pt)--(\linewidth,33pt);
+    \node[anchor=west] at (\tabcolsep,16.5pt) {Survey / Study};
+    \node at ({\scStudyWidth+0.5*\scYearWidth},16.5pt) {Year};
+    \node at ({\scStudyWidth+\scYearWidth+\scStateWidth},27.1pt) {Scope};
+    \node at ({\scStudyWidth+\scYearWidth+3.5*\scStateWidth+0.5*\scRsiWidth},27.1pt) {Thematic Coverage};
+    \draw[scOverviewDivider,line width=0.3pt]
+      ({\scStudyWidth+\scYearWidth+4pt},21.8pt)--
+      ({\scStudyWidth+\scYearWidth+2*\scStateWidth-4pt},21.8pt);
+    \draw[scOverviewDivider,line width=0.3pt]
+      ({\scStudyWidth+\scYearWidth+2*\scStateWidth+4pt},21.8pt)--
+      ({\scStudyWidth+\scYearWidth+5*\scStateWidth+\scRsiWidth-4pt},21.8pt);
+    \begin{scope}[every node/.append style={font=\rmfamily\bfseries\fontsize{7}{7.7}\selectfont}]
+      \node at ({\scStudyWidth+\scYearWidth+0.5*\scStateWidth},10.6pt) {Video\\Generation};
+      \node at ({\scStudyWidth+\scYearWidth+1.5*\scStateWidth},10.6pt) {World\\Models};
+      \node at ({\scStudyWidth+\scYearWidth+2.5*\scStateWidth},10.6pt) {Model\\Development};
+      \node at ({\scStudyWidth+\scYearWidth+5*\scStateWidth+0.5*\scRsiWidth},10.6pt) {RSI};
+      \node at ({\scStudyWidth+\scYearWidth+3.5*\scStateWidth},10.6pt) {Agentic\\Video Gen.};
+      \node at ({\scStudyWidth+\scYearWidth+4.5*\scStateWidth},10.6pt) {Agent--World\\Interaction};
+      \node at ({\scStudyWidth+\scYearWidth+5.5*\scStateWidth+\scRsiWidth},16.5pt) {Agent\\Design};
+    \end{scope}
+  \end{tikzpicture}}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}p{0.40\linewidth}>{\centering\arraybackslash}p{0.055\linewidth}*{5}{>{\centering\arraybackslash}X}>{\centering\arraybackslash}p{0.035\linewidth}>{\centering\arraybackslash}X}
+\multicolumn{9}{@{}c@{}}{\scOverviewHeaderPanel}\\[-2.5pt]
+\midrule
+\rowcolor{scOverviewFamily}[0pt][0pt]
+\multicolumn{9}{@{}c@{}}{\rule[-2.7pt]{0pt}{10.6pt}{\bfseries\itshape Visual Generative Modeling}} \\
+% N01
+Adversarial Text-to-Image Synthesis~\citep{frolov2021surveyn01} & 2021 & \scOverviewNo & \scOverviewNo & \scOverviewYes & \scOverviewNo & \scOverviewNo & \scOverviewNo & \scOverviewNo \\
+% N08
+Diffusion Models: Methods and Applications~\citep{yang2022surveyn08} & 2022 & \scOverviewYes & \scOverviewNo & \scOverviewYes & \scOverviewPartial & \scOverviewNo & \scOverviewNo & \scOverviewPartial \\
+% N09
+RenAIssance: Text-to-Image Generation~\citep{bie2023surveyn09} & 2023 & \scOverviewPartial & \scOverviewNo & \scOverviewYes & \scOverviewNo & \scOverviewNo & \scOverviewNo & \scOverviewNo \\
+% N02
+Text-to-Image Diffusion Models~\citep{zhang2023surveyn02} & 2023 & \scOverviewYes & \scOverviewNo & \scOverviewYes & \scOverviewNo & \scOverviewNo & \scOverviewNo & \scOverviewNo \\
+% S05
+From Sora: Text-to-Video Generation~\citep{sun2024sorasurvey} & 2024 & \scOverviewYes & \scOverviewPartial & \scOverviewYes & \scOverviewYes & \scOverviewPartial & \scOverviewNo & \scOverviewPartial \\
+% N06
+Autoregressive Models in Vision~\citep{xiong2024surveyn06} & 2024 & \scOverviewYes & \scOverviewYes & \scOverviewYes & \scOverviewNo & \scOverviewYes & \scOverviewNo & \scOverviewPartial \\
+% S04
+Video Diffusion Models~\citep{melnik2024videodiffusionsurvey} & 2024 & \scOverviewYes & \scOverviewYes & \scOverviewYes & \scOverviewNo & \scOverviewPartial & \scOverviewNo & \scOverviewPartial \\
+\rowcolor{scOverviewFamily}[0pt][0pt]
+\multicolumn{9}{@{}c@{}}{\rule[-2.7pt]{0pt}{10.6pt}{\bfseries\itshape Visual Editing and Control}} \\
+% N03
+Diffusion-Based Image Editing~\citep{huang2024surveyn03} & 2024 & \scOverviewNo & \scOverviewNo & \scOverviewYes & \scOverviewNo & \scOverviewNo & \scOverviewNo & \scOverviewNo \\
+% N04
+Controllable Text-to-Image Generation~\citep{cao2024surveyn04} & 2024 & \scOverviewPartial & \scOverviewPartial & \scOverviewYes & \scOverviewNo & \scOverviewNo & \scOverviewNo & \scOverviewNo \\
+% S07
+Diffusion-Based Video Editing~\citep{sun2024videoeditingsurvey} & 2024 & \scOverviewYes & \scOverviewNo & \scOverviewYes & \scOverviewNo & \scOverviewNo & \scOverviewNo & \scOverviewNo \\
+\rowcolor{scOverviewFamily}[0pt][0pt]
+\multicolumn{9}{@{}c@{}}{\rule[-2.7pt]{0pt}{10.6pt}{\bfseries\itshape Long Video Generation and Memory}} \\
+% S03
+Long Video Generation~\citep{li2024longvideosurvey} & 2024 & \scOverviewYes & \scOverviewNo & \scOverviewYes & \scOverviewNo & \scOverviewNo & \scOverviewNo & \scOverviewNo \\
+% N07
+Long Video Generation: Latest Trends~\citep{waseem2024surveyn07} & 2024 & \scOverviewYes & \scOverviewNo & \scOverviewYes & \scOverviewYes & \scOverviewNo & \scOverviewNo & \scOverviewYes \\
+% S09
+Spatiotemporal Consistency~\citep{yin2025spatiotemporal} & 2025 & \scOverviewYes & \scOverviewPartial & \scOverviewYes & \scOverviewPartial & \scOverviewPartial & \scOverviewNo & \scOverviewPartial \\
+% N14
+The Past Frames the Future: Video Memory~\citep{chen2026surveyn14} & 2026 & \scOverviewYes & \scOverviewYes & \scOverviewYes & \scOverviewNo & \scOverviewPartial & \scOverviewNo & \scOverviewNo \\
+\rowcolor{scOverviewFamily}[0pt][0pt]
+\multicolumn{9}{@{}c@{}}{\rule[-2.7pt]{0pt}{10.6pt}{\bfseries\itshape Specialized Video Generation}} \\
+% S06
+Human Video Generation~\citep{lei2024humanvideosurvey} & 2024 & \scOverviewYes & \scOverviewNo & \scOverviewYes & \scOverviewNo & \scOverviewNo & \scOverviewNo & \scOverviewNo \\
+% S10
+Controllable Video Generation~\citep{ma2025controllablevideo} & 2025 & \scOverviewYes & \scOverviewPartial & \scOverviewYes & \scOverviewPartial & \scOverviewPartial & \scOverviewNo & \scOverviewPartial \\
+% S11
+Physics Cognition in Video Generation~\citep{lin2025physicscognitionsurvey} & 2025 & \scOverviewYes & \scOverviewYes & \scOverviewYes & \scOverviewYes & \scOverviewYes & \scOverviewNo & \scOverviewYes \\
+\rowcolor{scOverviewFamily}[0pt][0pt]
+\multicolumn{9}{@{}c@{}}{\rule[-2.7pt]{0pt}{10.6pt}{\bfseries\itshape Generation Evaluation and Alignment}} \\
+% N11
+Diffusion Model Alignment~\citep{liu2024surveyn11} & 2024 & \scOverviewYes & \scOverviewNo & \scOverviewYes & \scOverviewNo & \scOverviewNo & \scOverviewNo & \scOverviewNo \\
+% S12
+AI-Generated Video Evaluation~\citep{liu2024videogenerationevaluation} & 2024 & \scOverviewYes & \scOverviewNo & \scOverviewYes & \scOverviewNo & \scOverviewNo & \scOverviewNo & \scOverviewPartial \\
+% N05
+Preference Alignment for Image Generation~\citep{wu2025surveyn05} & 2025 & \scOverviewPartial & \scOverviewPartial & \scOverviewYes & \scOverviewNo & \scOverviewPartial & \scOverviewNo & \scOverviewPartial \\
+% S13
+Video Post-Training and Alignment~\citep{li2026videoposttraining} & 2026 & \scOverviewYes & \scOverviewPartial & \scOverviewYes & \scOverviewYes & \scOverviewPartial & \scOverviewNo & \scOverviewYes \\
+\rowcolor{scOverviewFamily}[0pt][0pt]
+\multicolumn{9}{@{}c@{}}{\rule[-2.7pt]{0pt}{10.6pt}{\bfseries\itshape Visual Production Workflows}} \\
+% S01
+AI-Empowered Persuasive Video Generation~\citep{liu2021persuasivevideosurvey} & 2021 & \scOverviewYes & \scOverviewNo & \scOverviewYes & \scOverviewNo & \scOverviewNo & \scOverviewNo & \scOverviewNo \\
+% S14
+LLMs Meet Multimodal Generation and Editing~\citep{he2024llmsgenerationediting} & 2024 & \scOverviewYes & \scOverviewNo & \scOverviewYes & \scOverviewYes & \scOverviewNo & \scOverviewNo & \scOverviewYes \\
+% Added 2026-10-20
+Visual Generation in the New Era~\citep{wu2026visualnewera} & 2026 & \scOverviewYes & \scOverviewYes & \scOverviewYes & \scOverviewPartial & \scOverviewYes & \scOverviewNo & \scOverviewYes \\
+Agentic Generative Systems~\citep{xu2026ags} & 2026 & \scOverviewYes & \scOverviewPartial & \scOverviewPartial & \scOverviewYes & \scOverviewPartial & \scOverviewNo & \scOverviewYes \\
+Agentic Artifact Creation~\citep{wang2026artifactcreation} & 2026 & \scOverviewYes & \scOverviewYes & \scOverviewPartial & \scOverviewYes & \scOverviewYes & \scOverviewNo & \scOverviewYes \\
+% N15
+Beyond Visual Generation: Agentic Creation~\citep{mei2026beyond} & 2026 & \scOverviewYes & \scOverviewNo & \scOverviewYes & \scOverviewYes & \scOverviewNo & \scOverviewNo & \scOverviewYes \\
+% S16
+Agentic Visual Generation: Models to Control~\citep{huang2026agenticvisual} & 2026 & \scOverviewYes & \scOverviewPartial & \scOverviewYes & \scOverviewYes & \scOverviewPartial & \scOverviewYes & \scOverviewYes \\
+% S15
+Agentic Visual Generation~\citep{xing2026agenticvisualsurvey} & 2026 & \scOverviewYes & \scOverviewYes & \scOverviewYes & \scOverviewYes & \scOverviewPartial & \scOverviewPartial & \scOverviewYes \\
+\rowcolor{scOverviewFamily}[0pt][0pt]
+\multicolumn{9}{@{}c@{}}{\rule[-2.7pt]{0pt}{10.6pt}{\bfseries\itshape Video Understanding Agents}} \\
+% N22
+Agentic Video Understanding~\citep{deng2026agenticvideounderstanding} & 2026 & \scOverviewNo & \scOverviewPartial & \scOverviewYes & \scOverviewNo & \scOverviewPartial & \scOverviewNo & \scOverviewYes \\
+% Adjacent method, not a survey. Frozen model weights; harness evolution only.
+% Static-video investigation is not interaction with a generative world model.
+% RSI No: Sec. 2.2 names a self-modifying improver but does not develop recursive procedure revision; the method evolves the task harness.
+Video-RSI: Harness Evolution (method)~\citep{luo2026videorsi} & 2026 & \scOverviewNo & \scOverviewNo & \scOverviewPartial & \scOverviewNo & \scOverviewNo & \scOverviewNo & \scOverviewYes \\
+\rowcolor{scOverviewFamily}[0pt][0pt]
+\multicolumn{9}{@{}c@{}}{\rule[-2.7pt]{0pt}{10.6pt}{\bfseries\itshape General and Interactive World Models}} \\
+% S22
+Sora as a World Model?~\citep{puspitasari2024soraworldsurvey} & 2024 & \scOverviewYes & \scOverviewYes & \scOverviewYes & \scOverviewPartial & \scOverviewYes & \scOverviewNo & \scOverviewYes \\
+% S23
+Understanding World or Predicting Future?~\citep{ding2024worldmodels} & 2024 & \scOverviewYes & \scOverviewYes & \scOverviewYes & \scOverviewNo & \scOverviewYes & \scOverviewNo & \scOverviewYes \\
+% N12
+Interactive Generative Video~\citep{yu2025surveyn12} & 2025 & \scOverviewYes & \scOverviewYes & \scOverviewYes & \scOverviewNo & \scOverviewYes & \scOverviewNo & \scOverviewYes \\
+% N13
+Visual World Simulation: A Roadmap~\citep{yue2025surveyn13} & 2025 & \scOverviewYes & \scOverviewYes & \scOverviewYes & \scOverviewNo & \scOverviewYes & \scOverviewNo & \scOverviewYes \\
+% S28
+Agentic World Modeling~\citep{chu2026agenticworldmodel} & 2026 & \scOverviewYes & \scOverviewYes & \scOverviewYes & \scOverviewNo & \scOverviewYes & \scOverviewPartial & \scOverviewYes \\
+% Added 2026-10-20
+Quo Vadis, World Modeling?~\citep{yang2026quovadis} & 2026 & \scOverviewNo & \scOverviewYes & \scOverviewYes & \scOverviewNo & \scOverviewYes & \scOverviewNo & \scOverviewYes \\
+\rowcolor{scOverviewFamily}[0pt][0pt]
+\multicolumn{9}{@{}c@{}}{\rule[-2.7pt]{0pt}{10.6pt}{\bfseries\itshape Embodied World Models}} \\
+% S26
+World Models for Embodied AI~\citep{li2025embodiedworldmodels} & 2025 & \scOverviewYes & \scOverviewYes & \scOverviewYes & \scOverviewPartial & \scOverviewYes & \scOverviewNo & \scOverviewYes \\
+% N18
+A Step Toward World Models: Manipulation~\citep{zhang2025surveyn18} & 2025 & \scOverviewYes & \scOverviewYes & \scOverviewYes & \scOverviewNo & \scOverviewYes & \scOverviewNo & \scOverviewYes \\
+% N19
+Robotic Video World Models~\citep{mei2026surveyn19} & 2026 & \scOverviewYes & \scOverviewYes & \scOverviewYes & \scOverviewNo & \scOverviewYes & \scOverviewNo & \scOverviewYes \\
+% S29
+World Models for Robot Learning~\citep{hou2026robotworldmodels} & 2026 & \scOverviewYes & \scOverviewYes & \scOverviewYes & \scOverviewNo & \scOverviewYes & \scOverviewNo & \scOverviewYes \\
+% N20
+World Models for Robotic Manipulation~\citep{wang2026surveyn20} & 2026 & \scOverviewYes & \scOverviewYes & \scOverviewYes & \scOverviewNo & \scOverviewYes & \scOverviewNo & \scOverviewYes \\
+% N17
+World-Action Models for Robot Learning~\citep{lu2026surveyn17} & 2026 & \scOverviewYes & \scOverviewYes & \scOverviewYes & \scOverviewNo & \scOverviewYes & \scOverviewNo & \scOverviewYes \\
+% N16
+Embodied World Models: Plausible to Actionable~\citep{yao2026surveyn16} & 2026 & \scOverviewYes & \scOverviewYes & \scOverviewYes & \scOverviewNo & \scOverviewYes & \scOverviewNo & \scOverviewYes \\
+\rowcolor{scOverviewFamily}[0pt][0pt]
+\multicolumn{9}{@{}c@{}}{\rule[-2.7pt]{0pt}{10.6pt}{\bfseries\itshape Agent Harness}} \\
+% Added 2026-10-20
+Code as Agent Harness~\citep{ning2026code} & 2026 & \scOverviewNo & \scOverviewYes & \scOverviewPartial & \scOverviewNo & \scOverviewYes & \scOverviewNo & \scOverviewYes \\
+Agent System and Harness Design~\citep{guo2026harnessdesign} & 2026 & \scOverviewNo & \scOverviewNo & \scOverviewPartial & \scOverviewNo & \scOverviewNo & \scOverviewPartial & \scOverviewYes \\
+\rowcolor{scOverviewFamily}[0pt][0pt]
+\multicolumn{9}{@{}c@{}}{\rule[-2.7pt]{0pt}{10.6pt}{\bfseries\itshape Self-Evolving Systems}} \\
+% R01
+Self-Evolution of Large Language Models~\citep{tao2024surveyr01} & 2024 & \scOverviewNo & \scOverviewNo & \scOverviewYes & \scOverviewNo & \scOverviewNo & \scOverviewPartial & \scOverviewYes \\
+% R02
+Self-Evolving Agents~\citep{gao2025surveyr02} & 2025 & \scOverviewNo & \scOverviewPartial & \scOverviewYes & \scOverviewNo & \scOverviewPartial & \scOverviewPartial & \scOverviewYes \\
+% R04
+RSI: Bounded Refinement to Research Loops~\citep{chen2026surveyr04} & 2026 & \scOverviewPartial & \scOverviewNo & \scOverviewYes & \scOverviewNo & \scOverviewNo & \scOverviewYes & \scOverviewYes \\
+% R05
+Recursive Self-Improvement in AI~\citep{wu2026rsisurvey} & 2026 & \scOverviewNo & \scOverviewNo & \scOverviewYes & \scOverviewNo & \scOverviewNo & \scOverviewYes & \scOverviewYes \\
+% R03
+Self-Improvements in Modern Agentic Systems~\citep{ren2026surveyr03} & 2026 & \scOverviewPartial & \scOverviewYes & \scOverviewYes & \scOverviewNo & \scOverviewYes & \scOverviewYes & \scOverviewYes \\
+% N21
+The Last AI Built by Humans: Genuine RSI~\citep{duan2026surveyn21} & 2026 & \scOverviewPartial & \scOverviewYes & \scOverviewYes & \scOverviewNo & \scOverviewYes & \scOverviewYes & \scOverviewYes \\
+\midrule
+% Ours
+\rowcolor{scOverviewOurs}
+{\bfseries Ours} & 2026 & \scOverviewYes & \scOverviewYes & \scOverviewYes & \scOverviewYes & \scOverviewYes & \scOverviewYes & \scOverviewYes \\
+\bottomrule
+\end{tabularx}
+\endgroup
+\end{table}

@@ -3,6 +3,7 @@ import path from 'node:path';
 import assert from 'node:assert/strict';
 import vm from 'node:vm';
 import {fileURLToPath} from 'node:url';
+import {renderSurveyComparison} from './survey-comparison.mjs';
 
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const output=process.argv[2]?path.resolve(process.argv[2]):path.join(root,'build/website');
@@ -20,6 +21,9 @@ let position=-1;
 for(const author of people.authors){const next=authors.indexOf(author.name);assert(next>position,'Missing/reordered author: '+author.name);position=next;}
 assert.equal((html.match(/class="tree-node"/g)||[]).length,96,'Research tree links missing');
 assert.equal((html.match(/data-citation=/g)||[]).length,52,'Table 1 studies missing');
+const comparison=JSON.parse(fs.readFileSync(path.join(root,'data/survey-comparison.json'),'utf8'));
+const escape=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+assert(html.includes(renderSurveyComparison(comparison,escape)),'Published Table 1 differs from the checked paper data');
 assert(!/<dialog[^>]+\bopen(?:\s|>|=)/.test(html),'Opening must remain closed without JavaScript');
 const opening=html.match(/<script id="studio-intro-script">([\s\S]*?)<\/script>/)?.[1];
 assert(opening?.includes('sessionStorage.'),'Approved opening session behavior changed');
